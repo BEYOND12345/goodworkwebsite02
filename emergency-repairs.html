@@ -38,6 +38,7 @@
             line-height: 1.6;
             color: var(--charcoal);
             background-color: var(--white);
+            padding-top: 70px;
         }
 
         .container {
@@ -54,22 +55,25 @@
 
         /* Header Navigation */
         .header-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
             border-bottom: 1px solid var(--light-grey);
-            padding: 15px 0;
-            position: sticky;
-            top: 0;
             z-index: 1000;
+            padding: 0;
         }
 
         .nav-container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 70px;
         }
 
         @media (min-width: 1240px) {
@@ -79,7 +83,7 @@
         }
 
         .nav-logo a {
-            font-size: 1.5rem;
+            font-size: 1.25rem;
             font-weight: 700;
             color: var(--charcoal);
             text-decoration: none;
@@ -92,7 +96,7 @@
         .nav-menu {
             display: flex;
             align-items: center;
-            gap: 32px;
+            gap: 20px;
         }
 
         .nav-menu a {
@@ -112,7 +116,7 @@
         .nav-cta {
             background: var(--yellow-primary) !important;
             color: var(--charcoal) !important;
-            padding: 12px 24px !important;
+            padding: 10px 20px !important;
             font-weight: 600 !important;
         }
 
@@ -275,7 +279,7 @@
         }
 
         /* Mobile Responsive */
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
             .nav-menu {
                 display: none;
             }
@@ -574,13 +578,13 @@
     <header class="header-nav">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="index.html">Rivers Property Services</a>
+                <a href="index.html">Good Hands Handyman</a>
             </div>
             <nav class="nav-menu">
                 <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="areas.html">Areas</a>
                 <a href="about.html">About</a>
-                <a href="handyman-services-byron-bay.html">Services</a>
-                <a href="handyman-pricing-northern-rivers.html">Pricing</a>
                 <a href="contact.html">Contact</a>
                 <a href="tel:0412345678" class="nav-cta">Call Now</a>
             </nav>
@@ -591,10 +595,10 @@
             </button>
             <div class="mobile-menu" id="mobileMenu">
                 <a href="index.html" onclick="closeMobileMenu()">Home</a>
-                <a href="about.html" onclick="closeMobileMenu()">About</a>
+                <a href="about-dan-byron-bay-handyman.html" onclick="closeMobileMenu()">About Dan</a>
                 <a href="handyman-services-byron-bay.html" onclick="closeMobileMenu()">Services</a>
                 <a href="handyman-pricing-northern-rivers.html" onclick="closeMobileMenu()">Pricing</a>
-                <a href="contact.html" onclick="closeMobileMenu()">Contact</a>
+                <a href="get-quote.html" onclick="closeMobileMenu()">Get Quote</a>
                 <a href="tel:0412345678" class="nav-cta" onclick="closeMobileMenu()">Call Now</a>
             </div>
         </div>
@@ -605,7 +609,7 @@
         <div class="container">
             <h1>Emergency Repair Services</h1>
             <p class="hero-subtitle">Fast response emergency repairs across Northern Rivers NSW. When you need urgent repairs, we provide professional solutions with same-day service available.</p>
-            <a href="contact.html" class="cta-button">Get Free Quote</a>
+            <a href="get-quote.html" class="cta-button">Get Free Quote</a>
         </div>
     </section>
 
@@ -622,7 +626,7 @@
         <div class="container">
             <h2>Ready to Get Started?</h2>
             <p>Contact us today for professional services across Byron Bay, Ballina, Lismore, Bangalow, Mullumbimby, Tweed Heads, Ocean Shores and surrounding areas.</p>
-            <a href="contact.html" class="cta-button">Get Your Free Quote</a>
+            <a href="get-quote.html" class="cta-button">Get Your Free Quote</a>
         </div>
     </section>
 
@@ -690,8 +694,8 @@
                 <!-- Quick Actions -->
                 <div class="footer-section quick-actions">
                     <h3>Get Started</h3>
-                    <a href="contact.html" class="cta-button">Get Free Quote</a>
-                    <a href="about.html" class="cta-button cta-secondary">About Us</a>
+                    <a href="get-quote.html" class="cta-button">Get Free Quote</a>
+                    <a href="about-dan-byron-bay-handyman.html" class="cta-button cta-secondary">About Us</a>
                     
                     <div class="business-hours">
                         <h4>Response Times</h4>

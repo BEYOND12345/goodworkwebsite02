@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Airbnb Maintenance Services Northern Rivers | Rivers Property Services</title>
-    <meta name="description" content="Specialist Airbnb property maintenance services across Northern Rivers NSW. Keep your rental property in perfect condition for 5-star guest reviews. Call 0412 345 678">
+    <title>Deck Restoration Byron Bay | Good Hands Handyman & Property Services</title>
+    <meta name="description" content="I restore weathered decks throughout Byron Bay & Northern Rivers. Sand, stain, oil, and waterproof your deck properly. Quality materials, fair pricing. Call 0412 345 678">
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -173,10 +173,10 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(45, 55, 72, 0.85), rgba(45, 55, 72, 0.85)), url('airbnb-maintenance-hero.jpg');
+            height: 500px;
+            background: linear-gradient(rgba(45, 55, 72, 0.8), rgba(45, 55, 72, 0.8)), url('deck-restoration-byron-bay-service.jpg');
             background-size: cover;
             background-position: center;
-            height: 500px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -203,14 +203,14 @@
         .cta-button {
             background: var(--yellow-primary);
             color: var(--charcoal);
-            padding: 16px 32px;
+            padding: 18px 36px;
+            border: none;
             border-radius: var(--border-radius);
-            text-decoration: none;
+            font-size: 1.125rem;
             font-weight: 600;
-            font-size: 1.1rem;
+            text-decoration: none;
             display: inline-block;
             transition: all 0.3s ease;
-            box-shadow: var(--shadow-md);
         }
 
         .cta-button:hover {
@@ -219,36 +219,83 @@
             box-shadow: var(--shadow-lg);
         }
 
-        /* Main Content Section */
+        /* Content Sections */
         .section {
-            padding: 80px 0;
+            padding: 40px 0;
+        }
+
+        .section-alt {
+            background: var(--bg-subtle);
         }
 
         .section-header {
             text-align: center;
-            margin-bottom: 48px;
+            margin-bottom: 32px;
         }
 
         .section-title {
-            font-size: clamp(2rem, 4vw, 2.75rem);
+            font-size: clamp(2rem, 4vw, 2.5rem);
             font-weight: 700;
             color: var(--charcoal);
-            margin-bottom: 16px;
-            letter-spacing: -0.025em;
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
         }
 
+        .main-content {
+            max-width: 800px;
+            margin: 0 auto 64px;
+            font-size: 1.125rem;
+            line-height: 1.7;
+            color: var(--dark-grey);
+        }
+
+        /* Service List */
+        .service-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 24px;
+            margin-bottom: 0;
+        }
+
+        .service-item {
+            background: var(--white);
+            padding: 24px;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--light-grey);
+            transition: all 0.3s ease;
+        }
+
+        .service-item:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--yellow-primary);
+        }
+
+        .service-item h3 {
+            font-size: 1.5rem;
+            color: var(--charcoal);
+            margin-bottom: 12px;
+        }
+
+        .service-item p {
+            color: var(--dark-grey);
+            line-height: 1.6;
+        }
+
+        /* Content with Image */
         .content-with-image {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 64px;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 40px;
             align-items: center;
+            margin: 0 auto 40px;
             max-width: 1200px;
-            margin: 0 auto 80px;
             padding: 0 24px;
         }
 
         .content-text {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             line-height: 1.8;
             color: var(--dark-grey);
         }
@@ -282,40 +329,6 @@
             object-fit: cover;
         }
 
-        /* Service List Grid */
-        .service-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 32px;
-            margin: 64px 0;
-        }
-
-        .service-item {
-            background: var(--white);
-            padding: 32px;
-            border-radius: var(--border-radius-lg);
-            box-shadow: var(--shadow-sm);
-            transition: all 0.3s ease;
-            border-left: 4px solid var(--yellow-primary);
-        }
-
-        .service-item:hover {
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-lg);
-        }
-
-        .service-item h3 {
-            font-size: 1.375rem;
-            font-weight: 600;
-            color: var(--charcoal);
-            margin-bottom: 16px;
-        }
-
-        .service-item p {
-            color: var(--dark-grey);
-            line-height: 1.7;
-        }
-
         /* Balance Image */
         .balance-image {
             margin-top: 40px;
@@ -340,7 +353,7 @@
 
         /* Testimonials Section */
         .testimonials {
-            padding: 80px 0;
+            padding: 40px 0;
             background: var(--bg-subtle);
         }
 
@@ -386,8 +399,8 @@
         }
 
         .testimonial-location {
-            color: var(--medium-grey);
             font-size: 0.9rem;
+            color: var(--medium-grey);
             margin-top: 4px;
         }
 
@@ -395,429 +408,610 @@
             border-radius: var(--border-radius-lg);
             overflow: hidden;
             box-shadow: var(--shadow-lg);
+            transition: all 0.3s ease;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .testimonials-image:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
         }
 
         .testimonials-image img {
             width: 100%;
-            height: auto;
+            height: 100%;
             display: block;
-            aspect-ratio: 4/5;
+            aspect-ratio: 4/3;
             object-fit: cover;
         }
 
         /* Services Strip */
         .services-strip {
-            padding: 80px 0;
+            padding: 60px 0;
             background: var(--white);
         }
 
         .strip-title {
-            text-align: center;
-            font-size: clamp(2rem, 4vw, 2.5rem);
+            font-size: clamp(1.75rem, 3vw, 2.25rem);
             font-weight: 700;
             color: var(--charcoal);
+            text-align: center;
             margin-bottom: 48px;
             letter-spacing: -0.02em;
         }
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 32px;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 24px;
             max-width: 1200px;
             margin: 0 auto;
         }
 
         .service-card {
-            background: var(--white);
-            padding: 24px;
+            text-align: center;
+            padding: 24px 16px;
+            background: var(--bg-subtle);
             border-radius: var(--border-radius-lg);
             text-decoration: none;
-            color: var(--charcoal);
-            text-align: center;
             transition: all 0.3s ease;
-            border: 2px solid var(--light-grey);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 16px;
+            border: 2px solid transparent;
         }
 
         .service-card:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--shadow-lg);
+            transform: translateY(-4px);
+            background: var(--white);
             border-color: var(--yellow-primary);
+            box-shadow: var(--shadow-lg);
         }
 
         .service-icon {
             width: 48px;
             height: 48px;
-            background: var(--yellow-light);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            margin: 0 auto 12px;
+            transition: transform 0.3s ease;
             color: var(--yellow-primary);
-            transition: all 0.3s ease;
+        }
+
+        .service-icon svg {
+            width: 100%;
+            height: 100%;
         }
 
         .service-card:hover .service-icon {
-            background: var(--yellow-primary);
-            color: var(--white);
             transform: scale(1.1);
+            color: var(--yellow-hover);
         }
 
         .service-card h4 {
             font-size: 1rem;
             font-weight: 600;
+            color: var(--charcoal);
             margin: 0;
         }
 
         /* CTA Section */
         .cta-section {
-            background: var(--charcoal);
-            color: var(--white);
-            padding: 80px 0;
+            background: linear-gradient(135deg, var(--yellow-primary) 0%, var(--yellow-hover) 100%);
+            padding: 48px 0;
             text-align: center;
         }
 
         .cta-section h2 {
-            font-size: clamp(2rem, 4vw, 2.5rem);
+            font-size: clamp(2.5rem, 5vw, 3rem);
+            color: var(--charcoal);
+            margin-bottom: 24px;
             font-weight: 700;
-            margin-bottom: 16px;
-            letter-spacing: -0.02em;
+            letter-spacing: -0.025em;
+            line-height: 1.1;
         }
 
         .cta-section p {
-            font-size: 1.2rem;
-            opacity: 0.9;
+            font-size: 1.25rem;
+            color: var(--charcoal);
             margin-bottom: 32px;
-            max-width: 600px;
+            opacity: 0.9;
+            line-height: 1.5;
+        }
+
+        .cta-section .cta-button {
+            background: var(--charcoal);
+            color: var(--white);
+        }
+
+        .cta-section .cta-button:hover {
+            background: var(--dark-grey);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--charcoal);
+            color: var(--white);
+            padding: 48px 0 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 32px;
+            margin-bottom: 48px;
+            max-width: 1200px;
             margin-left: auto;
             margin-right: auto;
+            padding: 0 24px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 24px;
+            color: var(--yellow-primary);
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            line-height: 1.6;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .footer-section a:hover {
+            color: var(--yellow-primary);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 32px;
+            text-align: center;
+            color: rgba(255,255,255,0.6);
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-left: 24px;
+            padding-right: 24px;
         }
 
         /* Mobile Responsive */
-        @media (max-width: 968px) {
-            .content-with-image {
-                grid-template-columns: 1fr;
-                gap: 48px;
-            }
-
-            .testimonials-container {
-                grid-template-columns: 1fr;
-                gap: 48px;
-            }
-
-            .services-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
         @media (max-width: 1024px) {
             .nav-menu {
                 display: none;
             }
-            
+
             .mobile-menu-btn {
                 display: flex;
             }
-            
+
             .mobile-menu.active {
                 display: block;
             }
+        }
 
-            .hero {
-                height: 400px;
-                padding: 0 24px;
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 0 20px;
             }
-
+            
             .section {
-                padding: 60px 0;
-            }
-
-            .services-grid {
-                grid-template-columns: 1fr;
+                padding: 40px 0;
             }
 
             .service-list {
                 grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .content-with-image {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                margin-bottom: 40px;
+                padding: 0 24px;
+            }
+
+            .content-text {
+                font-size: 1.1rem;
+                line-height: 1.7;
+            }
+
+            .content-text p + p {
+                margin-top: 24px;
+            }
+
+            .testimonials-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                padding: 0 24px;
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 16px;
+            }
+
+            .service-card {
+                padding: 20px 12px;
+            }
+
+            .service-icon {
+                width: 40px;
+                height: 40px;
+            }
+
+            .service-card h4 {
+                font-size: 0.9rem;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
             }
         }
 
-        /* Footer CSS */
-        .footer {
-            background: var(--charcoal);
-            color: var(--white);
-            padding: 64px 0 24px;
-        }
-        
-        .footer-main {
-            padding: 64px 32px 48px;
-        }
-        
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            gap: 48px;
-            margin-bottom: 48px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .footer-section h3 {
-            color: var(--yellow-primary);
-            font-weight: 600;
-            font-size: 1.125rem;
-            margin-bottom: 24px;
-        }
-        
-        .footer-section ul {
-            list-style: none;
-            padding: 0;
-        }
-        
-        .footer-section li {
-            margin-bottom: 12px;
-        }
-        
-        .footer-section a {
-            color: rgba(255,255,255,0.85);
-            text-decoration: none;
-            font-size: 0.95rem;
-            transition: all 0.3s ease;
-            display: block;
-            padding: 4px 0;
-        }
-        
-        .footer-section a:hover {
-            color: var(--yellow-primary);
-            transform: translateX(4px);
-        }
-        
-        .footer-section p {
-            color: rgba(255,255,255,0.8);
-            font-size: 0.95rem;
-            line-height: 1.7;
-            margin-bottom: 16px;
-        }
-        
-        .brand-logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--yellow-primary);
-            margin-bottom: 16px;
-        }
-        
-        .brand-tagline {
-            font-size: 1rem;
-            color: rgba(255,255,255,0.9);
-            margin-bottom: 24px;
-            font-style: italic;
-        }
-        
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 12px;
-            color: rgba(255,255,255,0.85);
-        }
-        
-        .contact-item svg {
-            width: 16px;
-            height: 16px;
-            color: var(--yellow-primary);
-            flex-shrink: 0;
-        }
-        
-        .contact-item a {
-            color: inherit;
-            text-decoration: none;
-            padding: 0;
-            transform: none;
-        }
-        
-        .contact-item a:hover {
-            color: var(--yellow-primary);
-            transform: none;
-        }
-        
-        .footer .cta-button {
-            background: var(--yellow-primary);
-            color: var(--charcoal);
-            padding: 16px 24px;
-            border: none;
-            border-radius: var(--border-radius);
-            font-weight: 600;
-            font-size: 0.95rem;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-            width: 100%;
-            text-align: center;
-            margin-bottom: 16px;
-            transition: all 0.3s ease;
-        }
-        
-        .footer .cta-button:hover {
-            background: var(--yellow-hover);
-            transform: translateY(-2px);
-        }
-        
-        .cta-secondary {
-            background: transparent;
-            border: 2px solid rgba(255,255,255,0.3);
-            color: var(--white);
-        }
-        
-        .cta-secondary:hover {
-            border-color: var(--yellow-primary);
-            color: var(--yellow-primary);
-            background: transparent;
-        }
-        
-        .business-hours {
-            margin-top: 24px;
-            padding: 20px;
-            background: rgba(255,255,255,0.05);
-            border-radius: var(--border-radius);
-            border-left: 4px solid var(--yellow-primary);
-        }
-        
-        .business-hours h4 {
-            color: var(--yellow-primary);
-            font-size: 0.875rem;
-            font-weight: 600;
-            margin-bottom: 12px;
-            text-transform: uppercase;
-        }
-        
-        .business-hours p {
-            color: rgba(255,255,255,0.9);
-            font-size: 0.875rem;
-            margin-bottom: 8px;
-        }
-        
-        .footer-bottom {
-            border-top: 1px solid rgba(255,255,255,0.1);
-            padding: 32px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 16px;
-        }
-        
-        .footer-bottom-left {
-            color: rgba(255,255,255,0.6);
-            font-size: 0.875rem;
-        }
-        
-        .footer-bottom-right {
-            display: flex;
-            gap: 24px;
-            align-items: center;
-        }
-        
-        .footer-bottom-right a {
-            color: rgba(255,255,255,0.6);
-            text-decoration: none;
-            font-size: 0.875rem;
-            transition: color 0.3s ease;
-        }
-        
-        .footer-bottom-right a:hover {
-            color: var(--yellow-primary);
-        }
-        
-        .social-links {
-            display: flex;
-            gap: 12px;
-        }
-        
-        .social-link {
-            width: 36px;
-            height: 36px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease;
-        }
-        
-        .social-link:hover {
-            background: var(--yellow-primary);
-            color: var(--charcoal);
-            transform: translateY(-2px);
-        }
-        
-        .social-link svg {
-            width: 18px;
-            height: 18px;
-        }
-        
-        .trust-badges {
-            display: flex;
-            justify-content: center;
-            gap: 32px;
-            padding: 24px 0;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            margin-top: 24px;
-        }
-        
-        .trust-badge {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            color: rgba(255,255,255,0.8);
-            font-size: 0.875rem;
-            font-weight: 500;
-        }
-        
-        .trust-badge svg {
-            width: 20px;
-            height: 20px;
-            color: var(--yellow-primary);
-        }
-        
-        @media (max-width: 968px) {
-            .footer-grid {
-                grid-template-columns: 1fr 1fr;
-                gap: 32px;
+        @media (max-width: 480px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
-        
-        @media (max-width: 640px) {
-            .footer-main {
-                padding: 48px 24px 32px;
-            }
-            
-            .footer-grid {
-                grid-template-columns: 1fr;
-                gap: 32px;
-            }
-            
-            .footer-bottom {
-                padding: 24px;
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            .trust-badges {
-                flex-wrap: wrap;
-                gap: 16px;
-            }
-        }
-    </style>
+    
+/* Professional Footer Styles */
+.footer {
+    background: var(--charcoal);
+    color: var(--white);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+.footer-main {
+    padding: 64px 32px 48px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 48px;
+    margin-bottom: 48px;
+}
+
+.footer-section h3 {
+    color: var(--yellow-primary);
+    font-weight: 600;
+    font-size: 1.125rem;
+    margin-bottom: 24px;
+    letter-spacing: -0.025em;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section li {
+    margin-bottom: 12px;
+}
+
+.footer-section a {
+    color: rgba(255,255,255,0.85);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    display: block;
+    padding: 4px 0;
+}
+
+.footer-section a:hover {
+    color: var(--yellow-primary);
+    transform: translateX(4px);
+}
+
+.footer-section p {
+    color: rgba(255,255,255,0.8);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+/* Brand Section */
+.brand-section {
+    grid-column: 1;
+}
+
+.brand-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--yellow-primary);
+    margin-bottom: 16px;
+    display: block;
+}
+
+.brand-tagline {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 24px;
+    font-style: italic;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    color: rgba(255,255,255,0.85);
+}
+
+.contact-item svg {
+    width: 16px;
+    height: 16px;
+    color: var(--yellow-primary);
+    flex-shrink: 0;
+}
+
+.contact-item a {
+    color: inherit;
+    text-decoration: none;
+    padding: 0;
+    transform: none;
+}
+
+.contact-item a:hover {
+    color: var(--yellow-primary);
+    transform: none;
+}
+
+/* Priority Services */
+.priority-services {
+    grid-column: 2;
+}
+
+.service-link {
+    position: relative;
+}
+
+.service-link.popular::after {
+    content: "Popular";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--yellow-primary);
+    color: var(--charcoal);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 12px;
+}
+
+/* Service Areas with Strategic Layout */
+.service-areas {
+    grid-column: 3;
+}
+
+.areas-primary {
+    margin-bottom: 20px;
+}
+
+.areas-primary li {
+    margin-bottom: 8px;
+}
+
+.areas-primary a {
+    font-weight: 500;
+}
+
+.areas-extended {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 16px;
+}
+
+.areas-extended h4 {
+    color: rgba(255,255,255,0.7);
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.areas-extended a {
+    font-size: 0.875rem;
+    color: rgba(255,255,255,0.7);
+}
+
+/* Quick Actions */
+.quick-actions {
+    grid-column: 4;
+}
+
+.cta-button {
+    background: var(--yellow-primary);
+    color: var(--charcoal);
+    padding: 16px 24px;
+    border: none;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 16px;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background: var(--yellow-hover);
+    transform: translateY(-2px);
+}
+
+.cta-secondary {
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.3);
+    color: var(--white);
+}
+
+.cta-secondary:hover {
+    border-color: var(--yellow-primary);
+    color: var(--yellow-primary);
+    background: transparent;
+}
+
+.business-hours {
+    margin-top: 24px;
+    padding: 20px;
+    background: rgba(255,255,255,0.05);
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--yellow-primary);
+}
+
+.business-hours h4 {
+    color: var(--yellow-primary);
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.business-hours p {
+    color: rgba(255,255,255,0.9);
+    font-size: 0.875rem;
+    margin-bottom: 8px;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.footer-bottom-left {
+    color: rgba(255,255,255,0.6);
+    font-size: 0.875rem;
+}
+
+.footer-bottom-right {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.footer-bottom-right a {
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+    font-size: 0.875rem;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom-right a:hover {
+    color: var(--yellow-primary);
+}
+
+.social-links {
+    display: flex;
+    gap: 12px;
+}
+
+.social-link {
+    width: 36px;
+    height: 36px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background: var(--yellow-primary);
+    color: var(--charcoal);
+    transform: translateY(-2px);
+}
+
+.social-link svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* Trust Badges */
+.trust-badges {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    padding: 24px 0;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: 24px;
+}
+
+.trust-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255,255,255,0.8);
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.trust-badge svg {
+    width: 20px;
+    height: 20px;
+    color: var(--yellow-primary);
+}
+
+/* Mobile Responsive */
+@media (max-width: 968px) {
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+    }
+
+    .brand-section {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 640px) {
+    .footer-main {
+        padding: 48px 24px 32px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .footer-bottom {
+        padding: 24px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .trust-badges {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .service-link.popular::after {
+        position: static;
+        display: inline-block;
+        margin-left: 8px;
+        transform: none;
+    }
+}
+</style>
 </head>
 <body>
     <!-- Header Navigation -->
     <header class="header-nav">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="index.html">Good Hands Handyman</a>
+                <a href="index.html">Good Hands</a>
             </div>
             <nav class="nav-menu">
                 <a href="index.html">Home</a>
@@ -838,7 +1032,7 @@
                 <a href="handyman-services-byron-bay.html" onclick="closeMobileMenu()">Services</a>
                 <a href="handyman-pricing-northern-rivers.html" onclick="closeMobileMenu()">Pricing</a>
                 <a href="get-quote.html" onclick="closeMobileMenu()">Get Quote</a>
-                <a href="tel:0412345678" class="nav-cta" onclick="closeMobileMenu()">Call Now</a>
+                <a href="tel:0412345678" onclick="closeMobileMenu()">Call Now</a>
             </div>
         </div>
     </header>
@@ -846,9 +1040,9 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>Airbnb Maintenance Services</h1>
-            <p class="hero-subtitle">Keep your holiday rental property in perfect condition with our specialist Airbnb maintenance services across Northern Rivers NSW</p>
-            <a href="get-quote.html" class="cta-button">Get Free Quote</a>
+            <h1>Deck Restoration Byron Bay</h1>
+            <p class="hero-subtitle">I'll bring your weathered deck back to life with proper restoration</p>
+            <a href="contact.html" class="cta-button">Get Free Quote</a>
         </div>
     </section>
 
@@ -856,81 +1050,83 @@
     <section class="section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Professional Airbnb Property Maintenance - Northern Rivers</h2>
+                <h2 class="section-title">Deck Restoration Services - Byron Bay & Northern Rivers</h2>
             </div>
         </div>
         
         <div class="content-with-image">
             <div class="content-text">
-                <p>We understand the unique demands of Airbnb and holiday rental properties. Quick turnarounds between guests, maintaining 5-star presentation standards, and handling maintenance issues that can't wait until after the weekend. Our specialist Airbnb maintenance service keeps your property guest-ready and maximizes your rental income.</p>
+                <p>I see what the Northern Rivers weather does to timber decks. Sun, rain, salt air - it all takes its toll. I properly restore weathered decks using quality materials and proven techniques. Sand back to bare timber, apply quality stain or oil, and protect against future weather damage.</p>
                 
-                <p>We work around your booking schedule, provide same-day emergency repairs, and maintain the high standards your guests expect. From pre-arrival property checks to post-guest maintenance, we handle everything so you can focus on providing exceptional hospitality experiences.</p>
+                <p>I don't just slap on a quick coat and call it done. I assess the timber condition, repair any structural issues, sand properly through different grits, and apply the right products for your specific timber and exposure. I use quality Cabot's, Feast Watson, and other proven deck products that actually last.</p>
             </div>
             <div class="content-image">
-                <img src="airbnb-maintenance-professional.jpg" alt="Professional Airbnb maintenance services Northern Rivers" loading="lazy">
+                <img src="deck-restoration-professional-service.jpg" alt="Professional deck restoration service in Northern Rivers" loading="lazy">
             </div>
         </div>
         
         <div class="container">
+
             <div class="service-list">
                 <div class="service-item">
-                    <h3>Pre-Arrival Property Checks</h3>
-                    <p>Complete property inspection and preparation before each guest arrival to ensure everything is perfect</p>
+                    <h3>Deck Sanding</h3>
+                    <p>I sand back weathered timber to reveal fresh wood underneath</p>
                 </div>
                 <div class="service-item">
-                    <h3>Emergency Repair Response</h3>
-                    <p>Same-day response for urgent repairs that can't wait - protecting your booking schedule and reputation</p>
+                    <h3>Timber Repair</h3>
+                    <p>I replace damaged boards and fix structural issues properly</p>
                 </div>
                 <div class="service-item">
-                    <h3>Post-Guest Maintenance</h3>
-                    <p>Quick turnaround maintenance and repairs between guest stays to keep your property guest-ready</p>
+                    <h3>Staining & Oiling</h3>
+                    <p>I apply quality products that protect and enhance your timber</p>
                 </div>
                 <div class="service-item">
-                    <h3>Preventive Maintenance</h3>
-                    <p>Regular maintenance schedules to prevent issues before they impact your guests or bookings</p>
+                    <h3>Structural Assessment</h3>
+                    <p>I check bearers, joists, and posts for safety issues</p>
                 </div>
                 <div class="service-item">
-                    <h3>Property Presentation</h3>
-                    <p>Maintaining the high visual standards your guests expect for 5-star reviews</p>
+                    <h3>Balustrade Restoration</h3>
+                    <p>I restore or replace deck railings to match your deck</p>
                 </div>
                 <div class="service-item">
-                    <h3>Outdoor Space Maintenance</h3>
-                    <p>Decks, outdoor furniture, gardens, and entertainment areas kept in perfect condition</p>
+                    <h3>Waterproofing</h3>
+                    <p>I apply protective coatings that keep moisture out</p>
                 </div>
             </div>
 
             <!-- Additional Image for Balance -->
             <div class="balance-image">
-                <img src="holiday-rental-maintenance-northern-rivers.jpg" alt="Holiday rental property maintenance Northern Rivers" loading="lazy">
+                <img src="deck-maintenance-northern-rivers.jpg" alt="Professional deck maintenance Northern Rivers" loading="lazy">
             </div>
         </div>
     </section>
+
 
     <!-- Testimonials Section -->
     <section class="testimonials">
         <div class="testimonials-container">
             <div class="testimonials-content">
-                <h2>What Airbnb Hosts Say</h2>
+                <h2>What Byron Bay Property Owners Say</h2>
                 
                 <div class="testimonial">
                     <div class="testimonial-text">
-                        "Rivers Property Services has been a game-changer for my Byron Bay Airbnb. They respond immediately when guests report issues and always fix things properly the first time. My guest reviews have improved dramatically since working with them."
+                        "Good Hands Handyman completely transformed our weathered deck. It was grey, splintered, and looked beyond saving. He sanded it back properly, replaced a few damaged boards, and applied a beautiful timber stain. Now it looks better than when we first built it. Quality work and fair pricing."
                     </div>
-                    <div class="testimonial-author">Emma Rodriguez</div>
-                    <div class="testimonial-location">Byron Bay Airbnb Host</div>
+                    <div class="testimonial-author">Jennifer Walsh</div>
+                    <div class="testimonial-location">Wategos Beach, Byron Bay</div>
                 </div>
 
                 <div class="testimonial">
                     <div class="testimonial-text">
-                        "Professional, reliable, and they understand the urgency of holiday rental maintenance. They've saved my bookings multiple times with same-day emergency repairs. Fair pricing and excellent quality work every time."
+                        "I use Good Hands for my Byron Bay holiday rental maintenance. He restored three decks for me - poolside, entertaining area, and upper balcony. Each one looks fantastic and the work has lasted through multiple storm seasons. Professional service and honest advice about products."
                     </div>
-                    <div class="testimonial-author">James Chen</div>
-                    <div class="testimonial-location">Ballina Holiday Rental Owner</div>
+                    <div class="testimonial-author">David Chen</div>
+                    <div class="testimonial-location">Byron Bay Accommodation Owner</div>
                 </div>
             </div>
             
             <div class="testimonials-image">
-                <img src="airbnb-property-maintenance.jpg" alt="Airbnb property maintenance specialist" loading="lazy">
+                <img src="deck-restoration-handyman.jpg" alt="Professional deck restoration service Northern Rivers" loading="lazy">
             </div>
         </div>
     </section>
@@ -938,41 +1134,34 @@
     <!-- Other Services Strip -->
     <section class="services-strip">
         <div class="container">
-            <h2 class="strip-title">Other Property Services</h2>
+            <h2 class="strip-title">Other Services I Provide</h2>
             <div class="services-grid">
-                <a href="emergency-repairs.html" class="service-card" title="Emergency Repair Services Northern Rivers">
+                <a href="gutter-cleaning.html" class="service-card" title="Gutter Cleaning Services Byron Bay">
                     <div class="service-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-                        </svg>
-                    </div>
-                    <h4>Emergency Repairs</h4>
-                </a>
-                <a href="general-handyman.html" class="service-card" title="General Handyman Services Northern Rivers">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
-                        </svg>
-                    </div>
-                    <h4>General Handyman</h4>
-                </a>
-                <a href="deck-restoration.html" class="service-card" title="Deck Restoration Services Byron Bay">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="6" width="20" height="12" rx="2"/>
-                            <path d="M12 6v12M2 12h20"/>
-                        </svg>
-                    </div>
-                    <h4>Deck Restoration</h4>
-                </a>
-                <a href="gutter-cleaning.html" class="service-card" title="Gutter Cleaning Services Northern Rivers">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M3 12h18l-9-9-9 9z"/>
-                            <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/>
+                            <path d="M3 3h18v18H3zM9 3v18m6-18v18"/>
                         </svg>
                     </div>
                     <h4>Gutter Cleaning</h4>
+                </a>
+                <a href="custom-carpentry.html" class="service-card" title="Custom Carpentry Services Northern Rivers">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                            <line x1="12" y1="18" x2="12" y2="12"/>
+                            <line x1="9" y1="15" x2="15" y2="15"/>
+                        </svg>
+                    </div>
+                    <h4>Custom Carpentry</h4>
+                </a>
+                <a href="painting-services.html" class="service-card" title="Interior Painting Services Byron Bay">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h4>Interior Painting</h4>
                 </a>
                 <a href="fence-repairs.html" class="service-card" title="Fence Repair Services Northern Rivers">
                     <div class="service-icon">
@@ -984,14 +1173,25 @@
                     </div>
                     <h4>Fence Repairs</h4>
                 </a>
-                <a href="deck-sanding.html" class="service-card" title="Deck Sanding Services Byron Bay">
+                <a href="power-washing.html" class="service-card" title="Power Washing Services Byron Bay">
                     <div class="service-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="11" cy="11" r="8"/>
-                            <path d="M21 21l-4.35-4.35"/>
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
                         </svg>
                     </div>
-                    <h4>Deck Sanding</h4>
+                    <h4>Power Washing</h4>
+                </a>
+                <a href="tv-wall-mounting.html" class="service-card" title="TV Wall Mounting Services Northern Rivers">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <h4>TV Mounting</h4>
                 </a>
             </div>
         </div>
@@ -1000,12 +1200,32 @@
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <h2>Need Airbnb Maintenance Support?</h2>
-            <p>Get professional property maintenance that protects your bookings and guest reviews</p>
-            <a href="get-quote.html" class="cta-button">Get Your Free Quote</a>
+            <h2>Need Your Deck Restored?</h2>
+            <p>I'll give you an honest assessment and quality restoration work</p>
+            <a href="contact.html" class="cta-button">Get Your Free Quote</a>
         </div>
-    </section>
+    </section><script>
+        // Navigation Functions
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('active');
+        }
 
+        function closeMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.remove('active');
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const mobileMenu = document.getElementById('mobileMenu');
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            
+            if (mobileMenu && menuBtn && !mobileMenu.contains(event.target) && !menuBtn.contains(event.target)) {
+                mobileMenu.classList.remove('active');
+            }
+        });
+    </script>
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-main">
@@ -1044,7 +1264,7 @@
                     <h3>Our Services</h3>
                     <ul>
                         <li><a href="general-handyman.html" class="service-link">General Handyman</a></li>
-                        <li><a href="deck-restoration.html" class="service-link">Deck Restoration</a></li>
+                        <li><a href="deck-restoration.html" class="service-link popular">Deck Restoration</a></li>
                         <li><a href="deck-sanding.html" class="service-link">Deck Sanding</a></li>
                         <li><a href="fence-repairs.html" class="service-link">Fence Repairs</a></li>
                         <li><a href="gutter-cleaning.html" class="service-link">Gutter Cleaning</a></li>
@@ -1070,8 +1290,8 @@
                 <!-- Quick Actions -->
                 <div class="footer-section quick-actions">
                     <h3>Get Started</h3>
-                    <a href="get-quote.html" class="cta-button">Get Free Quote</a>
-                    <a href="about-dan-byron-bay-handyman.html" class="cta-button cta-secondary">About Us</a>
+                    <a href="contact.html" class="cta-button">Get Free Quote</a>
+                    <a href="about.html" class="cta-button cta-secondary">About Us</a>
                     
                     <div class="business-hours">
                         <h4>Response Times</h4>
@@ -1137,35 +1357,5 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        function toggleMobileMenu() {
-            const mobileMenu = document.getElementById('mobileMenu');
-            mobileMenu.classList.toggle('active');
-        }
-
-        function closeMobileMenu() {
-            const mobileMenu = document.getElementById('mobileMenu');
-            mobileMenu.classList.remove('active');
-        }
-
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', function(event) {
-            const mobileMenu = document.getElementById('mobileMenu');
-            const menuBtn = document.querySelector('.mobile-menu-btn');
-            
-            if (mobileMenu && menuBtn && !mobileMenu.contains(event.target) && !menuBtn.contains(event.target)) {
-                mobileMenu.classList.remove('active');
-            }
-        });
-
-        // Close mobile menu on window resize
-        window.addEventListener('resize', function() {
-            if (window.innerWidth > 768) {
-                const mobileMenu = document.getElementById('mobileMenu');
-                mobileMenu.classList.remove('active');
-            }
-        });
-    </script>
 </body>
 </html>

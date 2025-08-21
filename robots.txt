@@ -1,0 +1,28 @@
+User-agent: *
+Allow: /
+
+# Important pages
+Allow: /index.html
+Allow: /handyman-byron-bay.html
+Allow: /handyman-ballina.html
+Allow: /deck-restoration.html
+Allow: /gutter-cleaning.html
+Allow: /kitchen-door-repairs-northern-rivers.html
+Allow: /deck-restoration-byron-bay.html
+Allow: /gutter-cleaning-ballina.html
+Allow: /kitchen-repairs-byron-bay.html
+Allow: /fence-repairs-ballina.html
+
+# Service pages
+Allow: /emergency-repairs.html
+Allow: /airbnb-maintenance.html
+
+# Disallow old/backup files
+Disallow: /*-old*
+Disallow: /*backup*
+Disallow: /master-*
+Disallow: /homepage-new.html
+Disallow: /index-old-backup.html
+
+# Sitemap
+Sitemap: https://goodhandshandyman.com.au/sitemap.xml
