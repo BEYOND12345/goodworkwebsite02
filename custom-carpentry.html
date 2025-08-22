@@ -3,100 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Northern Rivers Handyman Service Areas | Byron Bay to Tweed Heads | GoodHands</title>
-    <meta name="description" content="Professional handyman services across Northern Rivers NSW. From Byron Bay coastal properties to Lismore heritage homes, Ballina flood-prone areas to Tweed Heads high-rise maintenance. Same-week service guaranteed.">
-    <meta name="keywords" content="Northern Rivers handyman, Byron Bay, Ballina, Lismore, Tweed Heads, Mullumbimby, Bangalow, Ocean Shores, handyman service areas NSW">
+    <title>Custom Carpentry Services | Northern Rivers NSW | GoodHands</title>
+    <meta name="description" content="Professional custom carpentry services across Northern Rivers NSW. Built-in storage, custom shelving, outdoor structures, bespoke joinery. Same week service. Call 0481 457271">
+    <meta name="keywords" content="custom carpentry northern rivers, built-in storage, custom shelving, outdoor structures, bespoke joinery, carpenter byron bay">
     
-    <!-- Schema Markup for Service Area Business -->
+    <!-- Schema Markup for Service -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "GoodHands",
-        "image": "hero-handyman-working.webp",
-        "telephone": "0481457271",
-        "email": "info@goodhandshandyman.com.au",
-        "address": {
-            "@type": "PostalAddress",
-            "addressRegion": "NSW",
-            "addressCountry": "AU"
+        "@type": "Service",
+        "serviceType": "Custom Carpentry Services",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "GoodHands",
+            "telephone": "0481457271",
+            "email": "info@goodhandshandyman.com.au",
+            "areaServed": ["Byron Bay", "Ballina", "Lismore", "Tweed Heads", "Mullumbimby", "Bangalow", "Ocean Shores", "Lennox Head", "South Golden Beach"]
         },
-        "areaServed": [
-            {
-                "@type": "City",
-                "name": "Byron Bay",
-                "containedInPlace": {
-                    "@type": "State",
-                    "name": "NSW"
-                }
-            },
-            {
-                "@type": "City", 
-                "name": "Ballina",
-                "containedInPlace": {
-                    "@type": "State",
-                    "name": "NSW"
-                }
-            },
-            {
-                "@type": "City",
-                "name": "Lismore", 
-                "containedInPlace": {
-                    "@type": "State",
-                    "name": "NSW"
-                }
-            },
-            {
-                "@type": "City",
-                "name": "Tweed Heads",
-                "containedInPlace": {
-                    "@type": "State", 
-                    "name": "NSW"
-                }
-            },
-            {
-                "@type": "City",
-                "name": "Mullumbimby",
-                "containedInPlace": {
-                    "@type": "State",
-                    "name": "NSW"
-                }
-            },
-            {
-                "@type": "City",
-                "name": "Bangalow", 
-                "containedInPlace": {
-                    "@type": "State",
-                    "name": "NSW"
-                }
-            },
-            {
-                "@type": "City",
-                "name": "Ocean Shores",
-                "containedInPlace": {
-                    "@type": "State",
-                    "name": "NSW"
-                }
-            },
-            {
-                "@type": "City",
-                "name": "Lennox Head",
-                "containedInPlace": {
-                    "@type": "State",
-                    "name": "NSW"
-                }
-            },
-            {
-                "@type": "City",
-                "name": "South Golden Beach",
-                "containedInPlace": {
-                    "@type": "State",
-                    "name": "NSW"
-                }
-            }
-        ],
-        "serviceType": ["Handyman Services", "Property Maintenance", "Kitchen Repairs", "Deck Restoration", "Emergency Repairs"],
-        "priceRange": "$120-500"
+        "description": "Professional custom carpentry services including built-in storage solutions, custom shelving, outdoor structures, and bespoke joinery across Northern Rivers NSW.",
+        "offers": {
+            "@type": "Offer",
+            "priceRange": "$200-800",
+            "availability": "https://schema.org/InStock"
+        }
     }
     </script>
     
@@ -114,12 +43,13 @@
             --light-grey: #EDF2F7;
             --bg-subtle: #F7FAFC;
             --white: #FFFFFF;
+            --success: #22C55E;
             --border-radius: 12px;
             --border-radius-lg: 16px;
             --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
             --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
             --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
-            --shadow-xl: 0 20px 25px rgba(0,0,0,0.15);
+            --shadow-xl: 0 20px 25px rgba(0,0,0,0.1);
         }
 
         * {
@@ -143,7 +73,7 @@
             padding: 0 24px;
         }
 
-        /* Header Navigation */
+        /* Navigation */
         .header-nav {
             position: fixed;
             top: 0;
@@ -159,7 +89,7 @@
         .nav-container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 24px;
+            padding: 0 16px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -191,8 +121,7 @@
             transition: color 0.3s ease;
         }
 
-        .nav-menu a:hover,
-        .nav-menu a.active {
+        .nav-menu a:hover {
             color: var(--yellow-primary);
         }
 
@@ -216,23 +145,14 @@
         /* Hero Section */
         .hero {
             background: linear-gradient(rgba(45, 55, 72, 0.7), rgba(74, 85, 104, 0.7)), 
-                        url('hero-background-handyman.avif');
+                        url('contact-hero-carpentry.avif');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
             color: var(--white);
             padding: 120px 0 80px;
             text-align: center;
-            min-height: 60vh;
-            display: flex;
-            align-items: center;
-        }
-
-        .hero-content {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 0 24px;
+            min-height: 70vh;
         }
 
         .hero-content h1 {
@@ -251,6 +171,26 @@
             margin-left: auto;
             margin-right: auto;
             text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+        }
+
+        .hero-cta {
+            display: inline-block;
+            background: var(--yellow-primary);
+            color: var(--charcoal);
+            padding: 16px 32px;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .hero-cta:hover {
+            background: var(--yellow-hover);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-xl);
+            color: var(--charcoal);
         }
 
         /* Section Spacing */
@@ -283,170 +223,160 @@
             line-height: 1.6;
         }
 
-        /* Areas Grid */
-        .areas-grid {
+        /* Services Grid */
+        .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 40px;
-            margin-top: 80px;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 32px;
+            margin-top: 60px;
         }
 
-        .area-card {
+        .service-card {
             background: var(--white);
             border-radius: var(--border-radius-lg);
-            padding: 40px;
+            padding: 40px 32px;
             box-shadow: var(--shadow-md);
             border: 2px solid var(--light-grey);
             transition: all 0.3s ease;
-            text-decoration: none;
-            color: var(--charcoal);
-            display: block;
-            position: relative;
-            overflow: hidden;
+            text-align: center;
         }
 
-        .area-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, var(--yellow-primary), var(--yellow-hover));
-            transform: scaleX(0);
-            transition: transform 0.3s ease;
-        }
-
-        .area-card:hover::before {
-            transform: scaleX(1);
-        }
-
-        .area-card:hover {
+        .service-card:hover {
             border-color: var(--yellow-primary);
             background: var(--yellow-light);
             transform: translateY(-5px);
             box-shadow: var(--shadow-xl);
-            color: var(--charcoal);
         }
 
-        .area-title {
-            font-size: 1.75rem;
-            font-weight: 900;
-            margin-bottom: 16px;
-            color: var(--charcoal);
-        }
-
-        .area-subtitle {
-            font-size: 1rem;
-            color: var(--yellow-primary);
-            font-weight: 600;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .area-description {
-            color: var(--dark-grey);
-            line-height: 1.7;
-            margin-bottom: 24px;
-            font-size: 1rem;
-        }
-
-        .area-specialties {
-            margin-bottom: 24px;
-        }
-
-        .area-specialties h4 {
-            font-size: 0.9rem;
-            font-weight: 600;
-            color: var(--charcoal);
-            margin-bottom: 12px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .specialty-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-
-        .specialty-tag {
-            background: var(--yellow-light);
-            color: var(--charcoal);
-            padding: 6px 12px;
-            border-radius: 20px;
-            font-size: 0.875rem;
-            font-weight: 500;
-        }
-
-        .area-cta {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            color: var(--yellow-primary);
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-
-        .area-cta svg {
-            width: 16px;
-            height: 16px;
-            transition: transform 0.3s ease;
-        }
-
-        .area-card:hover .area-cta svg {
-            transform: translateX(4px);
-        }
-
-        /* Coverage Overview */
-        .coverage-section {
-            padding: 80px 0;
-            background: var(--charcoal);
-            color: var(--white);
-        }
-
-        .coverage-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-            margin-top: 60px;
-        }
-
-        .coverage-item {
-            text-align: center;
-        }
-
-        .coverage-icon {
+        .service-icon {
             width: 80px;
             height: 80px;
-            background: var(--yellow-primary);
+            background: var(--yellow-light);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 0 auto 24px;
+            color: var(--yellow-primary);
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover .service-icon {
+            background: var(--yellow-primary);
             color: var(--charcoal);
+            transform: scale(1.1);
         }
 
-        .coverage-icon svg {
-            width: 40px;
-            height: 40px;
+        .service-icon svg {
+            width: 48px;
+            height: 48px;
         }
 
-        .coverage-item h3 {
+        .service-title {
             font-size: 1.5rem;
             font-weight: 900;
             margin-bottom: 16px;
+            color: var(--charcoal);
+        }
+
+        .service-description {
+            color: var(--dark-grey);
+            line-height: 1.7;
+            margin-bottom: 24px;
+        }
+
+        .service-price {
+            font-weight: 900;
+            color: var(--charcoal);
+            font-size: 1.25rem;
+            margin-bottom: 20px;
+        }
+
+        /* Content Section */
+        .content-section {
+            padding: 80px 0;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .content-text h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--charcoal);
+            margin-bottom: 24px;
+            line-height: 1.2;
+        }
+
+        .content-text p {
+            color: var(--dark-grey);
+            line-height: 1.7;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .content-image {
+            position: relative;
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .content-image img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: var(--yellow-primary);
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--charcoal);
+            margin-bottom: 24px;
+            line-height: 1.2;
+        }
+
+        .cta-section p {
+            color: var(--dark-grey);
+            font-size: 1.25rem;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            background: var(--charcoal);
+            color: var(--white);
+            padding: 16px 32px;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            display: inline-block;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .cta-button:hover {
+            background: var(--dark-grey);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-xl);
             color: var(--white);
         }
 
-        .coverage-item p {
-            color: rgba(255,255,255,0.8);
-            line-height: 1.6;
-        }
-
-        /* Footer - matching contact page */
+        /* Footer */
         .footer {
             background: var(--charcoal);
             color: var(--white);
@@ -541,7 +471,7 @@
             transform: none;
         }
 
-        .cta-button {
+        .cta-button-footer {
             background: var(--yellow-primary);
             color: var(--charcoal);
             padding: 16px 24px;
@@ -558,7 +488,7 @@
             transition: all 0.3s ease;
         }
 
-        .cta-button:hover {
+        .cta-button-footer:hover {
             background: var(--yellow-hover);
             transform: translateY(-2px);
         }
@@ -685,14 +615,14 @@
 
         /* Mobile Responsive */
         @media (max-width: 968px) {
-            .areas-grid {
+            .content-grid {
                 grid-template-columns: 1fr;
-                gap: 32px;
+                gap: 40px;
             }
 
-            .coverage-grid {
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-                gap: 32px;
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
             }
 
             .footer-grid {
@@ -712,14 +642,8 @@
                 min-height: 50vh;
             }
 
-            .areas-grid {
-                grid-template-columns: 1fr;
-                gap: 24px;
-                margin-top: 60px;
-            }
-
-            .area-card {
-                padding: 32px 24px;
+            .section {
+                padding: 80px 0;
             }
 
             .footer-main {
@@ -753,8 +677,8 @@
             </div>
             <nav class="nav-menu">
                 <a href="index.html">Home</a>
-                <a href="services.html">Services</a>
-                <a href="areas.html" class="active">Areas</a>
+                <a href="handyman-services-byron-bay.html">Services</a>
+                <a href="areas.html">Areas</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
                 <a href="tel:0481457271" class="nav-cta">Call Now</a>
@@ -766,283 +690,127 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Northern Rivers Handyman Service Areas</h1>
-                <p>Professional handyman and property maintenance services across the entire Northern Rivers region. From coastal Byron Bay to heritage Lismore, we understand your local property challenges.</p>
+                <h1>Custom Carpentry Services</h1>
+                <p>Professional bespoke carpentry across Northern Rivers NSW. Built-in storage, custom shelving, outdoor structures, and quality joinery that transforms your space.</p>
+                <a href="tel:0481457271" class="hero-cta">Call 0481 457271</a>
             </div>
         </div>
     </section>
 
-    <!-- Main Service Areas -->
+    <!-- Services Section -->
     <section class="section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Where We Serve</h2>
-                <p class="section-subtitle">Each area has unique property challenges. We bring specialized local knowledge to every job.</p>
+                <h2 class="section-title">Professional Custom Carpentry Solutions</h2>
+                <p class="section-subtitle">Bespoke carpentry services designed to maximize your space and enhance your lifestyle</p>
             </div>
 
-            <div class="areas-grid">
-                <!-- Byron Bay -->
-                <a href="handyman-byron-bay.html" class="area-card">
-                    <div class="area-subtitle">Premium Coastal</div>
-                    <h3 class="area-title">Byron Bay</h3>
-                    <p class="area-description">Arts & Industry Estate to the Lighthouse precinct. We specialize in coastal property maintenance with marine-grade materials that withstand salt air and humidity. Premium properties require premium care.</p>
-                    <div class="area-specialties">
-                        <h4>Local Expertise</h4>
-                        <div class="specialty-list">
-                            <span class="specialty-tag">Salt Air Damage</span>
-                            <span class="specialty-tag">Premium Properties</span>
-                            <span class="specialty-tag">Heritage Cottages</span>
-                            <span class="specialty-tag">Arts & Industry</span>
-                        </div>
-                    </div>
-                    <div class="area-cta">
-                        Byron Bay Services
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <line x1="7" y1="17" x2="17" y2="7"/>
-                            <polyline points="7,7 17,7 17,17"/>
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="9" y1="9" x2="9" y2="15"/>
+                            <line x1="15" y1="9" x2="15" y2="15"/>
                         </svg>
                     </div>
-                </a>
+                    <h3 class="service-title">Built-in Storage Solutions</h3>
+                    <p class="service-description">Custom wardrobes, under-stair storage, and built-in cabinetry designed to maximize space and complement your home's architecture.</p>
+                    <div class="service-price">From $800 per project</div>
+                </div>
 
-                <!-- Ballina -->
-                <a href="handyman-ballina.html" class="area-card">
-                    <div class="area-subtitle">Flood-Ready Solutions</div>
-                    <h3 class="area-title">Ballina</h3>
-                    <p class="area-description">Big Prawn to Ballina Head. Post-flood restoration specialists using flood-resistant materials and elevated storage solutions. We understand the unique challenges of flood-prone properties.</p>
-                    <div class="area-specialties">
-                        <h4>Local Expertise</h4>
-                        <div class="specialty-list">
-                            <span class="specialty-tag">Flood Restoration</span>
-                            <span class="specialty-tag">Moisture Control</span>
-                            <span class="specialty-tag">Elevated Storage</span>
-                            <span class="specialty-tag">Insurance Work</span>
-                        </div>
-                    </div>
-                    <div class="area-cta">
-                        Ballina Services
+                <div class="service-card">
+                    <div class="service-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <line x1="7" y1="17" x2="17" y2="7"/>
-                            <polyline points="7,7 17,7 17,17"/>
+                            <line x1="3" y1="6" x2="21" y2="6"/>
+                            <line x1="3" y1="12" x2="21" y2="12"/>
+                            <line x1="3" y1="18" x2="21" y2="18"/>
                         </svg>
                     </div>
-                </a>
+                    <h3 class="service-title">Custom Shelving Systems</h3>
+                    <p class="service-description">Floating shelves, bookcase installations, and display shelving tailored to your specific needs and space requirements.</p>
+                    <div class="service-price">From $200 per linear meter</div>
+                </div>
 
-                <!-- Lismore -->
-                <a href="handyman-lismore-new.html" class="area-card">
-                    <div class="area-subtitle">Heritage & Restoration</div>
-                    <h3 class="area-title">Lismore</h3>
-                    <p class="area-description">Heritage building maintenance and post-flood restoration. We work with heritage guidelines and understand the specific requirements for maintaining character properties while improving flood resilience.</p>
-                    <div class="area-specialties">
-                        <h4>Local Expertise</h4>
-                        <div class="specialty-list">
-                            <span class="specialty-tag">Heritage Buildings</span>
-                            <span class="specialty-tag">Character Preservation</span>
-                            <span class="specialty-tag">Flood Recovery</span>
-                            <span class="specialty-tag">Compliance Work</span>
-                        </div>
-                    </div>
-                    <div class="area-cta">
-                        Lismore Services
+                <div class="service-card">
+                    <div class="service-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <line x1="7" y1="17" x2="17" y2="7"/>
-                            <polyline points="7,7 17,7 17,17"/>
+                            <path d="M3 21v-8a9 9 0 0 1 18 0v8"/>
+                            <path d="M9 21H3l6-6 6 6"/>
+                            <path d="M21 21h-6"/>
                         </svg>
                     </div>
-                </a>
+                    <h3 class="service-title">Outdoor Structures</h3>
+                    <p class="service-description">Pergolas, arbors, outdoor storage boxes, and custom outdoor furniture built to withstand Northern Rivers weather.</p>
+                    <div class="service-price">From $600 per structure</div>
+                </div>
 
-                <!-- Tweed Heads -->
-                <a href="handyman-tweed-heads.html" class="area-card">
-                    <div class="area-subtitle">High-Rise & Modern</div>
-                    <h3 class="area-title">Tweed Heads</h3>
-                    <p class="area-description">Border development high-rise maintenance and modern property solutions. Specialized in apartment complexes, body corporate work, and contemporary building systems requiring technical expertise.</p>
-                    <div class="area-specialties">
-                        <h4>Local Expertise</h4>
-                        <div class="specialty-list">
-                            <span class="specialty-tag">High-Rise Access</span>
-                            <span class="specialty-tag">Body Corporate</span>
-                            <span class="specialty-tag">Modern Systems</span>
-                            <span class="specialty-tag">Border Compliance</span>
-                        </div>
-                    </div>
-                    <div class="area-cta">
-                        Tweed Heads Services
+                <div class="service-card">
+                    <div class="service-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <line x1="7" y1="17" x2="17" y2="7"/>
-                            <polyline points="7,7 17,7 17,17"/>
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
                         </svg>
                     </div>
-                </a>
+                    <h3 class="service-title">Custom Furniture</h3>
+                    <p class="service-description">Bespoke tables, benches, entertainment units, and furniture pieces designed specifically for your space and lifestyle.</p>
+                    <div class="service-price">From $400 per piece</div>
+                </div>
 
-                <!-- Mullumbimby -->
-                <a href="handyman-mullumbimby.html" class="area-card">
-                    <div class="area-subtitle">Hinterland Solutions</div>
-                    <h3 class="area-title">Mullumbimby</h3>
-                    <p class="area-description">Hinterland properties with alternative building solutions. Experienced with eco-builds, owner-builder projects, and unique architectural challenges that require creative, sustainable approaches.</p>
-                    <div class="area-specialties">
-                        <h4>Local Expertise</h4>
-                        <div class="specialty-list">
-                            <span class="specialty-tag">Eco Building</span>
-                            <span class="specialty-tag">Owner Builder</span>
-                            <span class="specialty-tag">Sustainable Materials</span>
-                            <span class="specialty-tag">Creative Solutions</span>
-                        </div>
-                    </div>
-                    <div class="area-cta">
-                        Mullumbimby Services
+                <div class="service-card">
+                    <div class="service-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <line x1="7" y1="17" x2="17" y2="7"/>
-                            <polyline points="7,7 17,7 17,17"/>
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14,2 14,8 20,8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
                         </svg>
                     </div>
-                </a>
+                    <h3 class="service-title">Timber Feature Walls</h3>
+                    <p class="service-description">Statement timber walls, wainscoting, and decorative wooden features that add character and warmth to your interior spaces.</p>
+                    <div class="service-price">From $120 per m²</div>
+                </div>
 
-                <!-- Bangalow -->
-                <a href="handyman-bangalow.html" class="area-card">
-                    <div class="area-subtitle">Heritage Village</div>
-                    <h3 class="area-title">Bangalow</h3>
-                    <p class="area-description">Heritage cottage preservation with rural-coastal blend expertise. Maintaining character while improving functionality. We understand the balance between preservation and modern living needs.</p>
-                    <div class="area-specialties">
-                        <h4>Local Expertise</h4>
-                        <div class="specialty-list">
-                            <span class="specialty-tag">Heritage Cottages</span>
-                            <span class="specialty-tag">Character Features</span>
-                            <span class="specialty-tag">Rural Properties</span>
-                            <span class="specialty-tag">Preservation Work</span>
-                        </div>
-                    </div>
-                    <div class="area-cta">
-                        Bangalow Services
+                <div class="service-card">
+                    <div class="service-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <line x1="7" y1="17" x2="17" y2="7"/>
-                            <polyline points="7,7 17,7 17,17"/>
+                            <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                            <polyline points="2,17 12,22 22,17"/>
+                            <polyline points="2,12 12,17 22,12"/>
                         </svg>
                     </div>
-                </a>
-
-                <!-- Ocean Shores -->
-                <a href="handyman-ocean-shores.html" class="area-card">
-                    <div class="area-subtitle">Coastal Residential</div>
-                    <h3 class="area-title">Ocean Shores</h3>
-                    <p class="area-description">Beachside residential maintenance with coastal-specific challenges. Salt air protection, deck maintenance, and holiday property upkeep. We keep your coastal investment in perfect condition.</p>
-                    <div class="area-specialties">
-                        <h4>Local Expertise</h4>
-                        <div class="specialty-list">
-                            <span class="specialty-tag">Beachside Properties</span>
-                            <span class="specialty-tag">Deck Maintenance</span>
-                            <span class="specialty-tag">Holiday Rentals</span>
-                            <span class="specialty-tag">Salt Protection</span>
-                        </div>
-                    </div>
-                    <div class="area-cta">
-                        Ocean Shores Services
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <line x1="7" y1="17" x2="17" y2="7"/>
-                            <polyline points="7,7 17,7 17,17"/>
-                        </svg>
-                    </div>
-                </a>
-
-                <!-- Lennox Head -->
-                <a href="handyman-lennox-head.html" class="area-card">
-                    <div class="area-subtitle">Surf Coast</div>
-                    <h3 class="area-title">Lennox Head</h3>
-                    <p class="area-description">Surf coast properties requiring specialized coastal maintenance. From beachfront homes to Lake Ainsworth properties, we handle the unique challenges of this coastal microclimate.</p>
-                    <div class="area-specialties">
-                        <h4>Local Expertise</h4>
-                        <div class="specialty-list">
-                            <span class="specialty-tag">Surf Coast Properties</span>
-                            <span class="specialty-tag">Lake Ainsworth</span>
-                            <span class="specialty-tag">Coastal Erosion</span>
-                            <span class="specialty-tag">Sand Management</span>
-                        </div>
-                    </div>
-                    <div class="area-cta">
-                        Lennox Head Services
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <line x1="7" y1="17" x2="17" y2="7"/>
-                            <polyline points="7,7 17,7 17,17"/>
-                        </svg>
-                    </div>
-                </a>
-
-                <!-- South Golden Beach -->
-                <a href="handyman-south-golden-beach.html" class="area-card">
-                    <div class="area-subtitle">Remote Coastal</div>
-                    <h3 class="area-title">South Golden Beach</h3>
-                    <p class="area-description">Remote coastal properties requiring reliable maintenance solutions. We service this beautiful but challenging location with the same professional standards as our urban areas.</p>
-                    <div class="area-specialties">
-                        <h4>Local Expertise</h4>
-                        <div class="specialty-list">
-                            <span class="specialty-tag">Remote Access</span>
-                            <span class="specialty-tag">Beach Properties</span>
-                            <span class="specialty-tag">Weather Exposure</span>
-                            <span class="specialty-tag">Isolation Challenges</span>
-                        </div>
-                    </div>
-                    <div class="area-cta">
-                        South Golden Beach Services
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <line x1="7" y1="17" x2="17" y2="7"/>
-                            <polyline points="7,7 17,7 17,17"/>
-                        </svg>
-                    </div>
-                </a>
+                    <h3 class="service-title">Trim & Molding</h3>
+                    <p class="service-description">Skirting boards, architraves, cornices, and decorative molding installation to add finishing touches to your renovation.</p>
+                    <div class="service-price">From $25 per linear meter</div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Coverage Overview -->
-    <section class="coverage-section">
+    <!-- Content Section -->
+    <section class="content-section section-alt">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title" style="color: var(--white);">Complete Northern Rivers Coverage</h2>
-                <p class="section-subtitle" style="color: rgba(255,255,255,0.8);">Professional handyman services with local expertise across the entire region</p>
-            </div>
-
-            <div class="coverage-grid">
-                <div class="coverage-item">
-                    <div class="coverage-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                            <circle cx="12" cy="10" r="3"/>
-                        </svg>
-                    </div>
-                    <h3>9 Major Areas</h3>
-                    <p>From Byron Bay to South Golden Beach, covering all major Northern Rivers towns and coastal suburbs with specialized local knowledge.</p>
+            <div class="content-grid">
+                <div class="content-text">
+                    <h2>Quality Craftsmanship for Northern Rivers</h2>
+                    <p>Our custom carpentry services combine traditional craftsmanship with modern techniques to create beautiful, functional solutions for your home. From Byron Bay beach houses to Lismore family homes, we understand the unique requirements of Northern Rivers properties.</p>
+                    <p>We work with sustainable, locally-sourced timber where possible and use weather-resistant finishes that stand up to the coastal climate. Every project is tailored to your specific needs, budget, and timeline.</p>
+                    <p>Whether you're looking to maximize storage in a compact space, create a stunning feature wall, or build custom outdoor furniture, our experienced craftsmen deliver results that exceed expectations and add lasting value to your property.</p>
                 </div>
-
-                <div class="coverage-item">
-                    <div class="coverage-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <polyline points="12,6 12,12 16,14"/>
-                        </svg>
-                    </div>
-                    <h3>Same Week Service</h3>
-                    <p>Reliable response times across all service areas. Emergency repairs same day, general maintenance within 48 hours.</p>
-                </div>
-
-                <div class="coverage-item">
-                    <div class="coverage-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                            <path d="M9 12l2 2 4-4"/>
-                        </svg>
-                    </div>
-                    <h3>Local Expertise</h3>
-                    <p>Understanding unique challenges: coastal salt damage, flood resilience, heritage requirements, and modern building systems.</p>
-                </div>
-
-                <div class="coverage-item">
-                    <div class="coverage-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
-                        </svg>
-                    </div>
-                    <h3>Pride in Workmanship</h3>
-                    <p>Established relationships with local suppliers, understanding of council requirements, and proven track record in each area.</p>
+                <div class="content-image">
+                    <img src="airbnb-maintenance-professional-service.jpg" alt="Custom carpentry work showing built-in storage solution" loading="lazy">
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready for Custom Carpentry Solutions?</h2>
+            <p>Get your free consultation and quote today. Professional carpentry across all Northern Rivers areas.</p>
+            <a href="tel:0481457271" class="cta-button">Call 0481 457271</a>
         </div>
     </section>
 
@@ -1086,6 +854,9 @@
                             <li><a href="deck-restoration.html" class="service-link">Deck Restoration</a></li>
                             <li><a href="gutter-cleaning-northern-rivers.html" class="service-link">Gutter Cleaning</a></li>
                             <li><a href="fence-repairs-ballina.html" class="service-link">Fence Repairs</a></li>
+                            <li><a href="custom-carpentry.html" class="service-link">Custom Carpentry</a></li>
+                            <li><a href="painting-services.html" class="service-link">Painting Services</a></li>
+                            <li><a href="furniture-assembly.html" class="service-link">Furniture Assembly</a></li>
                             <li><a href="emergency-repairs.html" class="service-link">Emergency Repairs</a></li>
                             <li><a href="airbnb-maintenance.html" class="service-link">Airbnb Maintenance</a></li>
                             <li><a href="handyman-services-byron-bay.html" class="service-link">All Services</a></li>
@@ -1111,8 +882,8 @@
                     <!-- Quick Actions -->
                     <div class="footer-section quick-actions">
                         <h3>Get Started</h3>
-                        <a href="get-quote.html" class="cta-button">Get Free Quote</a>
-                        <a href="about-dan-byron-bay-handyman.html" class="cta-button cta-secondary">About Me</a>
+                        <a href="get-quote.html" class="cta-button-footer">Get Free Quote</a>
+                        <a href="about-dan-byron-bay-handyman.html" class="cta-button-footer cta-secondary">About Me</a>
                         
                         <div class="business-hours">
                             <h4>Response Times</h4>
