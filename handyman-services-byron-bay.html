@@ -217,6 +217,88 @@
             color: inherit;
         }
 
+        /* Service Category Styles */
+        .service-category {
+            text-align: center;
+            margin: 80px 0 40px 0;
+        }
+
+        .category-title {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--charcoal);
+            letter-spacing: 0.05em;
+            margin-bottom: 8px;
+        }
+
+        .category-subtitle {
+            font-size: 1.1rem;
+            color: var(--medium-grey);
+            font-style: italic;
+        }
+
+        /* Service Details Enhancement */
+        .service-details {
+            font-size: 0.875rem;
+            color: var(--medium-grey);
+            margin: 12px 0;
+            line-height: 1.5;
+            font-style: italic;
+        }
+
+        /* Technical Expertise Section */
+        .expertise-section {
+            background: var(--bg-subtle);
+            padding: 80px 0;
+            margin: 0;
+        }
+
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 48px;
+        }
+
+        .expertise-card {
+            background: var(--white);
+            padding: 32px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--light-grey);
+        }
+
+        .expertise-card h4 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--charcoal);
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--yellow-primary);
+            padding-bottom: 8px;
+        }
+
+        .expertise-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .expertise-card li {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+            color: var(--dark-grey);
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .expertise-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--yellow-primary);
+            font-weight: bold;
+        }
+
         .service-icon {
             width: 80px;
             height: 80px;
@@ -790,8 +872,8 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Complete Handyman Services Northern Rivers</h1>
-                <p>From kitchen repairs to deck restoration, we handle all your property maintenance needs throughout Byron Bay, Ballina, Lismore and surrounding areas. Quality workmanship, fair pricing, reliable service.</p>
+                <h1>Professional Handyman Services Byron Bay</h1>
+                <p>15 core services demonstrating skilled tradesmanship across Northern Rivers NSW. From precision carpentry to marine-grade deck restoration, we deliver technical expertise with quality materials suited to coastal conditions.</p>
                 <a href="contact.html" class="hero-cta">Get Free Quote</a>
             </div>
         </div>
@@ -801,11 +883,18 @@
     <section id="services" class="section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">My Services</h2>
-                <p class="section-subtitle">Professional handyman services for residential and commercial properties throughout the Northern Rivers region</p>
+                <h2 class="section-title">Comprehensive Service Portfolio</h2>
+                <p class="section-subtitle">15 core services demonstrating skilled tradesmanship and technical expertise across Northern Rivers NSW</p>
+            </div>
+
+            <!-- Interior Work Services -->
+            <div class="service-category">
+                <h3 class="category-title">INTERIOR WORK</h3>
+                <p class="category-subtitle">Precision craftsmanship for your indoor spaces</p>
             </div>
 
             <div class="services-grid">
+                <!-- 1. Custom Carpentry -->
                 <div class="service-card">
                     <div class="service-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -814,9 +903,76 @@
                             <line x1="15" y1="9" x2="15" y2="15"/>
                         </svg>
                     </div>
-                    <h3 class="service-title">Kitchen Door & Cabinet Repairs</h3>
-                    <p class="service-description">Specializing in kitchen cupboard doors that won't close, broken hinges, drawer sliders, and cabinet adjustments.</p>
-                    <div class="service-price">From $120</div>
+                    <h3 class="service-title">Custom Carpentry & Built-ins</h3>
+                    <p class="service-description">Built-in wardrobes, entertainment units, shelving systems, and storage solutions designed for your space.</p>
+                    <div class="service-details">Precision measuring, quality timber selection, concealed hardware, professional finishing</div>
+                    <div class="service-price">From $800</div>
+                    <a href="custom-carpentry.html" class="service-link">
+                        Get Custom Carpentry
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="7" y1="17" x2="17" y2="7"/>
+                            <polyline points="7,7 17,7 17,17"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- 2. Door Installation -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 21h18"/>
+                            <path d="M5 21V7l8-4v18"/>
+                            <path d="M19 21V11l-6-3"/>
+                            <rect x="9" y="9" width="4" height="4"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Door Installation & Adjustments</h3>
+                    <p class="service-description">Hanging new doors, fixing sticking doors, lock installation, and frame adjustments.</p>
+                    <div class="service-details">Precise planing, hinge mortising, lock boring, weatherstripping installation</div>
+                    <div class="service-price">From $180</div>
+                    <a href="door-repairs.html" class="service-link">
+                        Fix My Doors
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="7" y1="17" x2="17" y2="7"/>
+                            <polyline points="7,7 17,7 17,17"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- 3. Flooring Repairs -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="7"/>
+                            <rect x="3" y="14" width="18" height="7"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Flooring Repairs & Installation</h3>
+                    <p class="service-description">Timber floor repairs, laminate installation, tile replacement, and transition strips.</p>
+                    <div class="service-details">Moisture testing, subfloor preparation, expansion gaps, professional adhesives</div>
+                    <div class="service-price">From $250</div>
+                    <a href="flooring-installation.html" class="service-link">
+                        Install My Floors
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="7" y1="17" x2="17" y2="7"/>
+                            <polyline points="7,7 17,7 17,17"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- 4. Kitchen & Bathroom -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="9" y1="9" x2="9" y2="15"/>
+                            <line x1="15" y1="9" x2="15" y2="15"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Kitchen & Bathroom Repairs</h3>
+                    <p class="service-description">Cabinet door adjustments, drawer slider replacement, tap repairs, tile work.</p>
+                    <div class="service-details">Hinge adjustment, soft-close mechanisms, waterproofing, precision cutting</div>
+                    <div class="service-price">From $150</div>
                     <a href="kitchen-door-repairs-northern-rivers.html" class="service-link">
                         Fix My Kitchen
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -826,6 +982,58 @@
                     </a>
                 </div>
 
+                <!-- 5. Painting -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
+                            <path d="M12 9v6m0 0l3-3m-3 3l-3-3"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Painting, Patching & Wall Repairs</h3>
+                    <p class="service-description">Interior/exterior painting, hole patching, crack repair, texture matching, and surface preparation.</p>
+                    <div class="service-details">Plaster patching, sanding, primer selection, cut-in technique, color matching technology</div>
+                    <div class="service-price">From $200</div>
+                    <a href="painting-services.html" class="service-link">
+                        Paint My Property
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="7" y1="17" x2="17" y2="7"/>
+                            <polyline points="7,7 17,7 17,17"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- 6. TV Mounting -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="7" width="20" height="15" rx="2" ry="2"/>
+                            <polyline points="17 2 12 7 7 2"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">TV Wall Mounting & Electronics</h3>
+                    <p class="service-description">Professional TV mounting, cable management, sound system installation.</p>
+                    <div class="service-details">Stud finding, load calculations, cable concealment, bracket selection</div>
+                    <div class="service-price">From $200</div>
+                    <a href="tv-wall-mounting.html" class="service-link">
+                        Mount My TV
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="7" y1="17" x2="17" y2="7"/>
+                            <polyline points="7,7 17,7 17,17"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Exterior Work Services -->
+            <div class="service-category">
+                <h3 class="category-title">EXTERIOR WORK</h3>
+                <p class="category-subtitle">Weather-resistant solutions for coastal conditions</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- 7. Deck Building -->
+
                 <div class="service-card">
                     <div class="service-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -833,9 +1041,10 @@
                             <path d="M12 6v12M2 12h20"/>
                         </svg>
                     </div>
-                    <h3 class="service-title">Deck Restoration & Maintenance</h3>
-                    <p class="service-description">Bringing weathered decks back to life with professional sanding, staining, and repairs using marine-grade products.</p>
-                    <div class="service-price">From $300</div>
+                    <h3 class="service-title">Deck Building & Restoration</h3>
+                    <p class="service-description">Complete deck restoration including sanding, staining, and structural repairs.</p>
+                    <div class="service-details">Pressure washing, orbital sanding, marine-grade stains, joist replacement</div>
+                    <div class="service-price">From $800</div>
                     <a href="deck-restoration.html" class="service-link">
                         Restore My Deck
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -845,24 +1054,7 @@
                     </a>
                 </div>
 
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M3 12h18l-9-9-9 9z"/>
-                            <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/>
-                        </svg>
-                    </div>
-                    <h3 class="service-title">Gutter Cleaning & Repairs</h3>
-                    <p class="service-description">Complete gutter maintenance including cleaning, repairs, and installation of gutter guards to protect your property.</p>
-                    <div class="service-price">From $180</div>
-                    <a href="gutter-cleaning.html" class="service-link">
-                        Clean My Gutters
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <line x1="7" y1="17" x2="17" y2="7"/>
-                            <polyline points="7,7 17,7 17,17"/>
-                        </svg>
-                    </a>
-                </div>
+                <!-- 8. Fence & Gate -->
 
                 <div class="service-card">
                     <div class="service-icon">
@@ -872,9 +1064,10 @@
                             <line x1="15" y1="3" x2="15" y2="21"/>
                         </svg>
                     </div>
-                    <h3 class="service-title">Fence Repairs & Installation</h3>
-                    <p class="service-description">Fence repairs, gate fixes, and new installations using materials suited to our coastal climate.</p>
-                    <div class="service-price">From $220</div>
+                    <h3 class="service-title">Fence & Gate Services</h3>
+                    <p class="service-description">Fence repairs, gate installation, post replacement, and hardware upgrades.</p>
+                    <div class="service-details">Post-hole boring, galvanized hardware, self-closing mechanisms, privacy screening</div>
+                    <div class="service-price">From $280</div>
                     <a href="fence-repairs-ballina.html" class="service-link">
                         Fix My Fence
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -884,22 +1077,78 @@
                     </a>
                 </div>
 
+                <!-- 9. Gutter & Roofing -->
                 <div class="service-card">
                     <div class="service-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                            <path d="M3 12h18l-9-9-9 9z"/>
+                            <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/>
                         </svg>
                     </div>
-                    <h3 class="service-title">Emergency Repairs</h3>
-                    <p class="service-description">Same-day response for urgent repairs that can't wait. Storm damage, security issues, and safety hazards.</p>
-                    <div class="service-price">From $150</div>
-                    <a href="tel:0481457271" class="service-link">
-                        Emergency Call
+                    <h3 class="service-title">Gutter & Roofing Maintenance</h3>
+                    <p class="service-description">Gutter cleaning, repairs, guard installation, and minor roof maintenance.</p>
+                    <div class="service-details">Safety equipment, downpipe clearing, leaf guard systems, roof inspection</div>
+                    <div class="service-price">From $220</div>
+                    <a href="gutter-cleaning.html" class="service-link">
+                        Clean My Gutters
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            <line x1="7" y1="17" x2="17" y2="7"/>
+                            <polyline points="7,7 17,7 17,17"/>
                         </svg>
                     </a>
                 </div>
+
+                <!-- 10. Pressure Washing -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Pressure Washing & Exterior Cleaning</h3>
+                    <p class="service-description">House washing, driveway cleaning, deck restoration prep, mould removal.</p>
+                    <div class="service-details">Variable pressure settings, surface-specific detergents, soft wash techniques</div>
+                    <div class="service-price">From $300</div>
+                    <a href="power-washing.html" class="service-link">
+                        Clean My Property
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="7" y1="17" x2="17" y2="7"/>
+                            <polyline points="7,7 17,7 17,17"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- 11. Flyscreen & Window -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="12" y1="3" x2="12" y2="21"/>
+                            <line x1="3" y1="12" x2="21" y2="12"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Flyscreen & Window Repairs</h3>
+                    <p class="service-description">Flyscreen repair and replacement, window hardware fixes, sliding door adjustments.</p>
+                    <div class="service-details">Screen mesh replacement, frame repair, roller track cleaning, security screen installation</div>
+                    <div class="service-price">From $80</div>
+                    <a href="flyscreen-repairs.html" class="service-link">
+                        Fix My Screens
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="7" y1="17" x2="17" y2="7"/>
+                            <polyline points="7,7 17,7 17,17"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Specialized Services -->
+            <div class="service-category">
+                <h3 class="category-title">SPECIALIZED SERVICES</h3>
+                <p class="category-subtitle">Targeted solutions for specific property needs</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- 12. Airbnb Maintenance -->
 
                 <div class="service-card">
                     <div class="service-icon">
@@ -908,11 +1157,77 @@
                             <polyline points="9,22 9,12 15,12 15,22"/>
                         </svg>
                     </div>
-                    <h3 class="service-title">Airbnb & Rental Property Maintenance</h3>
-                    <p class="service-description">Specialized maintenance for holiday rentals and investment properties to keep them guest-ready and compliant.</p>
+                    <h3 class="service-title">Airbnb Property Maintenance</h3>
+                    <p class="service-description">Specialized maintenance for holiday rentals including guest-ready standards.</p>
+                    <div class="service-details">Rapid response, quality standards, guest safety compliance, revenue protection</div>
                     <div class="service-price">From $200</div>
                     <a href="airbnb-maintenance.html" class="service-link">
                         Keep Guests Happy
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="7" y1="17" x2="17" y2="7"/>
+                            <polyline points="7,7 17,7 17,17"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- 13. Emergency Repairs -->
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Emergency Repairs</h3>
+                    <p class="service-description">Same-day response for urgent repairs, storm damage, and security issues.</p>
+                    <div class="service-details">24/7 availability, temporary solutions, insurance documentation, safety priority</div>
+                    <div class="service-price">From $180</div>
+                    <a href="emergency-repairs.html" class="service-link">
+                        Emergency Help
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="7" y1="17" x2="17" y2="7"/>
+                            <polyline points="7,7 17,7 17,17"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- 14. Property Sale Prep -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 21h18"/>
+                            <path d="M5 21V7l8-4v18"/>
+                            <path d="M19 21V11l-6-3"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Property Sale Preparation</h3>
+                    <p class="service-description">Pre-inspection repairs, cosmetic improvements, and compliance work for property sales.</p>
+                    <div class="service-details">Building inspection preparation, compliance checks, value-adding improvements</div>
+                    <div class="service-price">From $400</div>
+                    <a href="property-maintenance.html" class="service-link">
+                        Prep for Sale
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="7" y1="17" x2="17" y2="7"/>
+                            <polyline points="7,7 17,7 17,17"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- 15. Security & Safety -->
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="M9 12l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Security & Safety Installations</h3>
+                    <p class="service-description">Security door installation, window locks, safety rails, and lighting installation.</p>
+                    <div class="service-details">Security-grade hardware, motion sensors, timer switches, compliance standards</div>
+                    <div class="service-price">From $250</div>
+                    <a href="security-installation.html" class="service-link">
+                        Secure My Home
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <line x1="7" y1="17" x2="17" y2="7"/>
                             <polyline points="7,7 17,7 17,17"/>
@@ -960,11 +1275,53 @@
         </div>
     </section>
 
+    <!-- Technical Expertise Section -->
+    <section class="expertise-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Technical Competence & Local Expertise</h2>
+                <p>Skilled tradesmanship with specialized knowledge for Northern Rivers conditions</p>
+            </div>
+            
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <h4>Precision Craftsmanship</h4>
+                    <ul>
+                        <li>Precision measuring and cutting techniques</li>
+                        <li>Quality timber selection for coastal conditions</li>
+                        <li>Concealed hardware installation</li>
+                        <li>Professional finishing techniques</li>
+                    </ul>
+                </div>
+                
+                <div class="expertise-card">
+                    <h4>Coastal Specialization</h4>
+                    <ul>
+                        <li>Understanding Byron Bay's salt air corrosion</li>
+                        <li>Marine-grade products for longevity</li>
+                        <li>Experience with Northern Rivers building styles</li>
+                        <li>Knowledge of local council requirements</li>
+                    </ul>
+                </div>
+                
+                <div class="expertise-card">
+                    <h4>Problem-Solving Focus</h4>
+                    <ul>
+                        <li>Fixing doors that won't close properly</li>
+                        <li>Eliminating squeaks and rattles</li>
+                        <li>Preventing water damage before it starts</li>
+                        <li>Restoring weathered timber to like-new condition</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <h2>Ready to Get Started?</h2>
-            <p>Free quotes, honest advice, and quality work you can count on throughout Northern Rivers NSW</p>
+            <h2>Ready for Quality Workmanship?</h2>
+            <p>Technical expertise, quality materials, and skilled tradesmanship throughout Northern Rivers NSW</p>
             <a href="contact.html" class="cta-button">Get Your Free Quote</a>
         </div>
     </section>
@@ -976,7 +1333,7 @@
                 <!-- Brand & Contact -->
                 <div class="footer-section brand-section">
                     <h3 class="brand-logo">GoodHands</h3>
-                    <p class="brand-tagline">"Professional property maintenance and handyman services across Northern Rivers NSW. Quality workmanship, fair pricing, and reliable service you can count on."</p>
+                    <p class="brand-tagline">"Skilled tradesmanship demonstrating technical competence across 15 core services. From precision carpentry to marine-grade deck restoration, we deliver quality workmanship with specialized knowledge of Northern Rivers coastal conditions."</p>
                     
                     <div class="contact-item">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
