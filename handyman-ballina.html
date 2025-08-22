@@ -622,6 +622,75 @@
             color: var(--yellow-primary);
         }
 
+        /* Content with Image */
+        .content-with-image {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .content-text h2 {
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            font-weight: 700;
+            margin-bottom: 24px;
+            color: var(--charcoal);
+        }
+
+        .content-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--dark-grey);
+            margin-bottom: 20px;
+        }
+
+        .content-image img {
+            width: 100%;
+            height: auto;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* Final CTA Section */
+        .final-cta {
+            padding: 120px 0;
+            background: var(--yellow-primary);
+            color: var(--charcoal);
+            text-align: center;
+        }
+
+        .final-cta h2 {
+            font-size: clamp(3rem, 7vw, 5rem);
+            font-weight: 800;
+            margin-bottom: 32px;
+            line-height: 1.1;
+        }
+
+        .final-cta p {
+            font-size: clamp(1.25rem, 3vw, 1.5rem);
+            margin-bottom: 56px;
+            opacity: 0.8;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+
+        .final-cta .cta-button {
+            background: var(--charcoal);
+            color: var(--white);
+            border: 2px solid var(--charcoal);
+        }
+
+        .final-cta .cta-button:hover {
+            background: var(--white);
+            color: var(--charcoal);
+            border-color: var(--charcoal);
+        }
+
         /* Mobile Responsive */
         @media (max-width: 1024px) {
             .nav-menu {
@@ -666,6 +735,12 @@
 
             .section {
                 padding: 60px 0;
+            }
+
+            .content-with-image {
+                grid-template-columns: 1fr;
+                gap: 48px;
+                padding: 0 20px;
             }
 
             .section-header {
@@ -859,6 +934,21 @@
         </div>
     </section>
 
+    <!-- Content with Image Section -->
+    <section class="section">
+        <div class="content-with-image">
+            <div class="content-text">
+                <h2>Ballina's Trusted Handyman Service</h2>
+                <p>From the iconic Big Prawn to the Richmond River, I've been serving Ballina properties for over 15 years. I understand the unique challenges of our coastal environment - from salt air affecting hardware to humidity issues with timber.</p>
+                
+                <p>Whether you're maintaining a riverfront property, updating your East Ballina home, or managing an investment property near the lighthouse, I provide reliable, professional service that protects your investment and keeps your property in top condition.</p>
+            </div>
+            <div class="content-image">
+                <img src="handyman-ballina-professional-service.avif" alt="Professional handyman services Ballina NSW - Big Prawn to Richmond River property maintenance" loading="lazy">
+            </div>
+        </div>
+    </section>
+
     <!-- Pricing Section -->
     <section class="pricing-section">
         <div class="container">
@@ -911,6 +1001,15 @@
                     <a href="contact.html" class="cta-button">Get Quote</a>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Ready to Fix Your Ballina Property?</h2>
+            <p>Get professional handyman services from the Big Prawn to Richmond River - honest pricing, quality work, reliable service</p>
+            <a href="contact.html" class="cta-button">Get Your Free Quote</a>
         </div>
     </section>
 

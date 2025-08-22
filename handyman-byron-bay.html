@@ -201,7 +201,7 @@
         .hero {
             padding: 140px 0 100px;
             background: linear-gradient(rgba(45, 55, 72, 0.6), rgba(45, 55, 72, 0.4)), 
-                        url('byron-bay-lighthouse-handyman-service.jpg');
+                        url('handyman-byron-bay-hero.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -507,12 +507,8 @@
         /* CTA Section */
         .final-cta {
             padding: 120px 0;
-            background: linear-gradient(rgba(45, 55, 72, 0.8), rgba(26, 32, 44, 0.8)), 
-                        url('byron-bay-arts-industry-cta.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            color: var(--white);
+            background: var(--yellow-primary);
+            color: var(--charcoal);
             text-align: center;
         }
 
@@ -526,11 +522,55 @@
         .final-cta p {
             font-size: clamp(1.25rem, 3vw, 1.5rem);
             margin-bottom: 56px;
-            opacity: 0.9;
+            opacity: 0.8;
             max-width: 700px;
             margin-left: auto;
             margin-right: auto;
             line-height: 1.6;
+        }
+
+        .final-cta .cta-primary {
+            background: var(--charcoal);
+            color: var(--white);
+            border: 2px solid var(--charcoal);
+        }
+
+        .final-cta .cta-primary:hover {
+            background: var(--white);
+            color: var(--charcoal);
+            border-color: var(--charcoal);
+        }
+
+        /* Content with Image */
+        .content-with-image {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .content-text h2 {
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            font-weight: 700;
+            margin-bottom: 24px;
+            color: var(--charcoal);
+        }
+
+        .content-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--dark-grey);
+            margin-bottom: 20px;
+        }
+
+        .content-image img {
+            width: 100%;
+            height: auto;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-lg);
         }
 
         /* Modal Styles - Copy from master template */
@@ -684,6 +724,12 @@
 
             .section {
                 padding: 80px 0;
+            }
+
+            .content-with-image {
+                grid-template-columns: 1fr;
+                gap: 48px;
+                padding: 0 20px;
             }
 
             .section-header {
@@ -1220,6 +1266,21 @@
                         </svg>
                     </a>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content with Image Section -->
+    <section class="section">
+        <div class="content-with-image">
+            <div class="content-text">
+                <h2>Byron Bay's Premier Handyman Service</h2>
+                <p>I understand Byron Bay's unique property needs - from the bustling Arts & Industry Estate commercial spaces to the heritage homes near the lighthouse. With over 15 years serving Northern Rivers properties, I know what works in our coastal climate.</p>
+                
+                <p>Whether you're managing an Arts & Industry Estate workshop, maintaining a heritage cottage, or keeping your Suffolk Park investment property guest-ready, I provide the same high-quality service that's earned the trust of Byron Bay property owners.</p>
+            </div>
+            <div class="content-image">
+                <img src="handyman-byron-bay-professional-service.avif" alt="Professional handyman services Byron Bay - Arts Industry Estate to Lighthouse heritage area" loading="lazy">
             </div>
         </div>
     </section>

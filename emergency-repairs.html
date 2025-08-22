@@ -173,7 +173,7 @@
         /* Hero Section */
         .hero {
             height: 500px;
-            background: linear-gradient(rgba(45, 55, 72, 0.8), rgba(45, 55, 72, 0.8)), url('deck-sanding-hero-bg.jpg');
+            background: linear-gradient(rgba(45, 55, 72, 0.8), rgba(45, 55, 72, 0.8)), url('emergency-repairs-hero.avif');
             background-size: cover;
             background-position: center;
             display: flex;
@@ -276,6 +276,74 @@
             opacity: 0.8;
             margin: 0;
             text-align: left;
+        }
+
+        /* Content with Image */
+        .content-with-image {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .content-with-image .content h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 24px;
+            color: var(--text-dark);
+        }
+
+        .content-with-image .content p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            opacity: 0.8;
+            text-align: left;
+            max-width: none;
+        }
+
+        .content-with-image .image {
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .content-with-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Final CTA */
+        .final-cta {
+            background: var(--yellow-primary);
+            color: var(--charcoal);
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .final-cta h2 {
+            color: var(--charcoal);
+            margin-bottom: 24px;
+        }
+
+        .final-cta p {
+            color: var(--charcoal);
+            opacity: 0.8;
+            margin-bottom: 32px;
+        }
+
+        .final-cta .cta-button {
+            background: var(--charcoal);
+            color: var(--white);
+        }
+
+        .final-cta .cta-button:hover {
+            background: var(--text-dark);
+            transform: translateY(-2px);
         }
 
         /* Mobile Responsive */
@@ -570,6 +638,12 @@
                 flex-wrap: wrap;
                 gap: 16px;
             }
+            
+            .content-with-image {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                text-align: center;
+            }
         }
     </style>
 </head>
@@ -621,12 +695,27 @@
         </div>
     </section>
 
+    <!-- Content with Image Section -->
+    <section class="section">
+        <div class="content-with-image">
+            <div class="content-text">
+                <h2>Northern Rivers Emergency Response</h2>
+                <p>When property emergencies strike across Byron Bay, Ballina, or Lismore, you need a trusted professional who understands the urgency. I've been handling emergency repairs across Northern Rivers for over 15 years - from storm damage to security breaches.</p>
+                
+                <p>Available for same-day emergency callouts, I carry essential repair materials and have established relationships with local suppliers to get urgent jobs completed quickly and properly. Your safety and property protection are my top priorities.</p>
+            </div>
+            <div class="content-image">
+                <img src="emergency-repairs-professional-service.avif" alt="Emergency repair services Northern Rivers NSW - professional fast response for urgent property repairs" loading="lazy">
+            </div>
+        </div>
+    </section>
+
     <!-- CTA Section -->
-    <section class="section section-alt">
+    <section class="final-cta">
         <div class="container">
-            <h2>Ready to Get Started?</h2>
-            <p>Contact us today for professional services across Byron Bay, Ballina, Lismore, Bangalow, Mullumbimby, Tweed Heads, Ocean Shores and surrounding areas.</p>
-            <a href="get-quote.html" class="cta-button">Get Your Free Quote</a>
+            <h2>Need Emergency Repairs Now?</h2>
+            <p>Fast response across Northern Rivers NSW - Byron Bay, Ballina, Lismore and surrounding areas. Professional emergency repair services when you need them most.</p>
+            <a href="get-quote.html" class="cta-button">Get Emergency Help</a>
         </div>
     </section>
 
