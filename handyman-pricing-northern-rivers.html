@@ -118,6 +118,65 @@
             color: var(--charcoal);
         }
 
+        /* Mobile Navigation */
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+            gap: 4px;
+        }
+
+        .mobile-menu-btn span {
+            width: 24px;
+            height: 2px;
+            background: var(--charcoal);
+            border-radius: 1px;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: var(--white);
+            border-bottom: 1px solid var(--light-grey);
+            box-shadow: var(--shadow-lg);
+            padding: 20px 0;
+        }
+
+        .mobile-menu a {
+            display: block;
+            padding: 12px 24px;
+            color: var(--charcoal);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-menu a:hover {
+            background: var(--yellow-light);
+            color: var(--yellow-primary);
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: flex;
+            }
+
+            .mobile-menu.active {
+                display: block;
+            }
+        }
+
         /* Hero Section */
         .hero {
             background: linear-gradient(135deg, var(--charcoal) 0%, var(--dark-grey) 100%);
@@ -462,6 +521,19 @@
                 <a href="contact.html">Contact</a>
                 <a href="tel:0481457271" class="nav-cta">Call Now</a>
             </nav>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html" onclick="closeMobileMenu()">Home</a>
+            <a href="services.html" onclick="closeMobileMenu()">Services</a>
+            <a href="areas.html" onclick="closeMobileMenu()">Areas</a>
+            <a href="about.html" onclick="closeMobileMenu()">About</a>
+            <a href="contact.html" onclick="closeMobileMenu()">Contact</a>
+            <a href="tel:0481457271" onclick="closeMobileMenu()">Call Now</a>
         </div>
     </header>
 
@@ -647,5 +719,37 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('active');
+        }
+
+        function closeMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.remove('active');
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const mobileMenu = document.getElementById('mobileMenu');
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            
+            if (mobileMenu && menuBtn && !mobileMenu.contains(event.target) && !menuBtn.contains(event.target)) {
+                mobileMenu.classList.remove('active');
+            }
+        });
+
+        // Close mobile menu on window resize
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                const mobileMenu = document.getElementById('mobileMenu');
+                if (mobileMenu) {
+                    mobileMenu.classList.remove('active');
+                }
+            }
+        });
+    </script>
 </body>
 </html>
