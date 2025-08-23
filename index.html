@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#FFB800">
     <title>GoodHands | Northern Rivers NSW</title>
     <meta name="description" content="Professional handyman and property maintenance services across Northern Rivers NSW. Kitchen repairs, deck restoration, emergency repairs - treating your property like it's our own. Call 0481 457271">
     <meta name="keywords" content="handyman northern rivers, property maintenance byron bay, deck restoration, kitchen repairs, emergency repairs, fence installation">
@@ -74,7 +76,14 @@
     }
     </script>
     
-    <!-- Google Fonts -->
+    <!-- Preload critical resources -->
+    <link rel="preload" href="decking_7_upscaled.webp" as="image">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    
+    <!-- Google Fonts - optimized loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <style>
@@ -236,7 +245,7 @@
         .hero {
             padding: 140px 0 100px;
             background: linear-gradient(rgba(45, 55, 72, 0.7), rgba(45, 55, 72, 0.5)), 
-                        url('decking_7_upscaled.png');
+                        url('decking_7_upscaled.webp');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
