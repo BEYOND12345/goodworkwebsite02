@@ -1,23 +1,49 @@
+# Robots.txt for GoodHands Handyman Northern Rivers
+# Generated for maximum SEO visibility
+
 User-agent: *
 Allow: /
-
-# Allow all major search engines
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-# Block any admin or private areas
 Disallow: /admin/
 Disallow: /private/
 Disallow: /*master*
 Disallow: /*old*
 Disallow: /*backup*
-Disallow: /*new*
+Disallow: /*test*
+Disallow: /*.py
+Disallow: /*.sh
+Disallow: /MOBILE_NAV_TEMPLATE.md
+Disallow: /README.md
+Disallow: /*template-guide*
+Disallow: /*debug*
+
+# Googlebot specific rules
+User-agent: Googlebot
+Allow: /
+Allow: /*.css
+Allow: /*.js
+Allow: /*.jpg
+Allow: /*.png
+Allow: /*.webp
+Allow: /*.avif
+Crawl-delay: 0
+
+# Bingbot specific rules  
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Block bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
 
 # XML Sitemap location
-Sitemap: https://riverspropertyservices.com.au/sitemap.xml
-
-# Crawl delay for politeness
-Crawl-delay: 1
+Sitemap: https://goodhandshandyman.com.au/sitemap.xml
