@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- Performance optimizations -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//www.google.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Handyman Services Byron Bay | All Northern Rivers Services | GoodHands</title>
@@ -9,910 +18,7 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <style>
-        :root {
-            --yellow-primary: #FFB800;
-            --yellow-hover: #E6A600;
-            --yellow-light: #FFF9E6;
-            --charcoal: #2D3748;
-            --dark-grey: #4A5568;
-            --medium-grey: #718096;
-            --light-grey: #EDF2F7;
-            --bg-subtle: #F7FAFC;
-            --white: #FFFFFF;
-            --border-radius: 12px;
-            --border-radius-lg: 16px;
-            --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
-            --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
-            --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            font-size: 16px;
-            line-height: 1.6;
-            color: var(--charcoal);
-            background-color: var(--white);
-            padding-top: 70px;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-
-        /* Header Navigation */
-        .header-nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid var(--light-grey);
-            z-index: 1000;
-            padding: 0;
-        }
-
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 24px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            height: 70px;
-        }
-
-        .nav-logo a {
-            font-size: 1.5rem;
-            font-weight: 900;
-            color: var(--charcoal);
-            text-decoration: none;
-        }
-
-        .nav-logo a:hover {
-            color: var(--yellow-primary);
-        }
-
-        .nav-menu {
-            display: flex;
-            align-items: center;
-            gap: 32px;
-        }
-
-        .nav-menu a {
-            color: var(--charcoal);
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.95rem;
-            transition: color 0.3s ease;
-        }
-
-        .nav-menu a:hover {
-            color: var(--yellow-primary);
-        }
-
-        .nav-cta {
-            background: var(--yellow-primary);
-            color: var(--charcoal);
-            padding: 8px 16px;
-            border-radius: var(--border-radius);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-            transition: all 0.3s ease;
-        }
-
-        .nav-cta:hover {
-            background: var(--yellow-hover);
-            transform: translateY(-1px);
-            color: var(--charcoal);
-        }
-
-        /* Mobile Menu Styles */
-        .mobile-menu-btn {
-            display: none;
-            flex-direction: column;
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 8px;
-            gap: 4px;
-        }
-
-        .mobile-menu-btn span {
-            width: 24px;
-            height: 2px;
-            background: var(--charcoal);
-            border-radius: 1px;
-            transition: all 0.3s ease;
-        }
-
-        .mobile-menu {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            background: var(--white);
-            border-top: 1px solid var(--light-grey);
-            box-shadow: var(--shadow-lg);
-            z-index: 999;
-        }
-
-        .mobile-menu a {
-            display: block;
-            padding: 16px 24px;
-            color: var(--charcoal);
-            text-decoration: none;
-            border-bottom: 1px solid var(--light-grey);
-            transition: all 0.3s ease;
-        }
-
-        .mobile-menu a:hover {
-            background: var(--yellow-light);
-            color: var(--yellow-primary);
-        }
-
-        /* Mobile Responsive */
-        @media (max-width: 768px) {
-            .nav-menu {
-                display: none !important;
-            }
-            
-            .mobile-menu-btn {
-                display: flex;
-            }
-            
-            .mobile-menu.active {
-                display: block;
-            }
-            
-            .nav-container {
-                padding: 0 16px;
-            }
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(rgba(45, 55, 72, 0.7), rgba(74, 85, 104, 0.7)), 
-                        url('decking_7_upscaled.webp');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            color: var(--white);
-            padding: 120px 0 60px;
-            text-align: center;
-            min-height: 60vh;
-            display: flex;
-            align-items: center;
-        }
-
-        .hero-content h1 {
-            font-size: 3rem;
-            font-weight: 800;
-            margin-bottom: 20px;
-            line-height: 1.2;
-        }
-
-        .hero-content p {
-            font-size: 1.25rem;
-            margin-bottom: 40px;
-            opacity: 0.9;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .hero-cta {
-            display: inline-block;
-            background: var(--yellow-primary);
-            color: var(--charcoal);
-            padding: 16px 32px;
-            border-radius: var(--border-radius);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-        }
-
-        .hero-cta:hover {
-            background: var(--yellow-hover);
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-lg);
-        }
-
-        /* Services Grid */
-        .services-section {
-            padding: 80px 0;
-        }
-
-        .section {
-            padding: 80px 0;
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .section-header h2 {
-            font-size: 2.5rem;
-            font-weight: 900;
-            margin-bottom: 20px;
-            color: var(--charcoal);
-        }
-
-        .section-header p {
-            font-size: 1.2rem;
-            color: var(--medium-grey);
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 40px;
-        }
-
-        .service-card {
-            background: var(--white);
-            border: 2px solid var(--light-grey);
-            border-radius: var(--border-radius-lg);
-            padding: 40px;
-            text-align: center;
-            transition: all 0.3s ease;
-            display: block;
-        }
-
-        .service-card:hover {
-            border-color: var(--yellow-primary);
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-lg);
-            color: inherit;
-        }
-
-        /* Service Category Styles */
-        .service-category {
-            text-align: center;
-            margin: 80px 0 40px 0;
-        }
-
-        .category-title {
-            font-size: 1.5rem;
-            font-weight: 800;
-            color: var(--charcoal);
-            letter-spacing: 0.05em;
-            margin-bottom: 8px;
-        }
-
-        .category-subtitle {
-            font-size: 1.1rem;
-            color: var(--medium-grey);
-            font-style: italic;
-        }
-
-        /* Service Details Enhancement */
-        .service-details {
-            font-size: 0.875rem;
-            color: var(--medium-grey);
-            margin: 12px 0;
-            line-height: 1.5;
-            font-style: italic;
-        }
-
-        /* Technical Expertise Section */
-        .expertise-section {
-            background: var(--bg-subtle);
-            padding: 80px 0;
-            margin: 0;
-        }
-
-        .expertise-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-            margin-top: 48px;
-        }
-
-        .expertise-card {
-            background: var(--white);
-            padding: 32px;
-            border-radius: var(--border-radius);
-            box-shadow: var(--shadow-sm);
-            border: 1px solid var(--light-grey);
-        }
-
-        .expertise-card h4 {
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: var(--charcoal);
-            margin-bottom: 20px;
-            border-bottom: 2px solid var(--yellow-primary);
-            padding-bottom: 8px;
-        }
-
-        .expertise-card ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .expertise-card li {
-            margin-bottom: 12px;
-            padding-left: 20px;
-            position: relative;
-            color: var(--dark-grey);
-            font-size: 0.95rem;
-            line-height: 1.5;
-        }
-
-        .expertise-card li:before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: var(--yellow-primary);
-            font-weight: bold;
-        }
-
-        .service-icon {
-            width: 80px;
-            height: 80px;
-            background: var(--yellow-light);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 25px;
-            transition: all 0.3s ease;
-        }
-
-        .service-card:hover .service-icon {
-            background: var(--yellow-primary);
-        }
-
-        .service-icon svg {
-            width: 40px;
-            height: 40px;
-            color: var(--yellow-primary);
-            transition: color 0.3s ease;
-        }
-
-        .service-card:hover .service-icon svg {
-            color: var(--charcoal);
-        }
-
-        .service-card h3 {
-            font-size: 1.5rem;
-            font-weight: 900;
-            margin-bottom: 15px;
-            color: var(--charcoal);
-        }
-
-        .service-card p {
-            color: var(--medium-grey);
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-
-        .service-features {
-            list-style: none;
-            text-align: left;
-        }
-
-        .service-features li {
-            color: var(--medium-grey);
-            margin-bottom: 8px;
-            position: relative;
-            padding-left: 20px;
-        }
-
-        .service-features li:before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: var(--yellow-primary);
-            font-weight: bold;
-        }
-
-        .service-price {
-            background: var(--yellow-light);
-            color: var(--charcoal);
-            padding: 12px 20px;
-            border-radius: var(--border-radius);
-            font-weight: 600;
-            font-size: 1.1rem;
-            text-align: center;
-            margin-top: 20px;
-            border: 2px solid var(--yellow-primary);
-        }
-
-        .service-link {
-            color: var(--charcoal);
-            text-decoration: none;
-            font-weight: 600;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            transition: all 0.3s ease;
-            font-size: 1.125rem;
-            margin-top: 16px;
-        }
-
-        .service-link:hover {
-            color: var(--yellow-primary);
-        }
-
-        .service-link svg {
-            width: 18px;
-            height: 18px;
-            transition: transform 0.3s ease;
-            stroke: currentColor;
-            fill: none;
-        }
-
-        .service-link:hover svg {
-            transform: translateX(6px);
-        }
-
-        /* Areas Section */
-        .areas-section {
-            padding: 80px 0;
-            background: var(--bg-subtle);
-        }
-
-        .areas-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-        }
-
-        .area-card {
-            background: var(--white);
-            padding: 30px;
-            border-radius: var(--border-radius);
-            text-align: center;
-            box-shadow: var(--shadow-sm);
-            text-decoration: none;
-            color: inherit;
-            transition: all 0.3s ease;
-        }
-
-        .area-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-lg);
-            color: inherit;
-        }
-
-        .area-card h3 {
-            font-size: 1.25rem;
-            font-weight: 600;
-            margin-bottom: 10px;
-            color: var(--charcoal);
-        }
-
-        .area-card p {
-            color: var(--medium-grey);
-        }
-
-        /* CTA Section */
-        .cta-section {
-            padding: 80px 0;
-            background: 
-                linear-gradient(135deg, rgba(247, 189, 34, 0.95) 0%, rgba(234, 179, 8, 0.95) 100%),
-                url('byron-bay-lighthouse-handyman-service.webp');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            text-align: center;
-        }
-
-        .cta-section h2 {
-            font-size: 2.5rem;
-            font-weight: 900;
-            margin-bottom: 20px;
-            color: var(--charcoal);
-        }
-
-        .cta-section p {
-            font-size: 1.2rem;
-            color: var(--charcoal);
-            margin-bottom: 40px;
-            opacity: 0.8;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background: var(--charcoal);
-            color: var(--white);
-            padding: 16px 32px;
-            border-radius: var(--border-radius);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-        }
-
-        .cta-button:hover {
-            background: var(--dark-grey);
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-lg);
-        }
-
-        /* Professional Footer Styles */
-        .footer {
-            background: var(--charcoal);
-            color: var(--white);
-            border-radius: var(--border-radius);
-            overflow: hidden;
-            box-shadow: var(--shadow-sm);
-        }
-
-        .footer-main {
-            padding: 64px 32px 48px;
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 1.2fr 0.8fr 0.8fr 1fr;
-            gap: 40px;
-        }
-
-        .footer-section h3 {
-            font-size: 1.25rem;
-            font-weight: 900;
-            margin-bottom: 20px;
-            color: var(--white);
-        }
-
-        .brand-logo {
-            font-size: 1.5rem;
-            font-weight: 800;
-            color: var(--yellow-primary);
-            margin-bottom: 20px;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 15px;
-        }
-
-        .contact-item svg {
-            width: 20px;
-            height: 20px;
-            color: var(--yellow-primary);
-        }
-
-        .contact-item a {
-            color: rgba(255, 255, 255, 0.9);
-            text-decoration: none;
-        }
-
-        .contact-item a:hover {
-            color: var(--yellow-primary);
-        }
-
-        .footer-section ul {
-            list-style: none;
-        }
-
-        .footer-section ul li {
-            margin-bottom: 10px;
-        }
-
-        .footer-section ul li a {
-            color: rgba(255, 255, 255, 0.8);
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .footer-section ul li a:hover {
-            color: var(--yellow-primary);
-        }
-
-        .footer-cta-button {
-            display: inline-block;
-            background: var(--yellow-primary);
-            color: var(--charcoal);
-            padding: 12px 24px;
-            border-radius: var(--border-radius);
-            text-decoration: none;
-            font-weight: 600;
-            margin-bottom: 20px;
-            transition: all 0.3s ease;
-        }
-
-        .footer-cta-button:hover {
-            background: var(--yellow-hover);
-            transform: translateY(-2px);
-            color: var(--charcoal);
-        }
-
-        .footer-bottom {
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            padding-top: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .footer-bottom p {
-            color: rgba(255, 255, 255, 0.6);
-            font-size: 0.875rem;
-        }
-
-        .footer-bottom-right {
-            display: flex;
-            gap: 20px;
-            align-items: center;
-        }
-
-        .footer-bottom-right a {
-            color: rgba(255, 255, 255, 0.6);
-            text-decoration: none;
-            font-size: 0.875rem;
-        }
-
-        .footer-bottom-right a:hover {
-            color: var(--yellow-primary);
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            gap: 48px;
-            margin-bottom: 48px;
-        }
-
-        .footer-section h3 {
-            color: var(--yellow-primary);
-            font-weight: 600;
-            font-size: 1.125rem;
-            margin-bottom: 24px;
-            letter-spacing: -0.025em;
-        }
-
-        .footer-section ul {
-            list-style: none;
-        }
-
-        .footer-section li {
-            margin-bottom: 12px;
-        }
-
-        .footer-section a {
-            color: rgba(255,255,255,0.85);
-            text-decoration: none;
-            font-size: 0.95rem;
-            transition: all 0.3s ease;
-            display: block;
-            padding: 4px 0;
-        }
-
-        .footer-section a:hover {
-            color: var(--yellow-primary);
-            transform: translateX(4px);
-        }
-
-        .footer-section p {
-            color: rgba(255,255,255,0.8);
-            font-size: 0.95rem;
-            line-height: 1.6;
-            margin-bottom: 16px;
-        }
-
-        .brand-section {
-            grid-column: 1;
-        }
-
-        .brand-logo {
-            color: var(--yellow-primary);
-            font-weight: 900;
-            font-size: 1.5rem;
-            margin-bottom: 16px;
-            display: block;
-        }
-
-        .brand-tagline {
-            font-style: italic;
-            opacity: 0.9;
-            margin-bottom: 24px;
-            line-height: 1.5;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 12px;
-            font-size: 0.95rem;
-        }
-
-        .contact-item svg {
-            width: 18px;
-            height: 18px;
-            color: var(--yellow-primary);
-            flex-shrink: 0;
-        }
-
-        .contact-item a {
-            color: rgba(255,255,255,0.9);
-            text-decoration: none;
-            padding: 0;
-            display: inline;
-        }
-
-        .contact-item a:hover {
-            color: var(--yellow-primary);
-            transform: none;
-        }
-
-        .contact-item span {
-            color: rgba(255,255,255,0.9);
-        }
-
-        .business-hours {
-            margin-top: 24px;
-        }
-
-        .business-hours h4 {
-            color: var(--yellow-primary);
-            font-size: 1rem;
-            margin-bottom: 12px;
-        }
-
-        .business-hours p {
-            font-size: 0.875rem;
-            margin-bottom: 6px;
-            color: rgba(255,255,255,0.8);
-        }
-
-        .trust-badges {
-            display: flex;
-            justify-content: center;
-            gap: 32px;
-            padding: 24px 0;
-            border-top: 1px solid rgba(255,255,255,0.1);
-        }
-
-        .trust-badge {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            gap: 8px;
-        }
-
-        .trust-badge svg {
-            width: 20px;
-            height: 20px;
-            color: var(--yellow-primary);
-        }
-
-        .trust-badge span {
-            font-size: 0.875rem;
-            color: rgba(255,255,255,0.9);
-            font-weight: 500;
-        }
-
-        .footer-bottom {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 24px 32px;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            background: rgba(0,0,0,0.2);
-        }
-
-        .footer-bottom-left p {
-            color: rgba(255,255,255,0.6);
-            font-size: 0.875rem;
-            margin: 0;
-        }
-
-        .footer-bottom-right {
-            display: flex;
-            gap: 24px;
-            align-items: center;
-        }
-
-        .social-links {
-            display: flex;
-            gap: 12px;
-        }
-
-        .social-link {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 32px;
-            height: 32px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 50%;
-            transition: all 0.3s ease;
-        }
-
-        .social-link:hover {
-            background: var(--yellow-primary);
-            color: var(--charcoal);
-        }
-
-        .social-link svg {
-            width: 16px;
-            height: 16px;
-        }
-
-        /* Mobile Responsive */
-        @media (max-width: 1024px) {
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .footer-grid {
-                grid-template-columns: 1fr 1fr;
-                gap: 32px;
-            }
-
-            .brand-section {
-                grid-column: 1 / -1;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .hero {
-                background-attachment: scroll;
-                padding: 100px 0 60px;
-                min-height: 50vh;
-            }
-            
-            .hero-content h1 {
-                font-size: 2.5rem;
-            }
-            
-            .services-section {
-                padding: 80px 0 60px;
-            }
-
-            .section-header h2 {
-                font-size: 2rem;
-            }
-
-            .cta-section h2 {
-                font-size: 2rem;
-            }
-
-            .footer-main {
-                padding: 48px 24px 32px;
-            }
-            
-            .footer-grid {
-                grid-template-columns: 1fr;
-                gap: 32px;
-            }
-
-            .footer-bottom {
-                flex-direction: column;
-                gap: 16px;
-                text-align: center;
-                padding: 24px;
-            }
-            
-            .trust-badges {
-                flex-wrap: wrap;
-                gap: 16px;
-            }
-        }
-    </style>
+    <style>:root{--yellow-primary:#FFB800;--yellow-hover:#E6A600;--yellow-light:#FFF9E6;--charcoal:#2D3748;--dark-grey:#4A5568;--medium-grey:#718096;--light-grey:#EDF2F7;--bg-subtle:#F7FAFC;--white:#FFFFFF;--border-radius:12px;--border-radius-lg:16px;--shadow-sm:0 1px 3px rgba(0,0,0,0.1);--shadow-md:0 4px 6px rgba(0,0,0,0.1);--shadow-lg:0 10px 15px rgba(0,0,0,0.1)}*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Nunito',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:16px;line-height:1.6;color:var(--charcoal);background-color:var(--white);padding-top:70px}.container{max-width:1200px;margin:0 auto;padding:0 24px}.header-nav{position:fixed;top:0;left:0;right:0;background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--light-grey);z-index:1000;padding:0}.nav-container{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:70px}.nav-logo a{font-size:1.5rem;font-weight:900;color:var(--charcoal);text-decoration:none}.nav-logo a:hover{color:var(--yellow-primary)}.nav-menu{display:flex;align-items:center;gap:32px}.nav-menu a{color:var(--charcoal);text-decoration:none;font-weight:500;font-size:0.95rem;transition:color 0.3s ease}.nav-menu a:hover{color:var(--yellow-primary);background:var(--yellow-light)}.nav-dropdown{position:relative}.nav-dropdown:hover .dropdown-content{display:block;opacity:1;transform:translateY(0)}.dropdown-trigger{display:flex;align-items:center;gap:4px}.dropdown-trigger::after{content:"▼";font-size:0.75rem;transition:transform 0.3s}.nav-dropdown:hover .dropdown-trigger::after{transform:rotate(180deg)}.dropdown-content{display:none;position:absolute;top:100%;left:0;background:var(--white);min-width:250px;box-shadow:var(--shadow-lg);border-radius:var(--border-radius);padding:8px 0;margin-top:8px;opacity:0;transform:translateY(-10px);transition:all 0.3s ease;z-index:1000}.dropdown-content a{display:block;padding:12px 20px;color:var(--charcoal);text-decoration:none;font-weight:500;transition:all 0.3s ease;white-space:nowrap}.dropdown-content a:hover{color:var(--yellow-primary);background:var(--yellow-light);transform:translateX(4px)}.dropdown-header{padding:8px 20px;font-weight:700;color:var(--medium-grey);font-size:0.875rem;text-transform:uppercase;letter-spacing:0.05em;border-bottom:1px solid var(--light-grey);margin-bottom:4px}.nav-cta{background:var(--yellow-primary) !important;color:var(--charcoal) !important;padding:8px 16px !important;border-radius:var(--border-radius) !important;text-decoration:none !important;font-weight:600 !important;font-size:0.9rem !important;transition:all 0.3s ease !important}.nav-cta:hover{background:var(--yellow-hover);transform:translateY(-1px);color:var(--charcoal)}.mobile-menu-btn{display:none;flex-direction:column;background:none;border:none;cursor:pointer;padding:8px;gap:4px}.mobile-menu-btn span{width:24px;height:2px;background:var(--charcoal);border-radius:1px;transition:all 0.3s ease}.mobile-menu{display:none;position:absolute;top:100%;left:0;right:0;background:var(--white);border-top:1px solid var(--light-grey);box-shadow:var(--shadow-lg);z-index:999}.mobile-menu a{display:block;padding:16px 24px;color:var(--charcoal);text-decoration:none;border-bottom:1px solid var(--light-grey);transition:all 0.3s ease}.mobile-menu a:hover{background:var(--yellow-light);color:var(--yellow-primary)}.mobile-dropdown{padding:0}.mobile-dropdown-trigger{position:relative;padding-right:40px !important}.mobile-dropdown-trigger::after{content:"▼";position:absolute;right:24px;top:50%;transform:translateY(-50%);transition:transform 0.3s}.mobile-dropdown.active .mobile-dropdown-trigger::after{transform:translateY(-50%) rotate(180deg)}.mobile-dropdown-content{display:none;background:var(--bg-subtle);padding:8px 0}.mobile-dropdown.active .mobile-dropdown-content{display:block}.mobile-dropdown-content a{padding-left:40px;font-size:0.9rem}@media (max-width:768px){.nav-menu{display:none !important}.mobile-menu-btn{display:flex}.mobile-menu.active{display:block}.nav-container{padding:0 16px}}.hero{background:linear-gradient(rgba(45,55,72,0.7),rgba(74,85,104,0.7)),url('decking_7_upscaled.webp');background-size:cover;background-position:center;background-attachment:fixed;color:var(--white);padding:120px 0 60px;text-align:center;min-height:60vh;display:flex;align-items:center}.hero-content h1{font-size:3rem;font-weight:800;margin-bottom:20px;line-height:1.2}.hero-content p{font-size:1.25rem;margin-bottom:40px;opacity:0.9;max-width:700px;margin-left:auto;margin-right:auto}.hero-cta{display:inline-block;background:var(--yellow-primary);color:var(--charcoal);padding:16px 32px;border-radius:var(--border-radius);text-decoration:none;font-weight:600;font-size:1.1rem;transition:all 0.3s ease}.hero-cta:hover{background:var(--yellow-hover);transform:translateY(-2px);box-shadow:var(--shadow-lg)}.services-section{padding:80px 0}.section{padding:80px 0}.section-header{text-align:center;margin-bottom:60px}.section-header h2{font-size:2.5rem;font-weight:900;margin-bottom:20px;color:var(--charcoal)}.section-header p{font-size:1.2rem;color:var(--medium-grey);max-width:700px;margin:0 auto}.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:40px}.service-card{background:var(--white);border:2px solid var(--light-grey);border-radius:var(--border-radius-lg);padding:40px;text-align:center;transition:all 0.3s ease;display:block}.service-card:hover{border-color:var(--yellow-primary);transform:translateY(-5px);box-shadow:var(--shadow-lg);color:inherit}.service-category{text-align:center;margin:80px 0 40px 0}.category-title{font-size:1.5rem;font-weight:800;color:var(--charcoal);letter-spacing:0.05em;margin-bottom:8px}.category-subtitle{font-size:1.1rem;color:var(--medium-grey);font-style:italic}.service-details{font-size:0.875rem;color:var(--medium-grey);margin:12px 0;line-height:1.5;font-style:italic}.expertise-section{background:var(--bg-subtle);padding:80px 0;margin:0}.expertise-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px;margin-top:48px}.expertise-card{background:var(--white);padding:32px;border-radius:var(--border-radius);box-shadow:var(--shadow-sm);border:1px solid var(--light-grey)}.expertise-card h4{font-size:1.25rem;font-weight:700;color:var(--charcoal);margin-bottom:20px;border-bottom:2px solid var(--yellow-primary);padding-bottom:8px}.expertise-card ul{list-style:none;padding:0}.expertise-card li{margin-bottom:12px;padding-left:20px;position:relative;color:var(--dark-grey);font-size:0.95rem;line-height:1.5}.expertise-card li:before{content:"✓";position:absolute;left:0;color:var(--yellow-primary);font-weight:bold}.service-icon{width:80px;height:80px;background:var(--yellow-light);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 25px;transition:all 0.3s ease}.service-card:hover .service-icon{background:var(--yellow-primary)}.service-icon svg{width:40px;height:40px;color:var(--yellow-primary);transition:color 0.3s ease}.service-card:hover .service-icon svg{color:var(--charcoal)}.service-card h3{font-size:1.5rem;font-weight:900;margin-bottom:15px;color:var(--charcoal)}.service-card p{color:var(--medium-grey);line-height:1.6;margin-bottom:20px}.service-features{list-style:none;text-align:left}.service-features li{color:var(--medium-grey);margin-bottom:8px;position:relative;padding-left:20px}.service-features li:before{content:"✓";position:absolute;left:0;color:var(--yellow-primary);font-weight:bold}.service-price{background:var(--yellow-light);color:var(--charcoal);padding:12px 20px;border-radius:var(--border-radius);font-weight:600;font-size:1.1rem;text-align:center;margin-top:20px;border:2px solid var(--yellow-primary)}.service-link{color:var(--charcoal);text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:8px;transition:all 0.3s ease;font-size:1.125rem;margin-top:16px}.service-link:hover{color:var(--yellow-primary)}.service-link svg{width:18px;height:18px;transition:transform 0.3s ease;stroke:currentColor;fill:none}.service-link:hover svg{transform:translateX(6px)}.areas-section{padding:80px 0;background:var(--bg-subtle)}.areas-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px}.area-card{background:var(--white);padding:30px;border-radius:var(--border-radius);text-align:center;box-shadow:var(--shadow-sm);text-decoration:none;color:inherit;transition:all 0.3s ease}.area-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg);color:inherit}.area-card h3{font-size:1.25rem;font-weight:600;margin-bottom:10px;color:var(--charcoal)}.area-card p{color:var(--medium-grey)}.cta-section{padding:80px 0;background:linear-gradient(135deg,rgba(247,189,34,0.95) 0%,rgba(234,179,8,0.95) 100%),url('byron-bay-lighthouse-handyman-service.webp');background-size:cover;background-position:center;background-repeat:no-repeat;text-align:center}.cta-section h2{font-size:2.5rem;font-weight:900;margin-bottom:20px;color:var(--charcoal)}.cta-section p{font-size:1.2rem;color:var(--charcoal);margin-bottom:40px;opacity:0.8}.cta-button{display:inline-block;background:var(--charcoal);color:var(--white);padding:16px 32px;border-radius:var(--border-radius);text-decoration:none;font-weight:600;font-size:1.1rem;transition:all 0.3s ease}.cta-button:hover{background:var(--dark-grey);transform:translateY(-2px);box-shadow:var(--shadow-lg)}.footer{background:var(--charcoal);color:var(--white);border-radius:var(--border-radius);overflow:hidden;box-shadow:var(--shadow-sm)}.footer-main{padding:64px 32px 48px}.footer-grid{display:grid;grid-template-columns:1.2fr 0.8fr 0.8fr 1fr;gap:40px}.footer-section h3{font-size:1.25rem;font-weight:900;margin-bottom:20px;color:var(--white)}.brand-logo{font-size:1.5rem;font-weight:800;color:var(--yellow-primary);margin-bottom:20px}.contact-item{display:flex;align-items:center;gap:12px;margin-bottom:15px}.contact-item svg{width:20px;height:20px;color:var(--yellow-primary)}.contact-item a{color:rgba(255,255,255,0.9);text-decoration:none}.contact-item a:hover{color:var(--yellow-primary)}.footer-section ul{list-style:none}.footer-section ul li{margin-bottom:10px}.footer-section ul li a{color:rgba(255,255,255,0.8);text-decoration:none;transition:color 0.3s ease}.footer-section ul li a:hover{color:var(--yellow-primary)}.footer-cta-button{display:inline-block;background:var(--yellow-primary);color:var(--charcoal);padding:12px 24px;border-radius:var(--border-radius);text-decoration:none;font-weight:600;margin-bottom:20px;transition:all 0.3s ease}.footer-cta-button:hover{background:var(--yellow-hover);transform:translateY(-2px);color:var(--charcoal)}.footer-bottom{border-top:1px solid rgba(255,255,255,0.1);padding-top:20px;display:flex;justify-content:space-between;align-items:center}.footer-bottom p{color:rgba(255,255,255,0.6);font-size:0.875rem}.footer-bottom-right{display:flex;gap:20px;align-items:center}.footer-bottom-right a{color:rgba(255,255,255,0.6);text-decoration:none;font-size:0.875rem}.footer-bottom-right a:hover{color:var(--yellow-primary)}.regional-areas{margin-bottom:20px}.region-group{margin-bottom:16px}.region-group h4{color:var(--yellow-primary);font-size:0.875rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:8px;border-bottom:1px solid rgba(255,255,255,0.1);padding-bottom:4px}.region-group ul{margin-bottom:12px}.region-group li{margin-bottom:8px}.view-all-areas{display:inline-flex;align-items:center;gap:6px;color:var(--yellow-primary);text-decoration:none;font-weight:600;font-size:0.9rem;padding:8px 0;transition:all 0.3s ease}.view-all-areas:hover{color:var(--white);transform:translateX(4px)}.footer-grid{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px}.footer-section h3{color:var(--yellow-primary);font-weight:600;font-size:1.125rem;margin-bottom:24px;letter-spacing:-0.025em}.footer-section ul{list-style:none}.footer-section li{margin-bottom:12px}.footer-section a{color:rgba(255,255,255,0.85);text-decoration:none;font-size:0.95rem;transition:all 0.3s ease;display:block;padding:4px 0}.footer-section a:hover{color:var(--yellow-primary);transform:translateX(4px)}.footer-section p{color:rgba(255,255,255,0.8);font-size:0.95rem;line-height:1.6;margin-bottom:16px}.brand-section{grid-column:1}.brand-logo{color:var(--yellow-primary);font-weight:900;font-size:1.5rem;margin-bottom:16px;display:block}.brand-tagline{font-style:italic;opacity:0.9;margin-bottom:24px;line-height:1.5}.contact-item{display:flex;align-items:center;gap:12px;margin-bottom:12px;font-size:0.95rem}.contact-item svg{width:18px;height:18px;color:var(--yellow-primary);flex-shrink:0}.contact-item a{color:rgba(255,255,255,0.9);text-decoration:none;padding:0;display:inline}.contact-item a:hover{color:var(--yellow-primary);transform:none}.contact-item span{color:rgba(255,255,255,0.9)}.business-hours{margin-top:24px}.business-hours h4{color:var(--yellow-primary);font-size:1rem;margin-bottom:12px}.business-hours p{font-size:0.875rem;margin-bottom:6px;color:rgba(255,255,255,0.8)}.trust-badges{display:flex;justify-content:center;gap:32px;padding:24px 0;border-top:1px solid rgba(255,255,255,0.1)}.trust-badge{display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px}.trust-badge svg{width:20px;height:20px;color:var(--yellow-primary)}.trust-badge span{font-size:0.875rem;color:rgba(255,255,255,0.9);font-weight:500}.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding:24px 32px;border-top:1px solid rgba(255,255,255,0.1);background:rgba(0,0,0,0.2)}.footer-bottom-left p{color:rgba(255,255,255,0.6);font-size:0.875rem;margin:0}.footer-bottom-right{display:flex;gap:24px;align-items:center}.social-links{display:flex;gap:12px}.social-link{display:flex;align-items:center;justify-content:center;width:32px;height:32px;background:rgba(255,255,255,0.1);border-radius:50%;transition:all 0.3s ease}.social-link:hover{background:var(--yellow-primary);color:var(--charcoal)}.social-link svg{width:16px;height:16px}@media (max-width:1024px){.services-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr;gap:32px}.brand-section{grid-column:1 / -1}}@media (max-width:768px){.hero{background-attachment:scroll;padding:100px 0 60px;min-height:50vh}.hero-content h1{font-size:2.5rem}.services-section{padding:80px 0 60px}.section-header h2{font-size:2rem}.cta-section h2{font-size:2rem}.footer-main{padding:48px 24px 32px}.footer-grid{grid-template-columns:1fr;gap:32px}.footer-bottom{flex-direction:column;gap:16px;text-align:center;padding:24px}.trust-badges{flex-wrap:wrap;gap:16px}}</style>
 </head>
 <body>
     <!-- Header Navigation -->
@@ -923,8 +29,28 @@
             </div>
             <nav class="nav-menu">
                 <a href="index.html">Home</a>
-                <a href="services.html">Services</a>
-                <a href="areas.html">Areas</a>
+                <a href="handyman-services-byron-bay.html">Services</a>
+                <div class="nav-dropdown">
+                    <a href="service-areas.html" class="dropdown-trigger">Service Areas</a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-header">Northern Rivers</div>
+                        <a href="handyman-byron-bay.html">Byron Bay</a>
+                        <a href="handyman-ballina.html">Ballina</a>
+                        <a href="handyman-lismore.html">Lismore</a>
+                        <a href="handyman-bangalow.html">Bangalow</a>
+                        <a href="handyman-mullumbimby.html">Mullumbimby</a>
+                        <a href="handyman-lennox-head.html">Lennox Head</a>
+                        <div class="dropdown-header">Tweed Coast</div>
+                        <a href="handyman-kingscliff.html">Kingscliff</a>
+                        <a href="handyman-cabarita-beach.html">Cabarita Beach</a>
+                        <a href="handyman-pottsville.html">Pottsville</a>
+                        <a href="handyman-casuarina.html">Casuarina</a>
+                        <a href="handyman-tweed-heads.html">Tweed Heads</a>
+                        <div class="dropdown-header">Gold Coast Edge</div>
+                        <a href="handyman-burleigh-heads.html">Burleigh Heads</a>
+                        <a href="handyman-currumbin.html">Currumbin</a>
+                    </div>
+                </div>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
                 <a href="tel:0481457271" class="nav-cta">Call Now</a>
@@ -937,10 +63,20 @@
             <div class="mobile-menu" id="mobileMenu">
                 <a href="index.html" onclick="closeMobileMenu()">Home</a>
                 <a href="handyman-services-byron-bay.html" onclick="closeMobileMenu()">Services</a>
-                <a href="areas.html" onclick="closeMobileMenu()">Areas</a>
+                <div class="mobile-dropdown" id="mobileServiceAreas">
+                    <a href="#" class="mobile-dropdown-trigger" onclick="toggleMobileDropdown(event, 'mobileServiceAreas')">Service Areas</a>
+                    <div class="mobile-dropdown-content">
+                        <a href="handyman-byron-bay.html" onclick="closeMobileMenu()">Byron Bay</a>
+                        <a href="handyman-ballina.html" onclick="closeMobileMenu()">Ballina</a>
+                        <a href="handyman-kingscliff.html" onclick="closeMobileMenu()">Kingscliff</a>
+                        <a href="handyman-cabarita-beach.html" onclick="closeMobileMenu()">Cabarita Beach</a>
+                        <a href="handyman-burleigh-heads.html" onclick="closeMobileMenu()">Burleigh Heads</a>
+                        <a href="service-areas.html" onclick="closeMobileMenu()">View All Areas</a>
+                    </div>
+                </div>
                 <a href="about.html" onclick="closeMobileMenu()">About</a>
                 <a href="contact.html" onclick="closeMobileMenu()">Contact</a>
-                <a href="tel:0481457271" onclick="closeMobileMenu()" class="mobile-cta">Call Now</a>
+                <a href="tel:0481457271" onclick="closeMobileMenu()">Call Now</a>
             </div>
         </div>
     </header>
@@ -1450,20 +586,36 @@
                     </ul>
                 </div>
 
-                <!-- Service Areas -->
+                <!-- Coastal Service Areas -->
                 <div class="footer-section service-areas">
-                    <h3>Service Areas</h3>
-                    <ul class="areas-list">
-                        <li><a href="handyman-byron-bay.html">Byron Bay</a></li>
-                        <li><a href="handyman-ballina.html">Ballina</a></li>
-                        <li><a href="handyman-lismore.html">Lismore</a></li>
-                        <li><a href="handyman-bangalow.html">Bangalow</a></li>
-                        <li><a href="handyman-mullumbimby.html">Mullumbimby</a></li>
-                        <li><a href="handyman-tweed-heads.html">Tweed Heads</a></li>
-                        <li><a href="handyman-ocean-shores.html">Ocean Shores</a></li>
-                        <li><a href="handyman-lennox-head.html">Lennox Head</a></li>
-                        <li><a href="handyman-south-golden-beach.html">South Golden Beach</a></li>
-                    </ul>
+                    <h3>Coastal Service Areas</h3>
+                    <div class="regional-areas">
+                        <div class="region-group">
+                            <h4>Northern Rivers</h4>
+                            <ul>
+                                <li><a href="handyman-byron-bay.html">Byron Bay</a></li>
+                                <li><a href="handyman-ballina.html">Ballina</a></li>
+                                <li><a href="handyman-lismore.html">Lismore</a></li>
+                                <li><a href="handyman-lennox-head.html">Lennox Head</a></li>
+                            </ul>
+                        </div>
+                        <div class="region-group">
+                            <h4>Tweed Coast</h4>
+                            <ul>
+                                <li><a href="handyman-kingscliff.html">Kingscliff</a></li>
+                                <li><a href="handyman-cabarita-beach.html">Cabarita Beach</a></li>
+                                <li><a href="handyman-tweed-heads.html">Tweed Heads</a></li>
+                            </ul>
+                        </div>
+                        <div class="region-group">
+                            <h4>Gold Coast Edge</h4>
+                            <ul>
+                                <li><a href="handyman-burleigh-heads.html">Burleigh Heads</a></li>
+                                <li><a href="handyman-currumbin.html">Currumbin</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="service-areas.html" class="view-all-areas">View All Areas →</a>
                 </div>
 
                 <!-- Quick Actions -->
@@ -1537,34 +689,29 @@
         </div>
     </footer>
     <script>
-        // Mobile Menu Toggle Functions
         function toggleMobileMenu() {
-            const mobileMenu = document.getElementById('mobileMenu');
-            mobileMenu.classList.toggle('active');
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('active');
         }
-
+        
         function closeMobileMenu() {
-            const mobileMenu = document.getElementById('mobileMenu');
-            mobileMenu.classList.remove('active');
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.remove('active');
         }
-
+        
+        function toggleMobileDropdown(event, dropdownId) {
+            event.preventDefault();
+            const dropdown = document.getElementById(dropdownId);
+            dropdown.classList.toggle('active');
+        }
+        
         // Close mobile menu when clicking outside
         document.addEventListener('click', function(event) {
-            const mobileMenu = document.getElementById('mobileMenu');
+            const menu = document.getElementById('mobileMenu');
             const menuBtn = document.querySelector('.mobile-menu-btn');
             
-            if (mobileMenu && menuBtn && !mobileMenu.contains(event.target) && !menuBtn.contains(event.target)) {
-                mobileMenu.classList.remove('active');
-            }
-        });
-
-        // Close mobile menu on window resize
-        window.addEventListener('resize', function() {
-            if (window.innerWidth > 768) {
-                const mobileMenu = document.getElementById('mobileMenu');
-                if (mobileMenu) {
-                    mobileMenu.classList.remove('active');
-                }
+            if (!menu.contains(event.target) && !menuBtn.contains(event.target)) {
+                menu.classList.remove('active');
             }
         });
     </script>

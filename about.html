@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- Performance optimizations -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//www.google.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Dan - Northern Rivers Handyman | Pride in Workmanship | GoodHands</title>
@@ -9,873 +18,12 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <style>
-        :root {
-            --yellow-primary: #FFB800;
-            --yellow-hover: #E6A600;
-            --yellow-light: #FFF9E6;
-            --charcoal: #2D3748;
-            --dark-grey: #4A5568;
-            --medium-grey: #718096;
-            --light-grey: #EDF2F7;
-            --bg-subtle: #F7FAFC;
-            --white: #FFFFFF;
-            --border-radius: 12px;
-            --border-radius-lg: 16px;
-            --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
-            --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
-            --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            font-size: 16px;
-            line-height: 1.6;
-            color: var(--charcoal);
-            background-color: var(--white);
-            padding-top: 70px;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-
-        /* Header Navigation */
-        .header-nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid var(--light-grey);
-            z-index: 1000;
-            padding: 0;
-        }
-
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 24px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            height: 70px;
-        }
-
-        .nav-logo a {
-            font-size: 1.5rem;
-            font-weight: 900;
-            color: var(--charcoal);
-            text-decoration: none;
-        }
-
-        .nav-logo a:hover {
-            color: var(--yellow-primary);
-        }
-
-        .nav-menu {
-            display: flex;
-            align-items: center;
-            gap: 32px;
-        }
-
-        .nav-menu a {
-            color: var(--charcoal);
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.95rem;
-            transition: color 0.3s ease;
-        }
-
-        .nav-menu a:hover {
-            color: var(--yellow-primary);
-        }
-
-        .nav-cta {
-            background: var(--yellow-primary);
-            color: var(--charcoal);
-            padding: 8px 16px;
-            border-radius: var(--border-radius);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-            transition: all 0.3s ease;
-        }
-
-        .nav-cta:hover {
-            background: var(--yellow-hover);
-            transform: translateY(-1px);
-            color: var(--charcoal);
-        }
-
-        /* Mobile Menu Styles */
-        .mobile-menu-btn {
-            display: none;
-            flex-direction: column;
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 8px;
-            gap: 4px;
-        }
-
-        .mobile-menu-btn span {
-            width: 24px;
-            height: 2px;
-            background: var(--charcoal);
-            border-radius: 1px;
-            transition: all 0.3s ease;
-        }
-
-        .mobile-menu {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            background: var(--white);
-            border-top: 1px solid var(--light-grey);
-            box-shadow: var(--shadow-lg);
-            z-index: 999;
-        }
-
-        .mobile-menu a {
-            display: block;
-            padding: 16px 24px;
-            color: var(--charcoal);
-            text-decoration: none;
-            border-bottom: 1px solid var(--light-grey);
-            transition: all 0.3s ease;
-        }
-
-        .mobile-menu a:hover {
-            background: var(--yellow-light);
-            color: var(--yellow-primary);
-        }
-
-        /* Mobile Responsive */
-        @media (max-width: 768px) {
-            .nav-menu {
-                display: none !important;
-            }
-            
-            .mobile-menu-btn {
-                display: flex;
-            }
-            
-            .mobile-menu.active {
-                display: block;
-            }
-            
-            .nav-container {
-                padding: 0 16px;
-            }
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(rgba(45, 55, 72, 0.7), rgba(74, 85, 104, 0.7)), 
-                        url('about-hero-background.avif');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            color: var(--white);
-            padding: 120px 0 80px;
-            text-align: center;
-            min-height: 60vh;
-            display: flex;
-            align-items: center;
-        }
-
-        .hero-content h1 {
-            font-size: 3rem;
-            font-weight: 800;
-            margin-bottom: 20px;
-            line-height: 1.2;
-        }
-
-        .hero-content p {
-            font-size: 1.25rem;
-            margin-bottom: 40px;
-            opacity: 0.9;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        /* About Section */
-        .about-section {
-            padding: 80px 0;
-        }
-
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1fr 1.2fr;
-            gap: 60px;
-            align-items: center;
-        }
-
-        .about-image {
-            border-radius: var(--border-radius-lg);
-            overflow: hidden;
-            box-shadow: var(--shadow-lg);
-            aspect-ratio: 1;
-        }
-
-        .about-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .about-content h2 {
-            font-size: 2.5rem;
-            font-weight: 900;
-            margin-bottom: 20px;
-            color: var(--charcoal);
-        }
-
-        .about-content p {
-            font-size: 1.1rem;
-            color: var(--medium-grey);
-            margin-bottom: 25px;
-            line-height: 1.7;
-        }
-
-        .about-content .highlight {
-            color: var(--charcoal);
-            font-weight: 600;
-        }
-
-        /* Experience Section */
-        .experience-section {
-            padding: 80px 0;
-            background: var(--bg-subtle);
-        }
-
-        .experience-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-        }
-
-        .experience-card {
-            background: var(--white);
-            padding: 40px;
-            border-radius: var(--border-radius-lg);
-            text-align: center;
-            box-shadow: var(--shadow-sm);
-        }
-
-        .experience-card svg {
-            width: 48px;
-            height: 48px;
-            color: var(--yellow-primary);
-            margin-bottom: 20px;
-        }
-
-        .experience-card h3 {
-            font-size: 1.25rem;
-            font-weight: 900;
-            margin-bottom: 15px;
-            color: var(--charcoal);
-        }
-
-        .experience-card p {
-            color: var(--medium-grey);
-            line-height: 1.6;
-        }
-
-        /* Values Section */
-        .values-section {
-            padding: 80px 0;
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .section-header h2 {
-            font-size: 2.5rem;
-            font-weight: 900;
-            margin-bottom: 20px;
-            color: var(--charcoal);
-        }
-
-        .section-header p {
-            font-size: 1.2rem;
-            color: var(--medium-grey);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .values-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-        }
-
-        .value-card {
-            padding: 40px;
-            border: 2px solid var(--light-grey);
-            border-radius: var(--border-radius-lg);
-            transition: all 0.3s ease;
-        }
-
-        .value-card:hover {
-            border-color: var(--yellow-primary);
-            box-shadow: var(--shadow-lg);
-        }
-
-        .value-card h3 {
-            font-size: 1.5rem;
-            font-weight: 900;
-            margin-bottom: 15px;
-            color: var(--charcoal);
-        }
-
-        .value-card p {
-            color: var(--medium-grey);
-            line-height: 1.6;
-        }
-
-        /* CTA Section */
-        .cta-section {
-            padding: 80px 0;
-            background: 
-                linear-gradient(135deg, rgba(247, 189, 34, 0.95) 0%, rgba(234, 179, 8, 0.95) 100%),
-                url('byron-bay-lighthouse-handyman-service.webp');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            text-align: center;
-        }
-
-        .cta-section h2 {
-            font-size: 2.5rem;
-            font-weight: 900;
-            margin-bottom: 20px;
-            color: var(--charcoal);
-        }
-
-        .cta-section p {
-            font-size: 1.2rem;
-            color: var(--charcoal);
-            margin-bottom: 40px;
-            opacity: 0.8;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background: var(--charcoal);
-            color: var(--white);
-            padding: 16px 32px;
-            border-radius: var(--border-radius);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-        }
-
-        .cta-button:hover {
-            background: var(--dark-grey);
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-lg);
-        }
-
-        /* Footer */
-        .footer {
-            background: var(--charcoal);
-            color: var(--white);
-            padding: 60px 0 20px;
-        }
-
-        .footer-main {
-            margin-bottom: 40px;
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 1.2fr 0.8fr 0.8fr 1fr;
-            gap: 40px;
-        }
-
-        .footer-section h3 {
-            font-size: 1.25rem;
-            font-weight: 900;
-            margin-bottom: 20px;
-            color: var(--white);
-        }
-
-        .brand-logo {
-            font-size: 1.5rem;
-            font-weight: 800;
-            color: var(--yellow-primary);
-            margin-bottom: 20px;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 15px;
-        }
-
-        .contact-item svg {
-            width: 20px;
-            height: 20px;
-            color: var(--yellow-primary);
-        }
-
-        .contact-item a {
-            color: rgba(255, 255, 255, 0.9);
-            text-decoration: none;
-        }
-
-        .contact-item a:hover {
-            color: var(--yellow-primary);
-        }
-
-        .footer-section ul {
-            list-style: none;
-        }
-
-        .footer-section ul li {
-            margin-bottom: 10px;
-        }
-
-        .footer-section ul li a {
-            color: rgba(255, 255, 255, 0.8);
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .footer-section ul li a:hover {
-            color: var(--yellow-primary);
-        }
-
-        .cta-button {
-            background: var(--yellow-primary);
-            color: var(--charcoal);
-            padding: 16px 24px;
-            border: none;
-            border-radius: var(--border-radius);
-            font-weight: 600;
-            font-size: 0.95rem;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-            width: 100%;
-            text-align: center;
-            margin-bottom: 16px;
-            transition: all 0.3s ease;
-        }
-
-        .cta-button:hover {
-            background: var(--yellow-hover);
-            transform: translateY(-2px);
-        }
-
-        .cta-secondary {
-            background: transparent;
-            border: 2px solid rgba(255,255,255,0.3);
-            color: var(--white);
-        }
-
-        .cta-secondary:hover {
-            border-color: var(--yellow-primary);
-            color: var(--yellow-primary);
-            background: transparent;
-        }
-
-        .business-hours {
-            margin-top: 24px;
-            padding: 20px;
-            background: rgba(255,255,255,0.05);
-            border-radius: var(--border-radius);
-            border-left: 4px solid var(--yellow-primary);
-        }
-
-        .business-hours h4 {
-            color: var(--yellow-primary);
-            font-size: 0.875rem;
-            font-weight: 600;
-            margin-bottom: 12px;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        .business-hours p {
-            color: rgba(255,255,255,0.9);
-            font-size: 0.875rem;
-            margin-bottom: 8px;
-        }
-
-        .social-links {
-            display: flex;
-            gap: 12px;
-        }
-
-        .social-link {
-            width: 36px;
-            height: 36px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: rgba(255,255,255,0.7);
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-
-        .social-link:hover {
-            background: var(--yellow-primary);
-            color: var(--charcoal);
-            transform: translateY(-2px);
-        }
-
-        .social-link svg {
-            width: 18px;
-            height: 18px;
-        }
-
-        /* Trust Badges */
-        .trust-badges {
-            display: flex;
-            justify-content: center;
-            gap: 32px;
-            padding: 24px 0;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            margin-top: 24px;
-        }
-
-        .trust-badge {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            color: rgba(255,255,255,0.8);
-            font-size: 0.875rem;
-            font-weight: 500;
-        }
-
-        .trust-badge svg {
-            width: 20px;
-            height: 20px;
-            color: var(--yellow-primary);
-        }
-
-        .footer-bottom {
-            border-top: 1px solid rgba(255,255,255,0.1);
-            padding: 32px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 16px;
-        }
-
-        .footer-bottom-left {
-            color: rgba(255,255,255,0.6);
-            font-size: 0.875rem;
-        }
-
-        .footer-bottom-right {
-            display: flex;
-            gap: 24px;
-            align-items: center;
-        }
-
-        .footer-bottom-right a {
-            color: rgba(255,255,255,0.6);
-            text-decoration: none;
-            font-size: 0.875rem;
-            transition: color 0.3s ease;
-        }
-
-        .footer-bottom-right a:hover {
-            color: var(--yellow-primary);
-        }
-
-        /* Mobile Responsive */
-        @media (max-width: 1024px) {
-            .about-grid {
-                grid-template-columns: 1fr;
-                gap: 40px;
-            }
-        }
-
-        @media (max-width: 968px) {
-            .footer-grid {
-                grid-template-columns: 1fr 1fr;
-                gap: 32px;
-            }
-
-            .brand-section {
-                grid-column: 1 / -1;
-            }
-        }
-
-        @media (max-width: 640px) {
-            .hero {
-                background-attachment: scroll;
-                padding: 100px 0 60px;
-                min-height: 50vh;
-            }
-            
-            .hero-content h1 {
-                font-size: 2.5rem;
-            }
-
-            .about-content h2 {
-                font-size: 2rem;
-            }
-
-            .section-header h2 {
-                font-size: 2rem;
-            }
-
-            .cta-section h2 {
-                font-size: 2rem;
-            }
-
-            .footer-main {
-                padding: 48px 24px 32px;
-            }
-
-            .footer-grid {
-                grid-template-columns: 1fr;
-                gap: 32px;
-            }
-
-            .footer-bottom {
-                padding: 24px;
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .trust-badges {
-                flex-wrap: wrap;
-                gap: 16px;
-            }
-        }
-    </style>
+    <style>:root{--yellow-primary:#FFB800;--yellow-hover:#E6A600;--yellow-light:#FFF9E6;--charcoal:#2D3748;--dark-grey:#4A5568;--medium-grey:#718096;--light-grey:#EDF2F7;--bg-subtle:#F7FAFC;--white:#FFFFFF;--border-radius:12px;--border-radius-lg:16px;--shadow-sm:0 1px 3px rgba(0,0,0,0.1);--shadow-md:0 4px 6px rgba(0,0,0,0.1);--shadow-lg:0 10px 15px rgba(0,0,0,0.1)}*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Nunito',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:16px;line-height:1.6;color:var(--charcoal);background-color:var(--white);padding-top:70px}.container{max-width:1200px;margin:0 auto;padding:0 24px}.header-nav{position:fixed;top:0;left:0;right:0;background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--light-grey);z-index:1000;padding:0}.nav-container{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:70px}.nav-logo a{font-size:1.5rem;font-weight:900;color:var(--charcoal);text-decoration:none}.nav-logo a:hover{color:var(--yellow-primary)}.nav-menu{display:flex;align-items:center;gap:32px}.nav-menu a{color:var(--charcoal);text-decoration:none;font-weight:500;font-size:0.95rem;transition:color 0.3s ease}.nav-menu a:hover{color:var(--yellow-primary)}.nav-dropdown{position:relative}.nav-dropdown:hover .dropdown-content{display:block;opacity:1;transform:translateY(0)}.dropdown-trigger{display:flex;align-items:center;gap:4px}.dropdown-trigger::after{content:"▼";font-size:0.75rem;transition:transform 0.3s}.nav-dropdown:hover .dropdown-trigger::after{transform:rotate(180deg)}.dropdown-content{display:none;position:absolute;top:100%;left:0;background:var(--white);min-width:250px;box-shadow:var(--shadow-lg);border-radius:var(--border-radius);padding:8px 0;margin-top:8px;opacity:0;transform:translateY(-10px);transition:all 0.3s ease;z-index:1000}.dropdown-content a{display:block;padding:12px 20px;color:var(--charcoal);text-decoration:none;font-weight:500;transition:all 0.3s ease;white-space:nowrap}.dropdown-content a:hover{color:var(--yellow-primary);background:var(--yellow-light);transform:translateX(4px)}.dropdown-header{padding:8px 20px;font-weight:700;color:var(--medium-grey);font-size:0.875rem;text-transform:uppercase;letter-spacing:0.05em;border-bottom:1px solid var(--light-grey);margin-bottom:4px}.nav-cta{background:var(--yellow-primary);color:var(--charcoal);padding:8px 16px;border-radius:var(--border-radius);text-decoration:none;font-weight:600;font-size:0.9rem;transition:all 0.3s ease}.nav-cta:hover{background:var(--yellow-hover);transform:translateY(-1px);color:var(--charcoal)}.mobile-menu-btn{display:none;flex-direction:column;background:none;border:none;cursor:pointer;padding:8px;gap:4px}.mobile-menu-btn span{width:24px;height:2px;background:var(--charcoal);border-radius:1px;transition:all 0.3s ease}.mobile-menu{display:none;position:absolute;top:100%;left:0;right:0;background:var(--white);border-top:1px solid var(--light-grey);box-shadow:var(--shadow-lg);z-index:999}.mobile-menu a{display:block;padding:16px 24px;color:var(--charcoal);text-decoration:none;border-bottom:1px solid var(--light-grey);transition:all 0.3s ease}.mobile-menu a:hover{background:var(--yellow-light);color:var(--yellow-primary)}.mobile-dropdown{padding:0}.mobile-dropdown-trigger{position:relative;padding-right:40px !important}.mobile-dropdown-trigger::after{content:"▼";position:absolute;right:24px;top:50%;transform:translateY(-50%);transition:transform 0.3s}.mobile-dropdown.active .mobile-dropdown-trigger::after{transform:translateY(-50%) rotate(180deg)}.mobile-dropdown-content{display:none;background:var(--bg-subtle);padding:8px 0}.mobile-dropdown.active .mobile-dropdown-content{display:block}.mobile-dropdown-content a{padding-left:40px;font-size:0.9rem}@media (max-width:768px){.nav-menu{display:none !important}.mobile-menu-btn{display:flex}.mobile-menu.active{display:block}.nav-container{padding:0 16px}}.hero{background:linear-gradient(rgba(45,55,72,0.7),rgba(74,85,104,0.7)),url('about-hero-background.avif');background-size:cover;background-position:center;background-attachment:fixed;color:var(--white);padding:120px 0 80px;text-align:center;min-height:60vh;display:flex;align-items:center}.hero-content h1{font-size:3rem;font-weight:800;margin-bottom:20px;line-height:1.2}.hero-content p{font-size:1.25rem;margin-bottom:40px;opacity:0.9;max-width:600px;margin-left:auto;margin-right:auto}.about-section{padding:80px 0}.about-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:60px;align-items:center}.about-image{border-radius:var(--border-radius-lg);overflow:hidden;box-shadow:var(--shadow-lg);aspect-ratio:1}.about-image img{width:100%;height:100%;object-fit:cover}.about-content h2{font-size:2.5rem;font-weight:900;margin-bottom:20px;color:var(--charcoal)}.about-content p{font-size:1.1rem;color:var(--medium-grey);margin-bottom:25px;line-height:1.7}.about-content .highlight{color:var(--charcoal);font-weight:600}.experience-section{padding:80px 0;background:var(--bg-subtle)}.experience-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:40px}.experience-card{background:var(--white);padding:40px;border-radius:var(--border-radius-lg);text-align:center;box-shadow:var(--shadow-sm)}.experience-card svg{width:48px;height:48px;color:var(--yellow-primary);margin-bottom:20px}.experience-card h3{font-size:1.25rem;font-weight:900;margin-bottom:15px;color:var(--charcoal)}.experience-card p{color:var(--medium-grey);line-height:1.6}.values-section{padding:80px 0}.section-header{text-align:center;margin-bottom:60px}.section-header h2{font-size:2.5rem;font-weight:900;margin-bottom:20px;color:var(--charcoal)}.section-header p{font-size:1.2rem;color:var(--medium-grey);max-width:600px;margin:0 auto}.values-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px}.value-card{padding:40px;border:2px solid var(--light-grey);border-radius:var(--border-radius-lg);transition:all 0.3s ease}.value-card:hover{border-color:var(--yellow-primary);box-shadow:var(--shadow-lg)}.value-card h3{font-size:1.5rem;font-weight:900;margin-bottom:15px;color:var(--charcoal)}.value-card p{color:var(--medium-grey);line-height:1.6}.cta-section{padding:80px 0;background:linear-gradient(135deg,rgba(247,189,34,0.95) 0%,rgba(234,179,8,0.95) 100%),url('byron-bay-lighthouse-handyman-service.webp');background-size:cover;background-position:center;background-repeat:no-repeat;text-align:center}.cta-section h2{font-size:2.5rem;font-weight:900;margin-bottom:20px;color:var(--charcoal)}.cta-section p{font-size:1.2rem;color:var(--charcoal);margin-bottom:40px;opacity:0.8}.cta-button{display:inline-block;background:var(--charcoal);color:var(--white);padding:16px 32px;border-radius:var(--border-radius);text-decoration:none;font-weight:600;font-size:1.1rem;transition:all 0.3s ease}.cta-button:hover{background:var(--dark-grey);transform:translateY(-2px);box-shadow:var(--shadow-lg)}.footer{background:var(--charcoal);color:var(--white);padding:60px 0 20px}.footer-main{margin-bottom:40px}.footer-grid{display:grid;grid-template-columns:1.2fr 0.8fr 0.8fr 1fr;gap:40px}.footer-section h3{font-size:1.25rem;font-weight:900;margin-bottom:20px;color:var(--white)}.brand-logo{font-size:1.5rem;font-weight:800;color:var(--yellow-primary);margin-bottom:20px}.contact-item{display:flex;align-items:center;gap:12px;margin-bottom:15px}.contact-item svg{width:20px;height:20px;color:var(--yellow-primary)}.contact-item a{color:rgba(255,255,255,0.9);text-decoration:none}.contact-item a:hover{color:var(--yellow-primary)}.footer-section ul{list-style:none}.footer-section ul li{margin-bottom:10px}.footer-section ul li a{color:rgba(255,255,255,0.8);text-decoration:none;transition:color 0.3s ease}.footer-section ul li a:hover{color:var(--yellow-primary)}.cta-button{background:var(--yellow-primary);color:var(--charcoal);padding:16px 24px;border:none;border-radius:var(--border-radius);font-weight:600;font-size:0.95rem;cursor:pointer;text-decoration:none;display:inline-block;width:100%;text-align:center;margin-bottom:16px;transition:all 0.3s ease}.cta-button:hover{background:var(--yellow-hover);transform:translateY(-2px)}.cta-secondary{background:transparent;border:2px solid rgba(255,255,255,0.3);color:var(--white)}.cta-secondary:hover{border-color:var(--yellow-primary);color:var(--yellow-primary);background:transparent}.business-hours{margin-top:24px;padding:20px;background:rgba(255,255,255,0.05);border-radius:var(--border-radius);border-left:4px solid var(--yellow-primary)}.business-hours h4{color:var(--yellow-primary);font-size:0.875rem;font-weight:600;margin-bottom:12px;text-transform:uppercase;letter-spacing:0.05em}.business-hours p{color:rgba(255,255,255,0.9);font-size:0.875rem;margin-bottom:8px}.regional-areas{margin-bottom:20px}.region-group{margin-bottom:16px}.region-group h4{color:var(--yellow-primary);font-size:0.875rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:8px;border-bottom:1px solid rgba(255,255,255,0.1);padding-bottom:4px}.region-group ul{margin-bottom:12px}.region-group li{margin-bottom:8px}.view-all-areas{display:inline-flex;align-items:center;gap:6px;color:var(--yellow-primary);text-decoration:none;font-weight:600;font-size:0.9rem;padding:8px 0;transition:all 0.3s ease}.view-all-areas:hover{color:var(--white);transform:translateX(4px)}.social-links{display:flex;gap:12px}.social-link{width:36px;height:36px;background:rgba(255,255,255,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.7);text-decoration:none;transition:all 0.3s ease}.social-link:hover{background:var(--yellow-primary);color:var(--charcoal);transform:translateY(-2px)}.social-link svg{width:18px;height:18px}.trust-badges{display:flex;justify-content:center;gap:32px;padding:24px 0;border-top:1px solid rgba(255,255,255,0.1);margin-top:24px}.trust-badge{display:flex;align-items:center;gap:8px;color:rgba(255,255,255,0.8);font-size:0.875rem;font-weight:500}.trust-badge svg{width:20px;height:20px;color:var(--yellow-primary)}.footer-bottom{border-top:1px solid rgba(255,255,255,0.1);padding:32px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}.footer-bottom-left{color:rgba(255,255,255,0.6);font-size:0.875rem}.footer-bottom-right{display:flex;gap:24px;align-items:center}.footer-bottom-right a{color:rgba(255,255,255,0.6);text-decoration:none;font-size:0.875rem;transition:color 0.3s ease}.footer-bottom-right a:hover{color:var(--yellow-primary)}@media (max-width:1024px){.about-grid{grid-template-columns:1fr;gap:40px}}@media (max-width:968px){.footer-grid{grid-template-columns:1fr 1fr;gap:32px}.brand-section{grid-column:1 / -1}}@media (max-width:640px){.hero{background-attachment:scroll;padding:100px 0 60px;min-height:50vh}.hero-content h1{font-size:2.5rem}.about-content h2{font-size:2rem}.section-header h2{font-size:2rem}.cta-section h2{font-size:2rem}.footer-main{padding:48px 24px 32px}.footer-grid{grid-template-columns:1fr;gap:32px}.footer-bottom{padding:24px;flex-direction:column;text-align:center}.trust-badges{flex-wrap:wrap;gap:16px}}</style>
     <!-- Enhanced LocalBusiness Schema for SEO -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "GoodHands Handyman Services",
-        "alternateName": "GoodHands",
-        "image": [
-            "https://goodhandshandyman.com.au/hero-handyman-working.webp",
-            "https://goodhandshandyman.com.au/decking_7_upscaled.webp",
-            "https://goodhandshandyman.com.au/about-dan-handyman.avif"
-        ],
-        "logo": "https://goodhandshandyman.com.au/good-hands-logo.png",
-        "telephone": "+61481457271",
-        "email": "danhandywork@gmail.com",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Northern Rivers Region",
-            "addressLocality": "Byron Bay",
-            "addressRegion": "NSW",
-            "postalCode": "2481",
-            "addressCountry": "AU"
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": -28.6474,
-            "longitude": 153.6020
-        },
-        "url": "https://goodhandshandyman.com.au",
-        "@id": "https://www.google.com/maps/place/?cid=12688451943747857598",
-        "areaServed": [
-            {
-                "@type": "City",
-                "name": "Byron Bay",
-                "addressRegion": "NSW"
-            },
-            {
-                "@type": "City", 
-                "name": "Ballina",
-                "addressRegion": "NSW"
-            },
-            {
-                "@type": "City",
-                "name": "Lismore", 
-                "addressRegion": "NSW"
-            },
-            {
-                "@type": "City",
-                "name": "Tweed Heads",
-                "addressRegion": "NSW"
-            },
-            {
-                "@type": "City",
-                "name": "Mullumbimby",
-                "addressRegion": "NSW"
-            },
-            {
-                "@type": "City",
-                "name": "Bangalow",
-                "addressRegion": "NSW"
-            },
-            {
-                "@type": "City",
-                "name": "Lennox Head",
-                "addressRegion": "NSW"
-            },
-            {
-                "@type": "City",
-                "name": "Ocean Shores",
-                "addressRegion": "NSW"
-            }
-        ],
-        "serviceType": [
-            "Emergency Handyman Repairs",
-            "Deck Restoration & Maintenance",
-            "Gutter Cleaning & Maintenance",
-            "Kitchen Cabinet & Door Repairs", 
-            "Fence Installation & Repairs",
-            "Custom Carpentry & Shelving",
-            "Property Maintenance",
-            "Airbnb & Holiday Rental Maintenance",
-            "Furniture Assembly",
-            "Interior & Exterior Painting"
-        ],
-        "priceRange": "$$$",
-        "openingHoursSpecification": [
-            {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                "opens": "07:00",
-                "closes": "18:00"
-            },
-            {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": "Saturday",
-                "opens": "08:00", 
-                "closes": "16:00"
-            }
-        ],
-        "paymentAccepted": "Cash, Bank Transfer, Credit Card",
-        "currenciesAccepted": "AUD",
-        "description": "Professional handyman and property maintenance services across Northern Rivers NSW. Specializing in emergency repairs, deck restoration, gutter cleaning, and all property maintenance needs. Reliable, honest service with upfront pricing.",
-        "foundingDate": "2020",
-        "slogan": "Treating your property like it's our own",
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "5.0",
-            "bestRating": "5",
-            "worstRating": "1",
-            "reviewCount": "47",
-            "ratingCount": "47"
-        },
-        "review": [
-            {
-                "@type": "Review",
-                "author": {
-                    "@type": "Person",
-                    "name": "Sarah Mitchell"
-                },
-                "datePublished": "2025-08-15",
-                "reviewBody": "Dan is absolutely fantastic! Fixed our deck and kitchen cabinets perfectly. Professional, reliable, and fairly priced.",
-                "reviewRating": {
-                    "@type": "Rating",
-                    "ratingValue": "5",
-                    "bestRating": "5"
-                }
-            },
-            {
-                "@type": "Review",
-                "author": {
-                    "@type": "Person",
-                    "name": "James Wilson"
-                },
-                "datePublished": "2025-08-20",
-                "reviewBody": "Emergency repair done quickly and professionally. Dan saved our holiday rental booking! Highly recommend.",
-                "reviewRating": {
-                    "@type": "Rating",
-                    "ratingValue": "5",
-                    "bestRating": "5"
-                }
-            }
-        ],
-        "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Handyman Services",
-            "itemListElement": [
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Emergency Repairs",
-                        "description": "24/7 emergency handyman repairs"
-                    },
-                    "price": "From $120"
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Deck Restoration",
-                        "description": "Complete deck sanding, oiling and restoration"
-                    },
-                    "price": "From $800"
-                }
-            ]
-        },
-        "potentialAction": {
-            "@type": "ReserveAction",
-            "target": {
-                "@type": "EntryPoint",
-                "urlTemplate": "https://goodhandshandyman.com.au/get-quote.html",
-                "inLanguage": "en-AU",
-                "actionPlatform": [
-                    "http://schema.org/DesktopWebPlatform",
-                    "http://schema.org/MobileWebPlatform"
-                ]
-            },
-            "result": {
-                "@type": "Reservation",
-                "name": "Get Quote"
-            }
-        }
-    }
-    </script>
+    <script type="application/ld+json">type="application/ld+json"</script>
 
     <!-- BreadcrumbList Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://goodhandshandyman.com.au"
-            },
-            {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "About",
-                "item": "https://goodhandshandyman.com.au/about.html"
-            }
-        ]
-    }
-    </script>
+    <script type="application/ld+json">type="application/ld+json"</script>
 </head>
 <body>
     <!-- Header Navigation -->
@@ -886,8 +34,28 @@
             </div>
             <nav class="nav-menu">
                 <a href="index.html">Home</a>
-                <a href="services.html">Services</a>
-                <a href="areas.html">Areas</a>
+                <a href="handyman-services-byron-bay.html">Services</a>
+                <div class="nav-dropdown">
+                    <a href="service-areas.html" class="dropdown-trigger">Service Areas</a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-header">Northern Rivers</div>
+                        <a href="handyman-byron-bay.html">Byron Bay</a>
+                        <a href="handyman-ballina.html">Ballina</a>
+                        <a href="handyman-lismore.html">Lismore</a>
+                        <a href="handyman-bangalow.html">Bangalow</a>
+                        <a href="handyman-mullumbimby.html">Mullumbimby</a>
+                        <a href="handyman-lennox-head.html">Lennox Head</a>
+                        <div class="dropdown-header">Tweed Coast</div>
+                        <a href="handyman-kingscliff.html">Kingscliff</a>
+                        <a href="handyman-cabarita-beach.html">Cabarita Beach</a>
+                        <a href="handyman-pottsville.html">Pottsville</a>
+                        <a href="handyman-casuarina.html">Casuarina</a>
+                        <a href="handyman-tweed-heads.html">Tweed Heads</a>
+                        <div class="dropdown-header">Gold Coast Edge</div>
+                        <a href="handyman-burleigh-heads.html">Burleigh Heads</a>
+                        <a href="handyman-currumbin.html">Currumbin</a>
+                    </div>
+                </div>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
                 <a href="tel:0481457271" class="nav-cta">Call Now</a>
@@ -900,7 +68,17 @@
             <div class="mobile-menu" id="mobileMenu">
                 <a href="index.html" onclick="closeMobileMenu()">Home</a>
                 <a href="handyman-services-byron-bay.html" onclick="closeMobileMenu()">Services</a>
-                <a href="areas.html" onclick="closeMobileMenu()">Areas</a>
+                <div class="mobile-dropdown" id="mobileServiceAreas">
+                    <a href="#" class="mobile-dropdown-trigger" onclick="toggleMobileDropdown(event, 'mobileServiceAreas')">Service Areas</a>
+                    <div class="mobile-dropdown-content">
+                        <a href="handyman-byron-bay.html" onclick="closeMobileMenu()">Byron Bay</a>
+                        <a href="handyman-ballina.html" onclick="closeMobileMenu()">Ballina</a>
+                        <a href="handyman-kingscliff.html" onclick="closeMobileMenu()">Kingscliff</a>
+                        <a href="handyman-cabarita-beach.html" onclick="closeMobileMenu()">Cabarita Beach</a>
+                        <a href="handyman-burleigh-heads.html" onclick="closeMobileMenu()">Burleigh Heads</a>
+                        <a href="service-areas.html" onclick="closeMobileMenu()">View All Areas</a>
+                    </div>
+                </div>
                 <a href="about.html" onclick="closeMobileMenu()">About</a>
                 <a href="contact.html" onclick="closeMobileMenu()">Contact</a>
                 <a href="tel:0481457271" onclick="closeMobileMenu()" class="mobile-cta">Call Now</a>
@@ -1062,20 +240,36 @@
                         </ul>
                     </div>
 
-                <!-- <a href="areas.html">Service Areas</a> -->
+                <!-- Coastal Service Areas -->
                 <div class="footer-section service-areas">
-                    <h3>Service Areas</h3>
-                    <ul class="areas-list">
-                        <li><a href="handyman-byron-bay.html">Byron Bay</a></li>
-                        <li><a href="handyman-ballina.html">Ballina</a></li>
-                        <li><a href="handyman-lismore-new.html">Lismore</a></li>
-                        <li><a href="handyman-bangalow.html">Bangalow</a></li>
-                        <li><a href="handyman-mullumbimby.html">Mullumbimby</a></li>
-                        <li><a href="handyman-tweed-heads.html">Tweed Heads</a></li>
-                        <li><a href="handyman-ocean-shores.html">Ocean Shores</a></li>
-                        <li><a href="handyman-lennox-head.html">Lennox Head</a></li>
-                        <li><a href="handyman-south-golden-beach.html">South Golden Beach</a></li>
-                    </ul>
+                    <h3>Coastal Service Areas</h3>
+                    <div class="regional-areas">
+                        <div class="region-group">
+                            <h4>Northern Rivers</h4>
+                            <ul>
+                                <li><a href="handyman-byron-bay.html">Byron Bay</a></li>
+                                <li><a href="handyman-ballina.html">Ballina</a></li>
+                                <li><a href="handyman-lismore.html">Lismore</a></li>
+                                <li><a href="handyman-lennox-head.html">Lennox Head</a></li>
+                            </ul>
+                        </div>
+                        <div class="region-group">
+                            <h4>Tweed Coast</h4>
+                            <ul>
+                                <li><a href="handyman-kingscliff.html">Kingscliff</a></li>
+                                <li><a href="handyman-cabarita-beach.html">Cabarita Beach</a></li>
+                                <li><a href="handyman-tweed-heads.html">Tweed Heads</a></li>
+                            </ul>
+                        </div>
+                        <div class="region-group">
+                            <h4>Gold Coast Edge</h4>
+                            <ul>
+                                <li><a href="handyman-burleigh-heads.html">Burleigh Heads</a></li>
+                                <li><a href="handyman-currumbin.html">Currumbin</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="service-areas.html" class="view-all-areas">View All Areas →</a>
                 </div>
 
                 <!-- Quick Actions -->
@@ -1151,34 +345,29 @@
         </div>
     </footer>
     <script>
-        // Mobile Menu Toggle Functions
         function toggleMobileMenu() {
-            const mobileMenu = document.getElementById('mobileMenu');
-            mobileMenu.classList.toggle('active');
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('active');
         }
 
         function closeMobileMenu() {
-            const mobileMenu = document.getElementById('mobileMenu');
-            mobileMenu.classList.remove('active');
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.remove('active');
+        }
+
+        function toggleMobileDropdown(event, dropdownId) {
+            event.preventDefault();
+            const dropdown = document.getElementById(dropdownId);
+            dropdown.classList.toggle('active');
         }
 
         // Close mobile menu when clicking outside
         document.addEventListener('click', function(event) {
-            const mobileMenu = document.getElementById('mobileMenu');
+            const menu = document.getElementById('mobileMenu');
             const menuBtn = document.querySelector('.mobile-menu-btn');
             
-            if (mobileMenu && menuBtn && !mobileMenu.contains(event.target) && !menuBtn.contains(event.target)) {
-                mobileMenu.classList.remove('active');
-            }
-        });
-
-        // Close mobile menu on window resize
-        window.addEventListener('resize', function() {
-            if (window.innerWidth > 768) {
-                const mobileMenu = document.getElementById('mobileMenu');
-                if (mobileMenu) {
-                    mobileMenu.classList.remove('active');
-                }
+            if (!menu.contains(event.target) && !menuBtn.contains(event.target)) {
+                menu.classList.remove('active');
             }
         });
     </script>
