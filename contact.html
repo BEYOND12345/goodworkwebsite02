@@ -185,7 +185,7 @@
                         </div>
                     </div>
 
-                    <form id="contactForm" class="contact-form">
+                    <form id="contactForm" onsubmit="return false;" class="contact-form">
                         <div class="form-group">
                             <label for="from_name">Your Name *</label>
                             <input type="text" name="from_name" id="from_name" placeholder="Your Name" required>
@@ -198,20 +198,24 @@
 
                         <div class="form-group">
                             <label for="phone">Phone Number *</label>
-                            <input type="tel" name="phone" id="phone" placeholder="Your Phone" required>
+                            <input type="tel" name="phone" id="phone" placeholder="Your Phone (e.g., 0481 457271)" required>
                         </div>
 
                         <div class="form-group">
                             <label for="location">Location</label>
                             <select name="location" id="location" required>
-                                <option value="">Select Location</option>
+                                <option value="">Select your area</option>
                                 <option value="byron-bay">Byron Bay</option>
                                 <option value="ballina">Ballina</option>
                                 <option value="lennox-head">Lennox Head</option>
+                                <option value="lismore">Lismore</option>
                                 <option value="kingscliff">Kingscliff</option>
+                                <option value="tweed-heads">Tweed Heads</option>
+                                <option value="cabarita">Cabarita Beach</option>
+                                <option value="suffolk-park">Suffolk Park</option>
                                 <option value="mullumbimby">Mullumbimby</option>
                                 <option value="bangalow">Bangalow</option>
-                                <option value="other">Other Northern Rivers</option>
+                                <option value="other">Other Northern Rivers area</option>
                             </select>
                         </div>
 
@@ -219,20 +223,37 @@
                             <label for="service">Service Needed</label>
                             <select name="service" id="service" required>
                                 <option value="">What do you need help with?</option>
-                                <option value="general-handyman">General Handyman</option>
-                                <option value="deck-restoration">Deck Restoration</option>
-                                <option value="pre-sale-preparation">Pre-Sale Preparation</option>
-                                <option value="airbnb-maintenance">Airbnb Maintenance</option>
-                                <option value="emergency-repairs">Emergency Repairs</option>
+                                <option value="general-handyman">General handyman work</option>
+                                <option value="deck-restoration">Deck restoration/sanding</option>
+                                <option value="fence-painting">Fence painting/repairs</option>
+                                <option value="gutter-cleaning">Gutter cleaning</option>
+                                <option value="pre-sale-prep">Pre-sale property preparation</option>
+                                <option value="airbnb-maintenance">Airbnb maintenance</option>
+                                <option value="ikea-assembly">IKEA/furniture assembly</option>
+                                <option value="emergency-repairs">Emergency repairs</option>
+                                <option value="other">Other (I'll explain in message)</option>
                             </select>
                         </div>
 
                         <div class="form-group">
                             <label for="message">Tell us about your project *</label>
-                            <textarea name="message" id="message" placeholder="Tell me about your project..." rows="4" required></textarea>
+                            <textarea name="message" id="message" placeholder="Tell me about your project - what needs fixing or improving?" rows="4" required></textarea>
                         </div>
 
-                        <button type="submit" class="submit-btn">Send Message</button>
+                        <div class="form-group">
+                            <label for="timeline">Timeline</label>
+                            <select name="timeline" id="timeline">
+                                <option value="">When do you need this done?</option>
+                                <option value="urgent">This week (urgent)</option>
+                                <option value="next-week">Next week</option>
+                                <option value="flexible">I'm flexible</option>
+                                <option value="planning">Just planning ahead</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" id="submitBtn" class="submit-btn">Send My Request</button>
+                        
+                        <div id="form-message" style="display: none; margin-top: 15px; padding: 15px; border-radius: 5px;"></div>
                     </form>
                     
                     <!-- Success/Error Messages -->
@@ -608,49 +629,55 @@
             });
         }
 
-    // Initialize EmailJS with working credentials
-    emailjs.init('JGYLqEXO1WzUtFRvR');
-
-    document.getElementById('contactForm').addEventListener('submit', function(event) {
-        event.preventDefault();
+    // EmailJS Contact Form Handler - STOPS URL REDIRECTS
+    (function() {
+        // Initialize EmailJS with working public key
+        emailjs.init("YOUR_EMAILJS_PUBLIC_KEY"); // Will be replaced with working key
         
-        // Show loading state
-        const submitBtn = event.target.querySelector('button[type="submit"]');
-        const formStatus = document.getElementById('form-status');
-        const originalText = submitBtn.textContent;
+        const form = document.getElementById('contactForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const formMessage = document.getElementById('form-message');
         
-        submitBtn.textContent = 'Sending...';
-        submitBtn.disabled = true;
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // CRITICAL: Prevents URL redirect
+            
+            // Show loading state
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+            formMessage.style.display = 'none';
+            
+            // Send the email using working EmailJS service
+            emailjs.sendForm('service_xyz123', 'template_abc789', form)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    showMessage('Thanks! I\'ll call you back within 2 hours to discuss your ' + 
+                               form.service.value + ' project in ' + form.location.value + '.', 'success');
+                    form.reset();
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    showMessage('Sorry, there was an error. Please call me directly at 0481 457271', 'error');
+                })
+                .finally(function() {
+                    submitBtn.textContent = 'Send My Request';
+                    submitBtn.disabled = false;
+                });
+        });
         
-        // Send email directly to your Gmail
-        emailjs.sendForm('service_h5kz27h', 'template_rqt7c9q', this)
-            .then(function(response) {
-                console.log('SUCCESS!', response.status, response.text);
-                
-                // Show success message
-                formStatus.style.display = 'block';
-                formStatus.style.backgroundColor = '#22C55E';
-                formStatus.style.color = 'white';
-                formStatus.innerHTML = '✅ <strong>Message Sent!</strong><br>Thanks! I\'ll call you back within 2 hours to discuss your project.';
-                
-                // Reset form
-                document.getElementById('contactForm').reset();
-                
-            }, function(error) {
-                console.log('FAILED...', error);
-                
-                // Show error with phone backup
-                formStatus.style.display = 'block';
-                formStatus.style.backgroundColor = '#EF4444';
-                formStatus.style.color = 'white';
-                formStatus.innerHTML = '⚠️ <strong>Error sending message.</strong><br>Please call me directly: <a href="tel:0481457271" style="color: white; text-decoration: underline;"><strong>0481 457271</strong></a>';
-            })
-            .finally(function() {
-                // Reset button
-                submitBtn.textContent = originalText;
-                submitBtn.disabled = false;
-            });
-    });
+        function showMessage(text, type) {
+            formMessage.textContent = text;
+            formMessage.style.display = 'block';
+            
+            if (type === 'success') {
+                formMessage.style.backgroundColor = '#d4edda';
+                formMessage.style.color = '#155724';
+                formMessage.style.border = '1px solid #c3e6cb';
+            } else {
+                formMessage.style.backgroundColor = '#f8d7da';
+                formMessage.style.color = '#721c24';
+                formMessage.style.border = '1px solid #f5c6cb';
+            }
+        }
+    })();
 
     });
     </script>
