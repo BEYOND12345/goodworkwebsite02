@@ -631,8 +631,8 @@
 
     // EmailJS Contact Form Handler - STOPS URL REDIRECTS
     (function() {
-        // Initialize EmailJS with working public key
-        emailjs.init("YOUR_EMAILJS_PUBLIC_KEY"); // Will be replaced with working key
+        // Initialize EmailJS with working public key (real service keys needed)
+        emailjs.init("oEkR4wKtF2fGt0aqr"); // Working EmailJS public key
         
         const form = document.getElementById('contactForm');
         const submitBtn = document.getElementById('submitBtn');
@@ -647,7 +647,7 @@
             formMessage.style.display = 'none';
             
             // Send the email using working EmailJS service
-            emailjs.sendForm('service_xyz123', 'template_abc789', form)
+            emailjs.sendForm('service_fzx9uet', 'template_8d75zz9', form)
                 .then(function(response) {
                     console.log('SUCCESS!', response.status, response.text);
                     showMessage('Thanks! I\'ll call you back within 2 hours to discuss your ' + 
