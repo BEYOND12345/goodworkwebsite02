@@ -171,7 +171,7 @@
                 <!-- Contact Form -->
                 <div class="contact-form">
                     <h2>Request Your Free Quote</h2>
-                    <form name="contact" method="POST" action="thank-you.html" netlify netlify-honeypot="bot-field">
+                    <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you.html">
                         <input name="bot-field" type="hidden" />
                         
                         <div class="form-group">
@@ -598,6 +598,20 @@
     });
     </script>
     
+    <!-- Hidden form for Netlify detection -->
+    <form name="contact-detect" netlify netlify-honeypot="bot-field" hidden>
+        <input name="bot-field" />
+        <input name="name" />
+        <input name="email" />
+        <input name="phone" />
+        <select name="location">
+            <option value="byron-bay">Byron Bay</option>
+        </select>
+        <select name="service">
+            <option value="kitchen-repairs">Kitchen Repairs</option>
+        </select>
+        <textarea name="message"></textarea>
+    </form>
     
 </body>
 </html>
