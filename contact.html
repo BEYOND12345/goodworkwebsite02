@@ -171,9 +171,9 @@
                 <!-- Contact Form -->
                 <div class="contact-form">
                     <h2>Request Your Free Quote</h2>
-                    <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you.html">
-                        <input name="bot-field" type="hidden" />
-                        
+                    <form method="POST" action="https://formspree.io/f/xkgnzgov">
+                        <input type="hidden" name="_next" value="https://goodhandshandyman.com.au/thank-you.html">
+                        <input type="hidden" name="_subject" value="New Quote Request from GoodHands Website">
                         <div class="form-group">
                             <label for="name">Your Name *</label>
                             <input type="text" id="name" name="name" required>
@@ -598,20 +598,6 @@
     });
     </script>
     
-    <!-- Hidden form for Netlify detection -->
-    <form name="contact-detect" netlify netlify-honeypot="bot-field" hidden>
-        <input name="bot-field" />
-        <input name="name" />
-        <input name="email" />
-        <input name="phone" />
-        <select name="location">
-            <option value="byron-bay">Byron Bay</option>
-        </select>
-        <select name="service">
-            <option value="kitchen-repairs">Kitchen Repairs</option>
-        </select>
-        <textarea name="message"></textarea>
-    </form>
     
 </body>
 </html>
