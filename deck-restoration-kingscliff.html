@@ -13,6 +13,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deck Restoration Kingscliff | Salt Village Coastal Deck Specialists | GoodHands</title>
+    <link rel="canonical" href="https://goodhandshandyman.com.au/deck-restoration-kingscliff.html">
     <meta name="description" content="Professional deck restoration for Kingscliff beachfront properties. Salt Village luxury standards with marine-grade materials for Cudgen Headland coastal conditions. Expert sanding & sealing. Call 0481 457271">
     
     <!-- Schema Markup for Deck Restoration Service -->
@@ -420,7 +421,7 @@
                     <h3>All Kingscliff Handyman Services</h3>
                     <p>Beyond deck restoration, I offer comprehensive handyman services throughout Kingscliff and the Salt Village area. From <a href="airbnb-maintenance-kingscliff.html" style="color: var(--yellow-primary); text-decoration: underline;">Airbnb maintenance</a> for holiday rental properties to general repairs, I understand the unique challenges of coastal properties.</p>
                     
-                    <p>Visit my <a href="handyman-kingscliff.html" style="color: var(--yellow-primary); text-decoration: underline;">Kingscliff Handyman Services</a> page to see the full range of services available in your area, including emergency repairs, gutter cleaning, and property maintenance.</p>
+                    <p>Visit my <a href="handyman-tweed-heads.html" style="color: var(--yellow-primary); text-decoration: underline;">Kingscliff Handyman Services</a> page to see the full range of services available in your area, including emergency repairs, gutter cleaning, and property maintenance.</p>
                     
                     <h4>Other Areas I Service:</h4>
                     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 16px;">
@@ -495,7 +496,7 @@
                 <div class="footer-section service-areas">
                     <h3>Service Areas</h3>
                     <ul class="areas-list">
-                        <li><a href="handyman-kingscliff.html">Kingscliff</a></li>
+                        <li><a href="handyman-tweed-heads.html">Kingscliff</a></li>
                         <li><a href="handyman-cabarita-beach.html">Cabarita Beach</a></li>
                         <li><a href="handyman-byron-bay.html">Byron Bay</a></li>
                         <li><a href="handyman-ballina.html">Ballina</a></li>
@@ -575,5 +576,33 @@
             </div>
         </div>
     </footer>
+
+    <script>
+    // Mobile Menu Toggle
+    document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('active');
+                
+                // Animate hamburger icon
+                const spans = mobileMenuBtn.querySelectorAll('span');
+                spans.forEach(span => span.classList.toggle('active'));
+            });
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+                    mobileMenu.classList.remove('active');
+                    const spans = mobileMenuBtn.querySelectorAll('span');
+                    spans.forEach(span => span.classList.remove('active'));
+                }
+            });
+        }
+    });
+    </script>
+    
 </body>
 </html>

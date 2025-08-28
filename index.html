@@ -6,15 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="theme-color" content="#FFB800">
     <title>GoodHands | Northern Rivers NSW</title>
-    <meta name="description" content="Professional handyman services across Northern Rivers NSW. <a href="emergency-repairs.html">Emergency repairs</a>, <a href="deck-restoration.html">deck restoration</a>, <a href="gutter-cleaning.html">gutter cleaning</a> - treating your property like our own. Call 0481 457271">
-    <meta name="keywords" content="handyman northern rivers, property maintenance byron bay, deck restoration, <a href="kitchen-repairs-byron-bay.html">kitchen repairs</a>, emergency repairs, fence installation">
+    <link rel="canonical" href="https://goodhandshandyman.com.au/">
+    <meta name="description" content="Professional handyman services across Northern Rivers NSW. Emergency repairs, deck restoration, gutter cleaning - treating your property like our own. Call 0481 457271">
+    <meta name="keywords" content="handyman northern rivers, property maintenance byron bay, deck restoration, kitchen repairs, emergency repairs, fence installation">
     <meta name="google-site-verification" content="eeNGqjy4zU7OGzX8pnTTULEd6wRbmiAochOKEs5t6Gs" />
     
     <!-- Schema Markup for Local Business -->
-    <script type="application/ld+json">type="application/ld+json"</script>
-    
-    <!-- Organization Schema -->
-    <script type="application/ld+json">type="application/ld+json"</script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "GoodHands Handyman",
+        "description": "Professional handyman services across Northern Rivers NSW",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Northern Rivers",
+            "addressRegion": "NSW",
+            "addressCountry": "AU"
+        },
+        "telephone": "+61481457271",
+        "email": "info@goodhandshandyman.com.au",
+        "url": "https://goodhandshandyman.com.au",
+        "@id": "https://www.google.com/maps/place/?cid=12688451943747857598",
+        "serviceArea": {
+            "@type": "Place",
+            "name": "Northern Rivers, NSW"
+        },
+        "openingHours": "Mo-Sa 07:00-17:00",
+        "priceRange": "$$"
+    }
+    </script>
     
     <!-- Preload critical resources -->
     <link rel="preload" href="decking_7_upscaled.webp" as="image">
@@ -49,7 +70,7 @@
                         <a href="handyman-mullumbimby.html">Mullumbimby</a>
                         <a href="handyman-lennox-head.html">Lennox Head</a>
                         <div class="dropdown-header">Tweed Coast</div>
-                        <a href="handyman-kingscliff.html">Kingscliff</a>
+                        <a href="handyman-tweed-heads.html">Kingscliff</a>
                         <a href="handyman-cabarita-beach.html">Cabarita Beach</a>
                         <a href="handyman-pottsville.html">Pottsville</a>
                         <a href="handyman-casuarina.html">Casuarina</a>
@@ -76,7 +97,7 @@
                     <div class="mobile-dropdown-content">
                         <a href="handyman-byron-bay.html" onclick="closeMobileMenu()">Byron Bay</a>
                         <a href="handyman-ballina.html" onclick="closeMobileMenu()">Ballina</a>
-                        <a href="handyman-kingscliff.html" onclick="closeMobileMenu()">Kingscliff</a>
+                        <a href="handyman-tweed-heads.html" onclick="closeMobileMenu()">Kingscliff</a>
                         <a href="handyman-cabarita-beach.html" onclick="closeMobileMenu()">Cabarita Beach</a>
                         <a href="handyman-burleigh-heads.html" onclick="closeMobileMenu()">Burleigh Heads</a>
                         <a href="service-areas.html" onclick="closeMobileMenu()">View All Areas</a>
@@ -518,7 +539,7 @@
                         <div class="region-group">
                             <h4>Tweed Coast</h4>
                             <ul>
-                                <li><a href="handyman-kingscliff.html">Kingscliff</a></li>
+                                <li><a href="handyman-tweed-heads.html">Kingscliff</a></li>
                                 <li><a href="handyman-cabarita-beach.html">Cabarita Beach</a></li>
                                 <li><a href="handyman-tweed-heads.html">Tweed Heads</a></li>
                             </ul>
@@ -656,5 +677,33 @@
             closeBookingModal();
         }
     </script>
+
+    <script>
+    // Mobile Menu Toggle
+    document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('active');
+                
+                // Animate hamburger icon
+                const spans = mobileMenuBtn.querySelectorAll('span');
+                spans.forEach(span => span.classList.toggle('active'));
+            });
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+                    mobileMenu.classList.remove('active');
+                    const spans = mobileMenuBtn.querySelectorAll('span');
+                    spans.forEach(span => span.classList.remove('active'));
+                }
+            });
+        }
+    });
+    </script>
+    
 </body>
 </html>

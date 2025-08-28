@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hidden Forms for Netlify Detection</title>
+    <meta name="robots" content="noindex">
+</head>
+<body style="display: none;">
+    <!-- This file helps Netlify detect forms during build -->
+    
+    <!-- Contact Form -->
+    <form name="contact" netlify netlify-honeypot="bot-field" action="/thank-you.html" method="POST">
+        <input name="bot-field" type="hidden" />
+        <input name="name" type="text" />
+        <input name="email" type="email" />
+        <input name="phone" type="tel" />
+        <select name="location">
+            <option value="">Select location</option>
+            <option value="byron-bay">Byron Bay</option>
+            <option value="ballina">Ballina</option>
+            <option value="lismore">Lismore</option>
+            <option value="tweed-heads">Tweed Heads</option>
+            <option value="mullumbimby">Mullumbimby</option>
+            <option value="bangalow">Bangalow</option>
+            <option value="other">Other</option>
+        </select>
+        <select name="service">
+            <option value="">Select service</option>
+            <option value="kitchen-repairs">Kitchen Repairs</option>
+            <option value="deck-restoration">Deck Restoration</option>
+            <option value="gutter-cleaning">Gutter Cleaning</option>
+            <option value="fence-repairs">Fence Repairs</option>
+            <option value="emergency">Emergency</option>
+            <option value="other">Other</option>
+        </select>
+        <textarea name="message"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+    
+    <!-- Test Form -->
+    <form name="test" netlify>
+        <input name="name" type="text" />
+        <input name="email" type="email" />
+        <textarea name="message"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+    
+</body>
+</html>

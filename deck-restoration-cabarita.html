@@ -13,6 +13,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deck Restoration Cabarita Beach | Halcyon House Luxury Standards | GoodHands</title>
+    <link rel="canonical" href="https://goodhandshandyman.com.au/deck-restoration-cabarita.html">
     <meta name="description" content="Premium deck restoration Cabarita Beach. Halcyon House-level luxury standards using marine-grade materials. Award-winning hospitality property maintenance expertise. Call 0481 457271">
     
     <!-- Google Fonts -->
@@ -514,5 +515,33 @@
             <p>&copy; 2024 GoodHands Professional Property Maintenance. Serving Cabarita Beach luxury properties with Halcyon House-level standards.</p>
         </div>
     </footer>
+
+    <script>
+    // Mobile Menu Toggle
+    document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('active');
+                
+                // Animate hamburger icon
+                const spans = mobileMenuBtn.querySelectorAll('span');
+                spans.forEach(span => span.classList.toggle('active'));
+            });
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+                    mobileMenu.classList.remove('active');
+                    const spans = mobileMenuBtn.querySelectorAll('span');
+                    spans.forEach(span => span.classList.remove('active'));
+                }
+            });
+        }
+    });
+    </script>
+    
 </body>
 </html>

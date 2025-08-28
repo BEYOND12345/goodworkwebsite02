@@ -13,6 +13,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Handyman Ballina NSW | GoodHands Property Maintenance</title>
+    <link rel="canonical" href="https://goodhandshandyman.com.au/handyman-ballina.html">
     <meta name="description" content="Ballina handyman services - property maintenance, <a href="deck-restoration.html">deck restoration</a>, <a href="emergency-repairs.html">emergency repairs</a>. Reliable local service across Northern Rivers NSW. Call 0481 457271">
     
     <!-- Google Fonts -->
@@ -222,8 +223,8 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>Handyman Services Ballina</h1>
-            <p class="hero-subtitle">From the Big Prawn to the Richmond River - professional property maintenance across Ballina NSW</p>
+            <h1>Ballina Handyman - Richmond River Property Expert</h1>
+            <p class="hero-subtitle">Specializing in flood-prone properties from East Ballina to Ballina Island. Expert knowledge of Richmond River flood patterns, drainage solutions, and waterfront property maintenance across Ballina NSW.</p>
             <div>
                 <a href="contact.html" class="cta-button">Get Free Quote</a>
                 <a href="tel:0481457271" class="cta-button cta-secondary">Call Now</a>
@@ -235,8 +236,8 @@
     <section class="section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Handyman Services in Ballina</h2>
-                <p class="section-subtitle">Professional property maintenance and repairs throughout Ballina and surrounding areas</p>
+                <h2 class="section-title">Ballina's Flood-Smart Handyman Services</h2>
+                <p class="section-subtitle">Richmond River property expertise - from Ballina Fair to North Creek Road. Specialized maintenance for flood-prone areas, waterfront properties, and heritage homes.</p>
             </div>
             
             <div class="services-grid">
@@ -327,6 +328,37 @@
                 
                 <div class="knowledge-image">
                     <img src="ballina-richmond-river-properties.jpg" alt="Ballina handyman services near Richmond River" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Richmond River Flood Expertise -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Richmond River Flood Expertise</h2>
+                <p class="section-subtitle">Specialized knowledge for Ballina's flood-prone properties - from Ballina Island to North Creek Road</p>
+            </div>
+            
+            <div class="content-with-image">
+                <div class="content-text">
+                    <h3>30+ Years Richmond River Experience</h3>
+                    <p>Living and working in Ballina since the 1990s, I've witnessed every major flood event including 2001, 2017, and 2022. This extensive experience helps me identify vulnerable areas in your property before flooding occurs.</p>
+                    
+                    <p><strong>Flood-Smart Solutions I Provide:</strong></p>
+                    <ul style="margin: 16px 0; padding-left: 20px;">
+                        <li>Elevated storage solutions for flood-prone areas</li>
+                        <li>Drainage improvements around East Ballina properties</li>
+                        <li>Moisture-resistant materials for below-flood-level areas</li>
+                        <li>Quick-deploy flood preparation modifications</li>
+                        <li>Post-flood cleanup and restoration services</li>
+                    </ul>
+                    
+                    <p>Whether your property is near North Creek, Ballina Island, or the Richmond River foreshore, I understand the specific flood risks and can help you prepare and recover.</p>
+                </div>
+                <div class="content-image">
+                    <img src="ballina-richmond-river-handyman-flood-expert.jpg" alt="Ballina flood expert handyman - Richmond River property specialists" loading="lazy">
                 </div>
             </div>
         </div>
@@ -520,7 +552,7 @@
                         <li><a href="handyman-tweed-heads.html">Tweed Heads</a></li>
                         <li><a href="handyman-ocean-shores.html">Ocean Shores</a></li>
                         <li><a href="handyman-lennox-head.html">Lennox Head</a></li>
-                        <li><a href="handyman-south-golden-beach.html">South Golden Beach</a></li>
+                        <li><a href="handyman-ocean-shores.html">South Golden Beach</a></li>
                     </ul>
                 </div>
 
@@ -551,5 +583,33 @@
             </div>
         </div>
     </footer>
+
+    <script>
+    // Mobile Menu Toggle
+    document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('active');
+                
+                // Animate hamburger icon
+                const spans = mobileMenuBtn.querySelectorAll('span');
+                spans.forEach(span => span.classList.toggle('active'));
+            });
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+                    mobileMenu.classList.remove('active');
+                    const spans = mobileMenuBtn.querySelectorAll('span');
+                    spans.forEach(span => span.classList.remove('active'));
+                }
+            });
+        }
+    });
+    </script>
+    
 </body>
 </html>

@@ -13,6 +13,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Good Hands Handyman Cabarita Beach | GoodHands</title>
+    <link rel="canonical" href="https://goodhandshandyman.com.au/handyman-cabarita-beach.html">
     <meta name="description" content="Cabarita Beach handyman specializing in Halcyon House luxury standards, beachfront property maintenance, coastal creek flooding solutions. Premium beachfront property care. Call 0481 457271">
     <meta name="keywords" content="Cabarita Beach handyman, property maintenance cabarita, local handyman, deck repairs cabarita beach, fence installation cabarita">
     
@@ -760,7 +761,7 @@
             </div>
             
             <div class="nearby-areas-grid">
-                <a href="handyman-kingscliff.html" class="nearby-area-card">
+                <a href="handyman-tweed-heads.html" class="nearby-area-card">
                     <div class="area-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
@@ -868,7 +869,7 @@
                     <h3>Service Areas</h3>
                     <ul class="areas-list">
                         <li><a href="handyman-cabarita-beach.html">Cabarita Beach</a></li>
-                        <li><a href="handyman-kingscliff.html">Kingscliff</a></li>
+                        <li><a href="handyman-tweed-heads.html">Kingscliff</a></li>
                         <li><a href="handyman-byron-bay.html">Byron Bay</a></li>
                         <li><a href="handyman-ballina.html">Ballina</a></li>
                         <li><a href="handyman-lismore.html">Lismore</a></li>
@@ -947,5 +948,33 @@
             </div>
         </div>
     </footer>
+
+    <script>
+    // Mobile Menu Toggle
+    document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('active');
+                
+                // Animate hamburger icon
+                const spans = mobileMenuBtn.querySelectorAll('span');
+                spans.forEach(span => span.classList.toggle('active'));
+            });
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+                    mobileMenu.classList.remove('active');
+                    const spans = mobileMenuBtn.querySelectorAll('span');
+                    spans.forEach(span => span.classList.remove('active'));
+                }
+            });
+        }
+    });
+    </script>
+    
 </body>
 </html>

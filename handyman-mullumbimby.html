@@ -13,11 +13,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mullumbimby Handyman | Hinterland Property Maintenance | GoodHands</title>
+    <link rel="canonical" href="https://goodhandshandyman.com.au/handyman-mullumbimby.html">
     <meta name="description" content="Mullumbimby handyman Dan - property maintenance, emergency repairs, deck restoration. Honest pricing, reliable service. Call 0481 457271">
     <meta name="keywords" content="handyman Mullumbimby, hinterland property maintenance, rural handyman, eco-friendly repairs, creek property maintenance">
     
     <!-- Schema Markup for Local Business -->
-    <script type="application/ld+json">type="application/ld+json"</script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "GoodHands Handyman",
+        "description": "Professional handyman services across Northern Rivers NSW",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Northern Rivers",
+            "addressRegion": "NSW",
+            "addressCountry": "AU"
+        },
+        "telephone": "+61481457271",
+        "email": "info@goodhandshandyman.com.au",
+        "url": "https://goodhandshandyman.com.au",
+        "@id": "https://www.google.com/maps/place/?cid=12688451943747857598"
+    }
+    </script>
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -59,8 +77,8 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Mullumbimby Handyman</h1>
-                <p>Professional hinterland property maintenance from the heart of the Byron Shire. Rural properties, eco-friendly repairs, and sustainable building solutions in the green hills.</p>
+                <h1>Mullumbimby Eco-Conscious Handyman</h1>
+                <p>Sustainable property maintenance for Mullumbimby's alternative lifestyle community. Specializing in permaculture properties, eco-homes, sustainable materials, and off-grid systems from Main Arm to Uki.</p>
                 <a href="tel:0481457271" class="hero-cta">Call 0481 457271</a>
             </div>
         </div>
@@ -70,8 +88,8 @@
     <section class="section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Mullumbimby Hinterland Property Services</h2>
-                <p class="section-subtitle">Specialized maintenance for rural properties, sustainable homes, and eco-conscious property care</p>
+                <h2 class="section-title">Sustainable & Alternative Lifestyle Property Services</h2>
+                <p class="section-subtitle">Eco-friendly repairs and maintenance for Mullumbimby's conscious community - from permaculture farms to alternative building techniques</p>
             </div>
 
             <div class="services-grid">
@@ -213,11 +231,44 @@
         </div>
     </section>
 
+    <!-- Sustainable Building & Alternative Living Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Alternative Building & Eco-Living Expertise</h2>
+                <p class="section-subtitle">Supporting Mullumbimby's conscious community with sustainable property solutions from Uki to Main Arm</p>
+            </div>
+            
+            <div class="content-grid">
+                <div class="content-text">
+                    <h3>Permaculture Property Specialist</h3>
+                    <p>Mullumbimby's unique alternative lifestyle community requires property maintenance that aligns with sustainable living principles. I work with natural materials, eco-friendly solutions, and respect for permaculture design.</p>
+                    
+                    <p><strong>Sustainable Services I Provide:</strong></p>
+                    <ul style="margin: 16px 0; padding-left: 20px;">
+                        <li>Straw bale and earth building repairs using traditional techniques</li>
+                        <li>Composting toilet and greywater system maintenance</li>
+                        <li>Solar hot water and off-grid system installations</li>
+                        <li>Natural material deck restoration using eco-friendly stains</li>
+                        <li>Rainwater harvesting system improvements</li>
+                        <li>Vegetable garden infrastructure - raised beds, trellises, greenhouses</li>
+                        <li>Alternative septic system maintenance and upgrades</li>
+                    </ul>
+                    
+                    <p>Understanding the Byron Shire's alternative building regulations, I help maintain unconventional properties while meeting council requirements. From hemp-crete repairs to maintaining tiny house utilities.</p>
+                </div>
+                <div class="content-image">
+                    <img src="mullumbimby-sustainable-handyman-permaculture.jpg" alt="Mullumbimby sustainable handyman - permaculture and eco-friendly property maintenance" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <h2>Ready for Sustainable Mullumbimby Service?</h2>
-            <p>Get your free quote today. Eco-friendly maintenance across all hinterland properties.</p>
+            <h2>Ready for Conscious Mullumbimby Service?</h2>
+            <p>Get your free quote today. Sustainable, eco-friendly maintenance that respects your lifestyle choices.</p>
             <a href="tel:0481457271" class="cta-button">Call 0481 457271</a>
         </div>
     </section>
@@ -302,7 +353,7 @@
                             <li><a href="handyman-tweed-heads.html">Tweed Heads</a></li>
                             <li><a href="handyman-ocean-shores.html">Ocean Shores</a></li>
                             <li><a href="handyman-lennox-head.html">Lennox Head</a></li>
-                            <li><a href="handyman-south-golden-beach.html">South Golden Beach</a></li>
+                            <li><a href="handyman-ocean-shores.html">South Golden Beach</a></li>
                         </ul>
                     </div>
 
@@ -379,5 +430,33 @@
     </footer>
 
     <script></script>
+
+    <script>
+    // Mobile Menu Toggle
+    document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('active');
+                
+                // Animate hamburger icon
+                const spans = mobileMenuBtn.querySelectorAll('span');
+                spans.forEach(span => span.classList.toggle('active'));
+            });
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+                    mobileMenu.classList.remove('active');
+                    const spans = mobileMenuBtn.querySelectorAll('span');
+                    spans.forEach(span => span.classList.remove('active'));
+                }
+            });
+        }
+    });
+    </script>
+    
 </body>
 </html>

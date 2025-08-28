@@ -13,6 +13,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Handyman Services Byron Bay | All Northern Rivers Services | GoodHands</title>
+    <link rel="canonical" href="https://goodhandshandyman.com.au/handyman-services-byron-bay.html">
     <meta name="description" content="Byron Bay handyman services - emergency repairs, deck restoration, property maintenance. Local expertise, competitive pricing - 0481 457271">
     
     <!-- Google Fonts -->
@@ -41,7 +42,7 @@
                         <a href="handyman-mullumbimby.html">Mullumbimby</a>
                         <a href="handyman-lennox-head.html">Lennox Head</a>
                         <div class="dropdown-header">Tweed Coast</div>
-                        <a href="handyman-kingscliff.html">Kingscliff</a>
+                        <a href="handyman-tweed-heads.html">Kingscliff</a>
                         <a href="handyman-cabarita-beach.html">Cabarita Beach</a>
                         <a href="handyman-pottsville.html">Pottsville</a>
                         <a href="handyman-casuarina.html">Casuarina</a>
@@ -68,7 +69,7 @@
                     <div class="mobile-dropdown-content">
                         <a href="handyman-byron-bay.html" onclick="closeMobileMenu()">Byron Bay</a>
                         <a href="handyman-ballina.html" onclick="closeMobileMenu()">Ballina</a>
-                        <a href="handyman-kingscliff.html" onclick="closeMobileMenu()">Kingscliff</a>
+                        <a href="handyman-tweed-heads.html" onclick="closeMobileMenu()">Kingscliff</a>
                         <a href="handyman-cabarita-beach.html" onclick="closeMobileMenu()">Cabarita Beach</a>
                         <a href="handyman-burleigh-heads.html" onclick="closeMobileMenu()">Burleigh Heads</a>
                         <a href="service-areas.html" onclick="closeMobileMenu()">View All Areas</a>
@@ -344,7 +345,7 @@
                     <p class="service-description">Flyscreen repair and replacement, window hardware fixes, sliding door adjustments.</p>
                     <div class="service-details">Screen mesh replacement, frame repair, roller track cleaning, security screen installation</div>
                     <div class="service-price">From $80</div>
-                    <a href="flyscreen-repairs.html" class="service-link">
+                    <a href="door-repairs.html" class="service-link">
                         Fix My Screens
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <line x1="7" y1="17" x2="17" y2="7"/>
@@ -417,7 +418,7 @@
                     <p class="service-description">Pre-inspection repairs, cosmetic improvements, and compliance work for property sales.</p>
                     <div class="service-details">Building inspection preparation, compliance checks, value-adding improvements</div>
                     <div class="service-price">From $400</div>
-                    <a href="property-maintenance.html" class="service-link">
+                    <a href="handyman-services-byron-bay.html" class="service-link">
                         Prep for Sale
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <line x1="7" y1="17" x2="17" y2="7"/>
@@ -439,7 +440,7 @@
                     <p class="service-description">Security door installation, window locks, safety rails, and lighting installation.</p>
                     <div class="service-details">Security-grade hardware, motion sensors, timer switches, compliance standards</div>
                     <div class="service-price">From $250</div>
-                    <a href="security-installation.html" class="service-link">
+                    <a href="handyman-services-byron-bay.html" class="service-link">
                         Secure My Home
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <line x1="7" y1="17" x2="17" y2="7"/>
@@ -602,7 +603,7 @@
                         <div class="region-group">
                             <h4>Tweed Coast</h4>
                             <ul>
-                                <li><a href="handyman-kingscliff.html">Kingscliff</a></li>
+                                <li><a href="handyman-tweed-heads.html">Kingscliff</a></li>
                                 <li><a href="handyman-cabarita-beach.html">Cabarita Beach</a></li>
                                 <li><a href="handyman-tweed-heads.html">Tweed Heads</a></li>
                             </ul>
@@ -715,5 +716,33 @@
             }
         });
     </script>
+
+    <script>
+    // Mobile Menu Toggle
+    document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('active');
+                
+                // Animate hamburger icon
+                const spans = mobileMenuBtn.querySelectorAll('span');
+                spans.forEach(span => span.classList.toggle('active'));
+            });
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+                    mobileMenu.classList.remove('active');
+                    const spans = mobileMenuBtn.querySelectorAll('span');
+                    spans.forEach(span => span.classList.remove('active'));
+                }
+            });
+        }
+    });
+    </script>
+    
 </body>
 </html>

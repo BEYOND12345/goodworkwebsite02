@@ -13,11 +13,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kitchen Door Repairs Northern Rivers | GoodHands</title>
+    <link rel="canonical" href="https://goodhandshandyman.com.au/kitchen-door-repairs-service-page.html">
     <meta name="description" content="Professional kitchen door repair services. Cabinet hinges, handles, drawer adjustments. Northern Rivers NSW expertise. Call 0481 457271">
     <meta name="keywords" content="kitchen door repairs northern rivers, cupboard door repairs byron bay, kitchen cabinet repairs ballina, broken hinges lismore, drawer sliders tweed heads">
     
     <!-- Schema Markup for Local Business -->
-    <script type="application/ld+json">type="application/ld+json"</script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "GoodHands Handyman",
+        "description": "Professional handyman services across Northern Rivers NSW",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Northern Rivers",
+            "addressRegion": "NSW",
+            "addressCountry": "AU"
+        },
+        "telephone": "+61481457271",
+        "email": "info@goodhandshandyman.com.au",
+        "url": "https://goodhandshandyman.com.au",
+        "@id": "https://www.google.com/maps/place/?cid=12688451943747857598"
+    }
+    </script>
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -333,7 +351,7 @@
                         <li><a href="handyman-tweed-heads.html">Tweed Heads</a></li>
                         <li><a href="handyman-ocean-shores.html">Ocean Shores</a></li>
                         <li><a href="handyman-lennox-head.html">Lennox Head</a></li>
-                        <li><a href="handyman-south-golden-beach.html">South Golden Beach</a></li>
+                        <li><a href="handyman-ocean-shores.html">South Golden Beach</a></li>
                     </ul>
                 </div>
 
@@ -407,5 +425,33 @@
             </div>
         </div>
     </footer>
+
+    <script>
+    // Mobile Menu Toggle
+    document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('active');
+                
+                // Animate hamburger icon
+                const spans = mobileMenuBtn.querySelectorAll('span');
+                spans.forEach(span => span.classList.toggle('active'));
+            });
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+                    mobileMenu.classList.remove('active');
+                    const spans = mobileMenuBtn.querySelectorAll('span');
+                    spans.forEach(span => span.classList.remove('active'));
+                }
+            });
+        }
+    });
+    </script>
+    
 </body>
 </html>

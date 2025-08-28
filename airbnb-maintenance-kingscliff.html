@@ -13,6 +13,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Airbnb Maintenance Kingscliff | Salt Village Holiday Rental Specialists | GoodHands</title>
+    <link rel="canonical" href="https://goodhandshandyman.com.au/airbnb-maintenance-kingscliff.html">
     <meta name="description" content="Professional Airbnb maintenance Kingscliff. Salt Village luxury holiday rental property care, rapid turnarounds, premium guest standards. Protect your bookings. Call 0481 457271">
     
     <!-- Google Fonts -->
@@ -386,7 +387,7 @@
                     </div>
                     <h4>Premium Deck Restoration</h4>
                 </a>
-                <a href="handyman-kingscliff.html" class="service-card" title="General Handyman Services Kingscliff">
+                <a href="handyman-tweed-heads.html" class="service-card" title="General Handyman Services Kingscliff">
                     <div class="service-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
@@ -448,7 +449,7 @@
                     <h3>All Kingscliff Handyman Services</h3>
                     <p>Beyond Airbnb maintenance, I offer comprehensive handyman services throughout Kingscliff and the Salt Village area. From <a href="deck-restoration-kingscliff.html" style="color: var(--yellow-primary); text-decoration: underline;">deck restoration</a> for beachfront properties to emergency repairs, I understand the unique challenges of coastal holiday rentals.</p>
                     
-                    <p>Visit my <a href="handyman-kingscliff.html" style="color: var(--yellow-primary); text-decoration: underline;">Kingscliff Handyman Services</a> page to see the full range of services available for your property, including general maintenance, repairs, and property care.</p>
+                    <p>Visit my <a href="handyman-tweed-heads.html" style="color: var(--yellow-primary); text-decoration: underline;">Kingscliff Handyman Services</a> page to see the full range of services available for your property, including general maintenance, repairs, and property care.</p>
                     
                     <h4>Holiday Rental Maintenance in Other Areas:</h4>
                     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 16px;">
@@ -511,7 +512,7 @@
                     <ul>
                         <li><a href="airbnb-maintenance-kingscliff.html" class="service-link popular">Airbnb Maintenance</a></li>
                         <li><a href="deck-restoration-kingscliff.html" class="service-link">Premium Deck Care</a></li>
-                        <li><a href="handyman-kingscliff.html" class="service-link">Luxury Property Care</a></li>
+                        <li><a href="handyman-tweed-heads.html" class="service-link">Luxury Property Care</a></li>
                         <li><a href="emergency-repairs.html" class="service-link">Emergency Response</a></li>
                         <li><a href="painting-services.html" class="service-link">Premium Finishes</a></li>
                         <li><a href="custom-carpentry.html" class="service-link">Bespoke Solutions</a></li>
@@ -603,5 +604,33 @@
             </div>
         </div>
     </footer>
+
+    <script>
+    // Mobile Menu Toggle
+    document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('active');
+                
+                // Animate hamburger icon
+                const spans = mobileMenuBtn.querySelectorAll('span');
+                spans.forEach(span => span.classList.toggle('active'));
+            });
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+                    mobileMenu.classList.remove('active');
+                    const spans = mobileMenuBtn.querySelectorAll('span');
+                    spans.forEach(span => span.classList.remove('active'));
+                }
+            });
+        }
+    });
+    </script>
+    
 </body>
 </html>

@@ -13,11 +13,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flooring Installation Byron Bay | Laminate Flooring Northern Rivers | GoodHands</title>
+    <link rel="canonical" href="https://goodhandshandyman.com.au/flooring-installation.html">
     <meta name="description" content="Professional flooring installation Northern Rivers NSW. Vinyl, laminate, timber specialists. Quality workmanship guaranteed. Call 0481 457271">
     <meta name="keywords" content="laminate flooring byron bay, flooring installation northern rivers, timber floor repairs, transition strips, subfloor preparation, flooring ballina">
     
     <!-- Schema Markup for Service -->
-    <script type="application/ld+json">type="application/ld+json"</script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "GoodHands Handyman",
+        "description": "Professional handyman services across Northern Rivers NSW",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Northern Rivers",
+            "addressRegion": "NSW",
+            "addressCountry": "AU"
+        },
+        "telephone": "+61481457271",
+        "email": "info@goodhandshandyman.com.au",
+        "url": "https://goodhandshandyman.com.au",
+        "@id": "https://www.google.com/maps/place/?cid=12688451943747857598"
+    }
+    </script>
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -323,5 +341,33 @@
         </div>
     </footer>
     <script></script>
+
+    <script>
+    // Mobile Menu Toggle
+    document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('active');
+                
+                // Animate hamburger icon
+                const spans = mobileMenuBtn.querySelectorAll('span');
+                spans.forEach(span => span.classList.toggle('active'));
+            });
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+                    mobileMenu.classList.remove('active');
+                    const spans = mobileMenuBtn.querySelectorAll('span');
+                    spans.forEach(span => span.classList.remove('active'));
+                }
+            });
+        }
+    });
+    </script>
+    
 </body>
 </html>

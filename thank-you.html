@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - GoodHands Handyman | Quote Request Received</title>
+    <link rel="canonical" href="https://goodhandshandyman.com.au/thank-you.html">
+    <meta name="description" content="Thank you for your quote request. We'll get back to you within 24 hours with your free handyman quote.">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --yellow-primary: #FFB800;
+            --yellow-hover: #E6A600;
+            --yellow-light: #FFF9E6;
+            --charcoal: #2D3748;
+            --dark-grey: #4A5568;
+            --medium-grey: #718096;
+            --light-grey: #EDF2F7;
+            --bg-subtle: #F7FAFC;
+            --white: #FFFFFF;
+            --success: #22C55E;
+            --border-radius: 12px;
+            --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--charcoal);
+            background-color: var(--white);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .thank-you-section {
+            padding: 120px 0;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .thank-you-content {
+            width: 100%;
+        }
+
+        .success-icon {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 40px;
+            background: var(--success);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: successPulse 2s ease-in-out infinite;
+        }
+
+        @keyframes successPulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .success-icon svg {
+            width: 50px;
+            height: 50px;
+            color: white;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 800;
+            color: var(--charcoal);
+            margin-bottom: 24px;
+        }
+
+        .success-message {
+            font-size: 1.25rem;
+            color: var(--dark-grey);
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.7;
+        }
+
+        .next-steps {
+            background: var(--yellow-light);
+            border-radius: var(--border-radius);
+            padding: 40px;
+            margin: 40px 0;
+            text-align: left;
+        }
+
+        .next-steps h2 {
+            color: var(--charcoal);
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .next-steps ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .next-steps li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .next-steps li::before {
+            content: "✓";
+            color: var(--success);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 16px 32px;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: var(--yellow-primary);
+            color: var(--charcoal);
+        }
+
+        .btn-primary:hover {
+            background: var(--yellow-hover);
+            transform: translateY(-2px);
+            color: var(--charcoal);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--charcoal);
+            border: 2px solid var(--charcoal);
+        }
+
+        .btn-secondary:hover {
+            background: var(--charcoal);
+            color: var(--white);
+        }
+
+        .contact-info {
+            margin-top: 60px;
+            padding: 40px;
+            background: var(--bg-subtle);
+            border-radius: var(--border-radius);
+        }
+
+        .contact-info h3 {
+            color: var(--charcoal);
+            margin-bottom: 20px;
+        }
+
+        .contact-details {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-item svg {
+            width: 20px;
+            height: 20px;
+            color: var(--yellow-primary);
+        }
+
+        .contact-item a {
+            color: var(--charcoal);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-item a:hover {
+            color: var(--yellow-primary);
+        }
+
+        @media (max-width: 768px) {
+            .thank-you-section {
+                padding: 80px 0;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-details {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .next-steps {
+                padding: 30px 20px;
+                text-align: center;
+            }
+
+            .next-steps ul {
+                text-align: left;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="thank-you-section">
+        <div class="container">
+            <div class="thank-you-content">
+                <div class="success-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                        <polyline points="20,6 9,17 4,12"/>
+                    </svg>
+                </div>
+                
+                <h1>Thank You!</h1>
+                
+                <p class="success-message">
+                    Your quote request has been received successfully. I'll review your project details and get back to you with a free, no-obligation quote within 24 hours.
+                </p>
+
+                <div class="next-steps">
+                    <h2>What happens next?</h2>
+                    <ul>
+                        <li>I'll review your project details and requirements</li>
+                        <li>If needed, I'll call to clarify any specifics about the work</li>
+                        <li>You'll receive a detailed quote within 24 hours</li>
+                        <li>Emergency requests get same-day response</li>
+                    </ul>
+                </div>
+
+                <div class="cta-buttons">
+                    <a href="index.html" class="btn btn-primary">Back to Homepage</a>
+                    <a href="handyman-services-byron-bay.html" class="btn btn-secondary">View All Services</a>
+                </div>
+
+                <div class="contact-info">
+                    <h3>Need to reach me urgently?</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <a href="tel:0481457271">0481 457271</a>
+                        </div>
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <a href="mailto:danhandywork@gmail.com">danhandywork@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Netlify success page redirect script -->
+    <script>
+        // Auto redirect after 10 seconds (optional)
+        // setTimeout(() => {
+        //     window.location.href = '/';
+        // }, 10000);
+    </script>
+</body>
+</html>

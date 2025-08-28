@@ -13,11 +13,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lennox Head Handyman | Beachfront Property Maintenance | GoodHands</title>
+    <link rel="canonical" href="https://goodhandshandyman.com.au/handyman-lennox-head.html">
     <meta name="description" content="Lennox Head handyman services - reliable property maintenance, emergency repairs, deck restoration. Local Northern Rivers expertise. Call 0481 457271">
     <meta name="keywords" content="handyman Lennox Head, beachfront property maintenance, surf shack repairs, coastal handyman, salt air protection">
     
     <!-- Schema Markup for Local Business -->
-    <script type="application/ld+json">type="application/ld+json"</script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "GoodHands Handyman",
+        "description": "Professional handyman services across Northern Rivers NSW",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Northern Rivers",
+            "addressRegion": "NSW",
+            "addressCountry": "AU"
+        },
+        "telephone": "+61481457271",
+        "email": "info@goodhandshandyman.com.au",
+        "url": "https://goodhandshandyman.com.au",
+        "@id": "https://www.google.com/maps/place/?cid=12688451943747857598"
+    }
+    </script>
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -59,8 +77,8 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Lennox Head Handyman</h1>
-                <p>Professional beachfront property maintenance from Seven Mile Beach to Skennars Head. Surf shack repairs, coastal property care, and salt air protection for your beach lifestyle.</p>
+                <h1>Lennox Head Surf Culture Handyman</h1>
+                <p>Beachfront property specialist serving Seven Mile Beach to Skennars Head. From surf shacks to luxury beach houses - maintaining your coastal lifestyle with surf-culture understanding and marine-grade solutions.</p>
                 <a href="tel:0481457271" class="hero-cta">Call 0481 457271</a>
             </div>
         </div>
@@ -70,8 +88,8 @@
     <section class="section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Lennox Head Beachfront Property Services</h2>
-                <p class="section-subtitle">Specialized maintenance for surf shacks, beach houses, and coastal properties</p>
+                <h2 class="section-title">Seven Mile Beach Property Specialist</h2>
+                <p class="section-subtitle">From surf shacks to luxury beach houses - maintaining Lennox Head's unique coastal lifestyle properties</p>
             </div>
 
             <div class="services-grid">
@@ -209,11 +227,44 @@
         </div>
     </section>
 
+    <!-- Seven Mile Beach Expertise Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Seven Mile Beach Surf Culture Specialist</h2>
+                <p class="section-subtitle">Understanding the unique needs of Lennox Head's surf lifestyle and beachfront community</p>
+            </div>
+            
+            <div class="content-grid">
+                <div class="content-text">
+                    <h3>Surf Culture Property Expertise</h3>
+                    <p>Lennox Head's legendary right-hand point break attracts surfers worldwide, creating a unique property landscape from budget surf shacks to luxury beachfront retreats. I understand the surf culture and the specific maintenance needs this lifestyle creates.</p>
+                    
+                    <p><strong>Surf Lifestyle Property Solutions:</strong></p>
+                    <ul style="margin: 16px 0; padding-left: 20px;">
+                        <li>Surf board storage solutions - racks, hooks, and protected storage areas</li>
+                        <li>Outdoor shower installations and maintenance for post-surf rinse</li>
+                        <li>Salt water and sand damage prevention and repair</li>
+                        <li>Weatherproofing for constant sea breeze exposure</li>
+                        <li>Coastal deck and veranda maintenance using marine-grade materials</li>
+                        <li>Quick-dry ventilation solutions for surf equipment storage</li>
+                        <li>Holiday rental turnover maintenance for surf tourism properties</li>
+                    </ul>
+                    
+                    <p>From Pat Morton Lookout to Lake Ainsworth, I maintain properties that serve Lennox's tight-knit surf community. Whether it's a beachside shack or a modern retreat overlooking Seven Mile Beach, I respect the surf culture and lifestyle.</p>
+                </div>
+                <div class="content-image">
+                    <img src="lennox-head-surf-culture-handyman-seven-mile-beach.jpg" alt="Lennox Head surf culture handyman specialist - Seven Mile Beach property expert" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <h2>Ready for Expert Lennox Head Service?</h2>
-            <p>Get your free quote today. Beachfront property maintenance from Seven Mile Beach to Skennars Head.</p>
+            <h2>Ready for Surf-Smart Lennox Head Service?</h2>
+            <p>Get your free quote today. Beachfront property maintenance that understands the surf lifestyle from Seven Mile Beach to Skennars Head.</p>
             <a href="tel:0481457271" class="cta-button">Call 0481 457271</a>
         </div>
     </section>
@@ -298,7 +349,7 @@
                             <li><a href="handyman-tweed-heads.html">Tweed Heads</a></li>
                             <li><a href="handyman-ocean-shores.html">Ocean Shores</a></li>
                             <li><a href="handyman-lennox-head.html">Lennox Head</a></li>
-                            <li><a href="handyman-south-golden-beach.html">South Golden Beach</a></li>
+                            <li><a href="handyman-ocean-shores.html">South Golden Beach</a></li>
                         </ul>
                     </div>
 
@@ -374,5 +425,33 @@
         </div>
     </footer>
     <script></script>
+
+    <script>
+    // Mobile Menu Toggle
+    document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('active');
+                
+                // Animate hamburger icon
+                const spans = mobileMenuBtn.querySelectorAll('span');
+                spans.forEach(span => span.classList.toggle('active'));
+            });
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+                    mobileMenu.classList.remove('active');
+                    const spans = mobileMenuBtn.querySelectorAll('span');
+                    spans.forEach(span => span.classList.remove('active'));
+                }
+            });
+        }
+    });
+    </script>
+    
 </body>
 </html>

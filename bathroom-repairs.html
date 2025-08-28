@@ -12,12 +12,30 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom Carpentry Services | Northern Rivers NSW | GoodHands</title>
+    <title>Bathroom Repairs Northern Rivers | Plumbing & Tiling Services | GoodHands</title>
+    <link rel="canonical" href="https://goodhandshandyman.com.au/bathroom-repairs.html">
     <meta name="description" content="Custom carpentry Northern Rivers NSW. Built-in storage, shelving, feature walls. Quality craftsmanship, sustainable timber. Call 0481 457271">
     <meta name="keywords" content="custom carpentry northern rivers, built-in storage, custom shelving, outdoor structures, bespoke joinery, carpenter byron bay">
     
     <!-- Schema Markup for Service -->
-    <script type="application/ld+json">type="application/ld+json"</script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "GoodHands Handyman",
+        "description": "Professional handyman services across Northern Rivers NSW",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Northern Rivers",
+            "addressRegion": "NSW",
+            "addressCountry": "AU"
+        },
+        "telephone": "+61481457271",
+        "email": "info@goodhandshandyman.com.au",
+        "url": "https://goodhandshandyman.com.au",
+        "@id": "https://www.google.com/maps/place/?cid=12688451943747857598"
+    }
+    </script>
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -244,7 +262,7 @@
                             <li><a href="handyman-tweed-heads.html">Tweed Heads</a></li>
                             <li><a href="handyman-ocean-shores.html">Ocean Shores</a></li>
                             <li><a href="handyman-lennox-head.html">Lennox Head</a></li>
-                            <li><a href="handyman-south-golden-beach.html">South Golden Beach</a></li>
+                            <li><a href="handyman-ocean-shores.html">South Golden Beach</a></li>
                         </ul>
                     </div>
 
@@ -320,5 +338,33 @@
         </div>
     </footer>
     <script></script>
+
+    <script>
+    // Mobile Menu Toggle
+    document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('active');
+                
+                // Animate hamburger icon
+                const spans = mobileMenuBtn.querySelectorAll('span');
+                spans.forEach(span => span.classList.toggle('active'));
+            });
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+                    mobileMenu.classList.remove('active');
+                    const spans = mobileMenuBtn.querySelectorAll('span');
+                    spans.forEach(span => span.classList.remove('active'));
+                }
+            });
+        }
+    });
+    </script>
+    
 </body>
 </html>

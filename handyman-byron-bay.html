@@ -13,6 +13,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Good Hands Handyman Byron Bay | Arts & Industry Estate to Cape Byron Lighthouse | GoodHands</title>
+    <link rel="canonical" href="https://goodhandshandyman.com.au/handyman-byron-bay.html">
     <meta name="description" content="Byron Bay handyman specializing in Arts & Industry Estate creative properties, Cape Byron Lighthouse heritage compliance, Tallow Beach salt air damage. Marine-grade coastal solutions. Call 0481 457271">
     <meta name="keywords" content="handyman Byron Bay, Arts Industry Estate, kitchen cupboard doors, deck restoration Byron Bay, lighthouse heritage area">
     
@@ -225,8 +226,8 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Good Hands Handyman Byron Bay</h1>
-                <p class="hero-tagline">Arts & Industry Estate to Cape Byron Lighthouse - I specialize in Byron Bay's eclectic property mix, heritage compliance, and extreme coastal conditions.</p>
+                <h1>Byron Bay Premier Property Handyman</h1>
+                <p class="hero-tagline">From Arts & Industry Estate creative studios to Cape Byron Lighthouse heritage zone - specialist maintenance for Byron Bay's premium properties, extreme coastal conditions, and council heritage requirements.</p>
                 
                 <button class="cta-primary" onclick="openBookingModal()">
                     Get Free Quote
@@ -286,7 +287,7 @@
                     <h3 class="service-title">Arts & Industry Estate Maintenance</h3>
                     <p class="service-description">The most exciting commercial estate in the region needs specialized care. I maintain creative businesses and residential conversions using commercial-grade materials and understanding unique mixed-use challenges.</p>
                     <div class="service-price">From $150</div>
-                    <a href="kitchen-cupboard-door-wont-close-byron-bay.html" class="service-link">
+                    <a href="kitchen-door-repairs-northern-rivers.html" class="service-link">
                         Fix My Kitchen Doors
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <line x1="7" y1="17" x2="17" y2="7"/>
@@ -305,7 +306,7 @@
                     <h3 class="service-title">Marine-Grade Deck Solutions</h3>
                     <p class="service-description">Byron Bay's subtropical coastal climate causes accelerated timber deterioration from salt and sand blown into the grain. I use marine-grade products specifically tested for our extreme conditions.</p>
                     <div class="service-price">From $35/m²</div>
-                    <a href="deck-looks-grey-splintery-byron-bay.html" class="service-link">
+                    <a href="deck-restoration-byron-bay.html" class="service-link">
                         Restore My Deck
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <line x1="7" y1="17" x2="17" y2="7"/>
@@ -402,6 +403,39 @@
             </div>
             <div class="content-image">
                 <img src="handyman-byron-bay-professional-service.avif" alt="Professional handyman services Byron Bay - Arts Industry Estate to Lighthouse heritage area" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Byron Bay Extreme Coastal Conditions Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Byron Bay's Extreme Coastal Environment</h2>
+                <p class="section-subtitle">Specialized solutions for Australia's easternmost point - where salt air meets lighthouse heritage</p>
+            </div>
+            
+            <div class="content-with-image">
+                <div class="content-text">
+                    <h3>Cape Byron's Unique Challenges</h3>
+                    <p>Being Australia's easternmost point means Byron Bay properties face the most intense coastal conditions in the country. From Arts & Industry Estate workshops to clifftop mansions overlooking Julian Rocks, every property needs specialized maintenance.</p>
+                    
+                    <p><strong>Byron Bay Coastal Solutions:</strong></p>
+                    <ul style="margin: 16px 0; padding-left: 20px;">
+                        <li>Marine-grade stainless steel fixings for all coastal installations</li>
+                        <li>Salt-resistant timber treatments for beachfront properties</li>
+                        <li>Tallow Beach sand damage protection and restoration</li>
+                        <li>Cape Byron lighthouse heritage-approved materials and methods</li>
+                        <li>UV-resistant painting systems for extreme sun exposure</li>
+                        <li>Cyclone-rated repairs and reinforcements</li>
+                        <li>Creative space modifications for Arts & Industry Estate properties</li>
+                    </ul>
+                    
+                    <p>Whether you're maintaining a multi-million dollar Wategos clifftop property, a creative studio in Arts & Industry Estate, or a heritage cottage near the lighthouse, I use materials and methods proven in Byron Bay's challenging environment.</p>
+                </div>
+                <div class="content-image">
+                    <img src="byron-bay-extreme-coastal-handyman-cape-byron.jpg" alt="Byron Bay extreme coastal conditions handyman - Cape Byron specialist" loading="lazy">
+                </div>
             </div>
         </div>
     </section>
@@ -716,7 +750,7 @@
                         <li><a href="handyman-tweed-heads.html">Tweed Heads</a></li>
                         <li><a href="handyman-ocean-shores.html">Ocean Shores</a></li>
                         <li><a href="handyman-lennox-head.html">Lennox Head</a></li>
-                        <li><a href="handyman-south-golden-beach.html">South Golden Beach</a></li>
+                        <li><a href="handyman-ocean-shores.html">South Golden Beach</a></li>
                     </ul>
                 </div>
 
@@ -790,5 +824,33 @@
             </div>
         </div>
     </footer>
+
+    <script>
+    // Mobile Menu Toggle
+    document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('active');
+                
+                // Animate hamburger icon
+                const spans = mobileMenuBtn.querySelectorAll('span');
+                spans.forEach(span => span.classList.toggle('active'));
+            });
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+                    mobileMenu.classList.remove('active');
+                    const spans = mobileMenuBtn.querySelectorAll('span');
+                    spans.forEach(span => span.classList.remove('active'));
+                }
+            });
+        }
+    });
+    </script>
+    
 </body>
 </html>

@@ -13,6 +13,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency Handyman Ballina | Flood Response & Storm Damage Specialists | GoodHands</title>
+    <link rel="canonical" href="https://goodhandshandyman.com.au/emergency-handyman-ballina.html">
     <meta name="description" content="Emergency handyman Ballina. Flood damage response, king tide repairs, Richmond River flooding specialists. Same-day emergency service for storm damage. Call 0481 457271">
     
     <!-- Google Fonts -->
@@ -465,7 +466,7 @@
                     <h4>Emergency Services in Other Areas:</h4>
                     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 16px;">
                         <a href="handyman-byron-bay.html" style="color: var(--yellow-primary); text-decoration: underline;">Byron Bay Emergency Repairs</a>
-                        <a href="handyman-kingscliff.html" style="color: var(--yellow-primary); text-decoration: underline;">Kingscliff Emergency Services</a>
+                        <a href="handyman-tweed-heads.html" style="color: var(--yellow-primary); text-decoration: underline;">Kingscliff Emergency Services</a>
                         <a href="handyman-cabarita-beach.html" style="color: var(--yellow-primary); text-decoration: underline;">Cabarita Beach Emergency</a>
                     </div>
                 </div>
@@ -531,5 +532,33 @@
             <p>&copy; 2024 GoodHands Emergency Services. Serving Ballina with rapid flood response and storm damage expertise since 2020.</p>
         </div>
     </footer>
+
+    <script>
+    // Mobile Menu Toggle
+    document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('active');
+                
+                // Animate hamburger icon
+                const spans = mobileMenuBtn.querySelectorAll('span');
+                spans.forEach(span => span.classList.toggle('active'));
+            });
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+                    mobileMenu.classList.remove('active');
+                    const spans = mobileMenuBtn.querySelectorAll('span');
+                    spans.forEach(span => span.classList.remove('active'));
+                }
+            });
+        }
+    });
+    </script>
+    
 </body>
 </html>
