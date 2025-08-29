@@ -183,27 +183,28 @@
                         </div>
                     </div>
 
-                    <form name="contact" method="POST" data-netlify="true" action="/thank-you.html">
-                        <input type="hidden" name="form-name" value="contact">
+                    <!-- COMPLETELY REBUILT FORM -->
+                    <form name="handyman-contact" method="POST" netlify action="/thank-you.html">
+                        <input type="hidden" name="form-name" value="handyman-contact">
                         
                         <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" required>
+                            <label for="customer-name">Your Name</label>
+                            <input type="text" id="customer-name" name="customer-name" required>
                         </div>
                         
                         <div class="form-group">
-                            <label for="email">Your Email</label>
-                            <input type="email" id="email" name="email" required>
+                            <label for="customer-email">Your Email</label>
+                            <input type="email" id="customer-email" name="customer-email" required>
                         </div>
                         
                         <div class="form-group">
-                            <label for="phone">Your Phone</label>
-                            <input type="tel" id="phone" name="phone" required>
+                            <label for="customer-phone">Your Phone</label>
+                            <input type="tel" id="customer-phone" name="customer-phone" required>
                         </div>
                         
                         <div class="form-group">
-                            <label for="location">Location</label>
-                            <select id="location" name="location" required>
+                            <label for="customer-location">Location</label>
+                            <select id="customer-location" name="customer-location" required>
                                 <option value="">Select your area</option>
                                 <option value="byron-bay">Byron Bay</option>
                                 <option value="ballina">Ballina</option>
@@ -216,8 +217,8 @@
                         </div>
                         
                         <div class="form-group">
-                            <label for="service">Service Needed</label>
-                            <select id="service" name="service" required>
+                            <label for="service-type">Service Needed</label>
+                            <select id="service-type" name="service-type" required>
                                 <option value="">Select service</option>
                                 <option value="general-handyman">General handyman work</option>
                                 <option value="deck-restoration">Deck restoration</option>
@@ -230,11 +231,11 @@
                         </div>
                         
                         <div class="form-group">
-                            <label for="details">Tell me about your project</label>
-                            <textarea id="details" name="details" placeholder="Describe what you need help with..."></textarea>
+                            <label for="project-details">Tell me about your project</label>
+                            <textarea id="project-details" name="project-details" placeholder="Describe what you need help with..."></textarea>
                         </div>
                         
-                        <button type="submit" class="submit-btn">Send My Request</button>
+                        <button type="submit" class="submit-btn">Send Request Now</button>
                     </form>
                 </div>
             </div>

@@ -7,14 +7,14 @@
 <body style="display: none;">
     <!-- This file helps Netlify detect forms during build -->
     
-    <!-- Contact Form -->
-    <form name="contact" netlify netlify-honeypot="bot-field" action="/thank-you.html" method="POST">
+    <!-- Handyman Contact Form -->
+    <form name="handyman-contact" netlify netlify-honeypot="bot-field" action="/thank-you.html" method="POST">
         <input name="bot-field" type="hidden" />
-        <input name="form-name" value="contact" type="hidden" />
-        <input name="name" type="text" />
-        <input name="email" type="email" />
-        <input name="phone" type="tel" />
-        <select name="location">
+        <input name="form-name" value="handyman-contact" type="hidden" />
+        <input name="customer-name" type="text" />
+        <input name="customer-email" type="email" />
+        <input name="customer-phone" type="tel" />
+        <select name="customer-location">
             <option value="">Select your area</option>
             <option value="byron-bay">Byron Bay</option>
             <option value="ballina">Ballina</option>
@@ -24,7 +24,7 @@
             <option value="tweed-heads">Tweed Heads</option>
             <option value="other">Other Northern Rivers</option>
         </select>
-        <select name="service">
+        <select name="service-type">
             <option value="">Select service</option>
             <option value="general-handyman">General handyman work</option>
             <option value="deck-restoration">Deck restoration</option>
@@ -34,7 +34,7 @@
             <option value="airbnb-maintenance">Airbnb maintenance</option>
             <option value="emergency-repairs">Emergency repairs</option>
         </select>
-        <textarea name="details"></textarea>
+        <textarea name="project-details"></textarea>
         <button type="submit">Submit</button>
     </form>
     
