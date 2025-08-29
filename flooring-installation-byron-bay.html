@@ -582,6 +582,50 @@
             color: var(--medium-grey);
         }
 
+        /* Content Images */
+        .content-image {
+            margin-top: 30px;
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            transition: all 0.3s ease;
+        }
+
+        .content-image:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .content-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            aspect-ratio: 4/3;
+            object-fit: cover;
+        }
+
+        /* Balance Image */
+        .balance-image {
+            margin-top: 40px;
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            transition: all 0.3s ease;
+        }
+
+        .balance-image:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .balance-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            aspect-ratio: 21/9;
+            object-fit: cover;
+        }
+
         /* Mobile Responsive */
         @media (max-width: 768px) {
             .nav-menu {
@@ -606,6 +650,18 @@
 
             .services-grid, .materials-grid, .process-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .content-image, .balance-image {
+                margin-top: 20px;
+            }
+
+            .content-image img {
+                aspect-ratio: 3/2;
+            }
+
+            .balance-image img {
+                aspect-ratio: 16/9;
             }
         }
     </style>
@@ -755,6 +811,10 @@
             </div>
 
             <p>All prices include professional installation with quality underlays, transitions, and finishing. Free quotes provided for all Northern Rivers projects.</p>
+            
+            <div class="balance-image">
+                <img src="flooring-installation-sample-2.jpg" alt="Expert flooring installation Byron Bay - professional tools and techniques for perfect results" loading="lazy">
+            </div>
         </div>
     </section>
 
@@ -810,6 +870,10 @@
             <p>Unlike larger companies like GAT Flooring or Northern Rivers Flooring, I provide personalized service with direct communication throughout your project. While House of Surfaces focuses on supply, I handle complete installation from preparation to finishing. My approach combines quality materials with expert installation at competitive rates, backed by local knowledge and genuine care for your property.</p>
             
             <p>I also offer complementary services including <a href="custom-carpentry.html">custom carpentry</a> for built-in storage solutions and <a href="flooring-installation.html">general flooring services</a> across the Northern Rivers region.</p>
+            
+            <div class="content-image">
+                <img src="flooring-blackbutt-laminate-1.webp" alt="Professional laminate flooring installation Byron Bay - quality blackbutt timber look planks with coastal durability" loading="lazy">
+            </div>
         </div>
     </section>
 
