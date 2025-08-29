@@ -170,72 +170,18 @@
                     </div>
                 </div>
 
-                <!-- Contact Form -->
-                <div class="contact-form">
-                    <h2>Request Your Free Quote</h2>
-                    <!-- EMERGENCY CONTACT METHODS -->
-                    <div style="background: #EF4444; color: white; padding: 20px; border-radius: 12px; margin-bottom: 30px; text-align: center;">
-                        <h3 style="margin-bottom: 15px;">📞 CONTACT DAN DIRECTLY</h3>
-                        <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-                            <a href="tel:0481457271" style="background: white; color: #EF4444; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: bold;">📞 Call: 0481 457271</a>
-                            <a href="sms:0481457271?body=Hi Dan, I need handyman help with:" style="background: white; color: #EF4444; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: bold;">💬 Text Me</a>
-                            <a href="mailto:danhandywork@gmail.com?subject=Handyman Quote Request" style="background: white; color: #EF4444; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: bold;">✉️ Email Direct</a>
-                        </div>
-                    </div>
-
-                    <!-- COMPLETELY REBUILT FORM -->
-                    <form name="handyman-contact" method="POST" netlify action="/thank-you.html">
-                        <input type="hidden" name="form-name" value="handyman-contact">
+                <div class="contact-section">
+                    <h3>Get Your Free Quote</h3>
+                    <form action="https://formsubmit.co/danhandywork@gmail.com" method="POST" style="max-width: 500px;">
+                        <input type="hidden" name="_next" value="https://goodhandshandyman.com.au">
+                        <input type="hidden" name="_subject" value="Good Hands Handyman Inquiry">
                         
-                        <div class="form-group">
-                            <label for="customer-name">Your Name</label>
-                            <input type="text" id="customer-name" name="customer-name" required>
-                        </div>
+                        <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd;">
+                        <input type="email" name="email" placeholder="Your Email" required style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd;">
+                        <input type="tel" name="phone" placeholder="Your Phone" required style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd;">
+                        <textarea name="message" placeholder="Tell me about your project" style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; height: 100px;"></textarea>
                         
-                        <div class="form-group">
-                            <label for="customer-email">Your Email</label>
-                            <input type="email" id="customer-email" name="customer-email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="customer-phone">Your Phone</label>
-                            <input type="tel" id="customer-phone" name="customer-phone" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="customer-location">Location</label>
-                            <select id="customer-location" name="customer-location" required>
-                                <option value="">Select your area</option>
-                                <option value="byron-bay">Byron Bay</option>
-                                <option value="ballina">Ballina</option>
-                                <option value="lennox-head">Lennox Head</option>
-                                <option value="lismore">Lismore</option>
-                                <option value="kingscliff">Kingscliff</option>
-                                <option value="tweed-heads">Tweed Heads</option>
-                                <option value="other">Other Northern Rivers</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="service-type">Service Needed</label>
-                            <select id="service-type" name="service-type" required>
-                                <option value="">Select service</option>
-                                <option value="general-handyman">General handyman work</option>
-                                <option value="deck-restoration">Deck restoration</option>
-                                <option value="fence-painting">Fence painting</option>
-                                <option value="gutter-cleaning">Gutter cleaning</option>
-                                <option value="pre-sale-prep">Pre-sale preparation</option>
-                                <option value="airbnb-maintenance">Airbnb maintenance</option>
-                                <option value="emergency-repairs">Emergency repairs</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="project-details">Tell me about your project</label>
-                            <textarea id="project-details" name="project-details" placeholder="Describe what you need help with..."></textarea>
-                        </div>
-                        
-                        <button type="submit" class="submit-btn">Send Request Now</button>
+                        <button type="submit" style="background: #FFB800; color: #333; padding: 15px 30px; border: none; cursor: pointer;">Send Request</button>
                     </form>
                 </div>
             </div>
