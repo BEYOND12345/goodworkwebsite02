@@ -10,29 +10,31 @@
     <!-- Contact Form -->
     <form name="contact" netlify netlify-honeypot="bot-field" action="/thank-you.html" method="POST">
         <input name="bot-field" type="hidden" />
+        <input name="form-name" value="contact" type="hidden" />
         <input name="name" type="text" />
         <input name="email" type="email" />
         <input name="phone" type="tel" />
         <select name="location">
-            <option value="">Select location</option>
+            <option value="">Select your area</option>
             <option value="byron-bay">Byron Bay</option>
             <option value="ballina">Ballina</option>
+            <option value="lennox-head">Lennox Head</option>
             <option value="lismore">Lismore</option>
+            <option value="kingscliff">Kingscliff</option>
             <option value="tweed-heads">Tweed Heads</option>
-            <option value="mullumbimby">Mullumbimby</option>
-            <option value="bangalow">Bangalow</option>
-            <option value="other">Other</option>
+            <option value="other">Other Northern Rivers</option>
         </select>
         <select name="service">
             <option value="">Select service</option>
-            <option value="kitchen-repairs">Kitchen Repairs</option>
-            <option value="deck-restoration">Deck Restoration</option>
-            <option value="gutter-cleaning">Gutter Cleaning</option>
-            <option value="fence-repairs">Fence Repairs</option>
-            <option value="emergency">Emergency</option>
-            <option value="other">Other</option>
+            <option value="general-handyman">General handyman work</option>
+            <option value="deck-restoration">Deck restoration</option>
+            <option value="fence-painting">Fence painting</option>
+            <option value="gutter-cleaning">Gutter cleaning</option>
+            <option value="pre-sale-prep">Pre-sale preparation</option>
+            <option value="airbnb-maintenance">Airbnb maintenance</option>
+            <option value="emergency-repairs">Emergency repairs</option>
         </select>
-        <textarea name="message"></textarea>
+        <textarea name="details"></textarea>
         <button type="submit">Submit</button>
     </form>
     
