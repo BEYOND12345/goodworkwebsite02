@@ -17,7 +17,7 @@ Disallow: /*backup*
 Disallow: /*new*
 
 # XML Sitemap location
-Sitemap: https://riverspropertyservices.com.au/sitemap.xml
+Sitemap: https://goodhandshandyman.com.au/sitemap.xml
 
 # Crawl delay for politeness
 Crawl-delay: 1

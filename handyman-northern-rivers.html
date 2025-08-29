@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handyman Northern Rivers - Professional Property Maintenance | Good Hands</title>
+    <meta name="description" content="Professional handyman Northern Rivers NSW - Byron Bay to Tweed Heads. Coastal property specialists. Deck restoration, kitchen repairs, gutter cleaning. Call Dan 0481 457271 today.">
+    <meta name="keywords" content="handyman Northern Rivers, Northern Rivers property maintenance, coastal handyman services, Byron Bay to Ballina handyman, Northern Rivers home repairs, regional handyman specialist">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Schema Markup for Handyman Northern Rivers Service -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Handyman Northern Rivers",
+        "description": "Professional handyman Northern Rivers NSW - Byron Bay to Tweed Heads. Coastal property specialists. Deck restoration, kitchen repairs, gutter cleaning.",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "GoodHands",
+            "telephone": "0481457271",
+            "email": "danhandywork@gmail.com",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Byron Bay",
+                "addressRegion": "NSW",
+                "postalCode": "2481",
+                "addressCountry": "AU"
+            }
+        },
+        "areaServed": [
+            "Northern Rivers NSW", "Byron Bay", "Ballina", "Lismore", "Tweed Heads", "Mullumbimby", "Bangalow", "Lennox Head", "Ocean Shores"
+        ],
+        "serviceType": "Regional Property Maintenance and Handyman Services",
+        "category": "Home Improvement",
+        "offers": {
+            "@type": "Offer",
+            "description": "Professional handyman services Northern Rivers",
+            "priceRange": "$120-350",
+            "priceCurrency": "AUD"
+        }
+    }
+    </script>
+    
+    <!-- FAQ Schema Markup for Featured Snippets -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Why choose a regional handyman Northern Rivers specialist?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "As an experienced handyman Northern Rivers professional, I understand the unique coastal challenges across the entire region from Byron Bay to Tweed Heads. I travel throughout Northern Rivers providing consistent, quality service to all properties."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you service all Northern Rivers areas?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, my handyman Northern Rivers service covers Byron Bay, Ballina, Lismore, Tweed Heads, Mullumbimby, Bangalow, Lennox Head, Ocean Shores and surrounding areas. I understand each area's specific property challenges."
+                }
+            }
+        ]
+    }
+    </script>
+    
+    <style>
+        :root {
+            --yellow-primary: #FFB800;
+            --yellow-hover: #E6A600;
+            --yellow-light: #FFF9E6;
+            --charcoal: #2D3748;
+            --dark-grey: #4A5568;
+            --medium-grey: #718096;
+            --light-grey: #EDF2F7;
+            --bg-subtle: #F7FAFC;
+            --white: #FFFFFF;
+            --border-radius: 12px;
+            --border-radius-lg: 16px;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--charcoal);
+            background-color: var(--white);
+            padding-top: 70px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header Navigation */
+        .header-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--light-grey);
+            z-index: 1000;
+            padding: 0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 70px;
+        }
+
+        .nav-logo a {
+            font-size: 1.25rem;
+            font-weight: 900;
+            color: var(--charcoal);
+            text-decoration: none;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            list-style: none;
+        }
+
+        .nav-menu a {
+            color: var(--charcoal);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            color: var(--yellow-primary);
+        }
+
+        .nav-cta {
+            background: var(--yellow-primary);
+            color: var(--charcoal);
+            padding: 12px 24px;
+            border-radius: var(--border-radius);
+            font-weight: 900;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .nav-cta:hover {
+            background: var(--yellow-hover);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 70vh;
+            min-height: 500px;
+            background: linear-gradient(rgba(45, 55, 72, 0.7), rgba(45, 55, 72, 0.7)), 
+                        url('general-handyman-tools-northern-rivers.webp');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 900;
+            margin-bottom: 24px;
+            letter-spacing: -0.025em;
+            line-height: 1.1;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto 32px;
+            line-height: 1.4;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--yellow-primary);
+            color: var(--charcoal);
+            padding: 18px 36px;
+            border: none;
+            border-radius: var(--border-radius);
+            font-size: 1.125rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            margin: 0 8px;
+        }
+
+        .cta-button:hover {
+            background: var(--yellow-hover);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .cta-secondary {
+            background: transparent;
+            border: 2px solid var(--yellow-primary);
+            color: var(--yellow-primary);
+        }
+
+        .cta-secondary:hover {
+            background: var(--yellow-primary);
+            color: var(--charcoal);
+        }
+
+        /* Section styles */
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 2.75rem);
+            font-weight: 900;
+            color: var(--charcoal);
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: var(--medium-grey);
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Content with Image */
+        .content-with-image {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 40px;
+            align-items: center;
+            margin: 0 auto 40px;
+            max-width: 1200px;
+            padding: 0 24px;
+        }
+
+        .content-text {
+            font-size: 1.125rem;
+            line-height: 1.7;
+            color: var(--dark-grey);
+        }
+
+        .content-text p {
+            margin-bottom: 24px;
+        }
+
+        .content-text strong {
+            color: var(--charcoal);
+            font-weight: 600;
+        }
+
+        .content-image {
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            transition: all 0.3s ease;
+        }
+
+        .content-image:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .content-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            aspect-ratio: 4/3;
+            object-fit: cover;
+        }
+
+        /* Areas Grid */
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+            margin-top: 40px;
+        }
+
+        .area-card {
+            background: var(--white);
+            border-radius: var(--border-radius-lg);
+            padding: 32px 24px;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .area-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--yellow-primary);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .area-card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--charcoal);
+            margin-bottom: 12px;
+        }
+
+        .area-card p {
+            color: var(--medium-grey);
+            line-height: 1.6;
+        }
+
+        .area-card a {
+            color: var(--yellow-primary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .area-card a:hover {
+            color: var(--yellow-hover);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--charcoal);
+            color: var(--white);
+            padding: 64px 0 24px;
+            margin-top: 80px;
+            text-align: center;
+        }
+
+        .footer p {
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+
+        .footer a {
+            color: var(--yellow-primary);
+            text-decoration: none;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .content-with-image {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .areas-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .cta-button {
+                display: block;
+                margin: 12px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">GoodHands</a>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="areas.html">Areas</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="tel:0481457271" class="nav-cta">Call Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Handyman Northern Rivers</h1>
+            <p class="hero-subtitle">Professional <strong>handyman Northern Rivers</strong> specialist - Byron Bay to Tweed Heads. Regional property maintenance experts covering the entire Northern Rivers NSW area.</p>
+            <div>
+                <a href="contact.html" class="cta-button">Get Free Quote</a>
+                <a href="tel:0481457271" class="cta-button cta-secondary">Call Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Handyman Northern Rivers Services</h2>
+                <p class="section-subtitle">Expert <strong>handyman Northern Rivers</strong> specialist - comprehensive property maintenance from Byron Bay to Tweed Heads</p>
+            </div>
+        </div>
+        
+        <div class="content-with-image">
+            <div class="content-text">
+                <p>As the premier <strong>handyman Northern Rivers</strong> professional, I understand the unique challenges properties face across this diverse coastal region. From Byron Bay's salt air to Lismore's inland humidity, each Northern Rivers location has specific maintenance requirements that generic handymen often miss.</p>
+                
+                <p>My <strong>handyman Northern Rivers</strong> service covers the entire region with consistent quality and expertise. Whether you need coastal deck restoration in Byron Bay, kitchen repairs in Ballina, or gutter cleaning in Tweed Heads, I bring the same professional standards and local knowledge to every <strong>handyman Northern Rivers</strong> project.</p>
+
+                <p>With over 15 years serving Northern Rivers properties, I've developed specialized techniques for our region's climate. My <strong>handyman Northern Rivers</strong> approach uses materials and methods specifically chosen for coastal conditions, seasonal weather patterns, and local building requirements.</p>
+
+                <h3 style="color: var(--charcoal); font-weight: 700; margin: 32px 0 16px 0;">Regional Expertise You Can Trust</h3>
+                <p>Professional <strong>handyman Northern Rivers</strong> services require understanding of regional variations - from beachfront properties to inland homes, commercial spaces to heritage buildings. I adapt my <strong>handyman Northern Rivers</strong> expertise to each location's specific needs, ensuring lasting results across the entire region.</p>
+            </div>
+            <div class="content-image">
+                <img src="handyman-northern-rivers-professional-service.jpg" alt="Professional handyman Northern Rivers services - Byron Bay to Tweed Heads regional property maintenance" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Areas Section -->
+    <section class="section" style="background: var(--bg-subtle);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Handyman Northern Rivers Coverage Areas</h2>
+                <p class="section-subtitle">Professional <strong>handyman Northern Rivers</strong> services throughout the region</p>
+            </div>
+
+            <div class="areas-grid">
+                <div class="area-card">
+                    <h3>Byron Bay & Surrounds</h3>
+                    <p>Coastal specialist <strong>handyman Northern Rivers</strong> services for Byron Bay, Suffolk Park, and surrounding areas. <a href="handyman-byron-bay.html">Byron Bay Handyman →</a></p>
+                </div>
+
+                <div class="area-card">
+                    <h3>Ballina Region</h3>
+                    <p>Richmond River area expertise with professional <strong>handyman Northern Rivers</strong> service from Big Prawn to river properties. <a href="handyman-ballina.html">Ballina Handyman →</a></p>
+                </div>
+
+                <div class="area-card">
+                    <h3>Lismore & Hinterland</h3>
+                    <p>Inland property maintenance with specialized <strong>handyman Northern Rivers</strong> techniques for humidity and weather challenges. <a href="handyman-lismore.html">Lismore Services →</a></p>
+                </div>
+
+                <div class="area-card">
+                    <h3>Tweed Heads</h3>
+                    <p>Gold Coast border specialist with reliable <strong>handyman Northern Rivers</strong> service for coastal and urban properties. <a href="handyman-tweed-heads.html">Tweed Services →</a></p>
+                </div>
+
+                <div class="area-card">
+                    <h3>Mullumbimby & Bangalow</h3>
+                    <p>Heritage and rural property expertise with professional <strong>handyman Northern Rivers</strong> maintenance services. <a href="handyman-mullumbimby.html">Mullumbimby →</a></p>
+                </div>
+
+                <div class="area-card">
+                    <h3>Coastal Towns</h3>
+                    <p>Lennox Head, Ocean Shores, and coastal communities served by expert <strong>handyman Northern Rivers</strong> professionals. <a href="handyman-lennox-head.html">Coastal Services →</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose Our Handyman Northern Rivers Service?</h2>
+                <p class="section-subtitle">15+ years of regional expertise across all Northern Rivers property types</p>
+            </div>
+            
+            <div class="content-with-image">
+                <div class="content-text">
+                    <h3 style="color: var(--charcoal); font-weight: 700; margin: 24px 0 16px 0;">Regional Property Challenges</h3>
+                    <p>The Northern Rivers region presents unique property maintenance challenges that require specialized knowledge. As an experienced <strong>handyman Northern Rivers</strong> professional, I understand coastal salt exposure in Byron Bay, river humidity in Ballina, and inland conditions in Lismore. My <strong>handyman Northern Rivers</strong> service adapts to each area's specific requirements.</p>
+                    
+                    <p>From Arts & Industry Estate commercial properties to heritage homes in Bangalow, each Northern Rivers location has different building styles and environmental factors. My <strong>handyman Northern Rivers</strong> expertise covers all property types across the region, ensuring consistent quality and appropriate techniques for local conditions.</p>
+                    
+                    <h3 style="color: var(--charcoal); font-weight: 700; margin: 24px 0 16px 0;">Comprehensive Regional Service</h3>
+                    <p>Professional <strong>handyman Northern Rivers</strong> coverage means reliable service whether you're in Byron Bay or Tweed Heads. I travel throughout the region providing the same high standards, using materials and techniques proven to work in Northern Rivers conditions. My <strong>handyman Northern Rivers</strong> approach ensures lasting results across all locations.</p>
+                </div>
+                <div class="content-image">
+                    <img src="northern-rivers-property-maintenance.jpg" alt="Handyman Northern Rivers regional coverage - Byron Bay to Tweed Heads professional property maintenance" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p><strong>Handyman Northern Rivers</strong> - Professional Property Maintenance</p>
+            <p>Servicing Byron Bay, Ballina, Lismore, Tweed Heads & surrounding Northern Rivers areas</p>
+            <p>Phone: <a href="tel:0481457271">0481 457271</a> | Email: <a href="mailto:danhandywork@gmail.com">danhandywork@gmail.com</a></p>
+            <p style="margin-top: 32px; font-size: 0.9rem; opacity: 0.7;">&copy; 2024 GoodHands. Professional handyman Northern Rivers services. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
