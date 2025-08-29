@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wall Repairs Byron Bay | Holes, Plasterboard & Drywall Repairs | Good Hands</title>
+    <meta name="description" content="Expert wall repairs Byron Bay. Fix holes, cracks, plasterboard damage. Professional patching, plastering, painting. Same day service available. Call 0481 457271">
+    <meta name="keywords" content="wall repairs byron bay, hole repair byron bay, plasterboard repairs byron bay, drywall repairs byron bay, wall patching byron bay, crack repairs byron bay">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Wall Repair Services",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Good Hands",
+            "telephone": "0481457271",
+            "email": "danhandywork@gmail.com",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Byron Bay",
+                "addressRegion": "NSW",
+                "addressCountry": "AU"
+            },
+            "areaServed": ["Byron Bay", "Ballina", "Lismore", "Tweed Heads", "Mullumbimby", "Bangalow", "Ocean Shores", "Lennox Head"],
+            "@id": "https://www.google.com/maps/place/?cid=12688451943747857598"
+        },
+        "description": "Professional wall repair services in Byron Bay including hole repairs, plasterboard patching, crack repairs, and wall preparation for painting.",
+        "offers": {
+            "@type": "Offer",
+            "priceRange": "$80-500",
+            "availability": "https://schema.org/InStock"
+        }
+    }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --yellow-primary: #FFB800;
+            --yellow-hover: #E6A600;
+            --yellow-light: #FFF9E6;
+            --charcoal: #2D3748;
+            --dark-grey: #4A5568;
+            --medium-grey: #718096;
+            --light-grey: #EDF2F7;
+            --bg-subtle: #F7FAFC;
+            --white: #FFFFFF;
+            --success: #22C55E;
+            --border-radius: 12px;
+            --border-radius-lg: 16px;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--charcoal);
+            background-color: var(--white);
+            padding-top: 70px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header Navigation */
+        .header-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--light-grey);
+            z-index: 1000;
+            padding: 0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 70px;
+        }
+
+        .nav-logo a {
+            font-size: 1.25rem;
+            font-weight: 900;
+            color: var(--charcoal);
+            text-decoration: none;
+        }
+
+        .nav-logo a:hover {
+            color: var(--yellow-primary);
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-menu a {
+            color: var(--charcoal);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            color: var(--yellow-primary);
+        }
+
+        .nav-cta {
+            background: var(--yellow-primary) !important;
+            color: var(--charcoal) !important;
+            padding: 12px 24px !important;
+            font-weight: 600 !important;
+            border-radius: var(--border-radius) !important;
+        }
+
+        .nav-cta:hover {
+            background: var(--yellow-hover) !important;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+            gap: 4px;
+        }
+
+        .mobile-menu-btn span {
+            width: 24px;
+            height: 2px;
+            background: var(--charcoal);
+            border-radius: 1px;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: var(--white);
+            border-bottom: 1px solid var(--light-grey);
+            box-shadow: var(--shadow-md);
+            padding: 20px 0;
+        }
+
+        .mobile-menu a {
+            display: block;
+            padding: 12px 24px;
+            color: var(--charcoal);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-menu a:hover {
+            background: var(--yellow-light);
+            color: var(--yellow-primary);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--yellow-light) 0%, var(--bg-subtle) 100%);
+            padding: 80px 0 60px;
+            margin-bottom: 60px;
+        }
+
+        .hero-content {
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--charcoal);
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--dark-grey);
+            margin-bottom: 30px;
+        }
+
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: var(--yellow-primary);
+            color: var(--charcoal);
+            padding: 16px 32px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-md);
+        }
+
+        .hero-cta:hover {
+            background: var(--yellow-hover);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* Services Grid */
+        .services-section {
+            padding: 60px 0;
+            background: var(--white);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--charcoal);
+            margin-bottom: 16px;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--medium-grey);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .service-card {
+            background: var(--bg-subtle);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--yellow-primary);
+            border-radius: var(--border-radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .service-icon svg {
+            width: 30px;
+            height: 30px;
+            stroke: var(--charcoal);
+        }
+
+        .service-card h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--charcoal);
+            margin-bottom: 12px;
+        }
+
+        .service-card p {
+            color: var(--medium-grey);
+            line-height: 1.6;
+        }
+
+        /* Content Sections */
+        .content-section {
+            padding: 60px 0;
+        }
+
+        .content-section:nth-child(even) {
+            background: var(--bg-subtle);
+        }
+
+        .content-section h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--charcoal);
+            margin-bottom: 20px;
+        }
+
+        .content-section p {
+            color: var(--medium-grey);
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 30px 0;
+        }
+
+        .feature-list li {
+            padding: 12px 0;
+            padding-left: 35px;
+            position: relative;
+            color: var(--dark-grey);
+        }
+
+        .feature-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--yellow-primary);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Common Issues Grid */
+        .issues-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+
+        .issue-item {
+            background: var(--white);
+            padding: 25px;
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--yellow-primary);
+        }
+
+        .issue-item h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--charcoal);
+            margin-bottom: 10px;
+        }
+
+        .issue-item p {
+            color: var(--medium-grey);
+            font-size: 0.95rem;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--yellow-primary) 0%, var(--yellow-hover) 100%);
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--charcoal);
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            color: var(--charcoal);
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: var(--white);
+            color: var(--charcoal);
+            padding: 16px 32px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-md);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--charcoal);
+            color: var(--white);
+            padding: 60px 0 30px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: var(--yellow-primary);
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-section a {
+            color: var(--light-grey);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--yellow-primary);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 30px;
+            text-align: center;
+            color: var(--medium-grey);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: flex;
+            }
+
+            .mobile-menu.active {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .services-grid, .issues-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Good Hands</a>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="handyman-services-byron-bay.html">Services</a>
+                <a href="areas.html">Areas</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="tel:0481457271" class="nav-cta">Call Now</a>
+            </nav>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="index.html" onclick="closeMobileMenu()">Home</a>
+                <a href="handyman-services-byron-bay.html" onclick="closeMobileMenu()">Services</a>
+                <a href="areas.html" onclick="closeMobileMenu()">Areas</a>
+                <a href="about.html" onclick="closeMobileMenu()">About</a>
+                <a href="contact.html" onclick="closeMobileMenu()">Contact</a>
+                <a href="tel:0481457271" onclick="closeMobileMenu()">Call Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Wall Repairs Byron Bay - Fix Holes & Cracks Fast</h1>
+                <p class="hero-subtitle">Expert wall patching, plasterboard repairs from Arts & Industry Estate to Wategos</p>
+                <a href="tel:0481457271" class="hero-cta">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    Same Day Service: 0481 457271
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Wall Repairs Byron Bay</h2>
+                <p class="section-subtitle">Fast, invisible repairs that save you money</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M8 12l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h3>Hole Repairs Byron Bay</h3>
+                    <p>Expert patching of small to large holes in plasterboard walls. From picture hook holes to door handle damage - professional invisible repairs.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3>Crack Repairs & Prevention</h3>
+                    <p>Fix and prevent wall cracks caused by Byron Bay's coastal humidity, settling, or minor structural movement. Long-lasting solutions.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="9" y1="9" x2="15" y2="9"/>
+                        </svg>
+                    </div>
+                    <h3>Plasterboard Replacement</h3>
+                    <p>Complete plasterboard sections replaced for water damage, large holes, or renovation prep. Perfect finish ready for painting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section class="content-section">
+        <div class="container">
+            <h2>Why Choose Good Hands for Wall Repairs Byron Bay?</h2>
+            <p>As a professional handyman specialising in <strong>wall repairs Byron Bay</strong>, I understand that damaged walls affect your property's appearance and value. From holiday rental touchups to comprehensive home renovations, I deliver invisible repairs that last.</p>
+            
+            <ul class="feature-list">
+                <li>Same-day service available for urgent wall repairs Byron Bay</li>
+                <li>Invisible repairs - you won't see where the damage was</li>
+                <li>All materials included in quoted price</li>
+                <li>Paint matching service for seamless finish</li>
+                <li>Understanding of Byron Bay's coastal humidity effects</li>
+                <li>Clean work practices - minimal disruption to your home</li>
+                <li>Competitive wall repairs Byron Bay pricing</li>
+                <li>Quality guarantee on all repair work</li>
+            </ul>
+
+            <p>Whether you need <strong>hole repair Byron Bay</strong> for a single damaged wall or comprehensive <strong>wall repairs Byron Bay</strong> for multiple rooms, I provide professional solutions that restore your property's appearance.</p>
+        </div>
+    </section>
+
+    <!-- Common Issues Section -->
+    <section class="content-section">
+        <div class="container">
+            <h2>Common Wall Problems I Fix in Byron Bay</h2>
+            <p>Professional <strong>wall repairs Byron Bay</strong> for all types of damage:</p>
+
+            <div class="issues-grid">
+                <div class="issue-item">
+                    <h4>Picture Hook Holes</h4>
+                    <p>Small holes from nails and screws - patched and painted to disappear completely</p>
+                </div>
+                <div class="issue-item">
+                    <h4>Door Handle Damage</h4>
+                    <p>Holes from door handles hitting walls - common in Byron Bay holiday rentals</p>
+                </div>
+                <div class="issue-item">
+                    <h4>Water Damage Patches</h4>
+                    <p>Coastal humidity damage requiring plasterboard replacement and repainting</p>
+                </div>
+                <div class="issue-item">
+                    <h4>Settlement Cracks</h4>
+                    <p>Hairline to larger cracks from Byron Bay's sandy soil movement</p>
+                </div>
+                <div class="issue-item">
+                    <h4>Furniture Damage</h4>
+                    <p>Dents and holes from furniture, moving damage, or kids' activities</p>
+                </div>
+                <div class="issue-item">
+                    <h4>Renovation Prep</h4>
+                    <p>Wall preparation for painting or tiling projects - smooth, perfect surfaces</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="content-section">
+        <div class="container">
+            <h2>Wall Repairs Byron Bay Process</h2>
+            <p>My systematic approach to <strong>wall repairs Byron Bay</strong> ensures lasting results:</p>
+            
+            <ul class="feature-list">
+                <li><strong>Assessment:</strong> Evaluate damage type, wall construction, and repair requirements</li>
+                <li><strong>Preparation:</strong> Clean area, protect surroundings, gather matching materials</li>
+                <li><strong>Patching:</strong> Professional repair using appropriate compounds and techniques</li>
+                <li><strong>Sanding:</strong> Smooth finish ensuring invisible repair lines</li>
+                <li><strong>Priming & Painting:</strong> Perfect colour match with quality coastal-suitable paint</li>
+                <li><strong>Final Inspection:</strong> Ensure repair is invisible and meets quality standards</li>
+            </ul>
+
+            <p>Most <strong>wall repairs Byron Bay</strong> jobs are completed the same day, with larger plasterboard replacements typically taking 1-2 days including drying time.</p>
+        </div>
+    </section>
+
+    <!-- Local Expertise Section -->
+    <section class="content-section">
+        <div class="container">
+            <h2>Byron Bay Local Wall Repair Knowledge</h2>
+            <p>Understanding Byron Bay's unique conditions is crucial for lasting <strong>wall repairs Byron Bay</strong>. Our coastal environment creates specific challenges:</p>
+
+            <ul class="feature-list">
+                <li>High humidity affecting plaster and paint adhesion</li>
+                <li>Salt air causing accelerated paint deterioration</li>
+                <li>Sandy soil movement creating settlement cracks</li>
+                <li>Holiday rental wear requiring frequent touch-ups</li>
+                <li>Heritage homes needing careful restoration techniques</li>
+                <li>Modern beach houses with specific material requirements</li>
+            </ul>
+
+            <p>My <strong>wall repairs Byron Bay</strong> service uses materials and techniques specifically chosen for coastal durability, ensuring your repairs last despite the challenging environment.</p>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Need Wall Repairs Byron Bay? Get Same Day Service!</h2>
+            <p>Fast, professional repairs that make damage disappear</p>
+            <a href="tel:0481457271" class="cta-button">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+                Call Dan: 0481 457271
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>My Services</h3>
+                    <ul>
+                        <li><a href="wall-repairs-byron-bay.html">Wall Repairs Byron Bay</a></li>
+                        <li><a href="painting-byron-bay.html">Painter Byron Bay</a></li>
+                        <li><a href="tiling-byron-bay.html">Tiler Byron Bay</a></li>
+                        <li><a href="deck-restoration.html">Deck Restoration</a></li>
+                        <li><a href="handyman-services-byron-bay.html">General Handyman</a></li>
+                        <li><a href="fence-repairs-ballina.html">Fence Repairs</a></li>
+                        <li><a href="gutter-cleaning.html">Gutter Cleaning</a></li>
+                        <li><a href="custom-carpentry.html">Custom Carpentry</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Service Areas</h3>
+                    <ul>
+                        <li><a href="handyman-byron-bay.html">Byron Bay</a></li>
+                        <li><a href="handyman-ballina.html">Ballina</a></li>
+                        <li><a href="handyman-lismore-new.html">Lismore</a></li>
+                        <li><a href="handyman-bangalow.html">Bangalow</a></li>
+                        <li><a href="handyman-mullumbimby.html">Mullumbimby</a></li>
+                        <li><a href="handyman-ocean-shores.html">Ocean Shores</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>Dan - Good Hands</li>
+                        <li><a href="tel:0481457271">0481 457271</a></li>
+                        <li><a href="mailto:danhandywork@gmail.com">danhandywork@gmail.com</a></li>
+                        <li>Byron Bay, NSW</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Good Hands - Professional Wall Repairs Byron Bay | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('active');
+        }
+
+        function closeMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.remove('active');
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const mobileMenu = document.getElementById('mobileMenu');
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            
+            if (mobileMenu && menuBtn && !mobileMenu.contains(event.target) && !menuBtn.contains(event.target)) {
+                mobileMenu.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
