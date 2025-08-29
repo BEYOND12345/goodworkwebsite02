@@ -3,31 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painting Services | Interior & Exterior Painting | Northern Rivers NSW | Good Hands</title>
-    <meta name="description" content="Professional interior and exterior painting services across Northern Rivers NSW. House painting, wall painting, fence painting, deck staining. Same week service. Call 0481 457271">
-    <meta name="keywords" content="painting services northern rivers, interior painting, exterior painting, house painting byron bay, wall painting, fence painting, deck staining">
-    
-    <!-- Schema Markup for Service -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "serviceType": "Painting Services",
-        "provider": {
-            "@type": "LocalBusiness",
-            "name": "Good Hands",
-            "telephone": "0481457271",
-            "email": "danhandywork@gmail.com",
-            "areaServed": ["Byron Bay", "Ballina", "Lismore", "Tweed Heads", "Mullumbimby", "Bangalow", "Ocean Shores", "Lennox Head", "South Golden Beach"]
-        },
-        "description": "Professional interior and exterior painting services including house painting, wall painting, fence painting, and deck staining across Northern Rivers NSW.",
-        "offers": {
-            "@type": "Offer",
-            "priceRange": "$150-600",
-            "availability": "https://schema.org/InStock"
-        }
-    }
-    </script>
+    <title>Painting Services Byron Bay | Good Hands</title>
+    <meta name="description" content="I handle interior and exterior painting throughout Byron Bay & Northern Rivers. Quality paints, precise preparation, coastal-suitable finishes. Honest pricing, reliable service. Call 0481 457271">
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -43,13 +20,11 @@
             --light-grey: #EDF2F7;
             --bg-subtle: #F7FAFC;
             --white: #FFFFFF;
-            --success: #22C55E;
             --border-radius: 12px;
             --border-radius-lg: 16px;
             --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
             --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
             --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
-            --shadow-xl: 0 20px 25px rgba(0,0,0,0.1);
         }
 
         * {
@@ -73,7 +48,13 @@
             padding: 0 24px;
         }
 
-        /* Navigation */
+        @media (min-width: 1240px) {
+            .container {
+                padding: 0 32px;
+            }
+        }
+
+        /* Header Navigation */
         .header-nav {
             position: fixed;
             top: 0;
@@ -89,11 +70,17 @@
         .nav-container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 16px;
+            padding: 0 24px;
             display: flex;
             align-items: center;
             justify-content: space-between;
             height: 70px;
+        }
+
+        @media (min-width: 1240px) {
+            .nav-container {
+                padding: 0 32px;
+            }
         }
 
         .nav-logo a {
@@ -117,32 +104,29 @@
             color: var(--charcoal);
             text-decoration: none;
             font-weight: 500;
-            font-size: 0.95rem;
-            transition: color 0.3s ease;
+            padding: 8px 16px;
+            border-radius: var(--border-radius);
+            transition: all 0.3s ease;
         }
 
         .nav-menu a:hover {
             color: var(--yellow-primary);
+            background: var(--yellow-light);
         }
 
         .nav-cta {
-            background: var(--yellow-primary);
-            color: var(--charcoal);
-            padding: 12px 24px;
-            border-radius: var(--border-radius);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-            transition: all 0.3s ease;
+            background: var(--yellow-primary) !important;
+            color: var(--charcoal) !important;
+            padding: 12px 24px !important;
+            font-weight: 600 !important;
         }
 
         .nav-cta:hover {
-            background: var(--yellow-hover);
-            transform: translateY(-1px);
-            color: var(--charcoal);
+            background: var(--yellow-hover) !important;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
         }
 
-        /* Mobile Menu Styles */
         .mobile-menu-btn {
             display: none;
             flex-direction: column;
@@ -168,17 +152,17 @@
             left: 0;
             right: 0;
             background: var(--white);
-            border-top: 1px solid var(--light-grey);
+            border-bottom: 1px solid var(--light-grey);
             box-shadow: var(--shadow-lg);
-            z-index: 999;
+            padding: 20px 0;
         }
 
         .mobile-menu a {
             display: block;
-            padding: 16px 24px;
+            padding: 12px 24px;
             color: var(--charcoal);
             text-decoration: none;
-            border-bottom: 1px solid var(--light-grey);
+            font-weight: 500;
             transition: all 0.3s ease;
         }
 
@@ -187,79 +171,57 @@
             color: var(--yellow-primary);
         }
 
-        /* Mobile Responsive */
-        @media (max-width: 768px) {
-            .nav-menu {
-                display: none !important;
-            }
-            
-            .mobile-menu-btn {
-                display: flex;
-            }
-            
-            .mobile-menu.active {
-                display: block;
-            }
-            
-            .nav-container {
-                padding: 0 16px;
-            }
-        }
-
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(45, 55, 72, 0.7), rgba(74, 85, 104, 0.7)), 
-                        url('handyman-services-byron-bay-hero.avif');
+            height: 500px;
+            background: linear-gradient(rgba(45, 55, 72, 0.8), rgba(45, 55, 72, 0.8)), url('interior-painting-byron-bay-hero.avif');
             background-size: cover;
             background-position: center;
-            background-attachment: fixed;
-            color: var(--white);
-            padding: 120px 0 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
             text-align: center;
-            min-height: 70vh;
         }
 
-        .hero-content h1 {
-            font-size: clamp(2.5rem, 6vw, 4rem);
-            font-weight: 800;
-            margin-bottom: 20px;
-            line-height: 1.2;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 900;
+            margin-bottom: 24px;
+            letter-spacing: -0.025em;
+            line-height: 1.1;
         }
 
-        .hero-content p {
-            font-size: clamp(1.1rem, 2.5vw, 1.25rem);
-            margin-bottom: 40px;
+        .hero-subtitle {
+            font-size: 1.25rem;
             opacity: 0.9;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-            text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+            max-width: 700px;
+            margin: 0 auto 32px;
+            line-height: 1.5;
         }
 
-        .hero-cta {
-            display: inline-block;
+        .cta-button {
             background: var(--yellow-primary);
             color: var(--charcoal);
-            padding: 16px 32px;
+            padding: 18px 36px;
+            border: none;
             border-radius: var(--border-radius);
+            font-size: 1.125rem;
+            font-weight: 600;
             text-decoration: none;
-            font-weight: 900;
-            font-size: 1.1rem;
+            display: inline-block;
             transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: var(--yellow-hover);
+            transform: translateY(-2px);
             box-shadow: var(--shadow-lg);
         }
 
-        .hero-cta:hover {
-            background: var(--yellow-hover);
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-xl);
-            color: var(--charcoal);
-        }
-
-        /* Section Spacing */
+        /* Content Sections */
         .section {
-            padding: 120px 0;
+            padding: 40px 0;
         }
 
         .section-alt {
@@ -268,205 +230,397 @@
 
         .section-header {
             text-align: center;
-            margin-bottom: 80px;
+            margin-bottom: 32px;
         }
 
         .section-title {
-            font-size: clamp(2.5rem, 5vw, 3.5rem);
-            font-weight: 800;
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            font-weight: 900;
             color: var(--charcoal);
             margin-bottom: 24px;
-            line-height: 1.2;
+            letter-spacing: -0.02em;
         }
 
-        .section-subtitle {
-            font-size: clamp(1.1rem, 2.5vw, 1.25rem);
-            color: var(--medium-grey);
-            max-width: 600px;
-            margin: 0 auto;
+        /* Service List */
+        .service-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 24px;
+            margin-bottom: 0;
+        }
+
+        .service-item {
+            background: var(--white);
+            padding: 24px;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--light-grey);
+            transition: all 0.3s ease;
+        }
+
+        .service-item:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--yellow-primary);
+        }
+
+        .service-item h3 {
+            font-size: 1.5rem;
+            color: var(--charcoal);
+            margin-bottom: 12px;
+        }
+
+        .service-item p {
+            color: var(--dark-grey);
             line-height: 1.6;
         }
 
-        /* Services Grid */
-        .services-grid {
+        /* Content with Image */
+        .content-with-image {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 32px;
-            margin-top: 60px;
-        }
-
-        .service-card {
-            background: var(--white);
-            border-radius: var(--border-radius-lg);
-            padding: 40px 32px;
-            box-shadow: var(--shadow-md);
-            border: 2px solid var(--light-grey);
-            transition: all 0.3s ease;
-            text-align: center;
-        }
-
-        .service-card:hover {
-            border-color: var(--yellow-primary);
-            background: var(--yellow-light);
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-xl);
-        }
-
-        .service-icon {
-            width: 80px;
-            height: 80px;
-            background: var(--yellow-light);
-            border-radius: 50%;
-            display: flex;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 40px;
             align-items: center;
-            justify-content: center;
-            margin: 0 auto 24px;
-            color: var(--yellow-primary);
-            transition: all 0.3s ease;
+            margin: 0 auto 40px;
+            max-width: 1200px;
+            padding: 0 24px;
         }
 
-        .service-card:hover .service-icon {
-            background: var(--yellow-primary);
-            color: var(--charcoal);
-            transform: scale(1.1);
-        }
-
-        .service-icon svg {
-            width: 48px;
-            height: 48px;
-        }
-
-        .service-title {
-            font-size: 1.5rem;
-            font-weight: 900;
-            margin-bottom: 16px;
-            color: var(--charcoal);
-        }
-
-        .service-description {
+        .content-text {
+            font-size: 1.2rem;
+            line-height: 1.8;
             color: var(--dark-grey);
-            line-height: 1.7;
-            margin-bottom: 24px;
-        }
-
-        .service-price {
-            font-weight: 900;
-            color: var(--charcoal);
-            font-size: 1.25rem;
-            margin-bottom: 20px;
-        }
-
-        /* Content Section */
-        .content-section {
-            padding: 80px 0;
-        }
-
-        .content-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
-        }
-
-        .content-text h2 {
-            font-size: 2.5rem;
-            font-weight: 800;
-            color: var(--charcoal);
-            margin-bottom: 24px;
-            line-height: 1.2;
         }
 
         .content-text p {
-            color: var(--dark-grey);
-            line-height: 1.7;
-            margin-bottom: 20px;
-            font-size: 1.1rem;
+            margin-bottom: 0;
+        }
+
+        .content-text p + p {
+            margin-top: 32px;
         }
 
         .content-image {
-            position: relative;
             border-radius: var(--border-radius-lg);
             overflow: hidden;
             box-shadow: var(--shadow-lg);
+            transition: all 0.3s ease;
+            max-width: 100%;
+        }
+
+        .content-image:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
         }
 
         .content-image img {
             width: 100%;
-            height: 400px;
+            height: auto;
+            display: block;
+            aspect-ratio: 4/3;
             object-fit: cover;
+        }
+
+        /* Balance Image */
+        .balance-image {
+            margin-top: 40px;
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            transition: all 0.3s ease;
+        }
+
+        .balance-image:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .balance-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            aspect-ratio: 21/9;
+            object-fit: cover;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 40px 0;
+            background: var(--bg-subtle);
+        }
+
+        .testimonials-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .testimonials-content h2 {
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            font-weight: 900;
+            color: var(--charcoal);
+            margin-bottom: 32px;
+            letter-spacing: -0.02em;
+        }
+
+        .testimonial {
+            background: var(--white);
+            padding: 32px;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-sm);
+            margin-bottom: 24px;
+            border-left: 4px solid var(--yellow-primary);
+        }
+
+        .testimonial-text {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: var(--dark-grey);
+            margin-bottom: 16px;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--charcoal);
+            font-size: 1rem;
+        }
+
+        .testimonial-location {
+            font-size: 0.9rem;
+            color: var(--medium-grey);
+            margin-top: 4px;
+        }
+
+        .testimonials-image {
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            transition: all 0.3s ease;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .testimonials-image:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .testimonials-image img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            aspect-ratio: 4/3;
+            object-fit: cover;
+        }
+
+        /* Services Strip */
+        .services-strip {
+            padding: 60px 0;
+            background: var(--white);
+        }
+
+        .strip-title {
+            font-size: clamp(1.75rem, 3vw, 2.25rem);
+            font-weight: 900;
+            color: var(--charcoal);
+            text-align: center;
+            margin-bottom: 48px;
+            letter-spacing: -0.02em;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            text-align: center;
+            padding: 24px 16px;
+            background: var(--bg-subtle);
+            border-radius: var(--border-radius-lg);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+            background: var(--white);
+            border-color: var(--yellow-primary);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .service-icon {
+            width: 48px;
+            height: 48px;
+            margin: 0 auto 12px;
+            transition: transform 0.3s ease;
+            color: var(--yellow-primary);
+        }
+
+        .service-icon svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .service-card:hover .service-icon {
+            transform: scale(1.1);
+            color: var(--yellow-hover);
+        }
+
+        .service-card h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--charcoal);
+            margin: 0;
         }
 
         /* CTA Section */
         .cta-section {
-            background: var(--yellow-primary);
-            padding: 80px 0;
+            background: linear-gradient(135deg, var(--yellow-primary) 0%, var(--yellow-hover) 100%);
+            padding: 48px 0;
             text-align: center;
         }
 
         .cta-section h2 {
-            font-size: 2.5rem;
-            font-weight: 800;
+            font-size: clamp(2.5rem, 5vw, 3rem);
             color: var(--charcoal);
             margin-bottom: 24px;
-            line-height: 1.2;
+            font-weight: 900;
+            letter-spacing: -0.025em;
+            line-height: 1.1;
         }
 
         .cta-section p {
-            color: var(--dark-grey);
             font-size: 1.25rem;
-            margin-bottom: 40px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
+            color: var(--charcoal);
+            margin-bottom: 32px;
+            opacity: 0.9;
+            line-height: 1.5;
         }
 
-        .cta-button {
+        .cta-section .cta-button {
             background: var(--charcoal);
             color: var(--white);
-            padding: 16px 32px;
-            border-radius: var(--border-radius);
-            text-decoration: none;
-            font-weight: 900;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-            display: inline-block;
-            box-shadow: var(--shadow-lg);
         }
 
-        .cta-button:hover {
+        .cta-section .cta-button:hover {
             background: var(--dark-grey);
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-xl);
-            color: var(--white);
         }
 
-        /* Footer */
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: flex;
+            }
+
+            .mobile-menu.active {
+                display: block;
+            }
+
+            .nav-container {
+                padding: 0 20px;
+            }
+            
+            .section {
+                padding: 40px 0;
+            }
+
+            .service-list {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .content-with-image {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                margin-bottom: 40px;
+                padding: 0 24px;
+            }
+
+            .content-text {
+                font-size: 1.1rem;
+                line-height: 1.7;
+            }
+
+            .content-text p + p {
+                margin-top: 24px;
+            }
+
+            .testimonials-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                padding: 0 24px;
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 16px;
+            }
+
+            .service-card {
+                padding: 20px 12px;
+            }
+
+            .service-icon {
+                width: 40px;
+                height: 40px;
+            }
+
+            .service-card h4 {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Professional Footer Styles */
         .footer {
             background: var(--charcoal);
             color: var(--white);
-            padding: 0;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
         }
 
         .footer-main {
-            padding: 64px 32px 32px;
+            padding: 64px 32px 48px;
         }
 
         .footer-grid {
             display: grid;
-            grid-template-columns: 1.2fr 0.8fr 0.8fr 1fr;
-            gap: 40px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 48px;
+            margin-bottom: 48px;
         }
 
         .footer-section h3 {
-            font-size: 1.25rem;
-            font-weight: 900;
-            margin-bottom: 20px;
-            color: var(--white);
+            color: var(--yellow-primary);
+            font-weight: 600;
+            font-size: 1.125rem;
+            margin-bottom: 24px;
+            letter-spacing: -0.025em;
         }
 
         .footer-section ul {
             list-style: none;
-            padding: 0;
         }
 
         .footer-section li {
@@ -474,11 +628,12 @@
         }
 
         .footer-section a {
-            color: rgba(255,255,255,0.8);
+            color: rgba(255,255,255,0.85);
             text-decoration: none;
-            transition: all 0.3s ease;
             font-size: 0.95rem;
-            line-height: 1.6;
+            transition: all 0.3s ease;
+            display: block;
+            padding: 4px 0;
         }
 
         .footer-section a:hover {
@@ -491,6 +646,10 @@
             font-size: 0.95rem;
             line-height: 1.7;
             margin-bottom: 16px;
+        }
+
+        .brand-section {
+            grid-column: 1;
         }
 
         .brand-logo {
@@ -535,7 +694,11 @@
             transform: none;
         }
 
-        .cta-button-footer {
+        .quick-actions {
+            grid-column: 4;
+        }
+
+        .cta-button.footer-cta {
             background: var(--yellow-primary);
             color: var(--charcoal);
             padding: 16px 24px;
@@ -552,7 +715,7 @@
             transition: all 0.3s ease;
         }
 
-        .cta-button-footer:hover {
+        .cta-button.footer-cta:hover {
             background: var(--yellow-hover);
             transform: translateY(-2px);
         }
@@ -637,8 +800,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: rgba(255,255,255,0.7);
-            text-decoration: none;
             transition: all 0.3s ease;
         }
 
@@ -677,18 +838,8 @@
             color: var(--yellow-primary);
         }
 
-        /* Mobile Responsive */
+        /* Mobile Responsive Footer */
         @media (max-width: 968px) {
-            .content-grid {
-                grid-template-columns: 1fr;
-                gap: 40px;
-            }
-
-            .services-grid {
-                grid-template-columns: 1fr;
-                gap: 24px;
-            }
-
             .footer-grid {
                 grid-template-columns: 1fr 1fr;
                 gap: 32px;
@@ -700,16 +851,6 @@
         }
 
         @media (max-width: 640px) {
-            .hero {
-                background-attachment: scroll;
-                padding: 100px 0 60px;
-                min-height: 50vh;
-            }
-
-            .section {
-                padding: 80px 0;
-            }
-
             .footer-main {
                 padding: 48px 24px 32px;
             }
@@ -741,10 +882,10 @@
             </div>
             <nav class="nav-menu">
                 <a href="index.html">Home</a>
+                <a href="about-dan-byron-bay-handyman.html">About Dan</a>
                 <a href="handyman-services-byron-bay.html">Services</a>
-                <a href="areas.html">Areas</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
+                <a href="handyman-pricing-northern-rivers.html">Pricing</a>
+                <a href="get-quote.html">Get Quote</a>
                 <a href="tel:0481457271" class="nav-cta">Call Now</a>
             </nav>
             <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu">
@@ -754,11 +895,11 @@
             </button>
             <div class="mobile-menu" id="mobileMenu">
                 <a href="index.html" onclick="closeMobileMenu()">Home</a>
+                <a href="about-dan-byron-bay-handyman.html" onclick="closeMobileMenu()">About Dan</a>
                 <a href="handyman-services-byron-bay.html" onclick="closeMobileMenu()">Services</a>
-                <a href="areas.html" onclick="closeMobileMenu()">Areas</a>
-                <a href="about.html" onclick="closeMobileMenu()">About</a>
-                <a href="contact.html" onclick="closeMobileMenu()">Contact</a>
-                <a href="tel:0481457271" onclick="closeMobileMenu()" class="mobile-cta">Call Now</a>
+                <a href="handyman-pricing-northern-rivers.html" onclick="closeMobileMenu()">Pricing</a>
+                <a href="get-quote.html" onclick="closeMobileMenu()">Get Quote</a>
+                <a href="tel:0481457271" onclick="closeMobileMenu()">Call Now</a>
             </div>
         </div>
     </header>
@@ -766,114 +907,160 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <div class="hero-content">
-                <h1>Professional Painting Services</h1>
-                <p>Expert interior and exterior painting across Northern Rivers NSW. Transform your property with quality finishes that protect and enhance your investment.</p>
-                <a href="tel:0481457271" class="hero-cta">Call 0481 457271</a>
+            <h1>Painting Services Byron Bay</h1>
+            <p class="hero-subtitle">I'll transform your property with quality paints and precise techniques for coastal conditions</p>
+            <a href="contact.html" class="cta-button">Get Free Quote</a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Interior & Exterior Painting Services - Byron Bay & Northern Rivers</h2>
+            </div>
+        </div>
+        
+        <div class="content-with-image">
+            <div class="content-text">
+                <p>I understand what Northern Rivers climate does to paint. I use premium paints designed for coastal conditions, prepare surfaces properly, and apply finishes that protect against salt air, humidity, and UV exposure. I take time with surface prep because that's what makes paint last.</p>
+                
+                <p>I don't rush painting jobs. I mask carefully, cut clean lines, and apply multiple coats when needed. I discuss color choices, suggest suitable paint types for each surface, and work around your schedule. I carry insurance for all painting work and guarantee my results.</p>
+            </div>
+            <div class="content-image">
+                <img src="professional-interior-painting-byron-bay.avif" alt="Professional interior painting services Byron Bay - premium wall finishes feature walls and color consultation for coastal homes" loading="lazy">
+            </div>
+        </div>
+        
+        <div class="container">
+
+            <div class="service-list">
+                <div class="service-item">
+                    <h3>Interior Painting</h3>
+                    <p>I paint walls, ceilings, and trim with low-VOC paints and precise cutting techniques</p>
+                </div>
+                <div class="service-item">
+                    <h3>Exterior Painting</h3>
+                    <p>I use weather-resistant paints and proper preparation for long-lasting coastal protection</p>
+                </div>
+                <div class="service-item">
+                    <h3>Trim & Detail Work</h3>
+                    <p>I handle windows, doors, and architectural details with careful masking and steady hands</p>
+                </div>
+                <div class="service-item">
+                    <h3>Surface Preparation</h3>
+                    <p>I sand, fill, and prime surfaces properly for optimal paint adhesion and durability</p>
+                </div>
+                <div class="service-item">
+                    <h3>Color Consultation</h3>
+                    <p>I help you choose colors that work with your space and Northern Rivers light conditions</p>
+                </div>
+                <div class="service-item">
+                    <h3>Touch-up & Repairs</h3>
+                    <p>I fix paint damage, match existing colors, and restore painted surfaces to like-new condition</p>
+                </div>
+            </div>
+
+            <!-- Additional Image for Balance -->
+            <div class="balance-image">
+                <img src="quality-painting-finishes-northern-rivers.webp" alt="Expert quality painting finishes Northern Rivers NSW - interior and exterior residential painting services weather-resistant coastal paints" loading="lazy">
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Complete Interior & Exterior Painting Solutions</h2>
-                <p class="section-subtitle">Professional painting services designed to protect and beautify your Northern Rivers property</p>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="testimonials-container">
+            <div class="testimonials-content">
+                <h2>What Byron Bay Property Owners Say</h2>
+                
+                <div class="testimonial">
+                    <div class="testimonial-text">
+                        "Good Hands painted our entire Byron Bay home interior. His surface prep was meticulous and the finish is flawless. He helped us choose colors that work perfectly with our natural light. Professional job with attention to every detail."
+                    </div>
+                    <div class="testimonial-author">Sarah Mitchell</div>
+                    <div class="testimonial-location">Byron Bay Homeowner</div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-text">
+                        "We needed exterior painting that would handle coastal weather. Good Hands used marine-grade paints and took extra time with preparation. Two years later and it still looks perfect. Quality work and honest pricing."
+                    </div>
+                    <div class="testimonial-author">David Thompson</div>
+                    <div class="testimonial-location">Bangalow Property Owner</div>
+                </div>
             </div>
+            
+            <div class="testimonials-image">
+                <img src="painting-testimonial-work-byron-bay.webp" alt="Satisfied customer painting project Byron Bay - professional interior painting transformation before after results Northern Rivers" loading="lazy">
+            </div>
+        </div>
+    </section>
 
+    <!-- Other Services Strip -->
+    <section class="services-strip">
+        <div class="container">
+            <h2 class="strip-title">Other Services I Provide</h2>
             <div class="services-grid">
-                <div class="service-card">
+                <a href="deck-restoration.html" class="service-card" title="Deck Restoration Services Byron Bay">
                     <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"/>
-                            <polyline points="9,22 9,12 15,12 15,22"/>
-                        </svg>
-                    </div>
-                    <h3 class="service-title">Interior House Painting</h3>
-                    <p class="service-description">Complete interior painting including walls, ceilings, trim, and feature walls. Premium paints with low-VOC options for healthy indoor air quality.</p>
-                    <div class="service-price">From $25 per m²</div>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M3 12h18l-9-9-9 9z"/>
-                            <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/>
-                        </svg>
-                    </div>
-                    <h3 class="service-title">Exterior House Painting</h3>
-                    <p class="service-description">Weather-resistant exterior painting designed for Northern Rivers climate. UV protection and moisture resistance for lasting results.</p>
-                    <div class="service-price">From $35 per m²</div>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                            <line x1="3" y1="9" x2="21" y2="9"/>
-                        </svg>
-                    </div>
-                    <h3 class="service-title">Fence & Gate Painting</h3>
-                    <p class="service-description">Timber and metal fence painting with weather protection. Staining, sealing, and protective coatings for long-lasting fence maintenance.</p>
-                    <div class="service-price">From $15 per linear meter</div>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <rect x="2" y="6" width="20" height="12" rx="2"/>
                             <path d="M12 6v12M2 12h20"/>
                         </svg>
                     </div>
-                    <h3 class="service-title">Deck Staining & Painting</h3>
-                    <p class="service-description">Deck restoration with protective stains and coatings. Marine-grade finishes for coastal properties exposed to salt air and moisture.</p>
-                    <div class="service-price">From $30 per m²</div>
-                </div>
-
-                <div class="service-card">
+                    <h4>Deck Restoration</h4>
+                </a>
+                <a href="flooring-installation.html" class="service-card" title="Flooring Installation Services Northern Rivers">
                     <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                            <line x1="9" y1="9" x2="9" y2="15"/>
-                            <line x1="15" y1="9" x2="15" y2="15"/>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="18" height="7"/>
+                            <rect x="3" y="14" width="18" height="7"/>
                         </svg>
                     </div>
-                    <h3 class="service-title">Cabinet & Furniture Painting</h3>
-                    <p class="service-description">Kitchen cabinet refresh, furniture restoration, and custom painting. Transform existing pieces with modern finishes and protective coatings.</p>
-                    <div class="service-price">From $150 per door</div>
-                </div>
-
-                <div class="service-card">
+                    <h4>Flooring Installation</h4>
+                </a>
+                <a href="custom-carpentry.html" class="service-card" title="Custom Carpentry Services Northern Rivers">
                     <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                            <polyline points="14,2 14,8 20,8"/>
-                            <line x1="16" y1="13" x2="8" y2="13"/>
-                            <line x1="16" y1="17" x2="8" y2="17"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                            <line x1="12" y1="18" x2="12" y2="12"/>
+                            <line x1="9" y1="15" x2="15" y2="15"/>
                         </svg>
                     </div>
-                    <h3 class="service-title">Feature Wall Painting</h3>
-                    <p class="service-description">Accent walls, decorative finishes, and specialty painting techniques. Create stunning focal points with texture and color.</p>
-                    <div class="service-price">From $200 per feature wall</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Content Section -->
-    <section class="content-section section-alt">
-        <div class="container">
-            <div class="content-grid">
-                <div class="content-text">
-                    <h2>Quality Painting for Northern Rivers Climate</h2>
-                    <p>Our painting services are specifically designed for the Northern Rivers climate, using premium paints and techniques that withstand coastal conditions, high humidity, and extreme weather variations from Byron Bay to Tweed Heads.</p>
-                    <p>We specialize in both interior and exterior applications, using eco-friendly, low-VOC paints where possible, and weather-resistant exterior coatings that provide long-lasting protection against salt air, UV exposure, and seasonal storms.</p>
-                    <p>From refreshing a single room to complete house repaints, deck staining to fence restoration, our experienced painters deliver professional results that enhance your property's value and curb appeal while providing years of protection.</p>
-                </div>
-                <div class="content-image">
-                    <img src="handyman-byron-bay-professional-service.avif" alt="Professional painting service showing interior wall painting" loading="lazy">
-                </div>
+                    <h4>Custom Carpentry</h4>
+                </a>
+                <a href="fence-repairs-ballina.html" class="service-card" title="Fence Repair Services Northern Rivers">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <line x1="9" y1="3" x2="9" y2="21"/>
+                            <line x1="15" y1="3" x2="15" y2="21"/>
+                        </svg>
+                    </div>
+                    <h4>Fence Repairs</h4>
+                </a>
+                <a href="gutter-cleaning.html" class="service-card" title="Gutter Cleaning Services Byron Bay">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
+                        </svg>
+                    </div>
+                    <h4>Gutter Cleaning</h4>
+                </a>
+                <a href="furniture-assembly.html" class="service-card" title="Furniture Assembly Services Northern Rivers">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                            <polyline points="9,22 9,12 15,12 15,22"/>
+                        </svg>
+                    </div>
+                    <h4>Furniture Assembly</h4>
+                </a>
             </div>
         </div>
     </section>
@@ -881,150 +1068,146 @@
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <h2>Ready to Transform Your Property?</h2>
-            <p>Get your free painting consultation and quote today. Professional interior and exterior painting across Northern Rivers.</p>
-            <a href="tel:0481457271" class="cta-button">Call 0481 457271</a>
+            <h2>Need Quality Painting?</h2>
+            <p>I'll give you an honest quote and paint it properly for coastal conditions</p>
+            <a href="contact.html" class="cta-button">Get Your Free Quote</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-main">
-                <div class="footer-grid">
-                    <!-- Brand & Contact -->
-                    <div class="footer-section brand-section">
-                        <a href="index.html" class="brand-logo">Good Hands</a>
-                        <p class="brand-tagline">Professional handyman services across Northern Rivers NSW</p>
-                        
-                        <div class="contact-item">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                            </svg>
-                            <a href="tel:0481457271">0481 457271</a>
-                        </div>
-                        <div class="contact-item">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                <polyline points="22,6 12,13 2,6"/>
-                            </svg>
-                            <a href="mailto:danhandywork@gmail.com">danhandywork@gmail.com</a>
-                        </div>
-                        <div class="contact-item">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                                <circle cx="12" cy="10" r="3"/>
-                            </svg>
-                            <span>Northern Rivers NSW</span>
-                        </div>
-                    </div>
-
-                    <!-- Core Services -->
-                    <div class="footer-section priority-services">
-                        <h3>My Services</h3>
-                        <ul>
-                            <li><a href="kitchen-door-repairs-northern-rivers.html" class="service-link">Kitchen Door Repairs</a></li>
-                            <li><a href="deck-restoration.html" class="service-link">Deck Restoration</a></li>
-                            <li><a href="gutter-cleaning-northern-rivers.html" class="service-link">Gutter Cleaning</a></li>
-                            <li><a href="fence-repairs-ballina.html" class="service-link">Fence Repairs</a></li>
-                            <li><a href="custom-carpentry.html" class="service-link">Custom Carpentry</a></li>
-                        <li><a href="flooring-installation.html" class="service-link">Flooring Installation</a></li>                            <li><a href="painting-services.html" class="service-link">Painting Services</a></li>
-                            <li><a href="furniture-assembly.html" class="service-link">Furniture Assembly</a></li>
-                            <li><a href="emergency-repairs.html" class="service-link">Emergency Repairs</a></li>
-                            <li><a href="airbnb-maintenance.html" class="service-link">Airbnb Maintenance</a></li>
-                            <li><a href="handyman-services-byron-bay.html" class="service-link">All Services</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Service Areas -->
-                    <div class="footer-section service-areas">
-                        <h3>Service Areas</h3>
-                        <ul class="areas-list">
-                            <li><a href="handyman-byron-bay.html">Byron Bay</a></li>
-                            <li><a href="handyman-ballina.html">Ballina</a></li>
-                            <li><a href="handyman-lismore-new.html">Lismore</a></li>
-                            <li><a href="handyman-bangalow.html">Bangalow</a></li>
-                            <li><a href="handyman-mullumbimby.html">Mullumbimby</a></li>
-                            <li><a href="handyman-tweed-heads.html">Tweed Heads</a></li>
-                            <li><a href="handyman-ocean-shores.html">Ocean Shores</a></li>
-                            <li><a href="handyman-lennox-head.html">Lennox Head</a></li>
-                            <li><a href="handyman-south-golden-beach.html">South Golden Beach</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Quick Actions -->
-                    <div class="footer-section quick-actions">
-                        <h3>Get Started</h3>
-                        <a href="get-quote.html" class="cta-button-footer">Get Free Quote</a>
-                        <a href="about-dan-byron-bay-handyman.html" class="cta-button-footer cta-secondary">About Me</a>
-                        
-                        <div class="business-hours">
-                            <h4>Response Times</h4>
-                            <p><strong>Emergency:</strong> Same day</p>
-                            <p><strong>General:</strong> Within 48 hours</p>
-                            <p><strong>Quotes:</strong> 24 hours</p>
-                            <p><strong>Weekend:</strong> Available</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Trust Signals -->
-                <div class="trust-badges">
-                    <div class="trust-badge">
+        <div class="footer-main">
+            <div class="footer-grid">
+                <!-- Brand & Contact -->
+                <div class="footer-section brand-section">
+                    <h3 class="brand-logo">Good Hands</h3>
+                    <p class="brand-tagline">"Professional property maintenance and handyman services across Northern Rivers NSW. Quality workmanship, fair pricing, and reliable service you can count on."</p>
+                    
+                    <div class="contact-item">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                            <path d="M9 12l2 2 4-4"/>
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
                         </svg>
-                        <span>Fully Insured</span>
+                        <a href="tel:0481457271">0481 457271</a>
                     </div>
-                    <div class="trust-badge">
+
+                    <div class="contact-item">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="8" r="7"/>
-                            <polyline points="8.21,13.89 7,23 12,20 17,23 15.79,13.88"/>
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
                         </svg>
-                        <span>Pride in Workmanship</span>
+                        <a href="mailto:danhandywork@gmail.com">danhandywork@gmail.com</a>
                     </div>
-                    <div class="trust-badge">
+
+                    <div class="contact-item">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
                             <circle cx="12" cy="10" r="3"/>
                         </svg>
-                        <span>Northern Rivers Local</span>
+                        <span>Serving Northern Rivers NSW</span>
                     </div>
-                    <div class="trust-badge">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
-                        </svg>
-                        <span>Same Week Service</span>
+                </div>
+
+                <!-- Core Services -->
+                <div class="footer-section services-section">
+                    <h3>My Services</h3>
+                    <ul>
+                        <li><a href="handyman-services-byron-bay.html" class="service-link">General Handyman</a></li>
+                        <li><a href="painting-services.html" class="service-link">Painting Services</a></li>
+                        <li><a href="deck-restoration.html" class="service-link">Deck Restoration</a></li>
+                        <li><a href="flooring-installation.html" class="service-link">Flooring Installation</a></li>
+                        <li><a href="fence-repairs-ballina.html" class="service-link">Fence Repairs</a></li>
+                        <li><a href="gutter-cleaning.html" class="service-link">Gutter Cleaning</a></li>
+                        <li><a href="custom-carpentry.html" class="service-link">Custom Carpentry</a></li>
+                    </ul>
+                </div>
+
+                <!-- Service Areas -->
+                <div class="footer-section service-areas">
+                    <h3>Service Areas</h3>
+                    <ul class="areas-list">
+                        <li><a href="handyman-byron-bay.html">Byron Bay</a></li>
+                        <li><a href="handyman-ballina.html">Ballina</a></li>
+                        <li><a href="handyman-lismore.html">Lismore</a></li>
+                        <li><a href="handyman-bangalow.html">Bangalow</a></li>
+                        <li><a href="handyman-mullumbimby.html">Mullumbimby</a></li>
+                        <li><a href="handyman-tweed-heads.html">Tweed Heads</a></li>
+                        <li><a href="handyman-ocean-shores.html">Ocean Shores</a></li>
+                    </ul>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="footer-section quick-actions">
+                    <h3>Get Started</h3>
+                    <a href="contact.html" class="cta-button footer-cta">Get Free Quote</a>
+                    <a href="about.html" class="cta-button footer-cta cta-secondary">About Me</a>
+                    
+                    <div class="business-hours">
+                        <h4>Response Times</h4>
+                        <p><strong>Emergency:</strong> Same day</p>
+                        <p><strong>General:</strong> Within 48 hours</p>
+                        <p><strong>Quotes:</strong> 24 hours</p>
+                        <p><strong>Weekend:</strong> Available</p>
                     </div>
                 </div>
             </div>
 
-            <div class="footer-bottom">
-                <div class="footer-bottom-left">
-                    <p>&copy; 2024 Good Hands. All rights reserved. | ABN: 58 600 491 085</p>
+            <!-- Trust Signals -->
+            <div class="trust-badges">
+                <div class="trust-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        <path d="M9 12l2 2 4-4"/>
+                    </svg>
+                    <span>Fully Insured</span>
                 </div>
-                <div class="footer-bottom-right">
-                    <a href="privacy-policy.html">Privacy Policy</a>
-                    <a href="terms-of-service.html">Terms of Service</a>
-                    <div class="social-links">
-                        <a href="#" class="social-link" aria-label="Facebook">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="social-link" aria-label="Instagram">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987 6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.435-3.396-1.157l.027-.016c.436-.01.878-.061 1.298-.143.569-.111 1.07-.25 1.57-.333-.417-.749-.661-1.62-.661-2.539 0-2.956 2.393-5.35 5.35-5.35s5.35 2.394 5.35 5.35c0 .919-.244 1.79-.661 2.539.5.083 1.001.222 1.57.333.42.082.862.133 1.298.143l.027.016c-.948.722-2.099 1.157-3.396 1.157-1.297 0-2.448-.435-3.396-1.157-.948.722-2.099 1.157-3.396 1.157z"/>
-                            </svg>
-                        </a>
-                    </div>
+                <div class="trust-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="8" r="7"/>
+                        <polyline points="8.21,13.89 7,23 12,20 17,23 15.79,13.88"/>
+                    </svg>
+                    <span>Pride in Workmanship</span>
+                </div>
+                <div class="trust-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                        <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                    <span>Northern Rivers Local</span>
+                </div>
+                <div class="trust-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                    </svg>
+                    <span>Same Week Service</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-left">
+                <p>&copy; 2024 Good Hands. All rights reserved. | ABN: 12 345 678 901</p>
+            </div>
+            <div class="footer-bottom-right">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-of-service.html">Terms of Service</a>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987 6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.435-3.396-1.157l.027-.016c.436-.01.878-.061 1.298-.143.569-.111 1.07-.25 1.57-.333-.417-.749-.661-1.62-.661-2.539 0-2.956 2.393-5.35 5.35-5.35s5.35 2.394 5.35 5.35c0 .919-.244 1.79-.661 2.539.5.083 1.001.222 1.57.333.42.082.862.133 1.298.143l.027.016c-.948.722-2.099 1.157-3.396 1.157-1.297 0-2.448-.435-3.396-1.157-.948.722-2.099 1.157-3.396 1.157z"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
     </footer>
+
     <script>
-        // Mobile Menu Toggle Functions
+        // Navigation Functions
         function toggleMobileMenu() {
             const mobileMenu = document.getElementById('mobileMenu');
             mobileMenu.classList.toggle('active');
@@ -1042,16 +1225,6 @@
             
             if (mobileMenu && menuBtn && !mobileMenu.contains(event.target) && !menuBtn.contains(event.target)) {
                 mobileMenu.classList.remove('active');
-            }
-        });
-
-        // Close mobile menu on window resize
-        window.addEventListener('resize', function() {
-            if (window.innerWidth > 768) {
-                const mobileMenu = document.getElementById('mobileMenu');
-                if (mobileMenu) {
-                    mobileMenu.classList.remove('active');
-                }
             }
         });
     </script>

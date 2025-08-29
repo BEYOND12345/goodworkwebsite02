@@ -4,66 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deck Sanding Byron Bay - Professional Coastal Timber Restoration | Good Hands</title>
-    <meta name="description" content="Professional deck sanding Byron Bay. Coastal timber restoration specialist. Salt air damage? We transform weathered decks with marine-grade finishes. Call Dan 0481 457271 - same week service."
+    <meta name="description" content="Professional deck sanding Byron Bay. Coastal timber restoration specialist. Salt air damage? We transform weathered decks with marine-grade finishes. Call Dan 0481 457271 - same week service.">
     
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Schema Markup for Deck Sanding Service -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "name": "Deck Sanding Byron Bay",
-        "description": "Professional deck sanding Byron Bay. Coastal timber restoration specialist. Salt air damage? We transform weathered decks with marine-grade finishes.",
-        "provider": {
-            "@type": "LocalBusiness",
-            "name": "Good Hands",
-            "telephone": "0481457271",
-            "email": "danhandywork@gmail.com",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Byron Bay",
-                "addressRegion": "NSW",
-                "postalCode": "2481",
-                "addressCountry": "AU"
-            }
-        },
-        "areaServed": [
-            "Byron Bay NSW", "Ballina NSW", "Northern Rivers NSW", "Tallow Beach", "Arts Industry Estate"
-        ],
-        "serviceType": "Deck Sanding and Restoration",
-        "category": "Home Improvement",
-        "offers": {
-            "@type": "Offer",
-            "description": "Professional deck sanding services",
-            "priceRange": "$35-65",
-            "priceCurrency": "AUD"
-        }
-    }
-    </script>
-    
-    <!-- Review Schema Markup -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Review",
-        "itemReviewed": {
-            "@type": "Service",
-            "name": "Deck Sanding Byron Bay"
-        },
-        "author": {
-            "@type": "Person",
-            "name": "Michael & Sarah Chen"
-        },
-        "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-        },
-        "reviewBody": "Our deck was completely grey and splintered from years of coastal weather. Good Hands deck sanding Byron Bay service sanded it back properly and applied beautiful timber stain. Now it's the focal point of our outdoor entertaining area. The work quality is outstanding."
-    }
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
     <style>
         :root {
@@ -81,7 +25,6 @@
             --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
             --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
             --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
-            --shadow-xl: 0 20px 25px rgba(0,0,0,0.15);
         }
 
         * {
@@ -105,7 +48,13 @@
             padding: 0 24px;
         }
 
-        /* Header Navigation */
+        @media (min-width: 1240px) {
+            .container {
+                padding: 0 32px;
+            }
+        }
+
+        /* Full Width Header Navigation */
         .header-nav {
             position: fixed;
             top: 0;
@@ -128,77 +77,83 @@
             height: 70px;
         }
 
+        @media (min-width: 1240px) {
+            .nav-container {
+                padding: 0 32px;
+            }
+        }
+
         .nav-logo a {
-            font-size: 1.5rem;
+            font-size: 1.25rem;
             font-weight: 900;
             color: var(--charcoal);
             text-decoration: none;
-            white-space: nowrap;
-            display: inline-block;
+        }
+
+        .nav-logo a:hover {
+            color: var(--yellow-primary);
         }
 
         .nav-menu {
             display: flex;
             align-items: center;
-            gap: 32px;
-            list-style: none;
+            gap: 20px;
         }
 
         .nav-menu a {
             color: var(--charcoal);
             text-decoration: none;
             font-weight: 500;
-            font-size: 1rem;
-            transition: color 0.3s ease;
+            padding: 8px 16px;
+            border-radius: var(--border-radius);
+            transition: all 0.3s ease;
         }
 
         .nav-menu a:hover {
             color: var(--yellow-primary);
+            background: var(--yellow-light);
         }
 
         .nav-cta {
-            background: var(--yellow-primary);
-            color: var(--charcoal);
-            padding: 12px 24px;
-            border-radius: var(--border-radius);
-            font-weight: 900;
-            font-size: 0.95rem;
-            text-decoration: none;
-            transition: all 0.3s ease;
+            background: var(--yellow-primary) !important;
+            color: var(--charcoal) !important;
+            padding: 10px 20px !important;
+            font-weight: 600 !important;
         }
 
         .nav-cta:hover {
-            background: var(--yellow-hover);
+            background: var(--yellow-hover) !important;
             transform: translateY(-2px);
             box-shadow: var(--shadow-md);
         }
 
-        /* Mobile menu button */
         .mobile-menu-btn {
             display: none;
             flex-direction: column;
-            cursor: pointer;
-            border: none;
             background: none;
-            padding: 4px;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+            gap: 4px;
         }
 
         .mobile-menu-btn span {
-            width: 25px;
-            height: 3px;
+            width: 24px;
+            height: 2px;
             background: var(--charcoal);
-            margin: 3px 0;
-            transition: 0.3s;
+            border-radius: 1px;
+            transition: all 0.3s ease;
         }
 
         .mobile-menu {
             display: none;
             position: absolute;
-            top: 70px;
+            top: 100%;
             left: 0;
             right: 0;
             background: var(--white);
             border-bottom: 1px solid var(--light-grey);
+            box-shadow: var(--shadow-lg);
             padding: 20px 0;
         }
 
@@ -208,35 +163,29 @@
             color: var(--charcoal);
             text-decoration: none;
             font-weight: 500;
-            border-bottom: 1px solid var(--light-grey);
+            transition: all 0.3s ease;
         }
 
         .mobile-menu a:hover {
-            background: var(--bg-subtle);
+            background: var(--yellow-light);
             color: var(--yellow-primary);
-        }
-
-        .mobile-menu.active {
-            display: block;
         }
 
         /* Hero Section */
         .hero {
-            height: 70vh;
-            min-height: 500px;
-            background: linear-gradient(rgba(45, 55, 72, 0.7), rgba(45, 55, 72, 0.7)), 
-                        url('deck-sanding-hero-bg.avif');
+            height: 500px;
+            background: linear-gradient(rgba(45, 55, 72, 0.8), rgba(45, 55, 72, 0.8)), url('deck-sanding-hero-bg.avif');
             background-size: cover;
             background-position: center;
             display: flex;
             align-items: center;
             justify-content: center;
+            color: white;
             text-align: center;
-            color: var(--white);
         }
 
         .hero h1 {
-            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
             font-weight: 900;
             margin-bottom: 24px;
             letter-spacing: -0.025em;
@@ -244,15 +193,14 @@
         }
 
         .hero-subtitle {
-            font-size: 1.5rem;
+            font-size: 1.25rem;
             opacity: 0.9;
             max-width: 700px;
             margin: 0 auto 32px;
-            line-height: 1.4;
+            line-height: 1.5;
         }
 
         .cta-button {
-            display: inline-block;
             background: var(--yellow-primary);
             color: var(--charcoal);
             padding: 18px 36px;
@@ -261,8 +209,8 @@
             font-size: 1.125rem;
             font-weight: 600;
             text-decoration: none;
+            display: inline-block;
             transition: all 0.3s ease;
-            cursor: pointer;
         }
 
         .cta-button:hover {
@@ -271,9 +219,13 @@
             box-shadow: var(--shadow-lg);
         }
 
-        /* Section styles */
+        /* Content Sections */
         .section {
             padding: 80px 0;
+        }
+
+        .section-alt {
+            background: var(--bg-subtle);
         }
 
         .section-header {
@@ -282,45 +234,34 @@
         }
 
         .section-title {
-            font-size: clamp(2rem, 4vw, 2.75rem);
+            font-size: clamp(2rem, 4vw, 2.5rem);
             font-weight: 900;
             color: var(--charcoal);
-            margin-bottom: 16px;
+            margin-bottom: 24px;
             letter-spacing: -0.02em;
-        }
-
-        .section-subtitle {
-            font-size: 1.125rem;
-            color: var(--medium-grey);
-            max-width: 700px;
-            margin: 0 auto;
-            line-height: 1.6;
         }
 
         /* Content with Image */
         .content-with-image {
             display: grid;
             grid-template-columns: 1.2fr 0.8fr;
-            gap: 40px;
+            gap: 64px;
             align-items: center;
-            margin: 0 auto 40px;
-            max-width: 1200px;
-            padding: 0 24px;
+            margin: 0 auto 80px;
         }
 
         .content-text {
-            font-size: 1.125rem;
-            line-height: 1.7;
+            font-size: 1.2rem;
+            line-height: 1.8;
             color: var(--dark-grey);
         }
 
         .content-text p {
-            margin-bottom: 24px;
+            margin-bottom: 0;
         }
 
-        .content-text strong {
-            color: var(--charcoal);
-            font-weight: 600;
+        .content-text p + p {
+            margin-top: 32px;
         }
 
         .content-image {
@@ -331,7 +272,7 @@
         }
 
         .content-image:hover {
-            transform: translateY(-8px);
+            transform: translateY(-4px);
             box-shadow: 0 20px 40px rgba(0,0,0,0.15);
         }
 
@@ -343,9 +284,45 @@
             object-fit: cover;
         }
 
+        /* Service List */
+        .service-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 32px;
+            margin-bottom: 80px;
+        }
+
+        .service-item {
+            background: var(--white);
+            padding: 32px;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--light-grey);
+            transition: all 0.3s ease;
+        }
+
+        .service-item:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--yellow-primary);
+        }
+
+        .service-item h3 {
+            font-size: 1.5rem;
+            color: var(--charcoal);
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        .service-item p {
+            color: var(--dark-grey);
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+
         /* Balance Image */
         .balance-image {
-            margin-top: 40px;
+            margin: 80px 0;
             border-radius: var(--border-radius-lg);
             overflow: hidden;
             box-shadow: var(--shadow-lg);
@@ -367,25 +344,22 @@
 
         /* Testimonials Section */
         .testimonials {
-            padding: 40px 0;
+            padding: 80px 0;
             background: var(--bg-subtle);
         }
 
         .testimonials-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 48px;
+            gap: 64px;
             align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 24px;
         }
 
         .testimonials-content h2 {
             font-size: clamp(2rem, 4vw, 2.5rem);
             font-weight: 900;
             color: var(--charcoal);
-            margin-bottom: 32px;
+            margin-bottom: 48px;
             letter-spacing: -0.02em;
         }
 
@@ -394,7 +368,7 @@
             padding: 32px;
             border-radius: var(--border-radius-lg);
             box-shadow: var(--shadow-sm);
-            margin-bottom: 24px;
+            margin-bottom: 32px;
             border-left: 4px solid var(--yellow-primary);
         }
 
@@ -402,14 +376,20 @@
             font-size: 1.1rem;
             line-height: 1.7;
             color: var(--dark-grey);
-            margin-bottom: 16px;
+            margin-bottom: 20px;
             font-style: italic;
         }
 
         .testimonial-author {
-            font-weight: 600;
+            font-weight: 700;
             color: var(--charcoal);
             font-size: 1rem;
+        }
+
+        .testimonial-location {
+            font-size: 0.9rem;
+            color: var(--medium-grey);
+            margin-top: 4px;
         }
 
         .testimonials-image {
@@ -417,9 +397,6 @@
             overflow: hidden;
             box-shadow: var(--shadow-lg);
             transition: all 0.3s ease;
-            height: 100%;
-            display: flex;
-            align-items: center;
         }
 
         .testimonials-image:hover {
@@ -429,7 +406,7 @@
 
         .testimonials-image img {
             width: 100%;
-            height: 100%;
+            height: auto;
             display: block;
             aspect-ratio: 4/3;
             object-fit: cover;
@@ -442,25 +419,23 @@
         }
 
         .strip-title {
-            text-align: center;
             font-size: clamp(1.75rem, 3vw, 2.25rem);
             font-weight: 900;
             color: var(--charcoal);
-            margin-bottom: 48px;
+            text-align: center;
+            margin-bottom: 64px;
             letter-spacing: -0.02em;
         }
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(6, 1fr);
             gap: 24px;
-            max-width: 1000px;
-            margin: 0 auto;
         }
 
         .service-card {
             text-align: center;
-            padding: 24px 16px;
+            padding: 32px 20px;
             background: var(--bg-subtle);
             border-radius: var(--border-radius-lg);
             text-decoration: none;
@@ -478,12 +453,9 @@
         .service-icon {
             width: 48px;
             height: 48px;
-            margin: 0 auto 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--yellow-primary);
+            margin: 0 auto 16px;
             transition: transform 0.3s ease;
+            color: var(--yellow-primary);
         }
 
         .service-icon svg {
@@ -500,41 +472,69 @@
             font-size: 1rem;
             font-weight: 600;
             color: var(--charcoal);
-            margin-bottom: 0;
-            line-height: 1.3;
+            margin: 0;
         }
 
-        .service-card a {
-            color: inherit;
-            text-decoration: none;
+        /* Final CTA */
+        .final-cta {
+            background: var(--yellow-primary);
+            color: var(--charcoal);
+            text-align: center;
+            padding: 80px 0;
         }
 
-        /* Footer */
+        .final-cta h2 {
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            font-weight: 900;
+            color: var(--charcoal);
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
+        }
+
+        .final-cta p {
+            font-size: 1.25rem;
+            color: var(--charcoal);
+            opacity: 0.8;
+            margin-bottom: 40px;
+        }
+
+        .final-cta .cta-button {
+            background: var(--charcoal);
+            color: var(--white);
+        }
+
+        .final-cta .cta-button:hover {
+            background: var(--dark-grey);
+            transform: translateY(-2px);
+        }
+
+        /* Professional Footer Styles */
         .footer {
             background: var(--charcoal);
             color: var(--white);
-            padding: 64px 0 24px;
-            margin-top: 80px;
         }
 
         .footer-main {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 24px;
+            padding: 64px 0 48px;
         }
 
         .footer-grid {
             display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
             gap: 48px;
             margin-bottom: 48px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 24px;
         }
 
         .footer-section h3 {
             color: var(--yellow-primary);
-            font-size: 1.125rem;
             font-weight: 600;
-            margin-bottom: 20px;
+            font-size: 1.125rem;
+            margin-bottom: 24px;
+            letter-spacing: -0.025em;
         }
 
         .footer-section ul {
@@ -546,10 +546,12 @@
         }
 
         .footer-section a {
-            color: rgba(255,255,255,0.8);
+            color: rgba(255,255,255,0.85);
             text-decoration: none;
             font-size: 0.95rem;
             transition: all 0.3s ease;
+            display: block;
+            padding: 4px 0;
         }
 
         .footer-section a:hover {
@@ -557,6 +559,14 @@
             transform: translateX(4px);
         }
 
+        .footer-section p {
+            color: rgba(255,255,255,0.8);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+
+        /* Brand Section */
         .brand-section {
             grid-column: 1;
         }
@@ -594,57 +604,263 @@
         .contact-item a {
             color: inherit;
             text-decoration: none;
+            padding: 0;
+            transform: none;
         }
 
+        .contact-item a:hover {
+            color: var(--yellow-primary);
+            transform: none;
+        }
+
+        /* Priority Services */
+        .priority-services {
+            grid-column: 2;
+        }
+
+        .service-link {
+            position: relative;
+        }
+
+        .service-link.popular::after {
+            content: "Popular";
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background: var(--yellow-primary);
+            color: var(--charcoal);
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 2px 8px;
+            border-radius: 12px;
+        }
+
+        /* Service Areas */
+        .service-areas {
+            grid-column: 3;
+        }
+
+        /* Quick Actions */
+        .quick-actions {
+            grid-column: 4;
+        }
+
+        .cta-button.footer-cta {
+            background: var(--yellow-primary);
+            color: var(--charcoal);
+            padding: 16px 24px;
+            border: none;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button.footer-cta:hover {
+            background: var(--yellow-hover);
+            transform: translateY(-2px);
+        }
+
+        .cta-secondary {
+            background: transparent;
+            border: 2px solid rgba(255,255,255,0.3);
+            color: var(--white);
+        }
+
+        .cta-secondary:hover {
+            border-color: var(--yellow-primary);
+            color: var(--yellow-primary);
+            background: transparent;
+        }
+
+        .business-hours {
+            margin-top: 24px;
+            padding: 20px;
+            background: rgba(255,255,255,0.05);
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--yellow-primary);
+        }
+
+        .business-hours h4 {
+            color: var(--yellow-primary);
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .business-hours p {
+            color: rgba(255,255,255,0.9);
+            font-size: 0.875rem;
+            margin-bottom: 8px;
+        }
+
+        /* Footer Bottom */
         .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding: 32px 24px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding-top: 32px;
+            flex-wrap: wrap;
+            gap: 16px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-bottom-left {
             color: rgba(255,255,255,0.6);
             font-size: 0.875rem;
         }
 
+        .footer-bottom-right {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+        }
+
+        .footer-bottom-right a {
+            color: rgba(255,255,255,0.6);
+            text-decoration: none;
+            font-size: 0.875rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-bottom-right a:hover {
+            color: var(--yellow-primary);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 12px;
+        }
+
+        .social-link {
+            width: 36px;
+            height: 36px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: var(--yellow-primary);
+            color: var(--charcoal);
+            transform: translateY(-2px);
+        }
+
+        .social-link svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        /* Trust Badges */
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            padding: 24px 0;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin-top: 24px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .trust-badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: rgba(255,255,255,0.8);
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .trust-badge svg {
+            width: 20px;
+            height: 20px;
+            color: var(--yellow-primary);
+        }
+
         /* Mobile Responsive */
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
             .nav-menu {
                 display: none;
             }
-            
+
             .mobile-menu-btn {
                 display: flex;
             }
-            
+
             .mobile-menu.active {
                 display: block;
             }
+        }
 
-            .hero {
-                min-height: 500px;
+        @media (max-width: 968px) {
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 32px;
+            }
+
+            .brand-section {
+                grid-column: 1 / -1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
                 padding: 0 20px;
+            }
+            
+            .section {
+                padding: 60px 0;
+            }
+
+            .service-list {
+                grid-template-columns: 1fr;
+                gap: 24px;
+                margin-bottom: 60px;
             }
 
             .content-with-image {
                 grid-template-columns: 1fr;
-                gap: 40px;
-                margin-bottom: 40px;
-                padding: 0 24px;
+                gap: 48px;
+                margin-bottom: 60px;
+            }
+
+            .content-text {
+                font-size: 1.1rem;
+                line-height: 1.7;
+            }
+
+            .content-text p + p {
+                margin-top: 24px;
             }
 
             .testimonials-container {
                 grid-template-columns: 1fr;
-                gap: 40px;
-                padding: 0 24px;
+                gap: 48px;
             }
 
             .services-grid {
-                grid-template-columns: 1fr;
-                gap: 20px;
-                padding: 0 24px;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 16px;
             }
 
             .service-card {
-                padding: 20px 12px;
+                padding: 24px 16px;
             }
 
             .service-icon {
@@ -656,179 +872,50 @@
                 font-size: 0.9rem;
             }
 
+            .balance-image {
+                margin: 60px 0;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .footer-main {
+                padding: 48px 0 32px;
+            }
+
             .footer-grid {
                 grid-template-columns: 1fr;
                 gap: 32px;
-                text-align: center;
+                padding: 0 24px;
             }
 
             .footer-bottom {
+                padding: 24px;
                 flex-direction: column;
-                gap: 16px;
-                text-align: center;
-            }
-        }
-
-        /* Missing Footer Styles */
-        .quick-actions .cta-button {
-            display: inline-block;
-            margin-bottom: 16px;
-            margin-right: 12px;
-            padding: 12px 24px;
-            font-size: 0.95rem;
-            background: var(--yellow-primary);
-            color: var(--charcoal);
-            border-radius: var(--border-radius);
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-
-        .quick-actions .cta-button:hover {
-            background: var(--yellow-hover);
-            transform: translateY(-2px);
-        }
-
-        .quick-actions .cta-secondary {
-            background: transparent;
-            border: 2px solid var(--yellow-primary);
-            color: var(--yellow-primary);
-        }
-
-        .quick-actions .cta-secondary:hover {
-            background: var(--yellow-primary);
-            color: var(--charcoal);
-        }
-
-        .business-hours {
-            margin-top: 24px;
-            padding-top: 24px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .business-hours h4 {
-            font-size: 1rem;
-            margin-bottom: 12px;
-            color: var(--yellow-primary);
-        }
-
-        .business-hours p {
-            margin-bottom: 8px;
-            font-size: 0.9rem;
-            color: rgba(255,255,255,0.85);
-        }
-
-        .trust-badges {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            padding: 32px 24px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            margin: 32px auto;
-            max-width: 1200px;
-        }
-
-        .trust-badge {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            color: var(--white);
-            opacity: 0.9;
-        }
-
-        .trust-badge svg {
-            width: 24px;
-            height: 24px;
-            color: var(--yellow-primary);
-            flex-shrink: 0;
-        }
-
-        .footer-bottom {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 24px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .footer-bottom-left p {
-            opacity: 0.7;
-            font-size: 0.875rem;
-            margin: 0;
-        }
-
-        .footer-bottom-right {
-            display: flex;
-            align-items: center;
-            gap: 24px;
-        }
-
-        .footer-bottom-right a {
-            color: var(--white);
-            text-decoration: none;
-            opacity: 0.7;
-            font-size: 0.875rem;
-            transition: opacity 0.3s ease;
-        }
-
-        .footer-bottom-right a:hover {
-            opacity: 1;
-        }
-
-        .social-links {
-            display: flex;
-            gap: 16px;
-        }
-
-        .social-link {
-            width: 32px;
-            height: 32px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            transition: background 0.3s ease;
-        }
-
-        .social-link:hover {
-            background: var(--yellow-primary);
-        }
-
-        .social-link svg {
-            width: 16px;
-            height: 16px;
-            fill: currentColor;
-        }
-
-        @media (max-width: 768px) {
-            .footer-grid {
-                grid-template-columns: 1fr;
-                gap: 32px;
-            }
-
-            .footer-trust-badges {
-                grid-template-columns: 1fr;
-            }
-
-            .footer-bottom {
-                flex-direction: column;
-                gap: 16px;
                 text-align: center;
             }
 
-            .footer-bottom-right {
-                flex-direction: column;
+            .trust-badges {
+                flex-wrap: wrap;
                 gap: 16px;
+            }
+
+            .service-link.popular::after {
+                position: static;
+                display: inline-block;
+                margin-left: 8px;
+                transform: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
     </style>
 </head>
 <body>
-    <!-- Full Width Header Navigation -->
+    <!-- Header Navigation -->
     <header class="header-nav">
         <div class="nav-container">
             <div class="nav-logo">
@@ -836,8 +923,8 @@
             </div>
             <nav class="nav-menu">
                 <a href="index.html">Home</a>
-                <a href="services.html">Services</a>
-                <a href="areas.html">Areas</a>
+                <a href="handyman-services-byron-bay.html">Services</a>
+                <a href="service-areas.html">Areas</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
                 <a href="tel:0481457271" class="nav-cta">Call Now</a>
@@ -847,155 +934,157 @@
                 <span></span>
                 <span></span>
             </button>
-        </div>
-        <div class="mobile-menu" id="mobileMenu">
-            <a href="index.html" onclick="closeMobileMenu()">Home</a>
-            <a href="services.html" onclick="closeMobileMenu()">Services</a>
-            <a href="areas.html" onclick="closeMobileMenu()">Areas</a>
-            <a href="about.html" onclick="closeMobileMenu()">About</a>
-            <a href="contact.html" onclick="closeMobileMenu()">Contact</a>
-            <a href="tel:0481457271" onclick="closeMobileMenu()">Call Now</a>
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="index.html" onclick="closeMobileMenu()">Home</a>
+                <a href="about-dan-byron-bay-handyman.html" onclick="closeMobileMenu()">About Dan</a>
+                <a href="handyman-services-byron-bay.html" onclick="closeMobileMenu()">Services</a>
+                <a href="handyman-pricing-northern-rivers.html" onclick="closeMobileMenu()">Pricing</a>
+                <a href="get-quote.html" onclick="closeMobileMenu()">Get Quote</a>
+                <a href="tel:0481457271" onclick="closeMobileMenu()">Call Now</a>
+            </div>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>Deck Sanding Byron Bay - Coastal Timber Specialists</h1>
-            <p class="hero-subtitle">Expert deck sanding & restoration in Byron Bay. Marine-grade finishes that withstand coastal conditions - from Tallow Beach to Arts & Industry Estate</p>
+            <h1>Deck Sanding Byron Bay</h1>
+            <p class="hero-subtitle">Expert deck sanding & restoration in Byron Bay. Marine-grade finishes that withstand coastal conditions</p>
             <a href="contact.html" class="cta-button">Get Free Quote</a>
         </div>
     </section>
 
-    <!-- Main Content Section -->
+    <!-- Main Content -->
     <section class="section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Expert Deck Sanding Byron Bay Services</h2>
-                <p class="section-subtitle">Professional <strong>deck sanding Byron Bay</strong> specialist - bringing weathered coastal timber back to life</p>
-            </div>
-        </div>
-        
-        <div class="content-with-image">
-            <div class="content-text">
-                <p>As a specialist in <strong>deck sanding Byron Bay</strong>, I understand what Northern Rivers weather does to timber decks. Sun, rain, and coastal conditions leave decks grey, splintered, and weathered. I properly restore them using professional-grade sanders and proven techniques that actually last.</p>
-                
-                <p><strong>I don't rush the sanding process.</strong> Multi-grit progression removes old finishes and weathering while preserving the timber's integrity. I use quality stains and oils that penetrate properly - not cheap products that peel off in 12 months. The result is a deck that looks better than new and handles our coastal climate.</p>
-
-                <p>Need comprehensive <a href="deck-restoration-byron-bay.html" style="color: #FFB800;">deck oiling Byron Bay</a> services after sanding? I provide complete deck restoration packages. For broader property maintenance, check out my full <a href="handyman-byron-bay.html" style="color: #FFB800;">handyman Byron Bay</a> services.</p>
-            </div>
-            <div class="content-image">
-                <img src="deck-sanding-professional-service.webp" alt="Professional deck sanding service Northern Rivers NSW - expert timber deck restoration using quality equipment Byron Bay Ballina" loading="lazy">
+                <h2 class="section-title">Professional Deck Sanding Services - Byron Bay & Northern Rivers</h2>
             </div>
         </div>
         
         <div class="container">
+            <div class="content-with-image">
+                <div class="content-text">
+                    <p>I understand what Northern Rivers weather does to timber decks. Sun, rain, and coastal conditions leave decks grey, splintered, and weathered. I properly restore them using professional-grade sanders and proven techniques that actually last in our coastal climate.</p>
+                    
+                    <p>I don't rush the sanding process. Multi-grit progression removes old finishes and weathering while preserving the timber's integrity. I use quality stains and oils that penetrate properly - not cheap products that peel off in 12 months. The result is a deck that looks better than new and handles coastal conditions.</p>
+                </div>
+                <div class="content-image">
+                    <img src="deck-sanding-professional-service.webp" alt="Professional deck sanding service Northern Rivers NSW - expert timber deck restoration using quality equipment Byron Bay Ballina" loading="lazy">
+                </div>
+            </div>
+
+            <div class="service-list">
+                <div class="service-item">
+                    <h3>Professional Sanding</h3>
+                    <p>I use multi-grit progression (40-80-120-220) that removes weathering while preserving timber integrity, not quick fixes that damage the wood.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Coastal Expertise</h3>
+                    <p>15+ years specialising in Byron Bay decks means I understand salt air damage and use marine-grade products that actually last.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Quality Finishes</h3>
+                    <p>I apply proven stains and oils from Cabot's and Feast Watson that penetrate properly, not cheap coatings that peel off.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Structural Assessment</h3>
+                    <p>I check for loose boards, protruding nails, and structural issues before sanding, ensuring a safe and complete restoration.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Proper Preparation</h3>
+                    <p>I protect plants, clean properly, and mask adjacent surfaces - professional preparation for professional results.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Weather Timing</h3>
+                    <p>I schedule work for optimal weather conditions, ensuring proper curing and finish adhesion in our coastal environment.</p>
+                </div>
+            </div>
+
+            <!-- Additional Image for Balance -->
             <div class="balance-image">
                 <img src="deck-sanding-wide-before-after.webp" alt="Deck sanding before and after transformation Northern Rivers - weathered timber deck restored to beautiful finish Byron Bay specialist" loading="lazy">
             </div>
         </div>
     </section>
 
-    <!-- Expertise Section -->
-    <section class="section" style="background: var(--bg-subtle);">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Why Choose Our Deck Sanding Byron Bay Service?</h2>
-                <p class="section-subtitle">15+ years of specialized coastal timber restoration experience</p>
-            </div>
-            
-            <div class="content-with-image">
-                <div class="content-text">
-                    <h3 style="color: var(--charcoal); font-weight: 700; margin: 24px 0 16px 0;">Coastal Deck Sanding Expertise</h3>
-                    <p>My <strong>deck sanding Byron Bay</strong> process is specifically designed for coastal conditions. Unlike inland timber, Byron Bay decks face unique challenges from salt air, UV exposure, and seasonal weather patterns. I've refined my techniques over 15 years to address these specific coastal challenges.</p>
-                    
-                    <p>From Tallow Beach properties to Arts & Industry Estate commercial decks, I understand how different Byron Bay microclimates affect timber. My professional service uses marine-grade equipment and coastal-rated materials that actually last in this environment.</p>
-                    
-                    <h3 style="color: var(--charcoal); font-weight: 700; margin: 24px 0 16px 0;">Professional Equipment & Techniques</h3>
-                    <p>Professional deck restoration requires the right tools and knowledge. I use commercial-grade orbital sanders with progressive grit sequences (40-80-120-220) that remove weathering while preserving timber integrity. This thorough approach is what sets my Byron Bay service apart from quick-fix competitors.</p>
-                </div>
-                <div class="content-image">
-                    <img src="deck-sanding-equipment-professional.webp" alt="Professional deck sanding Byron Bay equipment and techniques for coastal timber restoration" loading="lazy">
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Testimonials Section -->
     <section class="testimonials">
-        <div class="testimonials-container">
-            <div class="testimonials-content">
-                <h2>What Good Hands Customers Say</h2>
-                
-                <div class="testimonial">
-                    <div class="testimonial-text">"Our deck was completely grey and splintered from years of coastal weather. Good Hands <strong>deck sanding Byron Bay</strong> service sanded it back properly and applied beautiful timber stain. Now it's the focal point of our outdoor entertaining area. The work quality is outstanding."</div>
-                    <div class="testimonial-author">Michael & Sarah Chen</div>
+        <div class="container">
+            <div class="testimonials-container">
+                <div class="testimonials-content">
+                    <h2>What Byron Bay Property Owners Say</h2>
+                    
+                    <div class="testimonial">
+                        <div class="testimonial-text">
+                            "Our deck was completely grey and splintered from years of coastal weather. Good Hands sanded it back properly and applied beautiful timber stain. Now it's the focal point of our outdoor entertaining area. The work quality is outstanding and has lasted through two wet seasons."
+                        </div>
+                        <div class="testimonial-author">Michael & Sarah Chen</div>
+                        <div class="testimonial-location">Tallow Beach, Byron Bay</div>
+                    </div>
+
+                    <div class="testimonial">
+                        <div class="testimonial-text">
+                            "I had three quotes for deck restoration. Dan's approach was the most thorough - proper sanding grades, quality products, and realistic timeframes. The finished deck exceeded our expectations and the professional finish has held up perfectly in our coastal location."
+                        </div>
+                        <div class="testimonial-author">Jennifer Robertson</div>
+                        <div class="testimonial-location">Arts & Industry Estate, Byron Bay</div>
+                    </div>
                 </div>
                 
-                <div class="testimonial">
-                    <div class="testimonial-text">"I had three quotes for deck restoration. Dan's approach was the most thorough - proper sanding grades, quality products, and realistic timeframes. The finished deck exceeded our expectations and has lasted perfectly through two wet seasons."</div>
-                    <div class="testimonial-author">Jennifer Robertson</div>
+                <div class="testimonials-image">
+                    <img src="deck-sanding-testimonial-northern-rivers.webp" alt="Happy customer with professionally sanded deck Northern Rivers - testimonial for Good Hands deck restoration service" loading="lazy">
                 </div>
-            </div>
-            
-            <div class="testimonials-image">
-                <img src="deck-sanding-testimonial-northern-rivers.webp" alt="Happy customer with professionally sanded deck Northern Rivers - testimonial for Good Hands deck restoration service" loading="lazy">
             </div>
         </div>
     </section>
 
-    <!-- Services Strip -->
+    <!-- Other Services Strip -->
     <section class="services-strip">
         <div class="container">
-            <h2 class="strip-title">Professional <span style="color: #FFB800;">Deck Sanding Byron Bay</span> - Related Services</h2>
+            <h2 class="strip-title">Other Services I Provide</h2>
             <div class="services-grid">
-                <a href="deck-restoration.html" class="service-card">
+                <a href="deck-restoration.html" class="service-card" title="Deck Restoration Services Byron Bay">
                     <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
                             <polyline points="9 22 9 12 15 12 15 22"/>
                         </svg>
                     </div>
                     <h4>Deck Restoration</h4>
                 </a>
-                
-                <a href="gutter-cleaning.html" class="service-card">
+                <a href="gutter-cleaning.html" class="service-card" title="Gutter Cleaning Services Byron Bay">
                     <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M3 3l18 18"/>
-                            <path d="M20 16V7a2 2 0 0 0-2-2H9"/>
-                            <path d="M14 12l-4 4"/>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 3h18v18H3zM9 3v18m6-18v18"/>
                         </svg>
                     </div>
                     <h4>Gutter Cleaning</h4>
                 </a>
-                
-                <a href="kitchen-door-repairs-northern-rivers.html" class="service-card">
+                <a href="custom-carpentry.html" class="service-card" title="Custom Carpentry Services Northern Rivers">
                     <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="2" y="4" width="20" height="16" rx="2"/>
-                            <path d="M8 4v16"/>
-                            <path d="M16 4v16"/>
-                            <path d="M12 9v2"/>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                            <line x1="12" y1="18" x2="12" y2="12"/>
+                            <line x1="9" y1="15" x2="15" y2="15"/>
                         </svg>
                     </div>
-                    <h4>Kitchen Repairs</h4>
+                    <h4>Custom Carpentry</h4>
                 </a>
-                
-                <a href="fence-repairs-ballina.html" class="service-card">
+                <a href="fence-repairs-ballina.html" class="service-card" title="Fence Repair Services Northern Rivers">
                     <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M4 12v8h4v-8M4 12l4-8v8"/>
-                            <path d="M12 12v8h4v-8M12 12l4-8v8"/>
-                            <path d="M20 12v8h-4v-8M20 12l-4-8v8"/>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <line x1="9" y1="3" x2="9" y2="21"/>
+                            <line x1="15" y1="3" x2="15" y2="21"/>
                         </svg>
                     </div>
                     <h4>Fence Repairs</h4>
                 </a>
-                
-                <a href="airbnb-maintenance.html" class="service-card">
+                <a href="airbnb-maintenance.html" class="service-card" title="Airbnb Maintenance Services Byron Bay">
                     <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
                             <path d="M9 21V9h6v12"/>
                             <circle cx="12" cy="14" r="1"/>
@@ -1003,40 +1092,52 @@
                     </div>
                     <h4>Airbnb Maintenance</h4>
                 </a>
-                
-                <a href="emergency-repairs.html" class="service-card">
+                <a href="emergency-repairs.html" class="service-card" title="Emergency Repair Services Northern Rivers">
                     <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <circle cx="12" cy="12" r="10"/>
                             <path d="M12 8v4l2 2"/>
                         </svg>
                     </div>
                     <h4>Emergency Repairs</h4>
                 </a>
-                
-                <a href="handyman-bangalow.html" class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
-                        </svg>
-                    </div>
-                    <h4>General Handyman</h4>
-                </a>
-                
-                <a href="handyman-pricing-northern-rivers.html" class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <line x1="12" y1="1" x2="12" y2="23"/>
-                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
-                        </svg>
-                    </div>
-                    <h4>View Pricing</h4>
-                </a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Final CTA Section -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Need Your Deck Sanded?</h2>
+            <p>I'll restore your weathered deck with professional sanding and quality finishes</p>
+            <a href="contact.html" class="cta-button">Get Your Free Quote</a>
+        </div>
+    </section>
+
+    <script>
+        // Navigation Functions
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('active');
+        }
+
+        function closeMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.remove('active');
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const mobileMenu = document.getElementById('mobileMenu');
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            
+            if (mobileMenu && menuBtn && !mobileMenu.contains(event.target) && !menuBtn.contains(event.target)) {
+                mobileMenu.classList.remove('active');
+            }
+        });
+    </script>
+
+    <!-- Professional Footer -->
     <footer class="footer">
         <div class="footer-main">
             <div class="footer-grid">
@@ -1051,13 +1152,15 @@
                         </svg>
                         <a href="tel:0481457271">0481 457271</a>
                     </div>
+
                     <div class="contact-item">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
                             <polyline points="22,6 12,13 2,6"/>
                         </svg>
-                        <a href="mailto:danhandywork@gmail.com">danhandywork@gmail.com</a>
+                        <a href="mailto:info@goodhandshandyman.com.au">info@goodhandshandyman.com.au</a>
                     </div>
+
                     <div class="contact-item">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
@@ -1066,9 +1169,10 @@
                         <span>Serving Northern Rivers NSW</span>
                     </div>
                 </div>
+
                 <!-- Core Services -->
-                <div class="footer-section services-section">
-                    <h3>My Services</h3>
+                <div class="footer-section priority-services">
+                    <h3>Most Requested Services</h3>
                     <ul>
                         <li><a href="handyman-services-byron-bay.html" class="service-link">General Handyman</a></li>
                         <li><a href="deck-restoration.html" class="service-link">Deck Restoration</a></li>
@@ -1077,29 +1181,37 @@
                         <li><a href="gutter-cleaning.html" class="service-link">Gutter Cleaning</a></li>
                         <li><a href="airbnb-maintenance.html" class="service-link">Airbnb Maintenance</a></li>
                         <li><a href="custom-carpentry.html" class="service-link">Custom Carpentry</a></li>
-                        <li><a href="flooring-installation.html" class="service-link">Flooring Installation</a></li>                        <li><a href="emergency-repairs.html" class="service-link">Emergency Repairs</a></li>
+                        <li><a href="flooring-installation.html" class="service-link">Flooring Installation</a></li>
+                        <li><a href="emergency-repairs.html" class="service-link">Emergency Repairs</a></li>
                     </ul>
                 </div>
+
                 <!-- Service Areas -->
                 <div class="footer-section service-areas">
                     <h3>Service Areas</h3>
-                    <ul class="areas-list">
+                    <ul class="areas-primary">
                         <li><a href="handyman-byron-bay.html">Byron Bay</a></li>
                         <li><a href="handyman-ballina.html">Ballina</a></li>
                         <li><a href="handyman-lismore.html">Lismore</a></li>
                         <li><a href="handyman-bangalow.html">Bangalow</a></li>
                         <li><a href="handyman-mullumbimby.html">Mullumbimby</a></li>
-                        <li><a href="handyman-tweed-heads.html">Tweed Heads</a></li>
-                        <li><a href="handyman-ocean-shores.html">Ocean Shores</a></li>
-                        <li><a href="handyman-lennox-head.html">Lennox Head</a></li>
-                        <li><a href="handyman-south-golden-beach.html">South Golden Beach</a></li>
                     </ul>
+                    <div class="areas-extended">
+                        <h4>Also Covering</h4>
+                        <ul>
+                            <li><a href="handyman-tweed-heads.html">Tweed Heads</a></li>
+                            <li><a href="handyman-ocean-shores.html">Ocean Shores</a></li>
+                            <li><a href="handyman-lennox-head.html">Lennox Head</a></li>
+                            <li><a href="handyman-south-golden-beach.html">South Golden Beach</a></li>
+                        </ul>
+                    </div>
                 </div>
+
                 <!-- Quick Actions -->
                 <div class="footer-section quick-actions">
                     <h3>Get Started</h3>
-                    <a href="contact.html" class="cta-button">Get Free Quote</a>
-                    <a href="about.html" class="cta-button cta-secondary">About Me</a>
+                    <a href="contact.html" class="cta-button footer-cta">Get Free Quote</a>
+                    <a href="about.html" class="cta-button footer-cta cta-secondary">About Me</a>
                     
                     <div class="business-hours">
                         <h4>Response Times</h4>
@@ -1110,6 +1222,7 @@
                     </div>
                 </div>
             </div>
+
             <!-- Trust Signals -->
             <div class="trust-badges">
                 <div class="trust-badge">
@@ -1157,35 +1270,12 @@
                     </a>
                     <a href="#" class="social-link" aria-label="Instagram">
                         <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987 6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.435-3.396-1.157l.027-.016c.436-.01.878-.061 1.298-.143.569-.111 1.07-.25 1.57-.333-.417-.749-.661-1.62-.661-2.539 0-2.956 2.393-5.35 5.35-5.35s5.35 2.394 5.35 5.35c0 .919-.244 1.79-.661 2.539.5.083 1.001.222 1.57.333.42.082.862.133 1.298.143l.027.016c-.948.722-2.099 1.157-3.396 1.157-1.297 0-2.448-.435-3.396-1.157-.948.722-2.099 1.157-3.396 1.157z"/>
                         </svg>
                     </a>
                 </div>
             </div>
         </div>
     </footer>
-
-    <script>
-        // Navigation Functions
-        function toggleMobileMenu() {
-            const mobileMenu = document.getElementById('mobileMenu');
-            mobileMenu.classList.toggle('active');
-        }
-
-        function closeMobileMenu() {
-            const mobileMenu = document.getElementById('mobileMenu');
-            mobileMenu.classList.remove('active');
-        }
-
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', function(event) {
-            const mobileMenu = document.getElementById('mobileMenu');
-            const menuBtn = document.querySelector('.mobile-menu-btn');
-            
-            if (!mobileMenu.contains(event.target) && !menuBtn.contains(event.target)) {
-                mobileMenu.classList.remove('active');
-            }
-        });
-    </script>
 </body>
 </html>

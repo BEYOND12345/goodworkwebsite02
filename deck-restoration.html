@@ -7,7 +7,7 @@
     <meta name="description" content="I restore weathered decks throughout Byron Bay & Northern Rivers. Sand, stain, oil, and waterproof your deck properly. Quality materials, fair pricing. Call 0481 457271">
     
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
     <style>
         :root {
@@ -221,7 +221,7 @@
 
         /* Content Sections */
         .section {
-            padding: 40px 0;
+            padding: 80px 0;
         }
 
         .section-alt {
@@ -230,7 +230,7 @@
 
         .section-header {
             text-align: center;
-            margin-bottom: 32px;
+            margin-bottom: 64px;
         }
 
         .section-title {
@@ -241,57 +241,13 @@
             letter-spacing: -0.02em;
         }
 
-        .main-content {
-            max-width: 800px;
-            margin: 0 auto 64px;
-            font-size: 1.125rem;
-            line-height: 1.7;
-            color: var(--dark-grey);
-        }
-
-        /* Service List */
-        .service-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 24px;
-            margin-bottom: 0;
-        }
-
-        .service-item {
-            background: var(--white);
-            padding: 24px;
-            border-radius: var(--border-radius-lg);
-            box-shadow: var(--shadow-sm);
-            border: 1px solid var(--light-grey);
-            transition: all 0.3s ease;
-        }
-
-        .service-item:hover {
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-lg);
-            border-color: var(--yellow-primary);
-        }
-
-        .service-item h3 {
-            font-size: 1.5rem;
-            color: var(--charcoal);
-            margin-bottom: 12px;
-        }
-
-        .service-item p {
-            color: var(--dark-grey);
-            line-height: 1.6;
-        }
-
         /* Content with Image */
         .content-with-image {
             display: grid;
             grid-template-columns: 1.2fr 0.8fr;
-            gap: 40px;
+            gap: 64px;
             align-items: center;
-            margin: 0 auto 40px;
-            max-width: 1200px;
-            padding: 0 24px;
+            margin: 0 auto 80px;
         }
 
         .content-text {
@@ -313,7 +269,6 @@
             overflow: hidden;
             box-shadow: var(--shadow-lg);
             transition: all 0.3s ease;
-            max-width: 100%;
         }
 
         .content-image:hover {
@@ -329,9 +284,45 @@
             object-fit: cover;
         }
 
+        /* Service List */
+        .service-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 32px;
+            margin-bottom: 80px;
+        }
+
+        .service-item {
+            background: var(--white);
+            padding: 32px;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--light-grey);
+            transition: all 0.3s ease;
+        }
+
+        .service-item:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--yellow-primary);
+        }
+
+        .service-item h3 {
+            font-size: 1.5rem;
+            color: var(--charcoal);
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        .service-item p {
+            color: var(--dark-grey);
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+
         /* Balance Image */
         .balance-image {
-            margin-top: 40px;
+            margin: 80px 0;
             border-radius: var(--border-radius-lg);
             overflow: hidden;
             box-shadow: var(--shadow-lg);
@@ -353,25 +344,22 @@
 
         /* Testimonials Section */
         .testimonials {
-            padding: 40px 0;
+            padding: 80px 0;
             background: var(--bg-subtle);
         }
 
         .testimonials-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 48px;
+            gap: 64px;
             align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 24px;
         }
 
         .testimonials-content h2 {
             font-size: clamp(2rem, 4vw, 2.5rem);
             font-weight: 900;
             color: var(--charcoal);
-            margin-bottom: 32px;
+            margin-bottom: 48px;
             letter-spacing: -0.02em;
         }
 
@@ -380,7 +368,7 @@
             padding: 32px;
             border-radius: var(--border-radius-lg);
             box-shadow: var(--shadow-sm);
-            margin-bottom: 24px;
+            margin-bottom: 32px;
             border-left: 4px solid var(--yellow-primary);
         }
 
@@ -388,12 +376,12 @@
             font-size: 1.1rem;
             line-height: 1.7;
             color: var(--dark-grey);
-            margin-bottom: 16px;
+            margin-bottom: 20px;
             font-style: italic;
         }
 
         .testimonial-author {
-            font-weight: 600;
+            font-weight: 700;
             color: var(--charcoal);
             font-size: 1rem;
         }
@@ -409,9 +397,6 @@
             overflow: hidden;
             box-shadow: var(--shadow-lg);
             transition: all 0.3s ease;
-            height: 100%;
-            display: flex;
-            align-items: center;
         }
 
         .testimonials-image:hover {
@@ -421,7 +406,7 @@
 
         .testimonials-image img {
             width: 100%;
-            height: 100%;
+            height: auto;
             display: block;
             aspect-ratio: 4/3;
             object-fit: cover;
@@ -429,7 +414,7 @@
 
         /* Services Strip */
         .services-strip {
-            padding: 60px 0;
+            padding: 80px 0;
             background: var(--white);
         }
 
@@ -438,7 +423,7 @@
             font-weight: 900;
             color: var(--charcoal);
             text-align: center;
-            margin-bottom: 48px;
+            margin-bottom: 64px;
             letter-spacing: -0.02em;
         }
 
@@ -446,13 +431,11 @@
             display: grid;
             grid-template-columns: repeat(6, 1fr);
             gap: 24px;
-            max-width: 1200px;
-            margin: 0 auto;
         }
 
         .service-card {
             text-align: center;
-            padding: 24px 16px;
+            padding: 32px 20px;
             background: var(--bg-subtle);
             border-radius: var(--border-radius-lg);
             text-decoration: none;
@@ -470,7 +453,7 @@
         .service-icon {
             width: 48px;
             height: 48px;
-            margin: 0 auto 12px;
+            margin: 0 auto 16px;
             transition: transform 0.3s ease;
             color: var(--yellow-primary);
         }
@@ -501,14 +484,18 @@
         }
 
         .final-cta h2 {
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            font-weight: 900;
             color: var(--charcoal);
             margin-bottom: 24px;
+            letter-spacing: -0.02em;
         }
 
         .final-cta p {
+            font-size: 1.25rem;
             color: var(--charcoal);
             opacity: 0.8;
-            margin-bottom: 32px;
+            margin-bottom: 40px;
         }
 
         .final-cta .cta-button {
@@ -517,21 +504,24 @@
         }
 
         .final-cta .cta-button:hover {
-            background: var(--text-dark);
+            background: var(--dark-grey);
             transform: translateY(-2px);
         }
 
-        /* Footer */
+        /* Professional Footer Styles */
         .footer {
             background: var(--charcoal);
             color: var(--white);
-            padding: 48px 0 20px;
         }
 
-        .footer-content {
+        .footer-main {
+            padding: 64px 0 48px;
+        }
+
+        .footer-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 32px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 48px;
             margin-bottom: 48px;
             max-width: 1200px;
             margin-left: auto;
@@ -540,34 +530,267 @@
         }
 
         .footer-section h3 {
-            margin-bottom: 24px;
             color: var(--yellow-primary);
             font-weight: 600;
-            font-size: 1.2rem;
+            font-size: 1.125rem;
+            margin-bottom: 24px;
+            letter-spacing: -0.025em;
         }
 
-        .footer-section p,
-        .footer-section a {
-            color: rgba(255,255,255,0.8);
-            text-decoration: none;
-            line-height: 1.6;
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section li {
             margin-bottom: 12px;
+        }
+
+        .footer-section a {
+            color: rgba(255,255,255,0.85);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
             display: block;
+            padding: 4px 0;
         }
 
         .footer-section a:hover {
             color: var(--yellow-primary);
+            transform: translateX(4px);
         }
 
+        .footer-section p {
+            color: rgba(255,255,255,0.8);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+
+        /* Brand Section */
+        .brand-section {
+            grid-column: 1;
+        }
+
+        .brand-logo {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: var(--yellow-primary);
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        .brand-tagline {
+            font-size: 1rem;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 24px;
+            font-style: italic;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+            color: rgba(255,255,255,0.85);
+        }
+
+        .contact-item svg {
+            width: 16px;
+            height: 16px;
+            color: var(--yellow-primary);
+            flex-shrink: 0;
+        }
+
+        .contact-item a {
+            color: inherit;
+            text-decoration: none;
+            padding: 0;
+            transform: none;
+        }
+
+        .contact-item a:hover {
+            color: var(--yellow-primary);
+            transform: none;
+        }
+
+        /* Priority Services */
+        .priority-services {
+            grid-column: 2;
+        }
+
+        .service-link {
+            position: relative;
+        }
+
+        .service-link.popular::after {
+            content: "Popular";
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background: var(--yellow-primary);
+            color: var(--charcoal);
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 2px 8px;
+            border-radius: 12px;
+        }
+
+        /* Service Areas */
+        .service-areas {
+            grid-column: 3;
+        }
+
+        /* Quick Actions */
+        .quick-actions {
+            grid-column: 4;
+        }
+
+        .cta-button.footer-cta {
+            background: var(--yellow-primary);
+            color: var(--charcoal);
+            padding: 16px 24px;
+            border: none;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button.footer-cta:hover {
+            background: var(--yellow-hover);
+            transform: translateY(-2px);
+        }
+
+        .cta-secondary {
+            background: transparent;
+            border: 2px solid rgba(255,255,255,0.3);
+            color: var(--white);
+        }
+
+        .cta-secondary:hover {
+            border-color: var(--yellow-primary);
+            color: var(--yellow-primary);
+            background: transparent;
+        }
+
+        .business-hours {
+            margin-top: 24px;
+            padding: 20px;
+            background: rgba(255,255,255,0.05);
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--yellow-primary);
+        }
+
+        .business-hours h4 {
+            color: var(--yellow-primary);
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .business-hours p {
+            color: rgba(255,255,255,0.9);
+            font-size: 0.875rem;
+            margin-bottom: 8px;
+        }
+
+        /* Footer Bottom */
         .footer-bottom {
             border-top: 1px solid rgba(255,255,255,0.1);
-            padding-top: 32px;
-            text-align: center;
-            color: rgba(255,255,255,0.6);
+            padding: 32px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
             max-width: 1200px;
             margin: 0 auto;
-            padding-left: 24px;
-            padding-right: 24px;
+        }
+
+        .footer-bottom-left {
+            color: rgba(255,255,255,0.6);
+            font-size: 0.875rem;
+        }
+
+        .footer-bottom-right {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+        }
+
+        .footer-bottom-right a {
+            color: rgba(255,255,255,0.6);
+            text-decoration: none;
+            font-size: 0.875rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-bottom-right a:hover {
+            color: var(--yellow-primary);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 12px;
+        }
+
+        .social-link {
+            width: 36px;
+            height: 36px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: var(--yellow-primary);
+            color: var(--charcoal);
+            transform: translateY(-2px);
+        }
+
+        .social-link svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        /* Trust Badges */
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            padding: 24px 0;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin-top: 24px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .trust-badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: rgba(255,255,255,0.8);
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .trust-badge svg {
+            width: 20px;
+            height: 20px;
+            color: var(--yellow-primary);
         }
 
         /* Mobile Responsive */
@@ -585,25 +808,36 @@
             }
         }
 
+        @media (max-width: 968px) {
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 32px;
+            }
+
+            .brand-section {
+                grid-column: 1 / -1;
+            }
+        }
+
         @media (max-width: 768px) {
             .nav-container {
                 padding: 0 20px;
             }
             
             .section {
-                padding: 40px 0;
+                padding: 60px 0;
             }
 
             .service-list {
                 grid-template-columns: 1fr;
                 gap: 24px;
+                margin-bottom: 60px;
             }
 
             .content-with-image {
                 grid-template-columns: 1fr;
-                gap: 40px;
-                margin-bottom: 40px;
-                padding: 0 24px;
+                gap: 48px;
+                margin-bottom: 60px;
             }
 
             .content-text {
@@ -617,8 +851,7 @@
 
             .testimonials-container {
                 grid-template-columns: 1fr;
-                gap: 40px;
-                padding: 0 24px;
+                gap: 48px;
             }
 
             .services-grid {
@@ -627,7 +860,7 @@
             }
 
             .service-card {
-                padding: 20px 12px;
+                padding: 24px 16px;
             }
 
             .service-icon {
@@ -639,8 +872,38 @@
                 font-size: 0.9rem;
             }
 
-            .footer-content {
+            .balance-image {
+                margin: 60px 0;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .footer-main {
+                padding: 48px 0 32px;
+            }
+
+            .footer-grid {
                 grid-template-columns: 1fr;
+                gap: 32px;
+                padding: 0 24px;
+            }
+
+            .footer-bottom {
+                padding: 24px;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .trust-badges {
+                flex-wrap: wrap;
+                gap: 16px;
+            }
+
+            .service-link.popular::after {
+                position: static;
+                display: inline-block;
+                margin-left: 8px;
+                transform: none;
             }
         }
 
@@ -649,358 +912,7 @@
                 grid-template-columns: repeat(2, 1fr);
             }
         }
-    
-/* Professional Footer Styles */
-.footer {
-    background: var(--charcoal);
-    color: var(--white);
-    border-radius: var(--border-radius);
-    overflow: hidden;
-    box-shadow: var(--shadow-sm);
-}
-
-.footer-main {
-    padding: 64px 32px 48px;
-}
-
-.footer-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 48px;
-    margin-bottom: 48px;
-}
-
-.footer-section h3 {
-    color: var(--yellow-primary);
-    font-weight: 600;
-    font-size: 1.125rem;
-    margin-bottom: 24px;
-    letter-spacing: -0.025em;
-}
-
-.footer-section ul {
-    list-style: none;
-}
-
-.footer-section li {
-    margin-bottom: 12px;
-}
-
-.footer-section a {
-    color: rgba(255,255,255,0.85);
-    text-decoration: none;
-    font-size: 0.95rem;
-    transition: all 0.3s ease;
-    display: block;
-    padding: 4px 0;
-}
-
-.footer-section a:hover {
-    color: var(--yellow-primary);
-    transform: translateX(4px);
-}
-
-.footer-section p {
-    color: rgba(255,255,255,0.8);
-    font-size: 0.95rem;
-    line-height: 1.7;
-    margin-bottom: 16px;
-}
-
-/* Brand Section */
-.brand-section {
-    grid-column: 1;
-}
-
-.brand-logo {
-    font-size: 1.5rem;
-    font-weight: 900;
-    color: var(--yellow-primary);
-    margin-bottom: 16px;
-    display: block;
-}
-
-.brand-tagline {
-    font-size: 1rem;
-    color: rgba(255,255,255,0.9);
-    margin-bottom: 24px;
-    font-style: italic;
-}
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 12px;
-    color: rgba(255,255,255,0.85);
-}
-
-.contact-item svg {
-    width: 16px;
-    height: 16px;
-    color: var(--yellow-primary);
-    flex-shrink: 0;
-}
-
-.contact-item a {
-    color: inherit;
-    text-decoration: none;
-    padding: 0;
-    transform: none;
-}
-
-.contact-item a:hover {
-    color: var(--yellow-primary);
-    transform: none;
-}
-
-/* Priority Services */
-.priority-services {
-    grid-column: 2;
-}
-
-.service-link {
-    position: relative;
-}
-
-.service-link.popular::after {
-    content: "Popular";
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    background: var(--yellow-primary);
-    color: var(--charcoal);
-    font-size: 0.75rem;
-    font-weight: 600;
-    padding: 2px 8px;
-    border-radius: 12px;
-}
-
-/* Service Areas with Strategic Layout */
-.service-areas {
-    grid-column: 3;
-}
-
-.areas-primary {
-    margin-bottom: 20px;
-}
-
-.areas-primary li {
-    margin-bottom: 8px;
-}
-
-.areas-primary a {
-    font-weight: 500;
-}
-
-.areas-extended {
-    border-top: 1px solid rgba(255,255,255,0.1);
-    padding-top: 16px;
-}
-
-.areas-extended h4 {
-    color: rgba(255,255,255,0.7);
-    font-size: 0.875rem;
-    font-weight: 500;
-    margin-bottom: 12px;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-.areas-extended a {
-    font-size: 0.875rem;
-    color: rgba(255,255,255,0.7);
-}
-
-/* Quick Actions */
-.quick-actions {
-    grid-column: 4;
-}
-
-.cta-button {
-    background: var(--yellow-primary);
-    color: var(--charcoal);
-    padding: 16px 24px;
-    border: none;
-    border-radius: var(--border-radius);
-    font-weight: 600;
-    font-size: 0.95rem;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 16px;
-    transition: all 0.3s ease;
-}
-
-.cta-button:hover {
-    background: var(--yellow-hover);
-    transform: translateY(-2px);
-}
-
-.cta-secondary {
-    background: transparent;
-    border: 2px solid rgba(255,255,255,0.3);
-    color: var(--white);
-}
-
-.cta-secondary:hover {
-    border-color: var(--yellow-primary);
-    color: var(--yellow-primary);
-    background: transparent;
-}
-
-.business-hours {
-    margin-top: 24px;
-    padding: 20px;
-    background: rgba(255,255,255,0.05);
-    border-radius: var(--border-radius);
-    border-left: 4px solid var(--yellow-primary);
-}
-
-.business-hours h4 {
-    color: var(--yellow-primary);
-    font-size: 0.875rem;
-    font-weight: 600;
-    margin-bottom: 12px;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-.business-hours p {
-    color: rgba(255,255,255,0.9);
-    font-size: 0.875rem;
-    margin-bottom: 8px;
-}
-
-/* Footer Bottom */
-.footer-bottom {
-    border-top: 1px solid rgba(255,255,255,0.1);
-    padding: 32px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 16px;
-}
-
-.footer-bottom-left {
-    color: rgba(255,255,255,0.6);
-    font-size: 0.875rem;
-}
-
-.footer-bottom-right {
-    display: flex;
-    gap: 24px;
-    align-items: center;
-}
-
-.footer-bottom-right a {
-    color: rgba(255,255,255,0.6);
-    text-decoration: none;
-    font-size: 0.875rem;
-    transition: color 0.3s ease;
-}
-
-.footer-bottom-right a:hover {
-    color: var(--yellow-primary);
-}
-
-.social-links {
-    display: flex;
-    gap: 12px;
-}
-
-.social-link {
-    width: 36px;
-    height: 36px;
-    background: rgba(255,255,255,0.1);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-
-.social-link:hover {
-    background: var(--yellow-primary);
-    color: var(--charcoal);
-    transform: translateY(-2px);
-}
-
-.social-link svg {
-    width: 18px;
-    height: 18px;
-}
-
-/* Trust Badges */
-.trust-badges {
-    display: flex;
-    justify-content: center;
-    gap: 32px;
-    padding: 24px 0;
-    border-top: 1px solid rgba(255,255,255,0.1);
-    margin-top: 24px;
-}
-
-.trust-badge {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: rgba(255,255,255,0.8);
-    font-size: 0.875rem;
-    font-weight: 500;
-}
-
-.trust-badge svg {
-    width: 20px;
-    height: 20px;
-    color: var(--yellow-primary);
-}
-
-/* Mobile Responsive */
-@media (max-width: 968px) {
-    .footer-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 32px;
-    }
-
-    .brand-section {
-        grid-column: 1 / -1;
-    }
-}
-
-@media (max-width: 640px) {
-    .footer-main {
-        padding: 48px 24px 32px;
-    }
-
-    .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 32px;
-    }
-
-    .footer-bottom {
-        padding: 24px;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .trust-badges {
-        flex-wrap: wrap;
-        gap: 16px;
-    }
-
-    .service-link.popular::after {
-        position: static;
-        display: inline-block;
-        margin-left: 8px;
-        transform: none;
-    }
-}
-</style>
+    </style>
 </head>
 <body>
     <!-- Header Navigation -->
@@ -1011,8 +923,8 @@
             </div>
             <nav class="nav-menu">
                 <a href="index.html">Home</a>
-                <a href="services.html">Services</a>
-                <a href="areas.html">Areas</a>
+                <a href="handyman-services-byron-bay.html">Services</a>
+                <a href="service-areas.html">Areas</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
                 <a href="tel:0481457271" class="nav-cta">Call Now</a>
@@ -1050,43 +962,42 @@
             </div>
         </div>
         
-        <div class="content-with-image">
-            <div class="content-text">
-                <p>I see what the Northern Rivers weather does to timber decks. Sun, rain, salt air - it all takes its toll. I properly restore weathered decks using quality materials and proven techniques. Sand back to bare timber, apply quality stain or oil, and protect against future weather damage.</p>
-                
-                <p>I don't just slap on a quick coat and call it done. I assess the timber condition, repair any structural issues, sand properly through different grits, and apply the right products for your specific timber and exposure. I use quality Cabot's, Feast Watson, and other proven deck products that actually last.</p>
-            </div>
-            <div class="content-image">
-                <img src="deck-restoration-professional-service-northern-rivers.avif" alt="Professional deck restoration service Northern Rivers NSW - weathered timber deck transformation Byron Bay Ballina" loading="lazy">
-            </div>
-        </div>
-        
         <div class="container">
+            <div class="content-with-image">
+                <div class="content-text">
+                    <p>I see what the Northern Rivers weather does to timber decks. Sun, rain, salt air - it all takes its toll. I properly restore weathered decks using quality materials and proven techniques. Sand back to bare timber, apply quality stain or oil, and protect against future weather damage.</p>
+                    
+                    <p>I don't just slap on a quick coat and call it done. I assess the timber condition, repair any structural issues, sand properly through different grits, and apply the right products for your specific timber and exposure. I use quality Cabot's, Feast Watson, and other proven deck products that actually last.</p>
+                </div>
+                <div class="content-image">
+                    <img src="deck-restoration-professional-service-northern-rivers.avif" alt="Professional deck restoration service Northern Rivers NSW - weathered timber deck transformation Byron Bay Ballina" loading="lazy">
+                </div>
+            </div>
 
             <div class="service-list">
                 <div class="service-item">
                     <h3>Deck Sanding</h3>
-                    <p>I sand back weathered timber to reveal fresh wood underneath</p>
+                    <p>I sand back weathered timber to reveal fresh wood underneath, using proper grits and techniques for your specific timber type.</p>
                 </div>
                 <div class="service-item">
                     <h3>Timber Repair</h3>
-                    <p>I replace damaged boards and fix structural issues properly</p>
+                    <p>I replace damaged boards and fix structural issues properly, ensuring your deck is safe and structurally sound.</p>
                 </div>
                 <div class="service-item">
                     <h3>Staining & Oiling</h3>
-                    <p>I apply quality products that protect and enhance your timber</p>
+                    <p>I apply quality products that protect and enhance your timber, using proven brands that stand up to coastal weather.</p>
                 </div>
                 <div class="service-item">
                     <h3>Structural Assessment</h3>
-                    <p>I check bearers, joists, and posts for safety issues</p>
+                    <p>I check bearers, joists, and posts for safety issues, identifying any structural problems before they become dangerous.</p>
                 </div>
                 <div class="service-item">
                     <h3>Balustrade Restoration</h3>
-                    <p>I restore or replace deck railings to match your deck</p>
+                    <p>I restore or replace deck railings to match your deck, ensuring safety compliance and aesthetic consistency.</p>
                 </div>
                 <div class="service-item">
                     <h3>Waterproofing</h3>
-                    <p>I apply protective coatings that keep moisture out</p>
+                    <p>I apply protective coatings that keep moisture out, preventing rot and extending the life of your deck investment.</p>
                 </div>
             </div>
 
@@ -1097,32 +1008,33 @@
         </div>
     </section>
 
-
     <!-- Testimonials Section -->
     <section class="testimonials">
-        <div class="testimonials-container">
-            <div class="testimonials-content">
-                <h2>What Byron Bay Property Owners Say</h2>
-                
-                <div class="testimonial">
-                    <div class="testimonial-text">
-                        "Good Hands completely transformed our weathered deck. It was grey, splintered, and looked beyond saving. He sanded it back properly, replaced a few damaged boards, and applied a beautiful timber stain. Now it looks better than when we first built it. Quality work and fair pricing."
+        <div class="container">
+            <div class="testimonials-container">
+                <div class="testimonials-content">
+                    <h2>What Byron Bay Property Owners Say</h2>
+                    
+                    <div class="testimonial">
+                        <div class="testimonial-text">
+                            "Good Hands completely transformed our weathered deck. It was grey, splintered, and looked beyond saving. He sanded it back properly, replaced a few damaged boards, and applied a beautiful timber stain. Now it looks better than when we first built it. Quality work and fair pricing."
+                        </div>
+                        <div class="testimonial-author">Jennifer Walsh</div>
+                        <div class="testimonial-location">Wategos Beach, Byron Bay</div>
                     </div>
-                    <div class="testimonial-author">Jennifer Walsh</div>
-                    <div class="testimonial-location">Wategos Beach, Byron Bay</div>
-                </div>
 
-                <div class="testimonial">
-                    <div class="testimonial-text">
-                        "I use Good Hands for my Byron Bay holiday rental maintenance. He restored three decks for me - poolside, entertaining area, and upper balcony. Each one looks fantastic and the work has lasted through multiple storm seasons. Professional service and honest advice about products."
+                    <div class="testimonial">
+                        <div class="testimonial-text">
+                            "I use Good Hands for my Byron Bay holiday rental maintenance. He restored three decks for me - poolside, entertaining area, and upper balcony. Each one looks fantastic and the work has lasted through multiple storm seasons. Professional service and honest advice about products."
+                        </div>
+                        <div class="testimonial-author">David Chen</div>
+                        <div class="testimonial-location">Byron Bay Accommodation Owner</div>
                     </div>
-                    <div class="testimonial-author">David Chen</div>
-                    <div class="testimonial-location">Byron Bay Accommodation Owner</div>
                 </div>
-            </div>
-            
-            <div class="testimonials-image">
-                <img src="deck-restoration-handyman-byron-bay.jpg" alt="Experienced deck restoration handyman Northern Rivers - timber deck sanding and oiling Byron Bay specialist" loading="lazy">
+                
+                <div class="testimonials-image">
+                    <img src="deck-restoration-handyman-byron-bay.jpg" alt="Experienced deck restoration handyman Northern Rivers - timber deck sanding and oiling Byron Bay specialist" loading="lazy">
+                </div>
             </div>
         </div>
     </section>
@@ -1200,7 +1112,9 @@
             <p>I'll give you an honest assessment and quality restoration work</p>
             <a href="contact.html" class="cta-button">Get Your Free Quote</a>
         </div>
-    </section><script>
+    </section>
+
+    <script>
         // Navigation Functions
         function toggleMobileMenu() {
             const mobileMenu = document.getElementById('mobileMenu');
@@ -1222,7 +1136,8 @@
             }
         });
     </script>
-    <!-- Footer -->
+
+    <!-- Professional Footer -->
     <footer class="footer">
         <div class="footer-main">
             <div class="footer-grid">
@@ -1243,7 +1158,7 @@
                             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
                             <polyline points="22,6 12,13 2,6"/>
                         </svg>
-                        <a href="mailto:danhandywork@gmail.com">danhandywork@gmail.com</a>
+                        <a href="mailto:info@goodhandshandyman.com.au">info@goodhandshandyman.com.au</a>
                     </div>
 
                     <div class="contact-item">
@@ -1256,8 +1171,8 @@
                 </div>
 
                 <!-- Core Services -->
-                <div class="footer-section services-section">
-                    <h3>My Services</h3>
+                <div class="footer-section priority-services">
+                    <h3>Most Requested Services</h3>
                     <ul>
                         <li><a href="handyman-services-byron-bay.html" class="service-link">General Handyman</a></li>
                         <li><a href="deck-restoration.html" class="service-link popular">Deck Restoration</a></li>
@@ -1266,31 +1181,37 @@
                         <li><a href="gutter-cleaning.html" class="service-link">Gutter Cleaning</a></li>
                         <li><a href="airbnb-maintenance.html" class="service-link">Airbnb Maintenance</a></li>
                         <li><a href="custom-carpentry.html" class="service-link">Custom Carpentry</a></li>
-                        <li><a href="flooring-installation.html" class="service-link">Flooring Installation</a></li>                        <li><a href="emergency-repairs.html" class="service-link">Emergency Repairs</a></li>
+                        <li><a href="flooring-installation.html" class="service-link">Flooring Installation</a></li>
+                        <li><a href="emergency-repairs.html" class="service-link">Emergency Repairs</a></li>
                     </ul>
                 </div>
 
                 <!-- Service Areas -->
                 <div class="footer-section service-areas">
                     <h3>Service Areas</h3>
-                    <ul class="areas-list">
+                    <ul class="areas-primary">
                         <li><a href="handyman-byron-bay.html">Byron Bay</a></li>
                         <li><a href="handyman-ballina.html">Ballina</a></li>
                         <li><a href="handyman-lismore.html">Lismore</a></li>
                         <li><a href="handyman-bangalow.html">Bangalow</a></li>
                         <li><a href="handyman-mullumbimby.html">Mullumbimby</a></li>
-                        <li><a href="handyman-tweed-heads.html">Tweed Heads</a></li>
-                        <li><a href="handyman-ocean-shores.html">Ocean Shores</a></li>
-                        <li><a href="handyman-lennox-head.html">Lennox Head</a></li>
-                        <li><a href="handyman-south-golden-beach.html">South Golden Beach</a></li>
                     </ul>
+                    <div class="areas-extended">
+                        <h4>Also Covering</h4>
+                        <ul>
+                            <li><a href="handyman-tweed-heads.html">Tweed Heads</a></li>
+                            <li><a href="handyman-ocean-shores.html">Ocean Shores</a></li>
+                            <li><a href="handyman-lennox-head.html">Lennox Head</a></li>
+                            <li><a href="handyman-south-golden-beach.html">South Golden Beach</a></li>
+                        </ul>
+                    </div>
                 </div>
 
                 <!-- Quick Actions -->
                 <div class="footer-section quick-actions">
                     <h3>Get Started</h3>
-                    <a href="contact.html" class="cta-button">Get Free Quote</a>
-                    <a href="about.html" class="cta-button cta-secondary">About Me</a>
+                    <a href="contact.html" class="cta-button footer-cta">Get Free Quote</a>
+                    <a href="about.html" class="cta-button footer-cta cta-secondary">About Me</a>
                     
                     <div class="business-hours">
                         <h4>Response Times</h4>
