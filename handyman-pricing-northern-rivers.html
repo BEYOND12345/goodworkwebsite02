@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Handyman Pricing Northern Rivers | Transparent Rates | Good Hands</title>
-    <meta name="description" content="Transparent handyman pricing for Northern Rivers NSW. Hourly rates, project costs, and emergency callout fees. No hidden charges, free quotes. Call 0481 457271.">
+    <title>Pricing | GoodHands Handyman Byron Bay | $65/hour | Dan</title>
+    <meta name="description" content="Simple, transparent pricing from Dan at GoodHands. $65/hour with 2-hour minimum. Free quotes on all handyman work across Northern Rivers. Call 0481 457271">
     
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
     <style>
         :root {
@@ -49,7 +49,13 @@
             padding: 0 24px;
         }
 
-        /* Header Navigation */
+        @media (min-width: 1240px) {
+            .container {
+                padding: 0 32px;
+            }
+        }
+
+        /* Full Width Header Navigation */
         .header-nav {
             position: fixed;
             top: 0;
@@ -72,8 +78,14 @@
             height: 70px;
         }
 
+        @media (min-width: 1240px) {
+            .nav-container {
+                padding: 0 32px;
+            }
+        }
+
         .nav-logo a {
-            font-size: 1.5rem;
+            font-size: 1.25rem;
             font-weight: 900;
             color: var(--charcoal);
             text-decoration: none;
@@ -86,39 +98,36 @@
         .nav-menu {
             display: flex;
             align-items: center;
-            gap: 32px;
+            gap: 20px;
         }
 
         .nav-menu a {
             color: var(--charcoal);
             text-decoration: none;
             font-weight: 500;
-            font-size: 0.95rem;
-            transition: color 0.3s ease;
+            padding: 8px 16px;
+            border-radius: var(--border-radius);
+            transition: all 0.3s ease;
         }
 
         .nav-menu a:hover {
             color: var(--yellow-primary);
+            background: var(--yellow-light);
         }
 
         .nav-cta {
-            background: var(--yellow-primary);
-            color: var(--charcoal);
-            padding: 8px 16px;
-            border-radius: var(--border-radius);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-            transition: all 0.3s ease;
+            background: var(--yellow-primary) !important;
+            color: var(--charcoal) !important;
+            padding: 10px 20px !important;
+            font-weight: 600 !important;
         }
 
         .nav-cta:hover {
-            background: var(--yellow-hover);
-            transform: translateY(-1px);
-            color: var(--charcoal);
+            background: var(--yellow-hover) !important;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
         }
 
-        /* Mobile Navigation */
         .mobile-menu-btn {
             display: none;
             flex-direction: column;
@@ -163,7 +172,249 @@
             color: var(--yellow-primary);
         }
 
-        @media (max-width: 768px) {
+        /* Main Content */
+        .main-content {
+            padding: 80px 0;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .page-title {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 900;
+            color: var(--charcoal);
+            margin-bottom: 24px;
+            letter-spacing: -0.025em;
+        }
+
+        .intro-message {
+            max-width: 800px;
+            margin: 0 auto 80px;
+            text-align: center;
+            background: var(--bg-subtle);
+            padding: 40px;
+            border-radius: var(--border-radius-lg);
+            border-left: 4px solid var(--yellow-primary);
+        }
+
+        .intro-message p {
+            font-size: 1.25rem;
+            color: var(--dark-grey);
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+
+        /* Pricing Table */
+        .pricing-table {
+            background: var(--white);
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+            margin-bottom: 80px;
+        }
+
+        .pricing-table h2 {
+            background: var(--yellow-primary);
+            color: var(--charcoal);
+            padding: 32px;
+            margin: 0;
+            font-size: 1.75rem;
+            font-weight: 900;
+            text-align: center;
+        }
+
+        .pricing-table table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0;
+        }
+
+        .pricing-table th {
+            background: var(--bg-subtle);
+            padding: 20px;
+            text-align: left;
+            font-weight: 700;
+            color: var(--charcoal);
+            font-size: 1.1rem;
+        }
+
+        .pricing-table td {
+            padding: 20px;
+            border-bottom: 1px solid var(--light-grey);
+            font-size: 1rem;
+        }
+
+        .pricing-table strong {
+            color: var(--yellow-primary);
+            font-size: 1.3em;
+            font-weight: 900;
+        }
+
+        .pricing-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .pricing-table tr:hover {
+            background: var(--yellow-light);
+        }
+
+        /* Content Sections */
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-bottom: 80px;
+        }
+
+        .content-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--light-grey);
+            transition: all 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--yellow-primary);
+        }
+
+        .content-card h3 {
+            color: var(--charcoal);
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .content-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .content-card li {
+            padding: 8px 0;
+            color: var(--dark-grey);
+            position: relative;
+            padding-left: 24px;
+        }
+
+        .content-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--success);
+            font-weight: bold;
+        }
+
+        .content-card p {
+            color: var(--dark-grey);
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+
+        /* Quote CTA */
+        .quote-cta {
+            background: var(--yellow-primary);
+            color: var(--charcoal);
+            text-align: center;
+            padding: 80px 40px;
+            border-radius: var(--border-radius-lg);
+            margin-bottom: 80px;
+        }
+
+        .quote-cta h2 {
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            font-weight: 900;
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
+        }
+
+        .quote-cta p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .quote-cta p:last-of-type {
+            margin-bottom: 0;
+            margin-top: 20px;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background: var(--charcoal);
+            color: var(--white);
+            padding: 18px 36px;
+            border: none;
+            border-radius: var(--border-radius);
+            font-size: 1.25rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            margin: 0 auto;
+        }
+
+        .btn-primary:hover {
+            background: var(--dark-grey);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            margin-bottom: 80px;
+        }
+
+        .faq-section h2 {
+            text-align: center;
+            font-size: 2.25rem;
+            font-weight: 900;
+            color: var(--charcoal);
+            margin-bottom: 60px;
+        }
+
+        .faq-item {
+            background: var(--bg-subtle);
+            padding: 32px;
+            border-radius: var(--border-radius-lg);
+            margin-bottom: 24px;
+            border-left: 4px solid var(--yellow-primary);
+        }
+
+        .faq-item h3 {
+            color: var(--charcoal);
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .faq-item p {
+            color: var(--dark-grey);
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+
+        .faq-item a {
+            color: var(--yellow-primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .faq-item a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 1024px) {
             .nav-menu {
                 display: none;
             }
@@ -177,331 +428,48 @@
             }
         }
 
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, var(--charcoal) 0%, var(--dark-grey) 100%);
-            color: var(--white);
-            padding: 120px 0 80px;
-            text-align: center;
-        }
-
-        .hero-content h1 {
-            font-size: 3rem;
-            font-weight: 800;
-            margin-bottom: 20px;
-            line-height: 1.2;
-        }
-
-        .hero-content p {
-            font-size: 1.25rem;
-            margin-bottom: 40px;
-            opacity: 0.9;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        /* Pricing Section */
-        .pricing-section {
-            padding: 80px 0;
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .section-header h2 {
-            font-size: 2.5rem;
-            font-weight: 900;
-            margin-bottom: 20px;
-            color: var(--charcoal);
-        }
-
-        .section-header p {
-            font-size: 1.2rem;
-            color: var(--medium-grey);
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 40px;
-        }
-
-        .pricing-card {
-            background: var(--white);
-            border: 2px solid var(--light-grey);
-            border-radius: var(--border-radius-lg);
-            padding: 40px;
-            position: relative;
-            transition: all 0.3s ease;
-        }
-
-        .pricing-card.featured {
-            border-color: var(--yellow-primary);
-            transform: scale(1.05);
-        }
-
-        .pricing-card:hover {
-            border-color: var(--yellow-primary);
-            box-shadow: var(--shadow-lg);
-        }
-
-        .pricing-badge {
-            position: absolute;
-            top: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: var(--yellow-primary);
-            color: var(--charcoal);
-            padding: 8px 20px;
-            border-radius: 20px;
-            font-size: 0.875rem;
-            font-weight: 600;
-        }
-
-        .pricing-card h3 {
-            font-size: 1.5rem;
-            font-weight: 900;
-            margin-bottom: 10px;
-            color: var(--charcoal);
-            text-align: center;
-        }
-
-        .pricing-card .price {
-            font-size: 2.5rem;
-            font-weight: 800;
-            color: var(--yellow-primary);
-            text-align: center;
-            margin-bottom: 5px;
-        }
-
-        .pricing-card .price-unit {
-            font-size: 1rem;
-            color: var(--medium-grey);
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .pricing-features {
-            list-style: none;
-            margin-bottom: 30px;
-        }
-
-        .pricing-features li {
-            margin-bottom: 12px;
-            position: relative;
-            padding-left: 25px;
-            color: var(--medium-grey);
-        }
-
-        .pricing-features li:before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: var(--success);
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
-
-        .pricing-cta {
-            display: block;
-            width: 100%;
-            background: var(--yellow-primary);
-            color: var(--charcoal);
-            padding: 14px;
-            border: none;
-            border-radius: var(--border-radius);
-            text-align: center;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-        }
-
-        .pricing-cta:hover {
-            background: var(--yellow-hover);
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-md);
-            color: var(--charcoal);
-        }
-
-        /* Service Examples */
-        .examples-section {
-            padding: 80px 0;
-            background: var(--bg-subtle);
-        }
-
-        .examples-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .example-card {
-            background: var(--white);
-            padding: 30px;
-            border-radius: var(--border-radius);
-            box-shadow: var(--shadow-sm);
-        }
-
-        .example-card h4 {
-            font-size: 1.25rem;
-            font-weight: 600;
-            margin-bottom: 15px;
-            color: var(--charcoal);
-        }
-
-        .example-card p {
-            color: var(--medium-grey);
-            margin-bottom: 15px;
-        }
-
-        .example-price {
-            font-size: 1.5rem;
-            font-weight: 900;
-            color: var(--yellow-primary);
-        }
-
-        /* FAQ Section */
-        .faq-section {
-            padding: 80px 0;
-        }
-
-        .faq-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .faq-item {
-            background: var(--white);
-            border: 2px solid var(--light-grey);
-            border-radius: var(--border-radius);
-            padding: 25px;
-        }
-
-        .faq-item h4 {
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-bottom: 15px;
-            color: var(--charcoal);
-        }
-
-        .faq-item p {
-            color: var(--medium-grey);
-            line-height: 1.6;
-        }
-
-        /* CTA Section */
-        .cta-section {
-            padding: 80px 0;
-            background: 
-                linear-gradient(135deg, rgba(247, 189, 34, 0.95) 0%, rgba(234, 179, 8, 0.95) 100%),
-                url('byron-bay-lighthouse-handyman-service.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            text-align: center;
-        }
-
-        .cta-section h2 {
-            font-size: 2.5rem;
-            font-weight: 900;
-            margin-bottom: 20px;
-            color: var(--charcoal);
-        }
-
-        .cta-section p {
-            font-size: 1.2rem;
-            color: var(--charcoal);
-            margin-bottom: 40px;
-            opacity: 0.8;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background: var(--charcoal);
-            color: var(--white);
-            padding: 16px 32px;
-            border-radius: var(--border-radius);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-        }
-
-        .cta-button:hover {
-            background: var(--dark-grey);
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-lg);
-        }
-
-        /* Footer */
-        .footer {
-            background: var(--charcoal);
-            color: var(--white);
-            padding: 40px 0 20px;
-        }
-
-        .footer-content {
-            text-align: center;
-        }
-
-        .footer-content p {
-            color: rgba(255, 255, 255, 0.6);
-            font-size: 0.875rem;
-            margin-bottom: 15px;
-        }
-
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-        }
-
-        .footer-links a {
-            color: rgba(255, 255, 255, 0.6);
-            text-decoration: none;
-            font-size: 0.875rem;
-        }
-
-        .footer-links a:hover {
-            color: var(--yellow-primary);
-        }
-
-        /* Mobile Responsive */
-        @media (max-width: 1024px) {
-            .pricing-card.featured {
-                transform: none;
-            }
-        }
-
         @media (max-width: 768px) {
-            .hero-content h1 {
-                font-size: 2.5rem;
+            .nav-container {
+                padding: 0 20px;
+            }
+            
+            .main-content {
+                padding: 60px 0;
             }
 
-            .section-header h2 {
-                font-size: 2rem;
+            .intro-message {
+                padding: 32px 24px;
+                margin-bottom: 60px;
             }
 
-            .cta-section h2 {
-                font-size: 2rem;
+            .pricing-table h2 {
+                padding: 24px;
+                font-size: 1.5rem;
             }
 
-            .pricing-grid {
+            .pricing-table th,
+            .pricing-table td {
+                padding: 16px 12px;
+            }
+
+            .content-grid {
                 grid-template-columns: 1fr;
+                gap: 32px;
+                margin-bottom: 60px;
             }
 
-            .footer-links {
-                flex-direction: column;
-                gap: 15px;
+            .content-card {
+                padding: 32px 24px;
+            }
+
+            .quote-cta {
+                padding: 60px 24px;
+                margin-bottom: 60px;
+            }
+
+            .btn-primary {
+                padding: 16px 32px;
+                font-size: 1.125rem;
             }
         }
     </style>
@@ -515,8 +483,8 @@
             </div>
             <nav class="nav-menu">
                 <a href="index.html">Home</a>
-                <a href="services.html">Services</a>
-                <a href="areas.html">Areas</a>
+                <a href="handyman-services-byron-bay.html">Services</a>
+                <a href="service-areas.html">Areas</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
                 <a href="tel:0481457271" class="nav-cta">Call Now</a>
@@ -526,201 +494,140 @@
                 <span></span>
                 <span></span>
             </button>
-        </div>
-        <div class="mobile-menu" id="mobileMenu">
-            <a href="index.html" onclick="closeMobileMenu()">Home</a>
-            <a href="services.html" onclick="closeMobileMenu()">Services</a>
-            <a href="areas.html" onclick="closeMobileMenu()">Areas</a>
-            <a href="about.html" onclick="closeMobileMenu()">About</a>
-            <a href="contact.html" onclick="closeMobileMenu()">Contact</a>
-            <a href="tel:0481457271" onclick="closeMobileMenu()">Call Now</a>
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="index.html" onclick="closeMobileMenu()">Home</a>
+                <a href="about-dan-byron-bay-handyman.html" onclick="closeMobileMenu()">About Dan</a>
+                <a href="handyman-services-byron-bay.html" onclick="closeMobileMenu()">Services</a>
+                <a href="handyman-pricing-northern-rivers.html" onclick="closeMobileMenu()">Pricing</a>
+                <a href="get-quote.html" onclick="closeMobileMenu()">Get Quote</a>
+                <a href="tel:0481457271" onclick="closeMobileMenu()">Call Now</a>
+            </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <!-- Main Content -->
+    <main class="main-content">
         <div class="container">
-            <div class="hero-content">
-                <h1>Transparent Handyman Pricing</h1>
-                <p>Fair, competitive rates with no hidden charges. Free quotes for all work, emergency callouts available throughout Northern Rivers NSW.</p>
+            <!-- Page Header -->
+            <div class="page-header">
+                <h1 class="page-title">Simple, Honest Pricing</h1>
             </div>
-        </div>
-    </section>
-
-    <!-- Pricing Section -->
-    <section class="pricing-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Rates</h2>
-                <p>Honest pricing for quality handyman services. All quotes include materials and labour.</p>
+            
+            <!-- Intro Message -->
+            <div class="intro-message">
+                <p>I'm Dan from GoodHands. As a newer operator building my reputation in Byron Bay, I offer competitive rates while maintaining high standards. Every job is done right, guaranteed.</p>
             </div>
 
-            <div class="pricing-grid">
-                <!-- Standard Rate -->
-                <div class="pricing-card">
-                    <h3>Standard Rate</h3>
-                    <div class="price">$75</div>
-                    <div class="price-unit">per hour</div>
-                    <ul class="pricing-features">
-                        <li>General handyman work</li>
-                        <li>Kitchen repairs</li>
-                        <li>Minor maintenance</li>
-                        <li>Furniture assembly</li>
-                        <li>Small installations</li>
-                        <li>2 hour minimum</li>
+            <!-- Pricing Table -->
+            <div class="pricing-table">
+                <h2>Standard Rates</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Service Type</th>
+                            <th>Rate</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hourly Rate</td>
+                            <td><strong>$65/hour</strong></td>
+                            <td>2-hour minimum ($130)</td>
+                        </tr>
+                        <tr>
+                            <td>Half Day</td>
+                            <td><strong>$250</strong></td>
+                            <td>Up to 4 hours (save $10)</td>
+                        </tr>
+                        <tr>
+                            <td>Full Day</td>
+                            <td><strong>$480</strong></td>
+                            <td>Up to 8 hours (save $40)</td>
+                        </tr>
+                        <tr>
+                            <td>Emergency/Urgent</td>
+                            <td><strong>$85/hour</strong></td>
+                            <td>Same-day emergency response</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Content Grid -->
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3>What's Included:</h3>
+                    <ul>
+                        <li>Free quotes on all work</li>
+                        <li>All work guaranteed</li>
+                        <li>Fully insured</li>
+                        <li>Materials charged at cost (receipts provided)</li>
+                        <li>No hidden fees or charges</li>
                     </ul>
-                    <a href="contact.html" class="pricing-cta">Get Quote</a>
                 </div>
 
-                <!-- Project Rate -->
-                <div class="pricing-card featured">
-                    <div class="pricing-badge">Most Popular</div>
-                    <h3>Project Quote</h3>
-                    <div class="price">Fixed</div>
-                    <div class="price-unit">price agreed upfront</div>
-                    <ul class="pricing-features">
-                        <li>Deck restoration projects</li>
-                        <li>Major repairs</li>
-                        <li>Multi-day jobs</li>
-                        <li>Fence installations</li>
-                        <li>Bathroom renovations</li>
-                        <li>No hourly surprises</li>
+                <div class="content-card">
+                    <h3>Why $65/hour?</h3>
+                    <p>My rate is competitive for Byron Bay while I build my local reputation. You get quality work from someone who actually shows up, uses proper materials for coastal conditions, and guarantees everything I do.</p>
+                </div>
+
+                <div class="content-card">
+                    <h3>Special Considerations:</h3>
+                    <ul>
+                        <li>Pensioner discount: 10% off labor</li>
+                        <li>Multiple jobs: Ask about package deals</li>
+                        <li>Airbnb owners: Regular maintenance schedules available</li>
                     </ul>
-                    <a href="contact.html" class="pricing-cta">Get Free Quote</a>
+                </div>
+            </div>
+
+            <!-- Quote CTA -->
+            <div class="quote-cta">
+                <h2>Every Job is Different</h2>
+                <p>These are standard rates, but I prefer to give you an accurate quote for your specific job. It's free, no obligation, and I'll usually respond same day.</p>
+                
+                <a href="tel:0481457271" class="btn-primary">
+                    Call Dan: 0481 457 271
+                </a>
+                
+                <p>Or text me photos of what needs doing</p>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                
+                <div class="faq-item">
+                    <h3>How much do you charge?</h3>
+                    <p>My standard rate is $65/hour with a 2-hour minimum ($130). I also offer half-day ($250) and full-day ($480) rates. Every job is different though, so I prefer to give you an accurate quote for your specific needs. Quotes are free and there's no obligation. <a href="tel:0481457271">Call for a quote</a>.</p>
                 </div>
 
-                <!-- Emergency Rate -->
-                <div class="pricing-card">
-                    <h3>Emergency Callout</h3>
-                    <div class="price">$120</div>
-                    <div class="price-unit">first hour + materials</div>
-                    <ul class="pricing-features">
-                        <li>Same-day service</li>
-                        <li>After hours available</li>
-                        <li>Weekend callouts</li>
-                        <li>Storm damage repairs</li>
-                        <li>Security issues</li>
-                        <li>Safety hazards</li>
-                    </ul>
-                    <a href="tel:0481457271" class="pricing-cta">Call Now</a>
+                <div class="faq-item">
+                    <h3>Do you charge for quotes?</h3>
+                    <p>No, all quotes are completely free with no obligation. I'll usually respond the same day, and for most jobs I can give you a price over the phone or via text.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What about materials?</h3>
+                    <p>Materials are charged at cost - I'll show you the receipts. I don't mark up materials, you only pay what I paid plus my labor time.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Is there a minimum charge?</h3>
+                    <p>Yes, there's a 2-hour minimum ($130) for most jobs. This covers my travel time and setup. For very quick jobs, I'll often quote a fixed price instead.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Do you offer payment plans?</h3>
+                    <p>For larger jobs over $500, I can arrange progress payments. Typically 50% upfront for materials and 50% on completion. <a href="tel:0481457271">Call to discuss</a>.</p>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Service Examples -->
-    <section class="examples-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Typical Project Costs</h2>
-                <p>Examples of common jobs to help you budget. All quotes are free and accurate pricing provided upfront.</p>
-            </div>
-
-            <div class="examples-grid">
-                <div class="example-card">
-                    <h4>Kitchen Cupboard Door Repair</h4>
-                    <p>Fix 2-3 doors that won't close properly, including hinge adjustment and replacement</p>
-                    <div class="example-price">$120 - $180</div>
-                </div>
-
-                <div class="example-card">
-                    <h4>Small Deck Restoration</h4>
-                    <p>Sand, stain and seal a standard 3x4m deck including minor board repairs</p>
-                    <div class="example-price">$800 - $1,200</div>
-                </div>
-
-                <div class="example-card">
-                    <h4>Gutter Cleaning</h4>
-                    <p>Complete gutter clean of standard house including downpipe clearing</p>
-                    <div class="example-price">$180 - $280</div>
-                </div>
-
-                <div class="example-card">
-                    <h4>Fence Panel Replacement</h4>
-                    <p>Replace 3-4 damaged colorbond fence panels including posts if needed</p>
-                    <div class="example-price">$300 - $500</div>
-                </div>
-
-                <div class="example-card">
-                    <h4>TV Wall Mounting</h4>
-                    <p>Mount large TV to wall including cable management and testing</p>
-                    <div class="example-price">$150 - $220</div>
-                </div>
-
-                <div class="example-card">
-                    <h4>Bathroom Shelf Installation</h4>
-                    <p>Install 2-3 bathroom shelves with appropriate fixings for tiles</p>
-                    <div class="example-price">$120 - $180</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="faq-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Pricing FAQs</h2>
-            </div>
-
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <h4>Do you charge a callout fee?</h4>
-                    <p>No callout fee for standard appointments within our service area. Emergency callouts have a $120 first hour rate which includes travel time.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h4>Are materials included in the price?</h4>
-                    <p>Labour and materials are quoted separately for transparency. You'll receive an itemized quote showing exactly what you're paying for.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h4>What's your minimum charge?</h4>
-                    <p>2 hour minimum for standard work. Small jobs under 2 hours are still charged at the 2 hour rate to cover travel time and setup.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h4>Do you offer payment plans?</h4>
-                    <p>For larger projects over $1,000, we can arrange a deposit and progress payment schedule. Payment is due on completion for smaller jobs.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h4>Is there extra cost for weekends?</h4>
-                    <p>Standard rates apply for scheduled weekend work. Emergency callouts on weekends and after hours are charged at the emergency rate.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h4>What if the job takes longer than quoted?</h4>
-                    <p>Fixed price quotes won't change unless additional work is discovered and approved. Any changes are discussed before proceeding.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <h2>Ready for Your Free Quote?</h2>
-            <p>No obligation quotes provided within 24 hours. Emergency repairs available same day.</p>
-            <a href="contact.html" class="cta-button">Get Your Free Quote</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2024 Good Hands. All rights reserved. | ABN: 12 345 678 901</p>
-                <div class="footer-links">
-                    <a href="privacy-policy.html">Privacy Policy</a>
-                    <a href="terms-of-service.html">Terms of Service</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    </main>
 
     <script>
+        // Navigation Functions
         function toggleMobileMenu() {
             const mobileMenu = document.getElementById('mobileMenu');
             mobileMenu.classList.toggle('active');
@@ -738,16 +645,6 @@
             
             if (mobileMenu && menuBtn && !mobileMenu.contains(event.target) && !menuBtn.contains(event.target)) {
                 mobileMenu.classList.remove('active');
-            }
-        });
-
-        // Close mobile menu on window resize
-        window.addEventListener('resize', function() {
-            if (window.innerWidth > 768) {
-                const mobileMenu = document.getElementById('mobileMenu');
-                if (mobileMenu) {
-                    mobileMenu.classList.remove('active');
-                }
             }
         });
     </script>

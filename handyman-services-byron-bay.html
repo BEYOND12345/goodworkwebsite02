@@ -184,7 +184,7 @@
         /* Hero Section */
         .hero {
             background: linear-gradient(rgba(45, 55, 72, 0.7), rgba(74, 85, 104, 0.7)), 
-                        url('decking_7_upscaled.webp');
+                        url('decking_7_upscaled.Ip');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -433,6 +433,106 @@
             text-align: center;
             margin-top: 20px;
             border: 2px solid var(--yellow-primary);
+        }
+
+        .service-cta {
+            background: var(--yellow-primary);
+            color: var(--charcoal);
+            padding: 14px 24px;
+            border-radius: var(--border-radius);
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-align: center;
+            margin-top: 20px;
+            border: 2px solid var(--yellow-primary);
+            transition: all 0.3s ease;
+        }
+
+        .service-cta a {
+            color: var(--charcoal);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .service-cta:hover {
+            background: var(--yellow-hover);
+            border-color: var(--yellow-hover);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .service-cta a:hover {
+            color: var(--charcoal);
+        }
+
+        /* Pricing Table Styles */
+        .pricing-section {
+            padding: 60px 0 40px;
+            background: var(--bg-subtle);
+        }
+
+        .pricing-table {
+            background: var(--white);
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .pricing-table h2 {
+            background: var(--yellow-primary);
+            color: var(--charcoal);
+            padding: 24px;
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: 900;
+            text-align: center;
+        }
+
+        .pricing-table table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0;
+        }
+
+        .pricing-table th {
+            background: var(--bg-subtle);
+            padding: 16px 20px;
+            text-align: left;
+            font-weight: 700;
+            color: var(--charcoal);
+            font-size: 1rem;
+        }
+
+        .pricing-table td {
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--light-grey);
+            font-size: 0.95rem;
+        }
+
+        .pricing-table strong {
+            color: var(--yellow-primary);
+            font-size: 1.2em;
+            font-weight: 900;
+        }
+
+        .pricing-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .pricing-table tr:hover {
+            background: var(--yellow-light);
+        }
+
+        .pricing-note {
+            text-align: center;
+            padding: 20px 24px;
+            background: var(--yellow-light);
+            color: var(--dark-grey);
+            font-size: 0.9rem;
+            font-style: italic;
         }
 
         .service-link {
@@ -956,6 +1056,49 @@
         </div>
     </section>
 
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="pricing-table">
+                <h2>Dan's Transparent Pricing</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Service Type</th>
+                            <th>Rate</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Standard Hourly</td>
+                            <td><strong>$65/hour</strong></td>
+                            <td>2-hour minimum ($130)</td>
+                        </tr>
+                        <tr>
+                            <td>Half Day</td>
+                            <td><strong>$250</strong></td>
+                            <td>Up to 4 hours (save $10)</td>
+                        </tr>
+                        <tr>
+                            <td>Full Day</td>
+                            <td><strong>$480</strong></td>
+                            <td>Up to 8 hours (save $40)</td>
+                        </tr>
+                        <tr>
+                            <td>Emergency Same-Day</td>
+                            <td><strong>$85/hour</strong></td>
+                            <td>Within 4 hours notice</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="pricing-note">
+                    All rates include basic tools. Materials charged separately at cost price + 10%. Call for custom project quotes.
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Services Section -->
     <section id="services" class="section">
         <div class="container">
@@ -983,7 +1126,7 @@
                     <h3 class="service-title">Custom Carpentry & Built-ins</h3>
                     <p class="service-description">Built-in wardrobes, entertainment units, shelving systems, and storage solutions designed for your space.</p>
                     <div class="service-details">Precision measuring, quality timber selection, concealed hardware, professional finishing</div>
-                    <div class="service-price">From $800</div>
+                    <div class="service-cta"><a href="tel:0481457271">Call for quote: 0481 457271</a></div>
                     <a href="custom-carpentry.html" class="service-link">
                         Get Custom Carpentry
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1006,7 +1149,7 @@
                     <h3 class="service-title">Door Installation & Adjustments</h3>
                     <p class="service-description">Hanging new doors, fixing sticking doors, lock installation, and frame adjustments.</p>
                     <div class="service-details">Precise planing, hinge mortising, lock boring, weatherstripping installation</div>
-                    <div class="service-price">From $180</div>
+                    <div class="service-cta"><a href="tel:0481457271">Call for quote: 0481 457271</a></div>
                     <a href="door-repairs.html" class="service-link">
                         Fix My Doors
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1027,7 +1170,7 @@
                     <h3 class="service-title">Flooring Repairs & Installation</h3>
                     <p class="service-description">Timber floor repairs, laminate installation, tile replacement, and transition strips.</p>
                     <div class="service-details">Moisture testing, subfloor preparation, expansion gaps, professional adhesives</div>
-                    <div class="service-price">From $250</div>
+                    <div class="service-cta"><a href="tel:0481457271">Call for quote: 0481 457271</a></div>
                     <a href="flooring-installation.html" class="service-link">
                         Install My Floors
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1049,7 +1192,7 @@
                     <h3 class="service-title">Kitchen & Bathroom Repairs</h3>
                     <p class="service-description">Cabinet door adjustments, drawer slider replacement, tap repairs, tile work.</p>
                     <div class="service-details">Hinge adjustment, soft-close mechanisms, waterproofing, precision cutting</div>
-                    <div class="service-price">From $150</div>
+                    <div class="service-cta"><a href="tel:0481457271">Call for quote: 0481 457271</a></div>
                     <a href="kitchen-door-repairs-northern-rivers.html" class="service-link">
                         Fix My Kitchen
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1070,7 +1213,7 @@
                     <h3 class="service-title">Painting, Patching & Wall Repairs</h3>
                     <p class="service-description">Interior/exterior painting, hole patching, crack repair, texture matching, and surface preparation.</p>
                     <div class="service-details">Plaster patching, sanding, primer selection, cut-in technique, color matching technology</div>
-                    <div class="service-price">From $200</div>
+                    <div class="service-cta"><a href="tel:0481457271">Call for quote: 0481 457271</a></div>
                     <a href="painting-services.html" class="service-link">
                         Paint My Property
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1091,7 +1234,7 @@
                     <h3 class="service-title">TV Wall Mounting & Electronics</h3>
                     <p class="service-description">Professional TV mounting, cable management, sound system installation.</p>
                     <div class="service-details">Stud finding, load calculations, cable concealment, bracket selection</div>
-                    <div class="service-price">From $200</div>
+                    <div class="service-cta"><a href="tel:0481457271">Call for quote: 0481 457271</a></div>
                     <a href="tv-wall-mounting.html" class="service-link">
                         Mount My TV
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1121,7 +1264,7 @@
                     <h3 class="service-title">Deck Building & Restoration</h3>
                     <p class="service-description">Complete deck restoration including sanding, staining, and structural repairs.</p>
                     <div class="service-details">Pressure washing, orbital sanding, marine-grade stains, joist replacement</div>
-                    <div class="service-price">From $800</div>
+                    <div class="service-cta"><a href="tel:0481457271">Call for quote: 0481 457271</a></div>
                     <a href="deck-restoration.html" class="service-link">
                         Restore My Deck
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1144,7 +1287,7 @@
                     <h3 class="service-title">Fence & Gate Services</h3>
                     <p class="service-description">Fence repairs, gate installation, post replacement, and hardware upgrades.</p>
                     <div class="service-details">Post-hole boring, galvanized hardware, self-closing mechanisms, privacy screening</div>
-                    <div class="service-price">From $280</div>
+                    <div class="service-cta"><a href="tel:0481457271">Call for quote: 0481 457271</a></div>
                     <a href="fence-repairs-ballina.html" class="service-link">
                         Fix My Fence
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1165,7 +1308,7 @@
                     <h3 class="service-title">Gutter & Roofing Maintenance</h3>
                     <p class="service-description">Gutter cleaning, repairs, guard installation, and minor roof maintenance.</p>
                     <div class="service-details">Safety equipment, downpipe clearing, leaf guard systems, roof inspection</div>
-                    <div class="service-price">From $220</div>
+                    <div class="service-cta"><a href="tel:0481457271">Call for quote: 0481 457271</a></div>
                     <a href="gutter-cleaning.html" class="service-link">
                         Clean My Gutters
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1185,7 +1328,7 @@
                     <h3 class="service-title">Pressure Washing & Exterior Cleaning</h3>
                     <p class="service-description">House washing, driveway cleaning, deck restoration prep, mould removal.</p>
                     <div class="service-details">Variable pressure settings, surface-specific detergents, soft wash techniques</div>
-                    <div class="service-price">From $300</div>
+                    <div class="service-cta"><a href="tel:0481457271">Call for quote: 0481 457271</a></div>
                     <a href="power-washing.html" class="service-link">
                         Clean My Property
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1207,7 +1350,7 @@
                     <h3 class="service-title">Flyscreen & Window Repairs</h3>
                     <p class="service-description">Flyscreen repair and replacement, window hardware fixes, sliding door adjustments.</p>
                     <div class="service-details">Screen mesh replacement, frame repair, roller track cleaning, security screen installation</div>
-                    <div class="service-price">From $80</div>
+                    <div class="service-cta"><a href="tel:0481457271">Call for quote: 0481 457271</a></div>
                     <a href="flyscreen-repairs.html" class="service-link">
                         Fix My Screens
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1237,7 +1380,7 @@
                     <h3 class="service-title">Airbnb Property Maintenance</h3>
                     <p class="service-description">Specialized maintenance for holiday rentals including guest-ready standards.</p>
                     <div class="service-details">Rapid response, quality standards, guest safety compliance, revenue protection</div>
-                    <div class="service-price">From $200</div>
+                    <div class="service-cta"><a href="tel:0481457271">Call for quote: 0481 457271</a></div>
                     <a href="airbnb-maintenance.html" class="service-link">
                         Keep Guests Happy
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1258,7 +1401,7 @@
                     <h3 class="service-title">Emergency Repairs</h3>
                     <p class="service-description">Same-day response for urgent repairs, storm damage, and security issues.</p>
                     <div class="service-details">24/7 availability, temporary solutions, insurance documentation, safety priority</div>
-                    <div class="service-price">From $180</div>
+                    <div class="service-cta"><a href="tel:0481457271">Call for quote: 0481 457271</a></div>
                     <a href="emergency-repairs.html" class="service-link">
                         Emergency Help
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1280,7 +1423,7 @@
                     <h3 class="service-title">Property Sale Preparation</h3>
                     <p class="service-description">Pre-inspection repairs, cosmetic improvements, and compliance work for property sales.</p>
                     <div class="service-details">Building inspection preparation, compliance checks, value-adding improvements</div>
-                    <div class="service-price">From $400</div>
+                    <div class="service-cta"><a href="tel:0481457271">Call for quote: 0481 457271</a></div>
                     <a href="property-maintenance.html" class="service-link">
                         Prep for Sale
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1302,7 +1445,7 @@
                     <h3 class="service-title">Security & Safety Installations</h3>
                     <p class="service-description">Security door installation, window locks, safety rails, and lighting installation.</p>
                     <div class="service-details">Security-grade hardware, motion sensors, timer switches, compliance standards</div>
-                    <div class="service-price">From $250</div>
+                    <div class="service-cta"><a href="tel:0481457271">Call for quote: 0481 457271</a></div>
                     <a href="security-installation.html" class="service-link">
                         Secure My Home
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
