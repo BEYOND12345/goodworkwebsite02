@@ -219,41 +219,54 @@
 
         .about-grid {
             display: grid;
-            grid-template-columns: 1fr 1.2fr;
-            gap: 60px;
-            align-items: center;
+            grid-template-columns: 400px 1fr;
+            gap: 80px;
+            align-items: start;
+            max-width: 1100px;
+            margin: 0 auto;
         }
 
         .about-image {
+            position: sticky;
+            top: 100px;
             border-radius: var(--border-radius-lg);
             overflow: hidden;
             box-shadow: var(--shadow-lg);
-            aspect-ratio: 1;
         }
 
         .about-image img {
             width: 100%;
-            height: 100%;
+            height: auto;
+            display: block;
             object-fit: cover;
+            max-height: 500px;
+        }
+
+        .about-content {
+            padding-top: 20px;
         }
 
         .about-content h2 {
             font-size: 2.5rem;
             font-weight: 900;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             color: var(--charcoal);
+            line-height: 1.2;
         }
 
         .about-content p {
-            font-size: 1.1rem;
-            color: var(--medium-grey);
-            margin-bottom: 25px;
-            line-height: 1.7;
+            font-size: 1.15rem;
+            color: var(--dark-grey);
+            margin-bottom: 28px;
+            line-height: 1.8;
+            font-weight: 400;
         }
 
         .about-content .highlight {
             color: var(--charcoal);
-            font-weight: 600;
+            font-weight: 700;
+            background: linear-gradient(to bottom, transparent 60%, var(--yellow-light) 60%);
+            padding: 0 2px;
         }
 
         /* Experience Section */
@@ -613,6 +626,17 @@
                 grid-template-columns: 1fr;
                 gap: 40px;
             }
+
+            .about-image {
+                position: relative;
+                top: 0;
+                max-width: 500px;
+                margin: 0 auto;
+            }
+
+            .about-content {
+                padding-top: 0;
+            }
         }
 
         @media (max-width: 968px) {
@@ -717,18 +741,28 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-image">
-                    <img src="about-dan-handyman.avif" alt="Dan - Professional Handyman Northern Rivers NSW - Pride in Workmanship" loading="lazy">
+                    <img src="daniel-handyman.jpg" alt="Daniel - Your local Northern Rivers handyman" loading="lazy">
                 </div>
 
                 <div class="about-content">
-                    <h2>G'day, I'm Dan</h2>
-                    <p>I've been working as a handyman throughout the Northern Rivers region for over 15 years, and I still love what I do. <span class="highlight">There's something deeply satisfying about fixing things properly</span> – whether it's a kitchen cupboard door that won't close properly or restoring a weathered deck to its former glory.</p>
+                    <h2>Hey, I'm Daniel</h2>
+                    <p>I've been living here for about 10 years now with my family, and <span class="highlight">this is home.</span></p>
 
-                    <p>As a <span class="highlight">Byron Bay local</span>, I understand the unique challenges our coastal environment presents. The salt air, humidity, and occasional storms mean our homes need extra care and the right materials. I've learned which products work best here and which shortcuts to avoid.</p>
+                    <p>I was trained by my dad, who's an old-school carpenter and craftsman. Later I went to design school and even ran a big animation agency where I worked with some huge brands. It was fun, but over time I realised <span class="highlight">I prefer working with my hands.</span> There's something about building and fixing things properly that just feels right.</p>
 
-                    <p><span class="highlight">My approach is simple: treat every job like it's in my own home.</span> That means using quality materials, taking the time to do things properly, and being upfront about costs and timelines. No surprises, no rushing, just honest work done well.</p>
+                    <p>A while back I built my own tiny house, which taught me a lot about problem solving and attention to detail. Honestly, <span class="highlight">I got frustrated with tradies not showing up or cutting corners,</span> so I decided to do things myself — and then I realised that was exactly what I wanted to do for other people too.</p>
 
-                    <p>When I'm not wielding tools, you'll find me surfing the local breaks or exploring the hinterland trails. <span class="highlight">This is my home too</span>, and I'm proud to help keep our community's properties in great shape.</p>
+                    <p>I believe in good customer service and keeping people in the loop. I'm a <span class="highlight">measure twice, cut once</span> type of guy. I treat your home like my own, and I'm obsessive about detail, symmetry, and making sure things are done properly. I'm not the bloke for dodgy shortcuts, but if you want something built to last, I'm all in.</p>
+
+                    <p>People say I've got that ADHD energy — <span class="highlight">I just get stuck into a job and don't stop until it's finished.</span> There's nothing I can't figure out, and I genuinely enjoy solving problems.</p>
+
+                    <p>For me it's simple: <span class="highlight">be honest, do the job right, and make sure the client feels taken care of.</span> My reputation matters, and so does doing good work for good people.</p>
+                    
+                    <div style="margin-top: 30px; padding: 24px; background: var(--yellow-light); border-radius: 12px; border: 2px solid var(--yellow-primary);">
+                        <p style="font-size: 1.2rem; font-weight: 700; color: var(--charcoal); margin-bottom: 16px;">Ready to work with someone who actually cares?</p>
+                        <p style="margin-bottom: 20px;">Let's have a chat about your project. No sales pitch, just honest advice about what needs doing.</p>
+                        <a href="tel:0481457271" style="display: inline-block; background: var(--yellow-primary); color: var(--charcoal); padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 1.1rem; transition: all 0.3s ease;">Call Daniel: 0481 457271</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -786,18 +820,18 @@
 
             <div class="values-grid">
                 <div class="value-card">
-                    <h3>Quality First</h3>
-                    <p>I use quality materials and take the time needed to do the job properly. No shortcuts that will cause problems down the track. Your investment should last.</p>
+                    <h3>I Actually Show Up</h3>
+                    <p>Sounds basic, but you know how it is. If I say I'll be there, I'll be there. And if something comes up, I'll actually call you. No ghosting, no excuses.</p>
                 </div>
 
                 <div class="value-card">
-                    <h3>Honest Communication</h3>
-                    <p>Clear quotes upfront, realistic timelines, and regular updates. If something unexpected comes up, we'll discuss it before proceeding. No surprise bills.</p>
+                    <h3>Obsessive About Details</h3>
+                    <p>That picture frame will be level. Those gaps will be even. The symmetry will be perfect. I can't help it – things need to be done properly or it bugs me.</p>
                 </div>
 
                 <div class="value-card">
-                    <h3>Respect Your Space</h3>
-                    <p>I treat your home with respect – protecting floors and furniture, cleaning up thoroughly, and working around your schedule where possible.</p>
+                    <h3>No Dodgy Shortcuts</h3>
+                    <p>I'm not the bloke who'll bodge it together to save 10 minutes. If you want it built to last, done properly with the right materials, then I'm your guy.</p>
                 </div>
             </div>
         </div>
@@ -806,9 +840,9 @@
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <h2>Ready to Get Started?</h2>
-            <p>Let's chat about your project. Free quotes, honest advice, and quality work you can count on.</p>
-            <a href="contact.html" class="cta-button">Get Your Free Quote</a>
+            <h2>Let's Fix Your Stuff</h2>
+            <p>Give me a call and we'll sort out what needs doing. No pressure, just honest advice about your project.</p>
+            <a href="tel:0481457271" class="cta-button">Call Daniel: 0481 457271</a>
         </div>
     </section>
 
