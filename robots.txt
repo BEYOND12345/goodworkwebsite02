@@ -11,10 +11,13 @@ Allow: /
 # Block any admin or private areas
 Disallow: /admin/
 Disallow: /private/
-Disallow: /*master*
-Disallow: /*old*
-Disallow: /*backup*
-Disallow: /*new*
+Disallow: /master-*
+Disallow: /*-old*
+Disallow: /*-backup*
+# Allow important new pages
+Allow: /handyman-lismore-new.html
+Allow: /fence-repairs-ballina-new.html
+Allow: /homepage-new.html
 
 # XML Sitemap location
 Sitemap: https://goodhandshandyman.com.au/sitemap.xml

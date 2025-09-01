@@ -164,7 +164,37 @@
         .service-icon svg { width: 30px; height: 30px; stroke: var(--charcoal); }
 
         .service-card h3 { font-size: 1.3rem; font-weight: 600; color: var(--charcoal); margin-bottom: 12px; }
-        .service-card p { color: var(--medium-grey); line-height: 1.6; }
+        .service-card p { color: var(--medium-grey); line-height: 1.6; margin-bottom: 20px; }
+
+        .service-cta {
+            background: var(--yellow-primary);
+            color: var(--charcoal);
+            padding: 12px 20px;
+            border-radius: var(--border-radius);
+            font-weight: 700;
+            font-size: 0.95rem;
+            text-align: center;
+            margin-top: 20px;
+            border: 2px solid var(--yellow-primary);
+            transition: all 0.3s ease;
+        }
+
+        .service-cta a {
+            color: var(--charcoal);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .service-cta:hover {
+            background: var(--yellow-hover);
+            border-color: var(--yellow-hover);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .service-cta a:hover {
+            color: var(--charcoal);
+        }
 
         /* Content Sections */
         .content-section { padding: 60px 0; }
@@ -282,6 +312,7 @@
                     </div>
                     <h3>Pool & Patio Shade Sails</h3>
                     <p>Essential UV protection for Byron Bay pool areas and patios. Quality shade sails designed for coastal winds and Australian sun intensity.</p>
+                    <div class="service-cta"><a href="tel:0481457271">Call for quote: 0481 457271</a></div>
                 </div>
 
                 <div class="service-card">
@@ -292,6 +323,7 @@
                     </div>
                     <h3>Deck & Outdoor Dining</h3>
                     <p>Create comfortable outdoor dining and entertaining spaces with professionally installed shade sails. Perfect for Byron Bay's outdoor lifestyle.</p>
+                    <div class="service-cta"><a href="tel:0481457271">Call for quote: 0481 457271</a></div>
                 </div>
 
                 <div class="service-card">
@@ -302,6 +334,7 @@
                     </div>
                     <h3>Commercial Shade Solutions</h3>
                     <p>Large-scale shade sail installations for Byron Bay cafes, resorts, and commercial properties. Professional design and engineering.</p>
+                    <div class="service-cta"><a href="tel:0481457271">Call for quote: 0481 457271</a></div>
                 </div>
             </div>
         </div>

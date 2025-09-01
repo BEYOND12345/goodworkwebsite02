@@ -1,247 +1,317 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-<!-- Homepage -->
+<!-- Homepage - Highest Priority -->
 <url>
   <loc>https://goodhandshandyman.com.au/</loc>
-  <lastmod>2025-01-23</lastmod>
+  <lastmod>2025-01-30</lastmod>
   <changefreq>weekly</changefreq>
   <priority>1.0</priority>
 </url>
 
-<!-- Core Pages -->
 <url>
-  <loc>https://goodhandshandyman.com.au/about.html</loc>
-  <lastmod>2025-01-23</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.9</priority>
+  <loc>https://goodhandshandyman.com.au/index.html</loc>
+  <lastmod>2025-01-30</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>1.0</priority>
+</url>
+
+<!-- Core Business Pages - Very High Priority -->
+<url>
+  <loc>https://goodhandshandyman.com.au/handyman-services-byron-bay.html</loc>
+  <lastmod>2025-01-30</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.95</priority>
+</url>
+
+<url>
+  <loc>https://goodhandshandyman.com.au/handyman-pricing-northern-rivers.html</loc>
+  <lastmod>2025-01-30</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.95</priority>
+</url>
+
+<url>
+  <loc>https://goodhandshandyman.com.au/pricing.html</loc>
+  <lastmod>2025-01-30</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.95</priority>
 </url>
 
 <url>
   <loc>https://goodhandshandyman.com.au/contact.html</loc>
-  <lastmod>2025-01-23</lastmod>
+  <lastmod>2025-01-30</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.9</priority>
 </url>
 
 <url>
-  <loc>https://goodhandshandyman.com.au/areas.html</loc>
-  <lastmod>2025-01-23</lastmod>
+  <loc>https://goodhandshandyman.com.au/about.html</loc>
+  <lastmod>2025-01-30</lastmod>
   <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
+  <priority>0.9</priority>
 </url>
 
-<!-- Location Pages (High Priority for Local SEO) -->
+<!-- Location Pages - High Priority for Local SEO -->
 <url>
   <loc>https://goodhandshandyman.com.au/handyman-byron-bay.html</loc>
-  <lastmod>2025-01-23</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.9</priority>
-</url>
-
-<!-- New Critical Service Pages -->
-<url>
-  <loc>https://goodhandshandyman.com.au/painting-byron-bay.html</loc>
-  <lastmod>2025-01-23</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.9</priority>
-</url>
-
-<url>
-  <loc>https://goodhandshandyman.com.au/tiling-byron-bay.html</loc>
-  <lastmod>2025-01-23</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.9</priority>
-</url>
-
-<url>
-  <loc>https://goodhandshandyman.com.au/wall-repairs-byron-bay.html</loc>
-  <lastmod>2025-01-23</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.9</priority>
-</url>
-
-<url>
-  <loc>https://goodhandshandyman.com.au/deck-building-byron-bay.html</loc>
-  <lastmod>2025-01-23</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.9</priority>
-</url>
-
-<url>
-  <loc>https://goodhandshandyman.com.au/shade-sail-installation-byron-bay.html</loc>
-  <lastmod>2025-01-23</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.9</priority>
-</url>
-
-<url>
-  <loc>https://goodhandshandyman.com.au/flooring-installation-byron-bay.html</loc>
-  <lastmod>2025-01-23</lastmod>
+  <lastmod>2025-01-30</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.9</priority>
 </url>
 
 <url>
   <loc>https://goodhandshandyman.com.au/handyman-ballina.html</loc>
-  <lastmod>2025-01-23</lastmod>
+  <lastmod>2025-01-30</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.9</priority>
 </url>
 
 <url>
-  <loc>https://goodhandshandyman.com.au/handyman-northern-rivers.html</loc>
-  <lastmod>2025-01-23</lastmod>
+  <loc>https://goodhandshandyman.com.au/handyman-lismore-new.html</loc>
+  <lastmod>2025-01-30</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.9</priority>
-</url>
-
-<url>
-  <loc>https://goodhandshandyman.com.au/handyman-bangalow.html</loc>
-  <lastmod>2025-01-23</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.8</priority>
-</url>
-
-<url>
-  <loc>https://goodhandshandyman.com.au/handyman-ocean-shores.html</loc>
-  <lastmod>2025-01-23</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.8</priority>
 </url>
 
 <url>
   <loc>https://goodhandshandyman.com.au/handyman-tweed-heads.html</loc>
-  <lastmod>2025-01-23</lastmod>
+  <lastmod>2025-01-30</lastmod>
   <changefreq>weekly</changefreq>
-  <priority>0.8</priority>
+  <priority>0.85</priority>
 </url>
 
 <url>
   <loc>https://goodhandshandyman.com.au/handyman-mullumbimby.html</loc>
-  <lastmod>2025-01-23</lastmod>
+  <lastmod>2025-01-30</lastmod>
   <changefreq>weekly</changefreq>
-  <priority>0.8</priority>
+  <priority>0.85</priority>
+</url>
+
+<url>
+  <loc>https://goodhandshandyman.com.au/handyman-bangalow.html</loc>
+  <lastmod>2025-01-30</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.85</priority>
+</url>
+
+<url>
+  <loc>https://goodhandshandyman.com.au/handyman-ocean-shores.html</loc>
+  <lastmod>2025-01-30</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.85</priority>
 </url>
 
 <url>
   <loc>https://goodhandshandyman.com.au/handyman-lennox-head.html</loc>
-  <lastmod>2025-01-23</lastmod>
+  <lastmod>2025-01-30</lastmod>
   <changefreq>weekly</changefreq>
-  <priority>0.8</priority>
-</url>
-
-<!-- Service Pages -->
-<url>
-  <loc>https://goodhandshandyman.com.au/handyman-services-byron-bay.html</loc>
-  <lastmod>2025-01-23</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.8</priority>
+  <priority>0.85</priority>
 </url>
 
 <url>
-  <loc>https://goodhandshandyman.com.au/emergency-repairs.html</loc>
-  <lastmod>2025-01-23</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.7</priority>
+  <loc>https://goodhandshandyman.com.au/handyman-south-golden-beach.html</loc>
+  <lastmod>2025-01-30</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.85</priority>
 </url>
 
+<url>
+  <loc>https://goodhandshandyman.com.au/handyman-northern-rivers.html</loc>
+  <lastmod>2025-01-30</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.85</priority>
+</url>
+
+<!-- High-Value Service Pages -->
 <url>
   <loc>https://goodhandshandyman.com.au/deck-restoration.html</loc>
-  <lastmod>2025-01-23</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.7</priority>
-</url>
-
-<url>
-  <loc>https://goodhandshandyman.com.au/deck-sanding.html</loc>
-  <lastmod>2025-01-23</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.9</priority>
+  <lastmod>2025-01-30</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.85</priority>
 </url>
 
 <url>
   <loc>https://goodhandshandyman.com.au/deck-restoration-byron-bay.html</loc>
-  <lastmod>2025-01-23</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.9</priority>
+  <lastmod>2025-01-30</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.85</priority>
 </url>
 
 <url>
-  <loc>https://goodhandshandyman.com.au/gutter-cleaning.html</loc>
-  <lastmod>2025-01-23</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.7</priority>
+  <loc>https://goodhandshandyman.com.au/deck-building-byron-bay.html</loc>
+  <lastmod>2025-01-30</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.85</priority>
 </url>
 
 <url>
-  <loc>https://goodhandshandyman.com.au/fence-repairs-ballina.html</loc>
-  <lastmod>2025-01-23</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.7</priority>
+  <loc>https://goodhandshandyman.com.au/deck-sanding.html</loc>
+  <lastmod>2025-01-30</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
 </url>
 
 <url>
   <loc>https://goodhandshandyman.com.au/kitchen-door-repairs-northern-rivers.html</loc>
-  <lastmod>2025-01-23</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.7</priority>
+  <lastmod>2025-01-30</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.85</priority>
 </url>
 
 <url>
-  <loc>https://goodhandshandyman.com.au/airbnb-maintenance.html</loc>
-  <lastmod>2025-01-23</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.7</priority>
+  <loc>https://goodhandshandyman.com.au/kitchen-door-repairs-service-page.html</loc>
+  <lastmod>2025-01-30</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
 </url>
 
-<!-- New Service Pages -->
 <url>
-  <loc>https://goodhandshandyman.com.au/custom-carpentry.html</loc>
-  <lastmod>2025-01-23</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.7</priority>
+  <loc>https://goodhandshandyman.com.au/kitchen-repairs-byron-bay.html</loc>
+  <lastmod>2025-01-30</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://goodhandshandyman.com.au/painting-byron-bay.html</loc>
+  <lastmod>2025-01-30</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.85</priority>
 </url>
 
 <url>
   <loc>https://goodhandshandyman.com.au/painting-services.html</loc>
-  <lastmod>2025-01-23</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.7</priority>
+  <lastmod>2025-01-30</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
 </url>
 
 <url>
-  <loc>https://goodhandshandyman.com.au/furniture-assembly.html</loc>
-  <lastmod>2025-01-23</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.7</priority>
+  <loc>https://goodhandshandyman.com.au/tiling-byron-bay.html</loc>
+  <lastmod>2025-01-30</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.85</priority>
 </url>
 
 <url>
   <loc>https://goodhandshandyman.com.au/flooring-installation.html</loc>
-  <lastmod>2025-01-23</lastmod>
+  <lastmod>2025-01-30</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://goodhandshandyman.com.au/flooring-installation-byron-bay.html</loc>
+  <lastmod>2025-01-30</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.85</priority>
+</url>
+
+<url>
+  <loc>https://goodhandshandyman.com.au/shade-sail-installation-byron-bay.html</loc>
+  <lastmod>2025-01-30</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://goodhandshandyman.com.au/wall-repairs-byron-bay.html</loc>
+  <lastmod>2025-01-30</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<!-- Other Service Pages -->
+<url>
+  <loc>https://goodhandshandyman.com.au/gutter-cleaning.html</loc>
+  <lastmod>2025-01-30</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.75</priority>
+</url>
+
+<url>
+  <loc>https://goodhandshandyman.com.au/gutter-cleaning-ballina.html</loc>
+  <lastmod>2025-01-30</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.75</priority>
+</url>
+
+<url>
+  <loc>https://goodhandshandyman.com.au/fence-repairs-ballina.html</loc>
+  <lastmod>2025-01-30</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.75</priority>
+</url>
+
+<url>
+  <loc>https://goodhandshandyman.com.au/fence-repairs-ballina-new.html</loc>
+  <lastmod>2025-01-30</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.75</priority>
+</url>
+
+<url>
+  <loc>https://goodhandshandyman.com.au/custom-carpentry.html</loc>
+  <lastmod>2025-01-30</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.75</priority>
+</url>
+
+<url>
+  <loc>https://goodhandshandyman.com.au/furniture-assembly.html</loc>
+  <lastmod>2025-01-30</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.75</priority>
+</url>
+
+<url>
+  <loc>https://goodhandshandyman.com.au/emergency-repairs.html</loc>
+  <lastmod>2025-01-30</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.75</priority>
+</url>
+
+<url>
+  <loc>https://goodhandshandyman.com.au/airbnb-maintenance.html</loc>
+  <lastmod>2025-01-30</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.75</priority>
+</url>
+
+<!-- Supporting Pages -->
+<url>
+  <loc>https://goodhandshandyman.com.au/areas.html</loc>
+  <lastmod>2025-01-30</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.7</priority>
 </url>
 
-<!-- Business Pages -->
 <url>
-  <loc>https://goodhandshandyman.com.au/handyman-pricing-northern-rivers.html</loc>
-  <lastmod>2025-01-23</lastmod>
+  <loc>https://goodhandshandyman.com.au/homepage-new.html</loc>
+  <lastmod>2025-01-30</lastmod>
   <changefreq>monthly</changefreq>
-  <priority>0.6</priority>
+  <priority>0.7</priority>
 </url>
 
+<!-- Legal Pages -->
 <url>
   <loc>https://goodhandshandyman.com.au/privacy-policy.html</loc>
-  <lastmod>2025-01-23</lastmod>
+  <lastmod>2025-01-30</lastmod>
   <changefreq>yearly</changefreq>
   <priority>0.3</priority>
 </url>
 
 <url>
   <loc>https://goodhandshandyman.com.au/terms-of-service.html</loc>
-  <lastmod>2025-01-23</lastmod>
+  <lastmod>2025-01-30</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.3</priority>
+</url>
+
+<url>
+  <loc>https://goodhandshandyman.com.au/thank-you.html</loc>
+  <lastmod>2025-01-30</lastmod>
   <changefreq>yearly</changefreq>
   <priority>0.3</priority>
 </url>
