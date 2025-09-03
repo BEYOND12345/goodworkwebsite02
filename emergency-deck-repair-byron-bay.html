@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Deck Repair Byron Bay - 30 Minute Response | Call 0481 457271</title>
+    <meta name="description" content="Emergency deck repair Byron Bay. Deck collapsed? Party tomorrow? Airbnb guests arriving? 30-minute response. Available 24/7. Fixed pricing. Call 0481 457271 now.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --yellow-primary: #FFB800;
+            --yellow-hover: #E6A600;
+            --yellow-light: #FFF9E6;
+            --charcoal: #2D3748;
+            --dark-grey: #4A5568;
+            --medium-grey: #718096;
+            --light-grey: #EDF2F7;
+            --bg-subtle: #F7FAFC;
+            --white: #FFFFFF;
+            --border-radius: 12px;
+            --border-radius-lg: 16px;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--charcoal);
+            background-color: var(--white);
+            padding-top: 115px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Emergency Banner */
+        .emergency-banner {
+            background: var(--yellow-primary);
+            color: var(--charcoal);
+            padding: 12px 0;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.95rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1100;
+        }
+
+        .emergency-banner a {
+            color: var(--charcoal);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        /* Header Navigation - Same as hub page */
+        .header-nav {
+            position: fixed;
+            top: 45px;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--light-grey);
+            z-index: 1000;
+            padding: 0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 70px;
+        }
+
+        .nav-logo a {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: var(--charcoal);
+            text-decoration: none;
+        }
+
+        .nav-logo a:hover {
+            color: var(--yellow-primary);
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        .nav-menu a {
+            color: var(--charcoal);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: var(--border-radius);
+            transition: all 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            color: var(--yellow-primary);
+            background: var(--yellow-light);
+        }
+
+        .nav-cta {
+            background: var(--yellow-primary) !important;
+            color: var(--charcoal) !important;
+            padding: 12px 24px !important;
+            font-weight: 600 !important;
+        }
+
+        .nav-cta:hover {
+            background: var(--yellow-hover) !important;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 600px;
+            background: linear-gradient(rgba(45, 55, 72, 0.8), rgba(45, 55, 72, 0.6)), url('deck-restoration-handyman-byron-bay.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.8rem, 6vw, 4rem);
+            font-weight: 900;
+            margin-bottom: 24px;
+            letter-spacing: -0.025em;
+            line-height: 1.1;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero-subtitle {
+            font-size: 1.4rem;
+            opacity: 0.95;
+            max-width: 800px;
+            margin: 0 auto 32px;
+            line-height: 1.4;
+            font-weight: 600;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .hero-scenario {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 24px;
+            border-radius: var(--border-radius);
+            margin: 32px auto 40px;
+            max-width: 600px;
+            font-size: 1.1rem;
+            font-style: italic;
+        }
+
+        .hero-guarantee {
+            background: rgba(255, 184, 0, 0.95);
+            color: var(--charcoal);
+            padding: 16px 32px;
+            border-radius: var(--border-radius);
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            display: inline-block;
+        }
+
+        .hero-ctas {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta-button {
+            background: var(--yellow-primary);
+            color: var(--charcoal);
+            padding: 20px 40px;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2rem;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .cta-button:hover {
+            background: var(--yellow-hover);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+
+        .cta-button.secondary {
+            background: transparent;
+            color: var(--white);
+            border: 3px solid var(--white);
+        }
+
+        .cta-button.secondary:hover {
+            background: var(--white);
+            color: var(--yellow-primary);
+        }
+
+        /* Emergency Checklist Section */
+        .emergency-section {
+            background: var(--charcoal);
+            color: var(--white);
+            padding: 80px 0;
+        }
+
+        .emergency-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .emergency-title {
+            font-size: 2.5rem;
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .emergency-checklist {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin-bottom: 48px;
+        }
+
+        .emergency-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 24px;
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--yellow-primary);
+        }
+
+        .emergency-item h3 {
+            color: var(--yellow-primary);
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .emergency-item p {
+            font-size: 1rem;
+            line-height: 1.5;
+            opacity: 0.9;
+        }
+
+        /* Content with Image Section */
+        .content-with-image {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 80px;
+            align-items: center;
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 0 24px;
+        }
+
+        .content-text h2 {
+            font-size: 2.5rem;
+            font-weight: 900;
+            margin-bottom: 24px;
+            color: var(--charcoal);
+        }
+
+        .content-text p {
+            font-size: 1.2rem;
+            line-height: 1.7;
+            color: var(--dark-grey);
+            margin-bottom: 24px;
+        }
+
+        .content-image {
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            transition: all 0.3s ease;
+        }
+
+        .content-image:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .content-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            aspect-ratio: 4/3;
+            object-fit: cover;
+        }
+
+        /* Parts We Stock */
+        .parts-section {
+            padding: 80px 0;
+            background: var(--bg-subtle);
+        }
+
+        .parts-title {
+            font-size: 2.5rem;
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 24px;
+            color: var(--charcoal);
+        }
+
+        .parts-subtitle {
+            font-size: 1.25rem;
+            text-align: center;
+            color: var(--dark-grey);
+            margin-bottom: 48px;
+        }
+
+        .parts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .parts-card {
+            background: var(--white);
+            padding: 32px;
+            border-radius: var(--border-radius-lg);
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .parts-card:hover {
+            border-color: var(--yellow-primary);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .parts-card h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--charcoal);
+            margin-bottom: 16px;
+        }
+
+        .parts-card ul {
+            list-style: none;
+            text-align: left;
+        }
+
+        .parts-card li {
+            padding: 6px 0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--dark-grey);
+            font-size: 0.95rem;
+        }
+
+        .parts-card li::before {
+            content: "✓";
+            color: var(--yellow-primary);
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        /* Examples Section */
+        .examples-section {
+            padding: 80px 0;
+            background: var(--white);
+        }
+
+        .examples-title {
+            font-size: 2.5rem;
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 48px;
+            color: var(--charcoal);
+        }
+
+        .examples-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 32px;
+        }
+
+        .example-card {
+            background: var(--yellow-light);
+            padding: 32px;
+            border-radius: var(--border-radius-lg);
+            border-left: 4px solid var(--yellow-primary);
+        }
+
+        .example-card .when {
+            color: var(--yellow-primary);
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .example-card h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--charcoal);
+            margin-bottom: 16px;
+        }
+
+        .example-card p {
+            color: var(--dark-grey);
+            margin-bottom: 16px;
+            line-height: 1.6;
+        }
+
+        .example-card .result {
+            background: var(--white);
+            padding: 16px;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            color: var(--charcoal);
+            font-size: 0.95rem;
+            border-left: 4px solid var(--yellow-primary);
+        }
+
+        /* Final CTA */
+        .final-cta {
+            background: linear-gradient(135deg, var(--yellow-primary) 0%, var(--yellow-hover) 100%);
+            color: var(--charcoal);
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .final-cta h2 {
+            font-size: 3rem;
+            font-weight: 900;
+            margin-bottom: 24px;
+            line-height: 1.1;
+            color: var(--charcoal);
+        }
+
+        .final-cta p {
+            font-size: 1.3rem;
+            margin-bottom: 48px;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            color: var(--charcoal);
+        }
+
+        .final-cta .phone-number {
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: var(--charcoal);
+            margin-bottom: 32px;
+            letter-spacing: 2px;
+        }
+
+        /* Footer - Same as hub page */
+        .footer {
+            background: var(--charcoal);
+            color: var(--white);
+            padding: 64px 32px 32px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 48px;
+            max-width: 1200px;
+            margin: 0 auto 48px;
+        }
+
+        .footer-section h3 {
+            color: var(--yellow-primary);
+            font-weight: 600;
+            font-size: 1.125rem;
+            margin-bottom: 24px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section li {
+            margin-bottom: 12px;
+        }
+
+        .footer-section a {
+            color: rgba(255,255,255,0.85);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            display: block;
+            padding: 4px 0;
+        }
+
+        .footer-section a:hover {
+            color: var(--yellow-primary);
+            transform: translateX(4px);
+        }
+
+        .footer-section p {
+            color: rgba(255,255,255,0.8);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+
+        .brand-logo {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: var(--yellow-primary);
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        .brand-tagline {
+            font-size: 1rem;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 24px;
+            font-style: italic;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+            color: rgba(255,255,255,0.85);
+        }
+
+        .contact-item svg {
+            width: 16px;
+            height: 16px;
+            color: var(--yellow-primary);
+            flex-shrink: 0;
+        }
+
+        .contact-item a {
+            color: inherit;
+            text-decoration: none;
+            padding: 0;
+            transform: none;
+        }
+
+        .contact-item a:hover {
+            color: var(--yellow-primary);
+            transform: none;
+        }
+
+        .footer .cta-button {
+            background: var(--yellow-primary);
+            color: var(--charcoal);
+            padding: 16px 24px;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .footer .cta-button:hover {
+            background: var(--yellow-hover);
+            transform: translateY(-2px);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 32px;
+            text-align: center;
+            color: rgba(255,255,255,0.6);
+            font-size: 0.875rem;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .hero {
+                height: 500px;
+            }
+            
+            .hero-ctas {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .content-with-image {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                text-align: center;
+            }
+            
+            .emergency-checklist {
+                grid-template-columns: 1fr;
+            }
+            
+            .parts-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .examples-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .final-cta h2 {
+                font-size: 2.5rem;
+            }
+            
+            .final-cta .phone-number {
+                font-size: 2.5rem;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Emergency Banner -->
+    <div class="emergency-banner">
+        🚨 DECK EMERGENCY: Party tomorrow? Guests arriving? Deck collapsed? • <a href="tel:0481457271">Call 0481 457271</a>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="header-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Good Hands</a>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="about-dan-byron-bay-handyman.html">About Dan</a>
+                <a href="handyman-services-byron-bay.html">Services</a>
+                <a href="emergency-handyman-byron-bay.html">Emergency</a>
+                <a href="tel:0481457271" class="nav-cta">Call Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Emergency Deck Repair Byron Bay</h1>
+            <p class="hero-subtitle">30-Minute Response • Available 24/7</p>
+            
+            <div class="hero-scenario">
+                "It's Saturday afternoon, your deck boards just gave way with the party tomorrow, guests arriving at 2pm, and you're panicking..."
+            </div>
+            
+            <div class="hero-guarantee">Fixed in time for your event</div>
+            
+            <div class="hero-ctas">
+                <a href="tel:0481457271" class="cta-button">CALL NOW: 0481 457271</a>
+                <a href="sms:0481457271" class="cta-button secondary">Text Photos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Checklist Section -->
+    <section class="emergency-section">
+        <div class="container">
+            <div class="emergency-content">
+                <h2 class="emergency-title">This Is A Deck Emergency When:</h2>
+                
+                <div class="emergency-checklist">
+                    <div class="emergency-item">
+                        <h3>Structural Collapse or Boards Giving Way</h3>
+                        <p>Deck boards sagging, cracking, or breaking when walked on. Immediate safety risk to anyone using the deck.</p>
+                    </div>
+                    <div class="emergency-item">
+                        <h3>Airbnb Guests Arriving Tomorrow</h3>
+                        <p>Guests checking in and the deck is unusable. Your review score and booking income are at risk.</p>
+                    </div>
+                    <div class="emergency-item">
+                        <h3>Party or Event in 24-48 Hours</h3>
+                        <p>Wedding, birthday party, family gathering planned and your deck entertainment area is broken.</p>
+                    </div>
+                    <div class="emergency-item">
+                        <h3>Storm Damage Requiring Securing</h3>
+                        <p>Recent storm damaged deck structure, loose boards flapping, or railings that could fall and cause injury.</p>
+                    </div>
+                    <div class="emergency-item">
+                        <h3>Property Inspection Next Day</h3>
+                        <p>Building inspection, insurance assessment, or property sale inspection where deck issues will be noted.</p>
+                    </div>
+                    <div class="emergency-item">
+                        <h3>Railing Completely Loose</h3>
+                        <p>Balustrade or railing that's no longer secure, creating serious safety hazard especially with children.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content with Image Section -->
+    <section class="section">
+        <div class="content-with-image">
+            <div class="content-text">
+                <h2>Byron Bay Deck Emergency Response</h2>
+                <p>I understand the panic when your deck fails just before an event. In 15 years around Byron Bay, I've seen every type of deck emergency - from coastal weather damage to structural failures during parties.</p>
+                
+                <p>I carry emergency deck repair materials in my truck and can secure most situations within the first hour. Whether it's temporary repairs to get you through the weekend or permanent fixes, I'll get your deck safe and usable fast.</p>
+
+                <p>Response times from my Byron Bay base: Byron Bay CBD 15-20 minutes, Suffolk Park 20-25 minutes, Bangalow 25-30 minutes.</p>
+            </div>
+            <div class="content-image">
+                <img src="deck-restoration-professional-service-northern-rivers.avif" alt="Emergency deck repair Byron Bay - professional fast response for urgent deck repairs" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Parts We Stock Section -->
+    <section class="parts-section">
+        <div class="container">
+            <h2 class="parts-title">Parts We Stock For Emergency Deck Repairs</h2>
+            <p class="parts-subtitle">Ready to fix your deck emergency immediately</p>
+            
+            <div class="parts-grid">
+                <div class="parts-card">
+                    <h3>Structural Timber</h3>
+                    <ul>
+                        <li>90x45 treated pine bearers</li>
+                        <li>70x35 treated pine joists</li>
+                        <li>140x32 deck boards</li>
+                        <li>Emergency blocking timber</li>
+                    </ul>
+                </div>
+                <div class="parts-card">
+                    <h3>Fasteners & Hardware</h3>
+                    <ul>
+                        <li>Galvanized deck screws</li>
+                        <li>Structural carriage bolts</li>
+                        <li>Joist hangers</li>
+                        <li>Marine-grade fixings</li>
+                    </ul>
+                </div>
+                <div class="parts-card">
+                    <h3>Railing Components</h3>
+                    <ul>
+                        <li>Timber balusters</li>
+                        <li>Handrail sections</li>
+                        <li>Post brackets</li>
+                        <li>Gate hardware</li>
+                    </ul>
+                </div>
+                <div class="parts-card">
+                    <h3>Emergency Supplies</h3>
+                    <ul>
+                        <li>Temporary shoring props</li>
+                        <li>Safety tape & barriers</li>
+                        <li>Tarpaulins for weather</li>
+                        <li>Quick-set concrete</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Examples Section -->
+    <section class="examples-section">
+        <div class="container">
+            <h2 class="examples-title">Recent Emergency Deck Repairs</h2>
+            
+            <div class="examples-grid">
+                <div class="example-card">
+                    <div class="when">Saturday 2pm</div>
+                    <h3>Suffolk Park Airbnb - Deck Collapse</h3>
+                    <p>Guests arriving in 2 hours, main deck boards gave way during cleaning. Structural failure from termite damage. Property owner panicking about cancellations and reviews.</p>
+                    <div class="result">Secured area in 20 minutes, temporary repair completed, guests could use deck safely. Permanent repair next morning. Total cost: $380</div>
+                </div>
+                
+                <div class="example-card">
+                    <div class="when">Friday 8pm</div>
+                    <h3>Byron Bay Wedding Tomorrow</h3>
+                    <p>Wedding ceremony planned on deck at 4pm Saturday. Storm overnight damaged railing and several boards. 50 guests expected, venue change not possible.</p>
+                    <div class="result">Emergency call at 8pm Friday, repaired by 11am Saturday morning. Wedding went ahead perfectly. Total cost: $650</div>
+                </div>
+                
+                <div class="example-card">
+                    <div class="when">Sunday 10am</div>
+                    <h3>Bangalow Family Gathering</h3>
+                    <p>BBQ planned for Sunday lunch with extended family visiting from Melbourne. Deck railing came loose during setup, not safe for kids to use area.</p>
+                    <div class="result">Arrived in 25 minutes, railing re-secured and reinforced. Family BBQ saved, kids safe to play. Total cost: $195</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Don't Risk Your Event</h2>
+            <p>Deck problems get worse by the hour</p>
+            <div class="phone-number">0481 457271</div>
+            <a href="tel:0481457271" class="cta-button">Call Deck Emergency Line</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <!-- Brand & Contact -->
+            <div class="footer-section brand-section">
+                <h3 class="brand-logo">Good Hands</h3>
+                <p class="brand-tagline">"Emergency deck repairs Byron Bay. When your deck fails, we respond in 30 minutes."</p>
+                
+                <div class="contact-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    <a href="tel:0481457271">0481 457271</a>
+                </div>
+
+                <div class="contact-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    <a href="mailto:danhandywork@gmail.com">danhandywork@gmail.com</a>
+                </div>
+            </div>
+
+            <!-- Emergency Services -->
+            <div class="footer-section">
+                <h3>Other Emergency Services</h3>
+                <ul>
+                    <li><a href="emergency-handyman-byron-bay.html">Emergency Handyman</a></li>
+                    <li><a href="emergency-fence-repair-byron-bay.html">Emergency Fence Repair</a></li>
+                    <li><a href="emergency-airbnb-repairs-byron-bay.html">Emergency Airbnb Repairs</a></li>
+                    <li><a href="deck-restoration-byron-bay.html">Regular Deck Restoration</a></li>
+                </ul>
+            </div>
+
+            <!-- Service Areas -->
+            <div class="footer-section">
+                <h3>Emergency Coverage</h3>
+                <ul>
+                    <li><a href="handyman-byron-bay.html">Byron Bay (15-20 min)</a></li>
+                    <li><a href="handyman-ballina.html">Suffolk Park (20-25 min)</a></li>
+                    <li><a href="handyman-bangalow.html">Bangalow (25-30 min)</a></li>
+                    <li><a href="handyman-mullumbimby.html">Mullumbimby (20-30 min)</a></li>
+                </ul>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="footer-section">
+                <h3>Deck Emergency</h3>
+                <a href="tel:0481457271" class="cta-button">Call Emergency Line</a>
+                <a href="sms:0481457271" class="cta-button">Text Deck Photos</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Good Hands Emergency Deck Repairs Byron Bay. Available 24/7.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('active');
+        }
+
+        function closeMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.remove('active');
+        }
+    </script>
+</body>
+</html>

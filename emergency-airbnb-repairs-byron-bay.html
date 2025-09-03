@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Airbnb Repairs Byron Bay - Guests Arriving 2pm, Problems Found 10am?</title>
+    <meta name="description" content="Emergency Airbnb repairs Byron Bay. Guests arriving today? Cleaner found issues? Bad review imminent? 30-minute response saves your rating. Call 0481 457271 now.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --yellow-primary: #FFB800;
+            --yellow-hover: #E6A600;
+            --yellow-light: #FFF9E6;
+            --charcoal: #2D3748;
+            --dark-grey: #4A5568;
+            --medium-grey: #718096;
+            --light-grey: #EDF2F7;
+            --bg-subtle: #F7FAFC;
+            --white: #FFFFFF;
+            --border-radius: 12px;
+            --border-radius-lg: 16px;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--charcoal);
+            background-color: var(--white);
+            padding-top: 115px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Emergency Banner */
+        .emergency-banner {
+            background: var(--yellow-primary);
+            color: var(--charcoal);
+            padding: 12px 0;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.95rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1100;
+        }
+
+        .emergency-banner a {
+            color: var(--charcoal);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        /* Header Navigation */
+        .header-nav {
+            position: fixed;
+            top: 45px;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--light-grey);
+            z-index: 1000;
+            padding: 0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 70px;
+        }
+
+        .nav-logo a {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: var(--charcoal);
+            text-decoration: none;
+        }
+
+        .nav-logo a:hover {
+            color: var(--yellow-primary);
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        .nav-menu a {
+            color: var(--charcoal);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: var(--border-radius);
+            transition: all 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            color: var(--yellow-primary);
+            background: var(--yellow-light);
+        }
+
+        .nav-cta {
+            background: var(--yellow-primary) !important;
+            color: var(--charcoal) !important;
+            padding: 12px 24px !important;
+            font-weight: 600 !important;
+        }
+
+        .nav-cta:hover {
+            background: var(--yellow-hover) !important;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 600px;
+            background: linear-gradient(rgba(45, 55, 72, 0.8), rgba(45, 55, 72, 0.6)), url('airbnb-maintenance-hero-northern-rivers.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.8rem, 6vw, 4rem);
+            font-weight: 900;
+            margin-bottom: 24px;
+            letter-spacing: -0.025em;
+            line-height: 1.1;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero-subtitle {
+            font-size: 1.4rem;
+            opacity: 0.95;
+            max-width: 800px;
+            margin: 0 auto 32px;
+            line-height: 1.4;
+            font-weight: 600;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .hero-scenario {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 24px;
+            border-radius: var(--border-radius);
+            margin: 32px auto 40px;
+            max-width: 700px;
+            font-size: 1.1rem;
+            font-style: italic;
+        }
+
+        .hero-guarantee {
+            background: rgba(255, 184, 0, 0.95);
+            color: var(--charcoal);
+            padding: 16px 32px;
+            border-radius: var(--border-radius);
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            display: inline-block;
+        }
+
+        .hero-ctas {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta-button {
+            background: var(--yellow-primary);
+            color: var(--charcoal);
+            padding: 20px 40px;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2rem;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .cta-button:hover {
+            background: var(--yellow-hover);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+
+        .cta-button.secondary {
+            background: transparent;
+            color: var(--white);
+            border: 3px solid var(--white);
+        }
+
+        .cta-button.secondary:hover {
+            background: var(--white);
+            color: var(--yellow-primary);
+        }
+
+        /* Rating Risk Section */
+        .rating-risk {
+            background: var(--yellow-primary);
+            color: var(--charcoal);
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .rating-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .rating-title {
+            font-size: 2rem;
+            font-weight: 900;
+            margin-bottom: 16px;
+        }
+
+        .rating-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 24px;
+        }
+
+        .rating-stat {
+            text-align: center;
+        }
+
+        .rating-stat .number {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--charcoal);
+            display: block;
+        }
+
+        .rating-stat .label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* Emergency Checklist Section */
+        .emergency-section {
+            background: var(--charcoal);
+            color: var(--white);
+            padding: 80px 0;
+        }
+
+        .emergency-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .emergency-title {
+            font-size: 2.5rem;
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .emergency-checklist {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin-bottom: 48px;
+        }
+
+        .emergency-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 24px;
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--yellow-primary);
+        }
+
+        .emergency-item h3 {
+            color: var(--yellow-primary);
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .emergency-item p {
+            font-size: 1rem;
+            line-height: 1.5;
+            opacity: 0.9;
+        }
+
+        /* Content with Image Section */
+        .content-with-image {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 80px;
+            align-items: center;
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 0 24px;
+        }
+
+        .content-text h2 {
+            font-size: 2.5rem;
+            font-weight: 900;
+            margin-bottom: 24px;
+            color: var(--charcoal);
+        }
+
+        .content-text p {
+            font-size: 1.2rem;
+            line-height: 1.7;
+            color: var(--dark-grey);
+            margin-bottom: 24px;
+        }
+
+        .content-image {
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            transition: all 0.3s ease;
+        }
+
+        .content-image:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .content-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            aspect-ratio: 4/3;
+            object-fit: cover;
+        }
+
+        /* Common Issues Section */
+        .issues-section {
+            padding: 80px 0;
+            background: var(--bg-subtle);
+        }
+
+        .issues-title {
+            font-size: 2.5rem;
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 24px;
+            color: var(--charcoal);
+        }
+
+        .issues-subtitle {
+            font-size: 1.25rem;
+            text-align: center;
+            color: var(--dark-grey);
+            margin-bottom: 48px;
+        }
+
+        .issues-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .issue-card {
+            background: var(--white);
+            padding: 32px;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-sm);
+            border-left: 4px solid var(--yellow-primary);
+        }
+
+        .issue-card h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--charcoal);
+            margin-bottom: 16px;
+        }
+
+        .issue-card .review-impact {
+            background: #FFF5F5;
+            color: var(--yellow-primary);
+            padding: 12px 16px;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 16px;
+        }
+
+        .issue-card ul {
+            list-style: none;
+        }
+
+        .issue-card li {
+            padding: 6px 0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--dark-grey);
+            font-size: 0.95rem;
+        }
+
+        .issue-card li::before {
+            content: "⚠️";
+            flex-shrink: 0;
+        }
+
+        /* Examples Section */
+        .examples-section {
+            padding: 80px 0;
+            background: var(--white);
+        }
+
+        .examples-title {
+            font-size: 2.5rem;
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 48px;
+            color: var(--charcoal);
+        }
+
+        .examples-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 32px;
+        }
+
+        .example-card {
+            background: var(--yellow-light);
+            padding: 32px;
+            border-radius: var(--border-radius-lg);
+            border-left: 4px solid var(--yellow-primary);
+        }
+
+        .example-card .when {
+            color: var(--yellow-primary);
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .example-card h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--charcoal);
+            margin-bottom: 16px;
+        }
+
+        .example-card p {
+            color: var(--dark-grey);
+            margin-bottom: 16px;
+            line-height: 1.6;
+        }
+
+        .example-card .result {
+            background: var(--white);
+            padding: 16px;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            color: var(--charcoal);
+            font-size: 0.95rem;
+            border-left: 4px solid var(--yellow-primary);
+        }
+
+        /* Final CTA */
+        .final-cta {
+            background: linear-gradient(135deg, var(--yellow-primary) 0%, var(--yellow-hover) 100%);
+            color: var(--charcoal);
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .final-cta h2 {
+            font-size: 3rem;
+            font-weight: 900;
+            margin-bottom: 24px;
+            line-height: 1.1;
+            color: var(--charcoal);
+        }
+
+        .final-cta p {
+            font-size: 1.3rem;
+            margin-bottom: 48px;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            color: var(--charcoal);
+        }
+
+        .final-cta .phone-number {
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: var(--charcoal);
+            margin-bottom: 32px;
+            letter-spacing: 2px;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--charcoal);
+            color: var(--white);
+            padding: 64px 32px 32px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 48px;
+            max-width: 1200px;
+            margin: 0 auto 48px;
+        }
+
+        .footer-section h3 {
+            color: var(--yellow-primary);
+            font-weight: 600;
+            font-size: 1.125rem;
+            margin-bottom: 24px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section li {
+            margin-bottom: 12px;
+        }
+
+        .footer-section a {
+            color: rgba(255,255,255,0.85);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            display: block;
+            padding: 4px 0;
+        }
+
+        .footer-section a:hover {
+            color: var(--yellow-primary);
+            transform: translateX(4px);
+        }
+
+        .footer-section p {
+            color: rgba(255,255,255,0.8);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+
+        .brand-logo {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: var(--yellow-primary);
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        .brand-tagline {
+            font-size: 1rem;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 24px;
+            font-style: italic;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+            color: rgba(255,255,255,0.85);
+        }
+
+        .contact-item svg {
+            width: 16px;
+            height: 16px;
+            color: var(--yellow-primary);
+            flex-shrink: 0;
+        }
+
+        .contact-item a {
+            color: inherit;
+            text-decoration: none;
+            padding: 0;
+            transform: none;
+        }
+
+        .contact-item a:hover {
+            color: var(--yellow-primary);
+            transform: none;
+        }
+
+        .footer .cta-button {
+            background: var(--yellow-primary);
+            color: var(--charcoal);
+            padding: 16px 24px;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .footer .cta-button:hover {
+            background: var(--yellow-hover);
+            transform: translateY(-2px);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 32px;
+            text-align: center;
+            color: rgba(255,255,255,0.6);
+            font-size: 0.875rem;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .hero {
+                height: 500px;
+            }
+            
+            .hero-ctas {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .rating-stats {
+                gap: 20px;
+            }
+            
+            .content-with-image {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                text-align: center;
+            }
+            
+            .emergency-checklist {
+                grid-template-columns: 1fr;
+            }
+            
+            .issues-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .examples-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .final-cta h2 {
+                font-size: 2.5rem;
+            }
+            
+            .final-cta .phone-number {
+                font-size: 2.5rem;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Emergency Banner -->
+    <div class="emergency-banner">
+        🏡 AIRBNB EMERGENCY: Guests arriving today? Problems discovered? • <a href="tel:0481457271">Call 0481 457271</a>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="header-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Good Hands</a>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="about-dan-byron-bay-handyman.html">About Dan</a>
+                <a href="handyman-services-byron-bay.html">Services</a>
+                <a href="emergency-handyman-byron-bay.html">Emergency</a>
+                <a href="tel:0481457271" class="nav-cta">Call Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Emergency Airbnb Repairs Byron Bay</h1>
+            <p class="hero-subtitle">Save Your Review Score • Same Day Response</p>
+            
+            <div class="hero-scenario">
+                "It's 10am Friday, guests checking in at 2pm, cleaner just found 5 problems, and you're about to get your first 1-star review..."
+            </div>
+            
+            <div class="hero-guarantee">Fixed before check-in - reviews protected</div>
+            
+            <div class="hero-ctas">
+                <a href="tel:0481457271" class="cta-button">CALL NOW: 0481 457271</a>
+                <a href="sms:0481457271" class="cta-button secondary">Text Photos & Issues</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rating Risk Section -->
+    <section class="rating-risk">
+        <div class="container">
+            <div class="rating-content">
+                <h2 class="rating-title">Your Airbnb Rating Is At Risk</h2>
+                <p>One bad review can devastate your booking income</p>
+                
+                <div class="rating-stats">
+                    <div class="rating-stat">
+                        <span class="number">31%</span>
+                        <span class="label">Booking drop after 1 bad review</span>
+                    </div>
+                    <div class="rating-stat">
+                        <span class="number">$2,400</span>
+                        <span class="label">Lost monthly income (Byron Bay average)</span>
+                    </div>
+                    <div class="rating-stat">
+                        <span class="number">4.7</span>
+                        <span class="label">Minimum rating to stay competitive</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Checklist Section -->
+    <section class="emergency-section">
+        <div class="container">
+            <div class="emergency-content">
+                <h2 class="emergency-title">This Is An Airbnb Emergency When:</h2>
+                
+                <div class="emergency-checklist">
+                    <div class="emergency-item">
+                        <h3>Guests Checking In Today</h3>
+                        <p>Check-in scheduled and key features aren't working. Your review score and reputation are on the line.</p>
+                    </div>
+                    <div class="emergency-item">
+                        <h3>Bad Review Likely Without Fix</h3>
+                        <p>Problems that guests will definitely mention in reviews - broken amenities, safety issues, or comfort problems.</p>
+                    </div>
+                    <div class="emergency-item">
+                        <h3>Key Features Not Working</h3>
+                        <p>WiFi, hot water, air conditioning, or main appliances failed. These are basics guests expect to work.</p>
+                    </div>
+                    <div class="emergency-item">
+                        <h3>Safety Hazards Discovered</h3>
+                        <p>Electrical problems, structural issues, or anything that could cause injury to guests.</p>
+                    </div>
+                    <div class="emergency-item">
+                        <h3>Cleaner Can't Finish Setup</h3>
+                        <p>Property can't be prepared for guests due to maintenance issues blocking cleaning or setup.</p>
+                    </div>
+                    <div class="emergency-item">
+                        <h3>Host Reputation At Risk</h3>
+                        <p>You've built a great rating over years - don't let one fixable problem destroy it.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content with Image Section -->
+    <section class="section">
+        <div class="content-with-image">
+            <div class="content-text">
+                <h2>Byron Bay Airbnb Specialist</h2>
+                <p>I understand the panic when your Airbnb has problems with guests arriving. In Byron Bay's competitive market, one bad review can cost you thousands in lost bookings.</p>
+                
+                <p>I've saved dozens of host ratings by fixing problems before guests arrive. I know what guests complain about most, carry common Airbnb repair parts, and work fast to get properties guest-ready.</p>
+
+                <p>Response guarantee: Byron Bay 15-20 minutes, Suffolk Park 20-25 minutes. I'll have you guest-ready on time.</p>
+            </div>
+            <div class="content-image">
+                <img src="airbnb-maintenance-professional-service.jpg" alt="Emergency Airbnb repairs Byron Bay - professional same day response for holiday rental properties" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Common Issues Section -->
+    <section class="issues-section">
+        <div class="container">
+            <h2 class="issues-title">Most Common Airbnb Emergency Issues</h2>
+            <p class="issues-subtitle">These problems kill reviews if not fixed before guests arrive</p>
+            
+            <div class="issues-grid">
+                <div class="issue-card">
+                    <h3>Hot Water System Failure</h3>
+                    <div class="review-impact">GUARANTEED BAD REVIEW</div>
+                    <ul>
+                        <li>No hot water for showers</li>
+                        <li>System not heating properly</li>
+                        <li>Takes 20+ minutes to get hot</li>
+                        <li>Temperature fluctuating wildly</li>
+                    </ul>
+                </div>
+                <div class="issue-card">
+                    <h3>Door Lock Malfunctions</h3>
+                    <div class="review-impact">SAFETY & SECURITY COMPLAINT</div>
+                    <ul>
+                        <li>Key not working properly</li>
+                        <li>Door won't lock from inside</li>
+                        <li>Smart lock battery dead</li>
+                        <li>Handle or mechanism broken</li>
+                    </ul>
+                </div>
+                <div class="issue-card">
+                    <h3>Appliance Breakdowns</h3>
+                    <div class="review-impact">AMENITY FAILURE REVIEW</div>
+                    <ul>
+                        <li>Coffee machine not working</li>
+                        <li>Dishwasher won't start</li>
+                        <li>Air conditioning failed</li>
+                        <li>TV or WiFi issues</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Examples Section -->
+    <section class="examples-section">
+        <div class="container">
+            <h2 class="examples-title">Recent Airbnb Emergency Saves</h2>
+            
+            <div class="examples-grid">
+                <div class="example-card">
+                    <div class="when">Friday 10am</div>
+                    <h3>Suffolk Park Villa - Hot Water Failed</h3>
+                    <p>Family of 6 checking in at 3pm Friday, hot water system completely dead. Cleaner discovered issue at 10am, property worth $300/night, weekend fully booked.</p>
+                    <div class="result">Hot water element replaced by 1:30pm. Guests arrived to hot showers. 5-star review received. Revenue saved: $900 weekend</div>
+                </div>
+                
+                <div class="example-card">
+                    <div class="when">Thursday 11am</div>
+                    <h3>Byron Bay Apartment - Door Lock Failed</h3>
+                    <p>Smart lock battery died overnight, guests arriving 2pm, couldn't get keypad to work. Security and access completely compromised for check-in.</p>
+                    <div class="result">Lock mechanism and backup key system installed by 1pm. Check-in smooth, no security concerns. Perfect review maintained.</div>
+                </div>
+                
+                <div class="example-card">
+                    <div class="when">Saturday 9am</div>
+                    <h3>Bangalow House - Multiple Issues</h3>
+                    <p>Weekend guests arriving 4pm, cleaner found: broken toilet seat, loose deck railing, kitchen tap leaking, bedroom door won't close. Multiple review risks.</p>
+                    <div class="result">All 4 issues fixed in 3 hours. Property guest-ready by 2pm. Host's 4.9 rating protected. Total cost: $285</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Don't Risk Your Rating</h2>
+            <p>Your Airbnb reputation is worth thousands</p>
+            <div class="phone-number">0481 457271</div>
+            <a href="tel:0481457271" class="cta-button">Call Airbnb Emergency Line</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <!-- Brand & Contact -->
+            <div class="footer-section brand-section">
+                <h3 class="brand-logo">Good Hands</h3>
+                <p class="brand-tagline">"Emergency Airbnb repairs Byron Bay. Protecting host ratings since 2018. Same day response."</p>
+                
+                <div class="contact-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    <a href="tel:0481457271">0481 457271</a>
+                </div>
+
+                <div class="contact-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    <a href="mailto:danhandywork@gmail.com">danhandywork@gmail.com</a>
+                </div>
+            </div>
+
+            <!-- Emergency Services -->
+            <div class="footer-section">
+                <h3>Other Emergency Services</h3>
+                <ul>
+                    <li><a href="emergency-handyman-byron-bay.html">Emergency Handyman</a></li>
+                    <li><a href="emergency-deck-repair-byron-bay.html">Emergency Deck Repair</a></li>
+                    <li><a href="emergency-fence-repair-byron-bay.html">Emergency Fence Repair</a></li>
+                    <li><a href="airbnb-maintenance.html">Regular Airbnb Maintenance</a></li>
+                </ul>
+            </div>
+
+            <!-- Airbnb Areas -->
+            <div class="footer-section">
+                <h3>Airbnb Emergency Areas</h3>
+                <ul>
+                    <li><a href="handyman-byron-bay.html">Byron Bay (15-20 min)</a></li>
+                    <li><a href="handyman-ballina.html">Suffolk Park (20-25 min)</a></li>
+                    <li><a href="handyman-bangalow.html">Bangalow (25-30 min)</a></li>
+                    <li><a href="handyman-mullumbimby.html">Mullumbimby (20-30 min)</a></li>
+                </ul>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="footer-section">
+                <h3>Airbnb Emergency</h3>
+                <a href="tel:0481457271" class="cta-button">Call Emergency Line</a>
+                <a href="sms:0481457271" class="cta-button">Text Property Issues</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Good Hands Emergency Airbnb Repairs Byron Bay. Protecting host ratings.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('active');
+        }
+
+        function closeMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.remove('active');
+        }
+    </script>
+</body>
+</html>
