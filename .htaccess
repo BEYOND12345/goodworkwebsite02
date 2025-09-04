@@ -1,0 +1,114 @@
+# GoodHands URL Structure Fix - Clean URLs
+# Redirect all .html to clean URLs
+
+RewriteEngine On
+
+# 301 Redirects from .html to clean URLs
+RewriteRule ^about\.html$ /about [R=301,L]
+RewriteRule ^contact\.html$ /contact [R=301,L]
+RewriteRule ^areas\.html$ /areas [R=301,L]
+RewriteRule ^services\.html$ /services [R=301,L]
+RewriteRule ^custom-carpentry\.html$ /custom-carpentry [R=301,L]
+RewriteRule ^painting-services\.html$ /painting-services [R=301,L]
+RewriteRule ^emergency-repairs\.html$ /emergency-repairs [R=301,L]
+RewriteRule ^deck-sanding\.html$ /deck-sanding [R=301,L]
+RewriteRule ^gutter-cleaning\.html$ /gutter-cleaning [R=301,L]
+RewriteRule ^flooring-installation\.html$ /flooring-installation [R=301,L]
+RewriteRule ^furniture-assembly\.html$ /furniture-assembly [R=301,L]
+RewriteRule ^airbnb-maintenance\.html$ /airbnb-maintenance [R=301,L]
+
+# Location pages
+RewriteRule ^handyman-byron-bay\.html$ /handyman-byron-bay [R=301,L]
+RewriteRule ^handyman-ballina\.html$ /handyman-ballina [R=301,L]
+RewriteRule ^handyman-bangalow\.html$ /handyman-bangalow [R=301,L]
+RewriteRule ^handyman-mullumbimby\.html$ /handyman-mullumbimby [R=301,L]
+RewriteRule ^handyman-lismore-new\.html$ /handyman-lismore [R=301,L]
+RewriteRule ^handyman-ocean-shores\.html$ /handyman-ocean-shores [R=301,L]
+RewriteRule ^handyman-lennox-head\.html$ /handyman-lennox-head [R=301,L]
+RewriteRule ^handyman-tweed-heads\.html$ /handyman-tweed-heads [R=301,L]
+
+# Deck services
+RewriteRule ^deck-restoration\.html$ /deck-restoration [R=301,L]
+RewriteRule ^deck-building-byron-bay\.html$ /deck-building-byron-bay [R=301,L]
+RewriteRule ^deck-restoration-byron-bay\.html$ /deck-restoration-byron-bay [R=301,L]
+
+# Kitchen services
+RewriteRule ^kitchen-repairs-byron-bay\.html$ /kitchen-repairs-byron-bay [R=301,L]
+RewriteRule ^kitchen-door-repairs-northern-rivers\.html$ /kitchen-door-repairs-northern-rivers [R=301,L]
+
+# Other services
+RewriteRule ^fence-repairs-ballina\.html$ /fence-repairs-ballina [R=301,L]
+RewriteRule ^painting-byron-bay\.html$ /painting-byron-bay [R=301,L]
+RewriteRule ^wall-repairs-byron-bay\.html$ /wall-repairs-byron-bay [R=301,L]
+RewriteRule ^tiling-byron-bay\.html$ /tiling-byron-bay [R=301,L]
+RewriteRule ^shade-sail-installation-byron-bay\.html$ /shade-sail-installation-byron-bay [R=301,L]
+
+# Blog and property sale prep
+RewriteRule ^blog\.html$ /blog [R=301,L]
+RewriteRule ^blog/emergency-home-repairs-diy-vs-professional\.html$ /blog/emergency-home-repairs-diy-vs-professional [R=301,L]
+RewriteRule ^blog/protecting-your-deck-from-byron-bay-salt-air\.html$ /blog/protecting-your-deck-from-byron-bay-salt-air [R=301,L]
+RewriteRule ^property-sale-preparation-byron-bay\.html$ /property-sale-preparation-byron-bay [R=301,L]
+
+# Emergency pages
+RewriteRule ^emergency-handyman-byron-bay\.html$ /emergency-handyman-byron-bay [R=301,L]
+RewriteRule ^emergency-airbnb-repairs-byron-bay\.html$ /emergency-airbnb-repairs-byron-bay [R=301,L]
+RewriteRule ^emergency-bathroom-repair-byron-bay\.html$ /emergency-bathroom-repair-byron-bay [R=301,L]
+RewriteRule ^emergency-deck-repair-byron-bay\.html$ /emergency-deck-repair-byron-bay [R=301,L]
+RewriteRule ^emergency-door-repair-byron-bay\.html$ /emergency-door-repair-byron-bay [R=301,L]
+RewriteRule ^emergency-fence-repair-byron-bay\.html$ /emergency-fence-repair-byron-bay [R=301,L]
+RewriteRule ^emergency-storm-damage-northern-rivers\.html$ /emergency-storm-damage-northern-rivers [R=301,L]
+RewriteRule ^emergency-handyman-lismore\.html$ /emergency-handyman-lismore [R=301,L]
+
+# Policy and info pages
+RewriteRule ^privacy-policy\.html$ /privacy-policy [R=301,L]
+RewriteRule ^terms-of-service\.html$ /terms-of-service [R=301,L]
+RewriteRule ^thank-you\.html$ /thank-you [R=301,L]
+RewriteRule ^get-quote\.html$ /get-quote [R=301,L]
+
+# Additional services
+RewriteRule ^handyman-services-byron-bay\.html$ /handyman-services-byron-bay [R=301,L]
+RewriteRule ^handyman-pricing-northern-rivers\.html$ /handyman-pricing-northern-rivers [R=301,L]
+RewriteRule ^handyman-northern-rivers\.html$ /handyman-northern-rivers [R=301,L]
+RewriteRule ^handyman-south-golden-beach\.html$ /handyman-south-golden-beach [R=301,L]
+RewriteRule ^gutter-cleaning-ballina\.html$ /gutter-cleaning-ballina [R=301,L]
+
+# Remaining pages (no duplicates)
+RewriteRule ^about-dan-byron-bay-handyman\.html$ /about-dan-byron-bay-handyman [R=301,L]
+RewriteRule ^deck-sanding-old\.html$ /deck-sanding-old [R=301,L]
+RewriteRule ^fence-repairs-ballina-new\.html$ /fence-repairs-ballina-new [R=301,L]
+RewriteRule ^handyman-bangalow-old\.html$ /handyman-bangalow-old [R=301,L]
+RewriteRule ^kitchen-door-repairs-service-page\.html$ /kitchen-door-repairs-service-page [R=301,L]
+
+# Internal URL rewriting (serve .html files for clean URLs)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^.]+)$ $1.html [L]
+
+# Security headers
+Header always set X-Frame-Options DENY
+Header always set X-Content-Type-Options nosniff
+
+# Cache optimization
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/html "access plus 1 hour"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+</IfModule>
+
+# Gzip compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+</IfModule>
