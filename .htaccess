@@ -47,7 +47,12 @@ RewriteRule ^shade-sail-installation-byron-bay\.html$ /shade-sail-installation-b
 RewriteRule ^blog\.html$ /blog [R=301,L]
 RewriteRule ^blog/emergency-home-repairs-diy-vs-professional\.html$ /blog/emergency-home-repairs-diy-vs-professional [R=301,L]
 RewriteRule ^blog/protecting-your-deck-from-byron-bay-salt-air\.html$ /blog/protecting-your-deck-from-byron-bay-salt-air [R=301,L]
+RewriteRule ^blog/fix-kitchen-cupboard-doors-wont-close\.html$ /blog/fix-kitchen-cupboard-doors-wont-close [R=301,L]
+RewriteRule ^blog/storm-preparation-checklist-northern-rivers\.html$ /blog/storm-preparation-checklist-northern-rivers [R=301,L]
+RewriteRule ^blog/holiday-rental-maintenance-byron-bay\.html$ /blog/holiday-rental-maintenance-byron-bay [R=301,L]
+RewriteRule ^blog/bathroom-mould-prevention-coastal-homes\.html$ /blog/bathroom-mould-prevention-coastal-homes [R=301,L]
 RewriteRule ^property-sale-preparation-byron-bay\.html$ /property-sale-preparation-byron-bay [R=301,L]
+RewriteRule ^property-maintenance-byron-bay\.html$ /property-maintenance-byron-bay [R=301,L]
 
 # Emergency pages
 RewriteRule ^emergency-handyman-byron-bay\.html$ /emergency-handyman-byron-bay [R=301,L]
