@@ -624,9 +624,11 @@
 
         .footer-grid {
             display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr;
-            gap: 48px;
+            grid-template-columns: 1.2fr 0.9fr 0.9fr 0.9fr 1fr;
+            gap: 28px;
             margin-bottom: 48px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         .footer-section h3 {
@@ -814,7 +816,26 @@
             fill: currentColor;
         }
 
+        /* Mobile Responsive */
+        @media (max-width: 968px) {
+            .footer-grid {
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 28px;
+            }
+        }
+
         @media (max-width: 768px) {
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 28px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .footer-main {
+                padding: 48px 24px 32px;
+            }
+
             .footer-grid {
                 grid-template-columns: 1fr;
                 gap: 32px;
@@ -1098,7 +1119,7 @@
                 <!-- Brand & Contact -->
                 <div class="footer-section brand-section">
                     <h3 class="brand-logo">Good Hands</h3>
-                    <p class="brand-tagline">"Professional property maintenance and handyman services across Northern Rivers NSW. Quality workmanship, fair pricing, and reliable service you can count on."</p>
+                    <p class="brand-tagline">"Professional handyman services across Northern Rivers NSW."</p>
                     
                     <div class="contact-item">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1125,17 +1146,29 @@
                 </div>
 
                 <!-- Core Services -->
-                <div class="footer-section services-section">
+                <div class="footer-section priority-services">
                     <h3>My Services</h3>
                     <ul>
-                        <li><a href="/kitchen-door-repairs-northern-rivers" class="service-link">Kitchen Door Repairs</a></li>
+                        <li><a href="/kitchen-door-repairs-northern-rivers" class="service-link">Kitchen Repairs</a></li>
                         <li><a href="/deck-restoration" class="service-link">Deck Restoration</a></li>
-                        <li><a href="/deck-sanding" class="service-link">Deck Sanding</a></li>
+                        <li><a href="/gutter-cleaning-northern-rivers" class="service-link">Gutter Cleaning</a></li>
                         <li><a href="/fence-repairs-ballina" class="service-link">Fence Repairs</a></li>
-                        <li><a href="/gutter-cleaning" class="service-link">Gutter Cleaning</a></li>
                         <li><a href="/airbnb-maintenance" class="service-link">Airbnb Maintenance</a></li>
                         <li><a href="/custom-carpentry" class="service-link">Custom Carpentry</a></li>
-                        <li><a href="/flooring-installation" class="service-link">Flooring Installation</a></li>                        <li><a href="/emergency-handyman-byron-bay" class="service-link">Emergency Response</a></li>
+                        <li><a href="/handyman-services-byron-bay" class="service-link">All Services</a></li>
+                    </ul>
+                </div>
+
+                <!-- Emergency Services -->
+                <div class="footer-section emergency-services">
+                    <h3>Emergency Services</h3>
+                    <ul>
+                        <li><a href="/emergency-repairs" class="service-link">Emergency Repairs</a></li>
+                        <li><a href="/emergency-handyman-byron-bay" class="service-link">Emergency Handyman</a></li>
+                        <li><a href="/emergency-storm-damage-northern-rivers" class="service-link">Storm Damage</a></li>
+                        <li><a href="/emergency-airbnb-repairs-byron-bay" class="service-link">Emergency Airbnb</a></li>
+                        <li><a href="/emergency-bathroom-repair-byron-bay" class="service-link">Emergency Bathroom</a></li>
+                        <li><a href="/emergency-deck-repair-byron-bay" class="service-link">Emergency Deck</a></li>
                     </ul>
                 </div>
 
