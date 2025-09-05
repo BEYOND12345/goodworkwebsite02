@@ -473,8 +473,8 @@
 
         .footer-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            gap: 48px;
+            grid-template-columns: 1.2fr 0.9fr 0.9fr 0.9fr 1fr;
+            gap: 28px;
             margin-bottom: 48px;
             max-width: 1200px;
             margin: 0 auto;
@@ -766,9 +766,29 @@
             }
         }
 
+        /* Mobile Responsive Footer */
+        @media (max-width: 968px) {
+            .footer-grid {
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 28px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 28px;
+            }
+        }
+
         @media (max-width: 640px) {
             .footer-main {
                 padding: 48px 24px 32px;
+            }
+            
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
             }
         }
     </style>
@@ -1012,16 +1032,26 @@
                 <div class="footer-section priority-services">
                     <h3>My Services</h3>
                     <ul>
-                        <li><a href="/kitchen-door-repairs-northern-rivers">Kitchen Door Repairs</a></li>
-                        <li><a href="/deck-restoration">Deck Restoration</a></li>
-                        <li><a href="/gutter-cleaning-northern-rivers">Gutter Cleaning</a></li>
-                        <li><a href="/fence-repairs-ballina">Fence Repairs</a></li>
-                        <li><a href="/emergency-repairs">Emergency Repairs</a></li>
-                        <li><a href="/airbnb-maintenance">Airbnb Maintenance</a></li>
-                        <li><a href="/custom-carpentry">Custom Carpentry</a></li>
-                        <li><a href="/flooring-installation">Flooring Installation</a></li>
-                        <li><a href="/furniture-assembly">Furniture Assembly</a></li>
-                        <li><a href="/services">All Services</a></li>
+                        <li><a href="/kitchen-door-repairs-northern-rivers" class="service-link">Kitchen Repairs</a></li>
+                        <li><a href="/deck-restoration" class="service-link">Deck Restoration</a></li>
+                        <li><a href="/gutter-cleaning-northern-rivers" class="service-link">Gutter Cleaning</a></li>
+                        <li><a href="/fence-repairs-ballina" class="service-link">Fence Repairs</a></li>
+                        <li><a href="/airbnb-maintenance" class="service-link">Airbnb Maintenance</a></li>
+                        <li><a href="/custom-carpentry" class="service-link">Custom Carpentry</a></li>
+                        <li><a href="/handyman-services-byron-bay" class="service-link">All Services</a></li>
+                    </ul>
+                </div>
+
+                <!-- Emergency Services -->
+                <div class="footer-section emergency-services">
+                    <h3>Emergency Services</h3>
+                    <ul>
+                        <li><a href="/emergency-repairs" class="service-link">Emergency Repairs</a></li>
+                        <li><a href="/emergency-handyman-byron-bay" class="service-link">Emergency Handyman</a></li>
+                        <li><a href="/emergency-storm-damage-northern-rivers" class="service-link">Storm Damage</a></li>
+                        <li><a href="/emergency-airbnb-repairs-byron-bay" class="service-link">Emergency Airbnb</a></li>
+                        <li><a href="/emergency-bathroom-repair-byron-bay" class="service-link">Emergency Bathroom</a></li>
+                        <li><a href="/emergency-deck-repair-byron-bay" class="service-link">Emergency Deck</a></li>
                     </ul>
                 </div>
 
