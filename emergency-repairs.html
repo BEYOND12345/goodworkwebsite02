@@ -966,32 +966,34 @@
     <!-- Skip to main content link for accessibility -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <a href="index.html">
-                        <h1>Good Hands Handyman</h1>
-                    </a>
-                </div>
-                
-                <!-- Mobile menu toggle -->
-                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-
-                <nav class="nav" id="nav">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="areas.html">Service Areas</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html" class="cta-button">Get Quote</a></li>
-                    </ul>
-                </nav>
+    <!-- Header Navigation -->
+    <header class="header-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">GoodHands</a>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="areas.html">Areas</a>
+                <a href="blog.html">Blog</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="tel:0481457271" class="nav-cta">Call Now</a>
+            </nav>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="index.html" onclick="closeMobileMenu()">Home</a>
+                <a href="services.html" onclick="closeMobileMenu()">Services</a>
+                <a href="areas.html" onclick="closeMobileMenu()">Areas</a>
+                <a href="blog.html" onclick="closeMobileMenu()">Blog</a>
+                <a href="about.html" onclick="closeMobileMenu()">About</a>
+                <a href="contact.html" onclick="closeMobileMenu()">Contact</a>
+                <a href="tel:0481457271" onclick="closeMobileMenu()">Call Now</a>
             </div>
         </div>
     </header>
@@ -1244,9 +1246,32 @@
     </footer>
 
     <script>
-        // Mobile menu toggle
-        document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
-            document.getElementById('nav').classList.toggle('active');
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('active');
+        }
+
+        function closeMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.remove('active');
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const mobileMenu = document.getElementById('mobileMenu');
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            
+            if (mobileMenu && menuBtn && !mobileMenu.contains(event.target) && !menuBtn.contains(event.target)) {
+                mobileMenu.classList.remove('active');
+            }
+        });
+
+        // Close mobile menu on window resize
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                const mobileMenu = document.getElementById('mobileMenu');
+                mobileMenu.classList.remove('active');
+            }
         });
     </script>
 </body>
