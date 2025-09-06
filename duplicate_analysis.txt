@@ -1,0 +1,92 @@
+DUPLICATE TITLE AND META DESCRIPTION ANALYSIS
+================================================
+
+TITLE TAGS ANALYSIS:
+===================
+
+All title tags appear to be unique. No exact duplicates found.
+
+Similar patterns identified:
+- Location-based handyman titles: "Location Handyman | Description | GoodHands"
+- Service-based titles: "Service Name | Description | GoodHands"
+
+LOCATION PAGES TITLES (Handyman services):
+- Byron Bay Handyman | Arts & Industry Estate to Lighthouse | GoodHands
+- Ballina Handyman | GoodHands Property Maintenance  
+- Bangalow Handyman | Professional Property Maintenance Services
+- Lennox Head Handyman | Beachfront Property Maintenance | GoodHands
+- Mullumbimby Handyman | Hinterland Property Maintenance | GoodHands
+- Ocean Shores Handyman | Beachside Property Maintenance | GoodHands
+- South Golden Beach Handyman | Beachside Property Maintenance | GoodHands
+- Tweed Heads Handyman | Border Property Maintenance | GoodHands
+
+SERVICE PAGES TITLES:
+- Deck Restoration Byron Bay | GoodHands
+- Deck Restoration Byron Bay | Professional Deck Sanding & Staining
+- Gutter Cleaning Byron Bay | GoodHands
+- Kitchen Door Repairs Northern Rivers | GoodHands
+- Kitchen Cupboard Door Won't Close Northern Rivers | Same Day Hinge Repair | GoodHands
+
+POTENTIAL TITLE DUPLICATES/SIMILARITIES:
+=======================================
+
+1. DECK RESTORATION - SIMILAR CONTENT:
+   - "Deck Restoration Byron Bay | GoodHands" (deck-restoration.html)
+   - "Deck Restoration Byron Bay | Professional Deck Sanding & Staining" (deck-restoration-byron-bay.html)
+   
+2. BEACHSIDE MAINTENANCE - SIMILAR PATTERNS:
+   - "Lennox Head Handyman | Beachfront Property Maintenance | GoodHands"
+   - "Ocean Shores Handyman | Beachside Property Maintenance | GoodHands"  
+   - "South Golden Beach Handyman | Beachside Property Maintenance | GoodHands"
+
+3. KITCHEN DOOR REPAIRS - SIMILAR SERVICES:
+   - "Kitchen Door Repairs Northern Rivers | GoodHands"
+   - "Kitchen Cupboard Door Won't Close Northern Rivers | Same Day Hinge Repair | GoodHands"
+
+META DESCRIPTIONS ANALYSIS:
+==========================
+
+EXACT DUPLICATES: None found.
+
+SIMILAR CONTENT PATTERNS IDENTIFIED:
+===================================
+
+1. BEACHSIDE HANDYMAN DESCRIPTIONS - Very Similar Content:
+   
+   Lennox Head: "Lennox Head handyman specializing in beachfront properties. Salt air protection, surf shack maintenance, coastal property care. Same week service. Call 0481 457271"
+   
+   Ocean Shores: "Ocean Shores handyman specializing in beachside property maintenance. Salt air protection, deck restoration, holiday rental maintenance. Same week service. Call 0481 457271"
+   
+   South Golden Beach: "South Golden Beach handyman specializing in beachside property maintenance. Coastal repairs, salt air protection, holiday rental upkeep. Same week service. Call 0481 457271"
+
+2. DECK RESTORATION DESCRIPTIONS - Similar Services:
+   
+   deck-restoration.html: "I restore weathered decks throughout Byron Bay & Northern Rivers. Sand, stain, oil, and waterproof your deck properly. Quality materials, fair pricing. Call 0481 457271"
+   
+   deck-restoration-byron-bay.html: "Professional deck restoration in Byron Bay. I restore weathered decks with quality sanding, staining & waterproofing. Coastal-rated materials. Free quotes. Call 0481 457271"
+
+3. GUTTER CLEANING DESCRIPTIONS - Similar Services:
+   
+   gutter-cleaning.html: "I handle gutter cleaning throughout Byron Bay & Northern Rivers. I clear debris, check downpipes, and prevent water damage. Honest pricing, reliable service. Call 0481 457271"
+   
+   gutter-cleaning-ballina.html: "Professional gutter cleaning in Ballina NSW. I clear debris, check downpipes & prevent water damage for Ballina properties. Richmond River specialist. Free quotes. Call 0481 457271"
+
+4. KITCHEN DOOR REPAIRS - Similar Services:
+   
+   kitchen-door-repairs-northern-rivers.html: "Kitchen cupboard doors won't close? Broken hinges and drawer sliders fixed throughout Northern Rivers. Same day service, quality hardware. Call 0481 457271"
+   
+   kitchen-door-repairs-service-page.html: "Professional kitchen door repairs across Northern Rivers NSW. Cupboard doors, broken hinges, drawer sliders fixed quickly and properly. Quality hardware, honest pricing. Call 0481 457271"
+
+SUMMARY OF DUPLICATES/SIMILAR CONTENT:
+=====================================
+
+TITLE TAGS:
+- No exact duplicates
+- Similar patterns for location and service pages but content is differentiated
+
+META DESCRIPTIONS:
+- No exact duplicates  
+- High similarity in beachside location descriptions (3 pages)
+- Moderate similarity in service-specific descriptions (deck restoration, gutter cleaning, kitchen repairs)
+
+The beachside handyman meta descriptions are the most problematic as they share very similar language and structure, potentially causing SEO issues.
