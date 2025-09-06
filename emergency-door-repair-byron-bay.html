@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Door Repair Byron Bay & Northern Rivers | Good Hands</title>
+    <link rel="canonical" href="https://goodhandshandyman.com.au/emergency-door-repair-byron-bay.html">
+    <meta name="description" content="Emergency door repair Byron Bay & Northern Rivers. 24/7 response for urgent door problems. Can't wait till tomorrow? We answer now. 0481 457271">
+    
+    <!-- Schema Markup for Emergency Service -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EmergencyService",
+      "name": "Good Hands Handyman Emergency Door Repair",
+      "description": "24/7 emergency door repair service Northern Rivers NSW",
+      "url": "https://goodhandshandyman.com.au/emergency-door-repair-byron-bay.html",
+      "telephone": "0481457271",
+      "serviceType": "Emergency Door Repair",
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Byron Bay",
+          "containedInPlace": "NSW, Australia"
+        },
+        {
+          "@type": "City",
+          "name": "Ballina",
+          "containedInPlace": "NSW, Australia"
+        }
+      ],
+      "openingHours": "Mo,Tu,We,Th,Fr,Sa,Su 00:00-24:00"
+    }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        .hero {
+            height: 400px;
+            background: linear-gradient(rgba(45, 55, 72, 0.8), rgba(45, 55, 72, 0.8)), url('emergency-repairs-hero.avif');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .urgency-hero {
+            background: #FF4444;
+            color: white;
+            padding: 48px;
+            border-radius: var(--border-radius-lg);
+            margin: 48px 0;
+            text-align: center;
+        }
+
+        .urgency-hero h2 {
+            font-size: 1.8rem;
+            margin-bottom: 24px;
+        }
+
+        .urgency-hero p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .emergency-scenarios {
+            margin: 48px 0;
+        }
+
+        .emergency-scenarios ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .emergency-scenarios li {
+            background: var(--white);
+            padding: 32px;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-sm);
+            border-left: 4px solid #FF4444;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .fix-times table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 32px 0;
+            background: var(--white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+        }
+
+        .fix-times td {
+            padding: 20px;
+            border-bottom: 1px solid var(--light-grey);
+            vertical-align: middle;
+        }
+
+        .fix-times tr:last-child td {
+            border-bottom: none;
+        }
+
+        .service-areas ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .service-areas li {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--light-grey);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .service-areas li:last-child {
+            border-bottom: none;
+        }
+
+        .back-to-emergency {
+            background: var(--charcoal);
+            color: var(--white);
+            padding: 40px;
+            border-radius: var(--border-radius-lg);
+            text-align: center;
+            margin: 48px 0;
+        }
+
+        .back-to-emergency a {
+            color: var(--yellow-primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .emergency-cta {
+            background: #FF4444;
+            color: white;
+            font-size: 1.3rem;
+            padding: 20px 40px;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        .emergency-cta:hover {
+            background: #DD3333;
+            color: white;
+        }
+
+        .mobile-emergency-bar {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #FF4444;
+            z-index: 9999;
+            padding: 12px 20px;
+            box-shadow: 0 -4px 12px rgba(0,0,0,0.15);
+        }
+
+        .mobile-emergency-call {
+            display: block;
+            width: 100%;
+            background: transparent;
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-align: center;
+            padding: 12px;
+            border-radius: var(--border-radius);
+            border: 2px solid white;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-emergency-bar {
+                display: block;
+            }
+            
+            body {
+                padding-bottom: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <h1>Good Hands Handyman</h1>
+                    </a>
+                </div>
+                
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <nav class="nav" id="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="areas.html">Service Areas</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html" class="cta-button">Get Quote</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Emergency Door Repair - Northern Rivers 24/7 Response</h1>
+                <a href="tel:0481457271" class="emergency-cta">📞 CALL NOW: 0481 457271</a>
+            </div>
+        </section>
+
+        <!-- Urgency Scenario -->
+        <section class="section">
+            <div class="container">
+                <div class="urgency-hero">
+                    <h2>When Your Door Can't Wait</h2>
+                    <p>Front door won't lock. It's 8pm. You're leaving for work at 5am. Can't leave your home unsecured overnight. Guests arriving tomorrow and you can't get the door to close properly. Door handle broken from inside - guest is trapped.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emergency Scenarios -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="emergency-scenarios">
+                    <h2>We Handle These Door Emergencies Daily:</h2>
+                    <ul>
+                        <li>🔐 <strong>Door won't close or lock properly</strong> - Security risk that needs immediate attention</li>
+                        <li>💥 <strong>Door frame damaged in break-in attempt</strong> - Emergency security boarding and reinforcement</li>
+                        <li>💨 <strong>Swollen from humidity</strong> - Completely stuck, preventing entry or exit</li>
+                        <li>🔧 <strong>Lock mechanism failed</strong> - Can't secure property, leaving it vulnerable</li>
+                        <li>🚪 <strong>Door handle broken</strong> - Guest trapped inside room or can't access property</li>
+                        <li>⚡ <strong>Electronic door system failure</strong> - Airbnb keypad not working, guests arriving</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fix Times -->
+        <section class="section">
+            <div class="container">
+                <div class="fix-times">
+                    <h2>Realistic Fix Times for Door Emergencies</h2>
+                    <table>
+                        <tr>
+                            <td><strong>Temporary secure/fix</strong></td>
+                            <td><strong>20-30 minutes</strong></td>
+                            <td>Get door working safely for immediate use</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Full repair (parts on hand)</strong></td>
+                            <td><strong>1-2 hours</strong></td>
+                            <td>Complete professional repair with materials in truck</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Parts needed</strong></td>
+                            <td><strong>Secure now, fix next day</strong></td>
+                            <td>Emergency security tonight, proper parts tomorrow</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Security boarding</strong></td>
+                            <td><strong>30-45 minutes</strong></td>
+                            <td>Emergency security after break-in or severe damage</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Areas -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="service-areas">
+                    <h2>Emergency Door Repair Across Northern Rivers</h2>
+                    <p>Fast response for door emergencies in:</p>
+                    <ul>
+                        <li><a href="emergency-handyman-byron-bay.html">Byron Bay</a> <span>20-30 min response</span></li>
+                        <li><a href="emergency-handyman-ballina.html">Ballina</a> <span>35-45 min response</span></li>
+                        <li><a href="emergency-handyman-lismore.html">Lismore</a> <span>45-60 min response</span></li>
+                        <li><a href="emergency-handyman-tweed-heads.html">Tweed Heads</a> <span>45-60 min response</span></li>
+                        <li><a href="emergency-handyman-mullumbimby.html">Mullumbimby</a> <span>40-50 min response</span></li>
+                        <li><a href="emergency-handyman-bangalow.html">Bangalow</a> <span>30-40 min response</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Emergency Example -->
+        <section class="section">
+            <div class="container">
+                <h2>This Week's Door Emergency</h2>
+                <div class="emergency-scenarios">
+                    <ul>
+                        <li style="border-left-color: var(--yellow-primary);">
+                            <strong>Tuesday 2:30am - Byron Bay Arts & Industry Estate</strong><br>
+                            Airbnb guests broke door handle from inside bathroom. Guest trapped, couldn't get out, new guests arriving at 10am check-in. Arrived 3:15am, freed guest by removing hinge pins, temporary handle fitted by 4:00am. Permanent repair completed before new guests arrived.
+                            <br><br>
+                            <strong>Result:</strong> Problem solved, guest freed safely, new arrivals unaffected.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Back to Emergency Hub -->
+        <section class="section">
+            <div class="container">
+                <div class="back-to-emergency">
+                    <h2>Part of Our Complete Emergency Service</h2>
+                    <p>Door repairs are just one part of our comprehensive <a href="emergency-repairs.html">24/7 Northern Rivers Emergency Service</a></p>
+                    <p><strong>Other Emergency Services:</strong> Bathroom • Fence • Deck • Storm Damage • Airbnb Crisis</p>
+                    <p style="margin-top: 32px;">
+                        <a href="tel:0481457271" class="emergency-cta">📞 EMERGENCY HOTLINE: 0481 457271</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Mobile Emergency Call Button -->
+    <div class="mobile-emergency-bar">
+        <a href="tel:0481457271" class="mobile-emergency-call">📞 DOOR EMERGENCY</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-main">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Good Hands Handyman</h3>
+                    <p>Professional handyman services across Byron Bay and Northern Rivers. Quality workmanship, reliable service, competitive pricing.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="emergency-repairs.html">Emergency Repairs</a></li>
+                        <li><a href="deck-restoration.html">Deck Restoration</a></li>
+                        <li><a href="gutter-cleaning.html">Gutter Cleaning</a></li>
+                        <li><a href="fence-repairs-ballina.html">Fence Repairs</a></li>
+                        <li><a href="custom-carpentry.html">Custom Carpentry</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📞 Phone: 0481 457271</p>
+                    <p>📧 Email: danhandywork@gmail.com</p>
+                    <p>📍 Serving Byron Bay & Northern Rivers</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+            document.getElementById('nav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
