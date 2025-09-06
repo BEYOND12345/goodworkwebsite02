@@ -39,25 +39,19 @@
     <link rel="stylesheet" href="styles.css">
     
     <style>
-        /* Emergency Page Specific Styles */
-        .hero {
-            height: 400px;
+        /* Emergency Page Specific Styles - Minimal overrides only */
+        .hero-banner {
             background: linear-gradient(rgba(45, 55, 72, 0.8), rgba(45, 55, 72, 0.8)), url('emergency-repairs-hero.avif');
             background-size: cover;
             background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             color: white;
             text-align: center;
+            padding: 120px 0 80px;
         }
 
-        .hero h1 {
-            font-size: clamp(2rem, 5vw, 3rem);
-            font-weight: 900;
+        .hero-banner h1 {
+            color: white;
             margin-bottom: 24px;
-            letter-spacing: -0.025em;
-            line-height: 1.1;
         }
 
         .local-hero {
@@ -336,7 +330,7 @@
     <!-- Main Content -->
     <main id="main-content" class="main-content">
         <!-- Hero Section -->
-        <section class="hero">
+        <section class="hero-banner">
             <div class="container">
                 <h1>Emergency Handyman Ballina - 35-45 Minute Response</h1>
                 <div class="local-hero">
