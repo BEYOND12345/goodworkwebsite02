@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoodHands Blog | Northern Rivers Handyman Tips & Updates</title>
+    <meta name="description" content="GoodHands Handyman blog with property maintenance tips, Northern Rivers updates, and seasonal advice for Byron Bay, Ballina, Lismore and Tweed Heads.">
+    <link rel="canonical" href="https://goodhandshandyman.com.au/blog.html">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --yellow-primary: #FFB800;
+            --yellow-hover: #E6A600;
+            --yellow-light: #FFF9E6;
+            --charcoal: #2D3748;
+            --dark-grey: #4A5568;
+            --medium-grey: #718096;
+            --light-grey: #EDF2F7;
+            --bg-subtle: #F7FAFC;
+            --white: #FFFFFF;
+            --border-radius: 12px;
+            --border-radius-lg: 16px;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--charcoal);
+            background-color: var(--white);
+            padding-top: 70px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header Navigation */
+        .header-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--light-grey);
+            z-index: 1000;
+            padding: 0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 70px;
+        }
+
+        .nav-logo a {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: var(--charcoal);
+            text-decoration: none;
+        }
+
+        .nav-logo a:hover {
+            color: var(--yellow-primary);
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        .nav-menu a {
+            color: var(--charcoal);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-menu a:hover,
+        .nav-menu a.active {
+            color: var(--yellow-primary);
+        }
+
+        .nav-cta {
+            background: var(--yellow-primary);
+            color: var(--charcoal);
+            padding: 12px 24px;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .nav-cta:hover {
+            background: var(--yellow-hover);
+            transform: translateY(-1px);
+            color: var(--charcoal);
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+            gap: 4px;
+        }
+
+        .mobile-menu-btn span {
+            width: 24px;
+            height: 2px;
+            background: var(--charcoal);
+            border-radius: 1px;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: var(--white);
+            border-top: 1px solid var(--light-grey);
+            box-shadow: var(--shadow-lg);
+            z-index: 999;
+        }
+
+        .mobile-menu a {
+            display: block;
+            padding: 16px 24px;
+            color: var(--charcoal);
+            text-decoration: none;
+            border-bottom: 1px solid var(--light-grey);
+            transition: all 0.3s ease;
+        }
+
+        .mobile-menu a:hover {
+            background: var(--yellow-light);
+            color: var(--yellow-primary);
+        }
+
+        /* Blog Header */
+        .blog-header {
+            background: var(--bg-subtle);
+            padding: 80px 0 60px;
+            text-align: center;
+        }
+
+        .blog-title {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 800;
+            color: var(--charcoal);
+            margin-bottom: 20px;
+        }
+
+        .blog-subtitle {
+            font-size: 1.25rem;
+            color: var(--medium-grey);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Blog Content */
+        .blog-content {
+            padding: 80px 0;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 60px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Blog Posts */
+        .blog-posts {
+            max-width: 800px;
+        }
+
+        .blog-post {
+            background: var(--white);
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-md);
+            margin-bottom: 40px;
+            overflow: hidden;
+            border: 1px solid var(--light-grey);
+        }
+
+        .post-header {
+            padding: 40px 40px 20px;
+        }
+
+        .post-date {
+            color: var(--yellow-primary);
+            font-size: 0.875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+
+        .post-title {
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--charcoal);
+            margin-bottom: 16px;
+            line-height: 1.3;
+        }
+
+        .post-excerpt {
+            color: var(--dark-grey);
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .post-content {
+            padding: 0 40px 40px;
+        }
+
+        .post-text {
+            color: var(--charcoal);
+            line-height: 1.8;
+            margin-bottom: 24px;
+        }
+
+        .post-text h3 {
+            color: var(--charcoal);
+            font-weight: 700;
+            margin: 32px 0 16px;
+            font-size: 1.25rem;
+        }
+
+        .post-text ul {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+
+        .post-text li {
+            margin-bottom: 8px;
+            color: var(--dark-grey);
+        }
+
+        .read-more {
+            color: var(--yellow-primary);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .read-more:hover {
+            color: var(--yellow-hover);
+            gap: 12px;
+        }
+
+        /* Sidebar */
+        .blog-sidebar {
+            background: var(--bg-subtle);
+            border-radius: var(--border-radius-lg);
+            padding: 40px;
+            height: fit-content;
+            position: sticky;
+            top: 100px;
+        }
+
+        .sidebar-section {
+            margin-bottom: 40px;
+        }
+
+        .sidebar-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .sidebar-title {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--charcoal);
+            margin-bottom: 20px;
+        }
+
+        .sidebar-list {
+            list-style: none;
+        }
+
+        .sidebar-list li {
+            margin-bottom: 12px;
+        }
+
+        .sidebar-list a {
+            color: var(--dark-grey);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+            display: block;
+            padding: 8px 0;
+        }
+
+        .sidebar-list a:hover {
+            color: var(--yellow-primary);
+        }
+
+        .cta-box {
+            background: var(--yellow-light);
+            border: 2px solid var(--yellow-primary);
+            border-radius: var(--border-radius);
+            padding: 24px;
+            text-align: center;
+        }
+
+        .cta-box h4 {
+            color: var(--charcoal);
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .cta-box p {
+            color: var(--dark-grey);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            background: var(--yellow-primary);
+            color: var(--charcoal);
+            padding: 12px 20px;
+            border: none;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: var(--yellow-hover);
+            transform: translateY(-1px);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--charcoal);
+            color: var(--white);
+            padding: 64px 32px 32px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr 0.8fr 1fr;
+            gap: 40px;
+        }
+
+        .footer-section h3 {
+            font-size: 1.25rem;
+            font-weight: 900;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section li {
+            margin-bottom: 12px;
+        }
+
+        .footer-section a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .footer-section a:hover {
+            color: var(--yellow-primary);
+        }
+
+        .footer-section p {
+            color: rgba(255,255,255,0.8);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+
+        .brand-logo {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: var(--yellow-primary);
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        .brand-tagline {
+            font-size: 1rem;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 24px;
+            font-style: italic;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+            color: rgba(255,255,255,0.85);
+        }
+
+        .contact-item svg {
+            width: 16px;
+            height: 16px;
+            color: var(--yellow-primary);
+            flex-shrink: 0;
+        }
+
+        .contact-item a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            color: var(--yellow-primary);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none !important;
+            }
+            
+            .mobile-menu-btn {
+                display: flex;
+            }
+            
+            .mobile-menu.active {
+                display: block;
+            }
+            
+            .nav-container {
+                padding: 0 16px;
+            }
+
+            .blog-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .blog-sidebar {
+                order: -1;
+                position: static;
+            }
+
+            .post-header,
+            .post-content {
+                padding: 24px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">GoodHands</a>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="handyman-services-byron-bay.html">Services</a>
+                <a href="areas.html">Areas</a>
+                <a href="about.html">About</a>
+                <a href="blog.html" class="active">Blog</a>
+                <a href="contact.html">Contact</a>
+                <a href="tel:0481457271" class="nav-cta">Call Now</a>
+            </nav>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="index.html" onclick="closeMobileMenu()">Home</a>
+                <a href="handyman-services-byron-bay.html" onclick="closeMobileMenu()">Services</a>
+                <a href="areas.html" onclick="closeMobileMenu()">Areas</a>
+                <a href="about.html" onclick="closeMobileMenu()">About</a>
+                <a href="blog.html" onclick="closeMobileMenu()">Blog</a>
+                <a href="contact.html" onclick="closeMobileMenu()">Contact</a>
+                <a href="tel:0481457271" onclick="closeMobileMenu()">Call Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Blog Header -->
+    <section class="blog-header">
+        <div class="container">
+            <h1 class="blog-title">GoodHands Blog</h1>
+            <p class="blog-subtitle">Northern Rivers property maintenance tips, seasonal advice, and handyman insights from Byron Bay to Tweed Heads</p>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <section class="blog-content">
+        <div class="container">
+            <div class="blog-grid">
+                <!-- Blog Posts -->
+                <main class="blog-posts">
+                    <!-- Sample Blog Post 1 -->
+                    <article class="blog-post">
+                        <div class="post-header">
+                            <div class="post-date">December 15, 2024</div>
+                            <h2 class="post-title">Summer Property Maintenance Tips for Northern Rivers</h2>
+                            <p class="post-excerpt">Essential maintenance tasks to protect your property during the hot Northern Rivers summer months.</p>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-text">
+                                <p>Summer in the Northern Rivers brings unique challenges for property maintenance. From Byron Bay's salt air to Lismore's humidity, here's how to keep your property in top condition:</p>
+                                
+                                <h3>Essential Summer Tasks</h3>
+                                <ul>
+                                    <li><strong>Deck Maintenance:</strong> Check for sun damage and apply protective coatings</li>
+                                    <li><strong>Gutter Cleaning:</strong> Clear debris before storm season arrives</li>
+                                    <li><strong>Coastal Protection:</strong> Inspect and repair salt air damage</li>
+                                    <li><strong>Air Conditioning:</strong> Service units before peak summer demand</li>
+                                </ul>
+
+                                <p>Regular maintenance during summer prevents costly repairs and ensures your property stays comfortable and protected year-round.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Sample Blog Post 2 -->
+                    <article class="blog-post">
+                        <div class="post-header">
+                            <div class="post-date">December 10, 2024</div>
+                            <h2 class="post-title">Holiday Rental Maintenance: Keeping Guests Happy</h2>
+                            <p class="post-excerpt">Quick maintenance tips for Airbnb and holiday rental properties across the Northern Rivers.</p>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-text">
+                                <p>Holiday rental properties need constant attention to maintain 5-star reviews. Here's what I focus on for my Byron Bay and Ballina clients:</p>
+                                
+                                <h3>Between-Guest Checks</h3>
+                                <ul>
+                                    <li>Test all door handles and locks</li>
+                                    <li>Check kitchen cabinet doors and drawers</li>
+                                    <li>Inspect bathroom fixtures</li>
+                                    <li>Ensure all electrical switches work</li>
+                                </ul>
+
+                                <p>Small issues become big problems when guests are paying premium rates. Prevention is always better than emergency repairs.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Sample Blog Post 3 -->
+                    <article class="blog-post">
+                        <div class="post-header">
+                            <div class="post-date">December 5, 2024</div>
+                            <h2 class="post-title">Storm Season Preparation: Northern Rivers Checklist</h2>
+                            <p class="post-excerpt">Get your property ready for Northern Rivers storm season with this comprehensive checklist.</p>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-text">
+                                <p>Living between Byron Bay and Tweed Heads means preparing for unpredictable weather. Here's my professional storm preparation checklist:</p>
+                                
+                                <h3>Exterior Preparation</h3>
+                                <ul>
+                                    <li>Clean gutters and downpipes thoroughly</li>
+                                    <li>Secure loose fence panels and gates</li>
+                                    <li>Trim overhanging branches near the house</li>
+                                    <li>Check roof tiles and flashing</li>
+                                </ul>
+
+                                <p>Taking these steps now can save thousands in storm damage repairs later.</p>
+                            </div>
+                        </div>
+                    </article>
+                </main>
+
+                <!-- Sidebar -->
+                <aside class="blog-sidebar">
+                    <div class="sidebar-section">
+                        <h3 class="sidebar-title">Recent Posts</h3>
+                        <ul class="sidebar-list">
+                            <li><a href="#post1">Summer Property Maintenance Tips</a></li>
+                            <li><a href="#post2">Holiday Rental Maintenance</a></li>
+                            <li><a href="#post3">Storm Season Preparation</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <h3 class="sidebar-title">Categories</h3>
+                        <ul class="sidebar-list">
+                            <li><a href="#maintenance">Property Maintenance</a></li>
+                            <li><a href="#seasonal">Seasonal Tips</a></li>
+                            <li><a href="#emergency">Emergency Repairs</a></li>
+                            <li><a href="#coastal">Coastal Properties</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <div class="cta-box">
+                            <h4>Need Maintenance Help?</h4>
+                            <p>Professional handyman services across Northern Rivers NSW</p>
+                            <a href="contact.html" class="cta-button">Get Free Quote</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand & Contact -->
+                <div class="footer-section brand-section">
+                    <a href="index.html" class="brand-logo">GoodHands</a>
+                    <p class="brand-tagline">Professional handyman services across Northern Rivers NSW</p>
+                    
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        <a href="tel:0481457271">0481 457271</a>
+                    </div>
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                        <a href="mailto:danhandywork@gmail.com">danhandywork@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <span>Northern Rivers NSW</span>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="kitchen-door-repairs-northern-rivers.html">Kitchen Repairs</a></li>
+                        <li><a href="deck-restoration.html">Deck Restoration</a></li>
+                        <li><a href="gutter-cleaning.html">Gutter Cleaning</a></li>
+                        <li><a href="emergency-repairs.html">Emergency Repairs</a></li>
+                        <li><a href="airbnb-maintenance.html">Airbnb Maintenance</a></li>
+                    </ul>
+                </div>
+
+                <!-- Areas -->
+                <div class="footer-section">
+                    <h3>Service Areas</h3>
+                    <ul>
+                        <li><a href="handyman-byron-bay.html">Byron Bay</a></li>
+                        <li><a href="handyman-ballina.html">Ballina</a></li>
+                        <li><a href="handyman-lismore.html">Lismore</a></li>
+                        <li><a href="handyman-tweed-heads.html">Tweed Heads</a></li>
+                        <li><a href="areas.html">All Areas</a></li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle Functions
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('active');
+        }
+
+        function closeMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.remove('active');
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const mobileMenu = document.getElementById('mobileMenu');
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            
+            if (mobileMenu && menuBtn && !mobileMenu.contains(event.target) && !menuBtn.contains(event.target)) {
+                mobileMenu.classList.remove('active');
+            }
+        });
+
+        // Close mobile menu on window resize
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                const mobileMenu = document.getElementById('mobileMenu');
+                if (mobileMenu) {
+                    mobileMenu.classList.remove('active');
+                }
+            }
+        });
+    </script>
+</body>
+</html>
