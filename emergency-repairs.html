@@ -357,30 +357,50 @@
 
         .service-card {
             background: var(--white);
-            padding: 32px;
             border-radius: var(--border-radius-lg);
             box-shadow: var(--shadow-sm);
             transition: all 0.3s ease;
             border-left: 4px solid var(--yellow-primary);
             position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
         }
 
         .service-card:hover {
             transform: translateY(-4px);
             box-shadow: var(--shadow-lg);
         }
+        
+        .service-card-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 1px solid var(--light-grey);
+        }
+        
+        .service-card-content {
+            padding: 24px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
 
         .service-card h3 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 16px;
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 12px;
             color: var(--charcoal);
+            line-height: 1.3;
         }
 
         .service-card p {
             opacity: 0.8;
-            margin: 0;
+            margin: 0 0 16px 0;
             text-align: left;
+            line-height: 1.6;
+            flex: 1;
+            font-size: 1rem;
         }
 
         /* Content with Image */
@@ -796,15 +816,16 @@
         }
 
         .typical-time {
-            position: absolute;
-            top: 16px;
-            right: 16px;
-            background: #F7FAFC;
-            padding: 6px 12px;
-            border-radius: 8px;
+            background: var(--yellow-primary);
+            color: var(--charcoal);
+            padding: 8px 16px;
+            border-radius: 20px;
             font-size: 0.85rem;
-            font-weight: 600;
-            color: #4A5568;
+            font-weight: 700;
+            text-align: center;
+            margin-top: auto;
+            display: inline-block;
+            align-self: flex-start;
         }
 
         .emergency-example {
@@ -1106,34 +1127,52 @@
             <div class="emergency-services">
                 <div class="service-grid">
                     <a href="emergency-door-repair-byron-bay.html" class="service-card emergency-service">
-                        <h3>Emergency Door Repairs</h3>
-                        <p>Won't lock, won't close, security compromised. Last week: I fixed a Byron Bay front door completely jammed at 11pm - guest arriving next morning.</p>
-                        <span class="typical-time">Typical fix: 45 minutes</span>
+                        <img src="emergency-door-repairs.jpg" alt="Emergency Door Repairs - Dan fixing broken door lock at night" class="service-card-image" loading="lazy">
+                        <div class="service-card-content">
+                            <h3>Emergency Door Repairs</h3>
+                            <p>Won't lock, won't close, security compromised. Last week: I fixed a Byron Bay front door completely jammed at 11pm - guest arriving next morning.</p>
+                            <span class="typical-time">Typical fix: 45 minutes</span>
+                        </div>
                     </a>
                     <a href="handyman-services-byron-bay.html" class="service-card emergency-service">
-                        <h3>Bathroom Emergencies</h3>
-                        <p>Overflowing toilets, burst pipes, leaking taps. Recent: I stopped a Ballina toilet flooding downstairs at midnight - fixed in 20 minutes.</p>
-                        <span class="typical-time">Typical fix: 30-60 minutes</span>
+                        <img src="bathroom-emergencies.jpg" alt="Bathroom Emergencies - Emergency plumbing repairs and toilet fixes" class="service-card-image" loading="lazy">
+                        <div class="service-card-content">
+                            <h3>Bathroom Emergencies</h3>
+                            <p>Overflowing toilets, burst pipes, leaking taps. Recent: I stopped a Ballina toilet flooding downstairs at midnight - fixed in 20 minutes.</p>
+                            <span class="typical-time">Typical fix: 30-60 minutes</span>
+                        </div>
                     </a>
                     <a href="fence-repairs-ballina.html" class="service-card emergency-service">
-                        <h3>Fence & Security</h3>
-                        <p>Pool compliance, storm damage, break-ins. This month: I fixed a Lismore pool fence that collapsed, council inspection Monday - I got it done Sunday night.</p>
-                        <span class="typical-time">Typical fix: 1-2 hours</span>
+                        <img src="fence-security-repairs.jpg" alt="Fence & Security Repairs - Emergency fence and pool compliance fixes" class="service-card-image" loading="lazy">
+                        <div class="service-card-content">
+                            <h3>Fence & Security</h3>
+                            <p>Pool compliance, storm damage, break-ins. This month: I fixed a Lismore pool fence that collapsed, council inspection Monday - I got it done Sunday night.</p>
+                            <span class="typical-time">Typical fix: 1-2 hours</span>
+                        </div>
                     </a>
                     <a href="deck-restoration.html" class="service-card emergency-service">
-                        <h3>Deck Safety Issues</h3>
-                        <p>Collapsed boards, broken railings, safety hazards. Yesterday: I secured a Mullumbimby deck board that gave way under a guest - fixed same day.</p>
-                        <span class="typical-time">Typical fix: 2-3 hours</span>
+                        <img src="deck-safety-repairs.jpg" alt="Deck Safety Issues - Emergency deck board and railing repairs" class="service-card-image" loading="lazy">
+                        <div class="service-card-content">
+                            <h3>Deck Safety Issues</h3>
+                            <p>Collapsed boards, broken railings, safety hazards. Yesterday: I secured a Mullumbimby deck board that gave way under a guest - fixed same day.</p>
+                            <span class="typical-time">Typical fix: 2-3 hours</span>
+                        </div>
                     </a>
                     <a href="airbnb-maintenance.html" class="service-card emergency-service">
-                        <h3>Airbnb Crisis Response</h3>
-                        <p>Guest arriving, something's broken, need it fixed NOW. Friday: I fixed a Byron Bay Airbnb shower not working, guest in 3 hours - I had it done in 45 minutes.</p>
-                        <span class="typical-time">Priority response</span>
+                        <img src="airbnb-crisis-response.jpg" alt="Airbnb Crisis Response - Emergency repairs for holiday rental properties" class="service-card-image" loading="lazy">
+                        <div class="service-card-content">
+                            <h3>Airbnb Crisis Response</h3>
+                            <p>Guest arriving, something's broken, need it fixed NOW. Friday: I fixed a Byron Bay Airbnb shower not working, guest in 3 hours - I had it done in 45 minutes.</p>
+                            <span class="typical-time">Priority response</span>
+                        </div>
                     </a>
                     <a href="emergency-repairs.html" class="service-card emergency-service">
-                        <h3>Storm Damage</h3>
-                        <p>Tarping, securing, preventing further damage. Last storm: I secured Bangalow roof damage at 1am - tarped within 2 hours, permanent fix next day.</p>
-                        <span class="typical-time">Immediate securing</span>
+                        <img src="storm-damage-repairs.jpg" alt="Storm Damage Repairs - Emergency tarping and storm damage response" class="service-card-image" loading="lazy">
+                        <div class="service-card-content">
+                            <h3>Storm Damage</h3>
+                            <p>Tarping, securing, preventing further damage. Last storm: I secured Bangalow roof damage at 1am - tarped within 2 hours, permanent fix next day.</p>
+                            <span class="typical-time">Immediate securing</span>
+                        </div>
                     </a>
                 </div>
             </div>
