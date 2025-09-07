@@ -1054,6 +1054,46 @@
             padding-left: 20px;
             line-height: 1.8;
         }
+        
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 32px;
+            margin: 48px 0;
+        }
+        
+        .faq-item {
+            background: var(--white);
+            padding: 32px;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-sm);
+            border-left: 4px solid var(--yellow-primary);
+        }
+        
+        .faq-item h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: var(--charcoal);
+            line-height: 1.4;
+        }
+        
+        .faq-item p {
+            margin: 0;
+            line-height: 1.6;
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 768px) {
+            .faq-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+            
+            .faq-item {
+                padding: 24px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -1132,17 +1172,17 @@
                         <span class="response-time">45-60 mins</span>
                         <p>From The Square to Southern Cross Uni</p>
                     </a>
-                    <a href="emergency-handyman-byron-bay.html" class="location-card">
+                    <a href="handyman-tweed-heads.html" class="location-card">
                         <h3>Tweed Heads</h3>
                         <span class="response-time">45-60 mins</span>
                         <p>Point Danger to Twin Towns</p>
                     </a>
-                    <a href="emergency-handyman-byron-bay.html" class="location-card">
+                    <a href="handyman-mullumbimby.html" class="location-card">
                         <h3>Mullumbimby</h3>
                         <span class="response-time">40-50 mins</span>
                         <p>Main Street to Brunswick Valley</p>
                     </a>
-                    <a href="emergency-handyman-byron-bay.html" class="location-card">
+                    <a href="handyman-bangalow.html" class="location-card">
                         <h3>Bangalow</h3>
                         <span class="response-time">30-40 mins</span>
                         <p>Byron Street to hinterland estates</p>
@@ -1164,7 +1204,7 @@
                         <img src="emergency-door-repairs.webp" alt="Emergency Door Repairs - Dan fixing broken door locks and security issues" class="service-card-image" loading="lazy">
                         <div class="service-card-content">
                             <h3>Emergency Door Repairs</h3>
-                            <p>Won't lock, won't close, security compromised. Last week: I fixed a Byron Bay front door completely jammed at 11pm - guest arriving next morning.</p>
+                            <p>Won't lock, won't close, security compromised. Last week: I fixed a <a href="handyman-byron-bay.html">Byron Bay</a> front door completely jammed at 11pm - guest arriving next morning.</p>
                             <span class="typical-time">Typical fix: 45 minutes</span>
                         </div>
                     </a>
@@ -1172,7 +1212,7 @@
                         <img src="bathroom-emergencies.webp" alt="Bathroom Emergencies - Emergency bathroom maintenance and repairs" class="service-card-image" loading="lazy">
                         <div class="service-card-content">
                             <h3>Bathroom Emergencies</h3>
-                            <p>Blocked drains, loose fittings, cabinet repairs. Recent: I fixed a wobbly Ballina vanity that was coming off the wall - secured in 30 minutes.</p>
+                            <p>Blocked drains, loose fittings, cabinet repairs. Recent: I fixed a wobbly <a href="handyman-ballina.html">Ballina</a> vanity that was coming off the wall - secured in 30 minutes.</p>
                             <span class="typical-time">Typical fix: 30-60 minutes</span>
                         </div>
                     </a>
@@ -1180,7 +1220,7 @@
                         <img src="fence-security.jpg" alt="Fence & Security - Pool compliance and security fence repairs" class="service-card-image" loading="lazy">
                         <div class="service-card-content">
                             <h3>Fence & Security</h3>
-                            <p>Pool compliance, storm damage, break-ins. This month: I fixed a Lismore pool fence that collapsed, council inspection Monday - I got it done Sunday night.</p>
+                            <p>Pool compliance, storm damage, break-ins. This month: I fixed a <a href="handyman-lismore.html">Lismore</a> pool fence that collapsed, council inspection Monday - I got it done Sunday night.</p>
                             <span class="typical-time">Typical fix: 1-2 hours</span>
                         </div>
                     </a>
@@ -1188,7 +1228,7 @@
                         <img src="deck-safety.jpg" alt="Deck Safety Issues - Broken deck railing and board emergency repairs" class="service-card-image" loading="lazy">
                         <div class="service-card-content">
                             <h3>Deck Safety Issues</h3>
-                            <p>Collapsed boards, broken railings, safety hazards. Yesterday: I secured a Mullumbimby deck board that gave way under a guest - fixed same day.</p>
+                            <p>Collapsed boards, broken railings, safety hazards. Yesterday: I secured a <a href="handyman-mullumbimby.html">Mullumbimby</a> deck board that gave way under a guest - fixed same day.</p>
                             <span class="typical-time">Typical fix: 2-3 hours</span>
                         </div>
                     </a>
@@ -1196,7 +1236,7 @@
                         <img src="airbnb-damage.webp" alt="Airbnb Crisis Response - Emergency repairs for holiday rental property damage" class="service-card-image" loading="lazy">
                         <div class="service-card-content">
                             <h3>Airbnb Crisis Response</h3>
-                            <p>Guest arriving, something's broken, need it fixed NOW. Friday: I fixed a Byron Bay Airbnb shower not working, guest in 3 hours - I had it done in 45 minutes.</p>
+                            <p>Guest arriving, something's broken, need it fixed NOW. Friday: I fixed a <a href="airbnb-maintenance.html">Byron Bay Airbnb</a> shower not working, guest in 3 hours - I had it done in 45 minutes.</p>
                             <span class="typical-time">Priority response</span>
                         </div>
                     </a>
@@ -1204,7 +1244,7 @@
                         <img src="storm-damage.jpg" alt="Storm Damage Repairs - Emergency tarping and storm damage response" class="service-card-image" loading="lazy">
                         <div class="service-card-content">
                             <h3>Storm Damage</h3>
-                            <p>Tarping, securing, preventing further damage. Last storm: I secured Bangalow roof damage at 1am - tarped within 2 hours, permanent fix next day.</p>
+                            <p>Tarping, securing, preventing further damage. Last storm: I secured <a href="handyman-bangalow.html">Bangalow</a> roof damage at 1am - tarped within 2 hours, permanent fix next day.</p>
                             <span class="typical-time">Immediate securing</span>
                         </div>
                     </a>
@@ -1220,7 +1260,7 @@
             <p>I'm a handyman, not a superhero. Here's what I can't help with:</p>
             <ul class="limitations-list">
                 <li>Plumbing (I'm not licensed - you'll need a plumber for water pipe work)</li>
-                <li>Electrical work (safety first - call a sparkie)</li>
+                <li>Electrical work (safety first - call a sparkie) - see our <a href="handyman-services-byron-bay.html">general services</a> for what I can help with</li>
                 <li>Major structural repairs</li>
                 <li>Gas appliances</li>
                 <li>Guaranteed middle-of-the-night response (I'll help when I can, but I'm one person)</li>
@@ -1234,7 +1274,7 @@
             <h2>Last Week's Emergency Call</h2>
             <div class="emergency-example">
                 <blockquote>
-                    "Tuesday evening - Sarah from Byron Bay Arts & Industry Estate called me. Her Airbnb guests had somehow broken the front door handle completely - door wouldn't close properly, guests couldn't secure the property. New guests arriving next morning. I came out that evening with replacement hardware. Door functioning properly before the new guests arrived. Problem solved, everyone happy."
+                    "Tuesday evening - Sarah from <a href="handyman-byron-bay.html">Byron Bay Arts & Industry Estate</a> called me. Her <a href="airbnb-maintenance.html">Airbnb</a> guests had somehow broken the front door handle completely - door wouldn't close properly, guests couldn't secure the property. New guests arriving next morning. I came out that evening with replacement hardware. Door functioning properly before the new guests arrived. Problem solved, everyone happy."
                 </blockquote>
                 <p class="example-outcome"><strong>Total response time: 45 minutes</strong> | <strong>Problem solved: Yes</strong> | <strong>Follow-up needed: None</strong></p>
             </div>
@@ -1283,6 +1323,31 @@
             </ul>
             
             <p><strong>Please understand:</strong> I'm a one-person business. While I do my best to help with emergencies, I can't guarantee 24/7 availability. Sometimes I'm on another job, sometimes it's 3am and I'm asleep. But when I can help, I will.</p>
+        </div>
+    </section>
+
+    <!-- Emergency FAQ Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Emergency Handyman FAQ</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How quickly can you respond to emergency repairs in Byron Bay?</h3>
+                    <p>From Byron Bay, I typically respond within 20-30 minutes, depending on traffic and my current location. I'm honest about timing - if I'm already on another job, I'll let you know realistic expectations.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What areas do you cover for emergency repairs?</h3>
+                    <p>I cover all of Northern Rivers including Byron Bay, Ballina, Lismore, Tweed Heads, Mullumbimby, and Bangalow. Response times vary from 20 minutes (Byron Bay) to 60 minutes (outer areas).</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you really answer emergency calls 24/7?</h3>
+                    <p>I'm honest about this - I'll do my best to help when I can, but I'm one person. Sometimes I'm asleep at 3am, sometimes I'm on another job. I'll always get back to you as soon as possible though.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What emergency repairs can't you do?</h3>
+                    <p>I can't do licensed plumbing or electrical work - safety first. I also don't handle major structural repairs or gas appliances. I'll always be honest about what I can and can't help with.</p>
+                </div>
+            </div>
         </div>
     </section>
 
