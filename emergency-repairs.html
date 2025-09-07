@@ -120,6 +120,24 @@
             padding-top: 70px;
         }
 
+        /* Skip Link for Accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: var(--charcoal);
+            color: var(--white);
+            padding: 8px;
+            text-decoration: none;
+            z-index: 9999;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        .skip-link:focus {
+            top: 6px;
+        }
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
