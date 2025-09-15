@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emergency Handyman Northern Rivers | Urgent Repairs | Good Hands Handyman</title>
+    <title>Emergency Handyman Byron Bay | 24/7 Urgent Repairs Northern Rivers | GoodHands</title>
+    <meta name="description" content="Emergency handyman Byron Bay & Northern Rivers. 24/7 urgent repairs - door locks, water leaks, electrical issues. Same-day response when available. Call 0481 457271">
+    <meta name="keywords" content="emergency handyman byron bay, urgent repairs northern rivers, after hours handyman ballina, emergency repairs lismore, 24/7 handyman tweed heads, door lock emergency byron bay">
     <link rel="canonical" href="https://goodhandshandyman.com.au/emergency-repairs.html">
-    <meta name="description" content="Emergency handyman Northern Rivers when available. Byron Bay, Ballina, Lismore, Tweed Heads. Honest about response times. After-hours repairs. Call: 0481 457271">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Emergency Handyman Byron Bay | 24/7 Urgent Repairs Northern Rivers">
+    <meta property="og:description" content="Emergency handyman Byron Bay & Northern Rivers. 24/7 urgent repairs - door locks, water leaks, electrical issues. Same-day response.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://goodhandshandyman.com.au/emergency-repairs.html">
+    <meta property="og:image" content="https://goodhandshandyman.com.au/emergency-repairs-hero.avif">
+    <meta property="og:locale" content="en_AU">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Emergency Handyman Byron Bay | 24/7 Urgent Repairs Northern Rivers">
+    <meta name="twitter:description" content="Emergency handyman Byron Bay & Northern Rivers. 24/7 urgent repairs - door locks, water leaks, electrical issues.">
+    <meta name="twitter:image" content="https://goodhandshandyman.com.au/emergency-repairs-hero.avif">
+    
+    <!-- Emergency Service Meta Tags -->
+    <meta name="geo.region" content="AU-NSW">
+    <meta name="geo.placename" content="Byron Bay, Northern Rivers">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="urgency" content="high">
+    <meta name="service-hours" content="24/7">
     
     <!-- Schema Markup for Emergency Service -->
     <script type="application/ld+json">
@@ -94,15 +116,18 @@
             --yellow-light: #FFF9E6;
             --charcoal: #2D3748;
             --dark-grey: #4A5568;
+            --medium-grey: #718096;
             --light-grey: #EDF2F7;
             --bg-subtle: #F7FAFC;
             --white: #FFFFFF;
+            --success: #22C55E;
             --text-dark: #1A202C;
             --border-radius: 12px;
             --border-radius-lg: 16px;
             --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
             --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
             --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+            --shadow-xl: 0 20px 25px rgba(0,0,0,0.1);
         }
 
         * {
@@ -180,10 +205,12 @@
         }
 
         .nav-logo a {
-            font-size: 1.25rem;
+            font-size: 1.5rem;
             font-weight: 900;
             color: var(--charcoal);
             text-decoration: none;
+            white-space: nowrap;
+            display: inline-block;
         }
 
         .nav-logo a:hover {
@@ -193,7 +220,7 @@
         .nav-menu {
             display: flex;
             align-items: center;
-            gap: 20px;
+            gap: 32px;
         }
 
         .nav-menu a {
@@ -203,6 +230,7 @@
             padding: 8px 16px;
             border-radius: var(--border-radius);
             transition: all 0.3s ease;
+            white-space: nowrap;
         }
 
         .nav-menu a:hover {
@@ -213,7 +241,7 @@
         .nav-cta {
             background: var(--yellow-primary) !important;
             color: var(--charcoal) !important;
-            padding: 10px 20px !important;
+            padding: 12px 24px !important;
             font-weight: 600 !important;
         }
 
@@ -269,31 +297,67 @@
 
         /* Hero Section */
         .hero {
-            height: 500px;
-            background: linear-gradient(rgba(45, 55, 72, 0.8), rgba(45, 55, 72, 0.8)), url('emergency-repairs-hero.avif');
+            padding: 140px 0 100px;
+            background: linear-gradient(rgba(45, 55, 72, 0.7), rgba(45, 55, 72, 0.5)), url('emergency-repairs-hero.avif');
             background-size: cover;
             background-position: center;
+            background-attachment: fixed;
+            text-align: center;
+            min-height: 85vh;
             display: flex;
             align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
+        }
+
+        .hero-content {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px;
         }
 
         .hero h1 {
-            font-size: clamp(2.5rem, 5vw, 3.5rem);
-            font-weight: 900;
+            font-size: clamp(3rem, 8vw, 5rem);
+            font-weight: 800;
+            color: var(--white);
             margin-bottom: 24px;
-            letter-spacing: -0.025em;
+            letter-spacing: -0.03em;
             line-height: 1.1;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
         }
 
-        .hero-subtitle {
-            font-size: 1.25rem;
-            opacity: 0.9;
+        .hero-tagline {
+            font-size: clamp(1.25rem, 3vw, 1.5rem);
+            color: var(--white);
+            margin-bottom: 48px;
+            font-weight: 400;
             max-width: 700px;
-            margin: 0 auto 32px;
-            line-height: 1.5;
+            margin-left: auto;
+            margin-right: auto;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+        }
+
+        .cta-primary {
+            background: var(--yellow-primary);
+            color: var(--charcoal);
+            padding: 20px 40px;
+            border: none;
+            border-radius: var(--border-radius);
+            font-size: 1.125rem;
+            font-weight: 900;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: var(--shadow-lg);
+            margin-bottom: 64px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .cta-primary:hover {
+            background: var(--yellow-hover);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-xl);
         }
 
         .cta-button {
@@ -317,59 +381,110 @@
 
         /* Content Sections */
         .section {
-            padding: 80px 0;
+            padding: 120px 0;
         }
 
         .section-alt {
             background: var(--bg-subtle);
         }
 
+        .section-header {
+            text-align: center;
+            margin-bottom: 80px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 24px;
+        }
+
+        .section-title {
+            font-size: clamp(2.75rem, 6vw, 4.5rem);
+            font-weight: 900;
+            color: var(--charcoal);
+            margin-bottom: 32px;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
+
+        .section-subtitle {
+            font-size: clamp(1.125rem, 2.5vw, 1.375rem);
+            color: var(--dark-grey);
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
         .section h2 {
-            font-size: clamp(2rem, 4vw, 2.75rem);
+            font-size: clamp(2.75rem, 6vw, 4.5rem);
             font-weight: 900;
             text-align: center;
-            margin-bottom: 24px;
-            letter-spacing: -0.025em;
+            margin-bottom: 32px;
+            letter-spacing: -0.02em;
+            color: var(--charcoal);
+            line-height: 1.1;
         }
 
         .section p {
-            font-size: 1.1rem;
+            font-size: clamp(1.125rem, 2.5vw, 1.375rem);
             text-align: center;
-            max-width: 800px;
+            max-width: 600px;
             margin: 0 auto 48px;
-            opacity: 0.8;
+            color: var(--dark-grey);
+            line-height: 1.6;
         }
 
         /* Services Grid */
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 32px;
-            margin: 48px 0;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 40px;
+            margin-top: 80px;
+            padding: 0 24px;
         }
-        
+
         .service-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 24px;
-            margin: 48px 0;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 40px;
+            margin: 80px 0;
+            padding: 0 24px;
         }
 
         .service-card {
             background: var(--white);
             border-radius: var(--border-radius-lg);
-            box-shadow: var(--shadow-sm);
-            transition: all 0.3s ease;
-            border-left: 4px solid var(--yellow-primary);
-            position: relative;
-            overflow: hidden;
+            padding: 40px 32px;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--light-grey);
+            transition: all 0.4s ease;
+            text-align: left;
+            height: 100%;
             display: flex;
             flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--yellow-primary), var(--yellow-hover));
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
         }
 
         .service-card:hover {
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-lg);
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--yellow-primary);
         }
         
         .service-card-image {
@@ -402,21 +517,37 @@
             flex-direction: column;
         }
 
+        .service-title {
+            font-size: 1.75rem;
+            font-weight: 900;
+            margin-bottom: 20px;
+            color: var(--charcoal);
+            line-height: 1.3;
+        }
+
+        .service-description {
+            color: var(--dark-grey);
+            margin-bottom: 32px;
+            line-height: 1.7;
+            flex-grow: 1;
+            font-size: 1.125rem;
+        }
+
         .service-card h3 {
-            font-size: 1.4rem;
-            font-weight: 700;
-            margin-bottom: 12px;
+            font-size: 1.75rem;
+            font-weight: 900;
+            margin-bottom: 20px;
             color: var(--charcoal);
             line-height: 1.3;
         }
 
         .service-card p {
-            opacity: 0.8;
-            margin: 0 0 16px 0;
+            color: var(--dark-grey);
+            margin: 0 0 32px 0;
             text-align: left;
-            line-height: 1.6;
+            line-height: 1.7;
             flex: 1;
-            font-size: 1rem;
+            font-size: 1.125rem;
         }
 
         /* Content with Image */
@@ -492,30 +623,56 @@
             .nav-menu {
                 display: none;
             }
-            
+
             .mobile-menu-btn {
                 display: flex;
             }
-            
+
             .mobile-menu.active {
                 display: block;
             }
-            
+
+            .nav-container {
+                padding: 0 16px;
+            }
+
+            .nav-logo a {
+                font-size: 1.1rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 0 12px;
+            }
+
+            .nav-logo a {
+                font-size: 1rem;
+            }
+
             .hero {
-                height: 400px;
+                background-attachment: scroll;
+                padding: 120px 0 100px;
+                min-height: 80vh;
             }
-            
+
+            .hero-content {
+                padding: 0 20px;
+            }
+
             .section {
-                padding: 60px 0;
+                padding: 80px 0;
             }
-            
-            .services-grid {
-                grid-template-columns: 1fr;
-                gap: 24px;
+
+            .section-header {
+                margin-bottom: 60px;
+                padding: 0 20px;
             }
-            
-            .service-grid {
+
+            .services-grid, .service-grid {
                 grid-template-columns: 1fr;
+                gap: 32px;
+                padding: 0 20px;
             }
         }
         
@@ -765,6 +922,32 @@
                 grid-template-columns: 1fr 1fr;
                 gap: 32px;
             }
+
+            .brand-section {
+                grid-column: 1/-1;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .footer-main {
+                padding: 48px 24px 32px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .footer-bottom {
+                padding: 24px;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .trust-badges {
+                flex-wrap: wrap;
+                gap: 16px;
+            }
         }
         
         /* Emergency Page Specific Styles */
@@ -838,13 +1021,24 @@
             border-left-color: var(--yellow-primary);
         }
 
+        .service-price {
+            font-weight: 900;
+            color: var(--charcoal);
+            margin-bottom: 24px;
+            font-size: 1.25rem;
+            padding: 12px 20px;
+            background: var(--yellow-light);
+            border-radius: var(--border-radius);
+            display: inline-block;
+        }
+
         .typical-time {
             background: var(--yellow-primary);
             color: var(--charcoal);
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 700;
+            padding: 12px 20px;
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+            font-weight: 900;
             text-align: center;
             margin-top: auto;
             display: inline-block;
@@ -1138,12 +1332,14 @@
         <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>Emergency Handyman Northern Rivers - Here When Things Go Wrong</h1>
-            <div class="emergency-hero">
-                <h2>Urgent Repairs for Byron Bay & Surrounding Areas</h2>
-                <p class="response-promise">Local handyman available for emergency repairs • Fair pricing • Honest about what I can fix</p>
+            <div class="hero-content">
+                <h1>Emergency Handyman Northern Rivers</h1>
+                <p class="hero-tagline">Here when things go wrong - Byron Bay to Tweed Heads. Local handyman available for emergency repairs with fair pricing and honest service.</p>
+
+                <a href="tel:0481457271" class="cta-primary">
+                    Call or Text: 0481 457271
+                </a>
             </div>
-            <a href="tel:0481457271" class="cta-button emergency-cta">Call or Text: 0481 457271</a>
         </div>
     </section>
 
@@ -1203,49 +1399,49 @@
                     <a href="emergency-door-repair-byron-bay.html" class="service-card emergency-service">
                         <img src="emergency-door-repairs.webp" alt="Emergency Door Repairs - Dan fixing broken door locks and security issues" class="service-card-image" loading="lazy">
                         <div class="service-card-content">
-                            <h3>Emergency Door Repairs</h3>
-                            <p>Won't lock, won't close, security compromised. Last week: I fixed a <a href="handyman-byron-bay.html">Byron Bay</a> front door completely jammed at 11pm - guest arriving next morning.</p>
-                            <span class="typical-time">Typical fix: 45 minutes</span>
+                            <h3 class="service-title">Emergency Door Repairs</h3>
+                            <p class="service-description">Won't lock, won't close, security compromised. Last week: I fixed a <a href="handyman-byron-bay.html">Byron Bay</a> front door completely jammed at 11pm - guest arriving next morning.</p>
+                            <div class="service-price">Typical fix: 45 minutes</div>
                         </div>
                     </a>
                     <a href="handyman-services-byron-bay.html" class="service-card emergency-service">
                         <img src="bathroom-emergencies.webp" alt="Bathroom Emergencies - Emergency bathroom maintenance and repairs" class="service-card-image" loading="lazy">
                         <div class="service-card-content">
-                            <h3>Bathroom Emergencies</h3>
-                            <p>Blocked drains, loose fittings, cabinet repairs. Recent: I fixed a wobbly <a href="handyman-ballina.html">Ballina</a> vanity that was coming off the wall - secured in 30 minutes.</p>
-                            <span class="typical-time">Typical fix: 30-60 minutes</span>
+                            <h3 class="service-title">Bathroom Emergencies</h3>
+                            <p class="service-description">Blocked drains, loose fittings, cabinet repairs. Recent: I fixed a wobbly <a href="handyman-ballina.html">Ballina</a> vanity that was coming off the wall - secured in 30 minutes.</p>
+                            <div class="service-price">Typical fix: 30-60 minutes</div>
                         </div>
                     </a>
                     <a href="fence-repairs-ballina.html" class="service-card emergency-service">
                         <img src="fence-security.jpg" alt="Fence & Security - Pool compliance and security fence repairs" class="service-card-image" loading="lazy">
                         <div class="service-card-content">
-                            <h3>Fence & Security</h3>
-                            <p>Pool compliance, storm damage, break-ins. This month: I fixed a <a href="handyman-lismore.html">Lismore</a> pool fence that collapsed, council inspection Monday - I got it done Sunday night.</p>
-                            <span class="typical-time">Typical fix: 1-2 hours</span>
+                            <h3 class="service-title">Fence & Security</h3>
+                            <p class="service-description">Pool compliance, storm damage, break-ins. This month: I fixed a <a href="handyman-lismore.html">Lismore</a> pool fence that collapsed, council inspection Monday - I got it done Sunday night.</p>
+                            <div class="service-price">Typical fix: 1-2 hours</div>
                         </div>
                     </a>
                     <a href="deck-restoration.html" class="service-card emergency-service">
                         <img src="deck-safety.jpg" alt="Deck Safety Issues - Broken deck railing and board emergency repairs" class="service-card-image" loading="lazy">
                         <div class="service-card-content">
-                            <h3>Deck Safety Issues</h3>
-                            <p>Collapsed boards, broken railings, safety hazards. Yesterday: I secured a <a href="handyman-mullumbimby.html">Mullumbimby</a> deck board that gave way under a guest - fixed same day.</p>
-                            <span class="typical-time">Typical fix: 2-3 hours</span>
+                            <h3 class="service-title">Deck Safety Issues</h3>
+                            <p class="service-description">Collapsed boards, broken railings, safety hazards. Yesterday: I secured a <a href="handyman-mullumbimby.html">Mullumbimby</a> deck board that gave way under a guest - fixed same day.</p>
+                            <div class="service-price">Typical fix: 2-3 hours</div>
                         </div>
                     </a>
                     <a href="airbnb-maintenance.html" class="service-card emergency-service">
                         <img src="airbnb-damage.webp" alt="Airbnb Crisis Response - Emergency repairs for holiday rental property damage" class="service-card-image" loading="lazy">
                         <div class="service-card-content">
-                            <h3>Airbnb Crisis Response</h3>
-                            <p>Guest arriving, something's broken, need it fixed NOW. Friday: I fixed a <a href="airbnb-maintenance.html">Byron Bay Airbnb</a> shower not working, guest in 3 hours - I had it done in 45 minutes.</p>
-                            <span class="typical-time">Priority response</span>
+                            <h3 class="service-title">Airbnb Crisis Response</h3>
+                            <p class="service-description">Guest arriving, something's broken, need it fixed NOW. Friday: I fixed a <a href="airbnb-maintenance.html">Byron Bay Airbnb</a> shower not working, guest in 3 hours - I had it done in 45 minutes.</p>
+                            <div class="service-price">Priority response</div>
                         </div>
                     </a>
                     <a href="emergency-repairs.html" class="service-card emergency-service">
                         <img src="storm-damage.jpg" alt="Storm Damage Repairs - Emergency tarping and storm damage response" class="service-card-image" loading="lazy">
                         <div class="service-card-content">
-                            <h3>Storm Damage</h3>
-                            <p>Tarping, securing, preventing further damage. Last storm: I secured <a href="handyman-bangalow.html">Bangalow</a> roof damage at 1am - tarped within 2 hours, permanent fix next day.</p>
-                            <span class="typical-time">Immediate securing</span>
+                            <h3 class="service-title">Storm Damage</h3>
+                            <p class="service-description">Tarping, securing, preventing further damage. Last storm: I secured <a href="handyman-bangalow.html">Bangalow</a> roof damage at 1am - tarped within 2 hours, permanent fix next day.</p>
+                            <div class="service-price">Immediate securing</div>
                         </div>
                     </a>
                 </div>
