@@ -230,7 +230,45 @@
         .hero {
             background: linear-gradient(135deg, var(--bg-subtle) 0%, var(--light-grey) 100%);
             padding: 4rem 0;
-            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero-text {
+            text-align: left;
+        }
+
+        .hero-image {
+            position: relative;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .before-after-badge {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: var(--yellow-primary);
+            color: var(--charcoal);
+            padding: 0.5rem 1rem;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            font-size: 0.9rem;
         }
 
         .hero h1 {
@@ -523,6 +561,15 @@
             .final-cta h2 {
                 font-size: 2rem;
             }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .hero-text {
+                text-align: center;
+            }
         }
 
         /* Professional Footer Styles */
@@ -598,11 +645,17 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="container">
-            <h1>Fly Screen Repairs in Byron Bay & Northern Rivers</h1>
-            <p class="subtitle">Professional screen door repairs, torn mesh fixes, and sliding screen solutions</p>
-            <div class="hero-cta">
-                <a href="tel:0481457271" class="phone-cta">📞 Call Dan: 0481 457271</a>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Fly Screen Repairs in Byron Bay & Northern Rivers</h1>
+                <p class="subtitle">Professional screen door repairs, torn mesh fixes, and sliding screen solutions</p>
+                <div class="hero-cta">
+                    <a href="tel:0481457271" class="phone-cta">📞 Call Dan: 0481 457271</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="before-after-badge">Before & After</div>
+                <img src="flyscreen-repair-before-after.png" alt="Fly screen repair before and after - Byron Bay handyman service" loading="eager">
             </div>
         </div>
     </section>
@@ -619,6 +672,8 @@
                 <p style="margin-bottom: 1.5rem;">Whether your screen door looks like your cat's been using it as a scratching post, or your sliding screen keeps jumping off its track every time you try to close it, I can sort it out for you.</p>
 
                 <p style="margin-bottom: 1.5rem;">I've been fixing fly screens around Byron Bay and the Northern Rivers for years. I know exactly what goes wrong with them in our coastal climate, and I know how to fix them properly so they last.</p>
+
+                <p style="margin-bottom: 1.5rem;">I also handle other common coastal property issues like <a href="deck-restoration.html" style="color: var(--yellow-primary); text-decoration: none; font-weight: 500;">deck restoration</a>, <a href="rotten-timber-repair-byron-bay.html" style="color: var(--yellow-primary); text-decoration: none; font-weight: 500;">rotten timber repairs</a>, and <a href="emergency-repairs.html" style="color: var(--yellow-primary); text-decoration: none; font-weight: 500;">emergency repairs</a> that our weather throws at us.</p>
             </div>
         </div>
     </section>
@@ -889,6 +944,54 @@
             <p style="text-align: center; margin-top: 2rem; font-size: 1.1rem; color: var(--dark-grey);">
                 Not sure if I cover your area? Give me a call anyway - I'm pretty flexible.
             </p>
+        </div>
+    </section>
+
+    <!-- Related Services Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Other Handyman Services</h2>
+                <p>I handle all sorts of property maintenance issues around Byron Bay</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>🔨 <a href="deck-restoration.html" style="color: var(--charcoal); text-decoration: none;">Deck Restoration</a></h3>
+                    <p>Coastal decks take a beating from salt air and UV. I restore them to look like new with proper coastal-grade materials.</p>
+                    <a href="deck-restoration.html" style="color: var(--yellow-primary); text-decoration: none; font-weight: 500;">Learn about deck restoration →</a>
+                </div>
+
+                <div class="service-card">
+                    <h3>🪚 <a href="rotten-timber-repair-byron-bay.html" style="color: var(--charcoal); text-decoration: none;">Rotten Timber Repair</a></h3>
+                    <p>Byron Bay humidity rots timber fast. I replace rotten boards, posts, and framing with H4 treated materials that last.</p>
+                    <a href="rotten-timber-repair-byron-bay.html" style="color: var(--yellow-primary); text-decoration: none; font-weight: 500;">See timber repair services →</a>
+                </div>
+
+                <div class="service-card">
+                    <h3>🚨 <a href="emergency-repairs.html" style="color: var(--charcoal); text-decoration: none;">Emergency Repairs</a></h3>
+                    <p>Storm damage, burst pipes, electrical hazards - when things go wrong, I'm available for emergency callouts.</p>
+                    <a href="emergency-repairs.html" style="color: var(--yellow-primary); text-decoration: none; font-weight: 500;">Emergency repair info →</a>
+                </div>
+
+                <div class="service-card">
+                    <h3>🍴 <a href="kitchen-repairs-byron-bay.html" style="color: var(--charcoal); text-decoration: none;">Kitchen Repairs</a></h3>
+                    <p>Cabinet doors that won't close, drawers that stick, benchtop damage - I fix all kitchen maintenance issues.</p>
+                    <a href="kitchen-repairs-byron-bay.html" style="color: var(--yellow-primary); text-decoration: none; font-weight: 500;">Kitchen repair services →</a>
+                </div>
+
+                <div class="service-card">
+                    <h3>🏠 <a href="gutter-cleaning.html" style="color: var(--charcoal); text-decoration: none;">Gutter Cleaning</a></h3>
+                    <p>Coastal gutters fill with leaves and debris fast. I clean them properly and check for damage while I'm up there.</p>
+                    <a href="gutter-cleaning.html" style="color: var(--yellow-primary); text-decoration: none; font-weight: 500;">Gutter cleaning info →</a>
+                </div>
+
+                <div class="service-card">
+                    <h3>🏢 <a href="property-manager-services.html" style="color: var(--charcoal); text-decoration: none;">Property Management</a></h3>
+                    <p>Rental property maintenance, Airbnb repairs, emergency callouts for property managers and real estate agents.</p>
+                    <a href="property-manager-services.html" style="color: var(--yellow-primary); text-decoration: none; font-weight: 500;">Property manager services →</a>
+                </div>
+            </div>
         </div>
     </section>
 
