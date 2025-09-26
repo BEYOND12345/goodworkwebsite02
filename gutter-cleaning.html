@@ -642,6 +642,7 @@
 
             .footer-content {
                 grid-template-columns: 1fr;
+                gap: 2rem;
             }
         }
 
@@ -650,357 +651,70 @@
                 grid-template-columns: repeat(2, 1fr);
             }
         }
-    
-/* Professional Footer Styles */
-.footer {
-    background: var(--charcoal);
-    color: var(--white);
-    border-radius: var(--border-radius);
-    overflow: hidden;
-    box-shadow: var(--shadow-sm);
-}
 
-.footer-main {
-    padding: 64px 32px 48px;
-}
+        /* Footer Styles */
+        .footer-main {
+            background: var(--charcoal);
+            color: var(--white);
+            padding: 3rem 0 1rem;
+        }
 
-.footer-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 48px;
-    margin-bottom: 48px;
-}
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 20px;
+        }
 
-.footer-section h3 {
-    color: var(--yellow-primary);
-    font-weight: 600;
-    font-size: 1.125rem;
-    margin-bottom: 24px;
-    letter-spacing: -0.025em;
-}
+        .footer-section h3 {
+            color: var(--yellow-primary);
+            margin-bottom: 1rem;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
 
-.footer-section ul {
-    list-style: none;
-}
+        .footer-section p, .footer-section li {
+            color: #CBD5E0;
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
 
-.footer-section li {
-    margin-bottom: 12px;
-}
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
 
-.footer-section a {
-    color: rgba(255,255,255,0.85);
-    text-decoration: none;
-    font-size: 0.95rem;
-    transition: all 0.3s ease;
-    display: block;
-    padding: 4px 0;
-}
+        .footer-section a {
+            color: #CBD5E0;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
 
-.footer-section a:hover {
-    color: var(--yellow-primary);
-    transform: translateX(4px);
-}
+        .footer-section a:hover {
+            color: var(--yellow-primary);
+        }
 
-.footer-section p {
-    color: rgba(255,255,255,0.8);
-    font-size: 0.95rem;
-    line-height: 1.7;
-    margin-bottom: 16px;
-}
+        .footer-bottom {
+            border-top: 1px solid #4A5568;
+            padding-top: 1rem;
+            text-align: center;
+            color: #CBD5E0;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
 
-/* Brand Section */
-.brand-section {
-    grid-column: 1;
-}
-
-.brand-logo {
-    font-size: 1.5rem;
-    font-weight: 900;
-    color: var(--yellow-primary);
-    margin-bottom: 16px;
-    display: block;
-}
-
-.brand-tagline {
-    font-size: 1rem;
-    color: rgba(255,255,255,0.9);
-    margin-bottom: 24px;
-    font-style: italic;
-}
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 12px;
-    color: rgba(255,255,255,0.85);
-}
-
-.contact-item svg {
-    width: 16px;
-    height: 16px;
-    color: var(--yellow-primary);
-    flex-shrink: 0;
-}
-
-.contact-item a {
-    color: inherit;
-    text-decoration: none;
-    padding: 0;
-    transform: none;
-}
-
-.contact-item a:hover {
-    color: var(--yellow-primary);
-    transform: none;
-}
-
-/* Priority Services */
-.priority-services {
-    grid-column: 2;
-}
-
-.service-link {
-    position: relative;
-}
-
-.service-link.popular::after {
-    content: "Popular";
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    background: var(--yellow-primary);
-    color: var(--charcoal);
-    font-size: 0.75rem;
-    font-weight: 600;
-    padding: 2px 8px;
-    border-radius: 12px;
-}
-
-/* Service Areas with Strategic Layout */
-.service-areas {
-    grid-column: 3;
-}
-
-.areas-primary {
-    margin-bottom: 20px;
-}
-
-.areas-primary li {
-    margin-bottom: 8px;
-}
-
-.areas-primary a {
-    font-weight: 500;
-}
-
-.areas-extended {
-    border-top: 1px solid rgba(255,255,255,0.1);
-    padding-top: 16px;
-}
-
-.areas-extended h4 {
-    color: rgba(255,255,255,0.7);
-    font-size: 0.875rem;
-    font-weight: 500;
-    margin-bottom: 12px;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-.areas-extended a {
-    font-size: 0.875rem;
-    color: rgba(255,255,255,0.7);
-}
-
-/* Quick Actions */
-.quick-actions {
-    grid-column: 4;
-}
-
-.cta-button {
-    background: var(--yellow-primary);
-    color: var(--charcoal);
-    padding: 16px 24px;
-    border: none;
-    border-radius: var(--border-radius);
-    font-weight: 600;
-    font-size: 0.95rem;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 16px;
-    transition: all 0.3s ease;
-}
-
-.cta-button:hover {
-    background: var(--yellow-hover);
-    transform: translateY(-2px);
-}
-
-.cta-secondary {
-    background: transparent;
-    border: 2px solid rgba(255,255,255,0.3);
-    color: var(--white);
-}
-
-.cta-secondary:hover {
-    border-color: var(--yellow-primary);
-    color: var(--yellow-primary);
-    background: transparent;
-}
-
-.business-hours {
-    margin-top: 24px;
-    padding: 20px;
-    background: rgba(255,255,255,0.05);
-    border-radius: var(--border-radius);
-    border-left: 4px solid var(--yellow-primary);
-}
-
-.business-hours h4 {
-    color: var(--yellow-primary);
-    font-size: 0.875rem;
-    font-weight: 600;
-    margin-bottom: 12px;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-.business-hours p {
-    color: rgba(255,255,255,0.9);
-    font-size: 0.875rem;
-    margin-bottom: 8px;
-}
-
-/* Footer Bottom */
-.footer-bottom {
-    border-top: 1px solid rgba(255,255,255,0.1);
-    padding: 32px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 16px;
-}
-
-.footer-bottom-left {
-    color: rgba(255,255,255,0.6);
-    font-size: 0.875rem;
-}
-
-.footer-bottom-right {
-    display: flex;
-    gap: 24px;
-    align-items: center;
-}
-
-.footer-bottom-right a {
-    color: rgba(255,255,255,0.6);
-    text-decoration: none;
-    font-size: 0.875rem;
-    transition: color 0.3s ease;
-}
-
-.footer-bottom-right a:hover {
-    color: var(--yellow-primary);
-}
-
-.social-links {
-    display: flex;
-    gap: 12px;
-}
-
-.social-link {
-    width: 36px;
-    height: 36px;
-    background: rgba(255,255,255,0.1);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-
-.social-link:hover {
-    background: var(--yellow-primary);
-    color: var(--charcoal);
-    transform: translateY(-2px);
-}
-
-.social-link svg {
-    width: 18px;
-    height: 18px;
-}
-
-/* Trust Badges */
-.trust-badges {
-    display: flex;
-    justify-content: center;
-    gap: 32px;
-    padding: 24px 0;
-    border-top: 1px solid rgba(255,255,255,0.1);
-    margin-top: 24px;
-}
-
-.trust-badge {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: rgba(255,255,255,0.8);
-    font-size: 0.875rem;
-    font-weight: 500;
-}
-
-.trust-badge svg {
-    width: 20px;
-    height: 20px;
-    color: var(--yellow-primary);
-}
-
-/* Mobile Responsive */
-@media (max-width: 968px) {
-    .footer-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 32px;
-    }
-
-    .brand-section {
-        grid-column: 1 / -1;
-    }
-}
-
-@media (max-width: 640px) {
-    .footer-main {
-        padding: 48px 24px 32px;
-    }
-
-    .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 32px;
-    }
-
-    .footer-bottom {
-        padding: 24px;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .trust-badges {
-        flex-wrap: wrap;
-        gap: 16px;
-    }
-
-    .service-link.popular::after {
-        position: static;
-        display: inline-block;
-        margin-left: 8px;
-        transform: none;
-    }
-}
+        @media (max-width: 768px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
 </style>
 </head>
 <body>
@@ -1225,136 +939,54 @@
         });
     </script>
     <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-main">
-            <div class="footer-grid">
-                <!-- Brand & Contact -->
-                <div class="footer-section brand-section">
-                    <h3 class="brand-logo">GoodHands</h3>
-                    <p class="brand-tagline">"Professional property maintenance and handyman services across Northern Rivers NSW. Quality workmanship, fair pricing, and reliable service you can count on."</p>
-                    
-                    <div class="contact-item">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                        </svg>
-                        <a href="tel:0481457271">0481 457271</a>
-                    </div>
-
-                    <div class="contact-item">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                            <polyline points="22,6 12,13 2,6"/>
-                        </svg>
-                        <a href="mailto:danhandywork@gmail.com">danhandywork@gmail.com</a>
-                    </div>
-
-                    <div class="contact-item">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                            <circle cx="12" cy="10" r="3"/>
-                        </svg>
-                        <span>Serving Northern Rivers NSW</span>
-                    </div>
+    <footer class="footer-main">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>GoodHands Handyman</h3>
+                    <p>Professional handyman services across Byron Bay and Northern Rivers. Quality workmanship, honest pricing, reliable service.</p>
+                    <p><strong>Phone:</strong> <a href="tel:0481457271">0481 457271</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:danhandywork@gmail.com">danhandywork@gmail.com</a></p>
                 </div>
 
-                <!-- Core Services -->
-                <div class="footer-section services-section">
-                    <h3>My Services</h3>
+                <div class="footer-section">
+                    <h3>Services</h3>
                     <ul>
-                        <li><a href="handyman-services-byron-bay.html" class="service-link">General Handyman</a></li>
-                        <li><a href="deck-restoration.html" class="service-link">Deck Restoration</a></li>
-                        <li><a href="deck-sanding.html" class="service-link">Deck Sanding</a></li>
-                        <li><a href="fence-repairs-ballina.html" class="service-link">Fence Repairs</a></li>
-                        <li><a href="gutter-cleaning.html" class="service-link popular">Gutter Cleaning</a></li>
-                        <li><a href="airbnb-maintenance.html" class="service-link">Airbnb Maintenance</a></li>
-                        <li><a href="property-manager-services.html" class="service-link">Property Management</a></li>
-                        <li><a href="emergency-repairs.html" class="service-link">Emergency Repairs</a></li>
+                        <li><a href="gutter-cleaning.html">Gutter Cleaning</a></li>
+                        <li><a href="deck-restoration.html">Deck Restoration</a></li>
+                        <li><a href="deck-sanding.html">Deck Sanding</a></li>
+                        <li><a href="fence-repairs-ballina.html">Fence Repairs</a></li>
+                        <li><a href="emergency-repairs.html">Emergency Repairs</a></li>
+                        <li><a href="handyman-services-byron-bay.html">General Handyman</a></li>
                     </ul>
                 </div>
 
-                <!-- Service Areas -->
-                <div class="footer-section service-areas">
-                    <h3>Service Areas</h3>
-                    <ul class="areas-list">
+                <div class="footer-section">
+                    <h3>Areas Served</h3>
+                    <ul>
                         <li><a href="handyman-byron-bay.html">Byron Bay</a></li>
                         <li><a href="handyman-ballina.html">Ballina</a></li>
                         <li><a href="handyman-lismore.html">Lismore</a></li>
-                        <li><a href="handyman-bangalow.html">Bangalow</a></li>
                         <li><a href="handyman-mullumbimby.html">Mullumbimby</a></li>
-                        <li><a href="handyman-tweed-heads.html">Tweed Heads</a></li>
-                        <li><a href="handyman-ocean-shores.html">Ocean Shores</a></li>
-                        <li><a href="handyman-lennox-head.html">Lennox Head</a></li>
-                        <li><a href="handyman-south-golden-beach.html">South Golden Beach</a></li>
+                        <li><a href="handyman-bangalow.html">Bangalow</a></li>
+                        <li><a href="areas.html">All Areas</a></li>
                     </ul>
                 </div>
 
-                <!-- Quick Actions -->
-                <div class="footer-section quick-actions">
-                    <h3>Get Started</h3>
-                    <a href="contact.html" class="cta-button">Get Free Quote</a>
-                    <a href="about.html" class="cta-button cta-secondary">About Me</a>
-                    
-                    <div class="business-hours">
-                        <h4>Response Times</h4>
-                        <p><strong>Emergency:</strong> Same day</p>
-                        <p><strong>General:</strong> Within 48 hours</p>
-                        <p><strong>Quotes:</strong> 24 hours</p>
-                        <p><strong>Weekend:</strong> Available</p>
-                    </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Dan</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                    </ul>
                 </div>
             </div>
 
-            <!-- Trust Signals -->
-            <div class="trust-badges">
-                <div class="trust-badge">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                        <path d="M9 12l2 2 4-4"/>
-                    </svg>
-                    <span>Fully Insured</span>
-                </div>
-                <div class="trust-badge">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="8" r="7"/>
-                        <polyline points="8.21,13.89 7,23 12,20 17,23 15.79,13.88"/>
-                    </svg>
-                    <span>Pride in Workmanship</span>
-                </div>
-                <div class="trust-badge">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                        <circle cx="12" cy="10" r="3"/>
-                    </svg>
-                    <span>Northern Rivers Local</span>
-                </div>
-                <div class="trust-badge">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
-                    </svg>
-                    <span>Same Week Service</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <div class="footer-bottom-left">
-                <p>&copy; 2024 GoodHands. All rights reserved. | ABN: 12 345 678 901</p>
-            </div>
-            <div class="footer-bottom-right">
-                <a href="privacy-policy.html">Privacy Policy</a>
-                <a href="terms-of-service.html">Terms of Service</a>
-                <div class="social-links">
-                    <a href="#" class="social-link" aria-label="Facebook">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                        </svg>
-                    </a>
-                    <a href="#" class="social-link" aria-label="Instagram">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987 6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.435-3.396-1.157l.027-.016c.436-.01.878-.061 1.298-.143.569-.111 1.07-.25 1.57-.333-.417-.749-.661-1.62-.661-2.539 0-2.956 2.393-5.35 5.35-5.35s5.35 2.394 5.35 5.35c0 .919-.244 1.79-.661 2.539.5.083 1.001.222 1.57.333.42.082.862.133 1.298.143l.027.016c-.948.722-2.099 1.157-3.396 1.157-1.297 0-2.448-.435-3.396-1.157-.948.722-2.099 1.157-3.396 1.157z"/>
-                        </svg>
-                    </a>
-                </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GoodHands Handyman. All rights reserved. | Byron Bay & Northern Rivers Handyman Services</p>
             </div>
         </div>
     </footer>
