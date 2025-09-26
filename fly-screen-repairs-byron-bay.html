@@ -394,50 +394,6 @@
             left: 0;
         }
 
-        /* Pricing Section */
-        .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .pricing-card {
-            background: var(--white);
-            border-radius: var(--border-radius-lg);
-            padding: 2rem;
-            text-align: center;
-            box-shadow: var(--shadow-md);
-            position: relative;
-            transition: transform 0.3s ease;
-        }
-
-        .pricing-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .pricing-card.featured {
-            border: 2px solid var(--yellow-primary);
-        }
-
-        .pricing-card .price {
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--yellow-primary);
-            margin-bottom: 0.5rem;
-        }
-
-        .pricing-card .service-name {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: var(--charcoal);
-            margin-bottom: 1rem;
-        }
-
-        .pricing-card .description {
-            color: var(--dark-grey);
-            margin-bottom: 1.5rem;
-        }
 
         /* Areas Section */
         .areas-list {
@@ -482,51 +438,6 @@
             color: var(--charcoal);
         }
 
-        /* Footer */
-        .footer-main {
-            background: var(--charcoal);
-            color: var(--white);
-            padding: 3rem 0 1rem;
-        }
-
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .footer-section h3 {
-            color: var(--yellow-primary);
-            margin-bottom: 1rem;
-            font-weight: 600;
-        }
-
-        .footer-section p, .footer-section li {
-            color: #CBD5E0;
-            margin-bottom: 0.5rem;
-        }
-
-        .footer-section ul {
-            list-style: none;
-        }
-
-        .footer-section a {
-            color: #CBD5E0;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .footer-section a:hover {
-            color: var(--yellow-primary);
-        }
-
-        .footer-bottom {
-            border-top: 1px solid #4A5568;
-            padding-top: 1rem;
-            text-align: center;
-            color: #CBD5E0;
-        }
 
         /* Mobile Responsiveness */
         @media (max-width: 768px) {
@@ -572,7 +483,7 @@
             }
         }
 
-        /* Professional Footer Styles */
+        /* Footer Styles */
         .footer-main {
             background: var(--charcoal);
             color: var(--white);
@@ -584,21 +495,28 @@
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
             margin-bottom: 2rem;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 20px;
         }
 
         .footer-section h3 {
             color: var(--yellow-primary);
             margin-bottom: 1rem;
             font-weight: 600;
+            font-size: 1.1rem;
         }
 
         .footer-section p, .footer-section li {
             color: #CBD5E0;
             margin-bottom: 0.5rem;
+            line-height: 1.6;
         }
 
         .footer-section ul {
             list-style: none;
+            padding: 0;
         }
 
         .footer-section a {
@@ -616,12 +534,16 @@
             padding-top: 1rem;
             text-align: center;
             color: #CBD5E0;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-left: 20px;
+            padding-right: 20px;
         }
 
         @media (max-width: 768px) {
             .footer-content {
                 grid-template-columns: 1fr;
-                gap: 32px;
+                gap: 2rem;
             }
         }
     </style>
@@ -795,50 +717,24 @@
         </div>
     </section>
 
-    <!-- Pricing Section -->
+    <!-- Get Quote Section -->
     <section class="content-section">
         <div class="container">
             <div class="section-header">
-                <h2>Fly Screen Repair Pricing</h2>
-                <p>Transparent pricing for all types of screen repairs</p>
+                <h2>Get Your Free Quote</h2>
+                <p>Every job is different - call me to discuss your specific screen repair needs</p>
             </div>
 
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <div class="price">$25-40</div>
-                    <div class="service-name">Small Hole Patches</div>
-                    <div class="description">Minor tears and holes, on-site repairs</div>
-                </div>
-
-                <div class="pricing-card featured">
-                    <div class="price">$80-120</div>
-                    <div class="service-name">Full Mesh Replacement</div>
-                    <div class="description">Complete re-meshing per screen, includes quality mesh</div>
-                </div>
-
-                <div class="pricing-card">
-                    <div class="price">$120-180</div>
-                    <div class="service-name">Screen Door Re-mesh</div>
-                    <div class="description">Full door re-meshing with frame repairs if needed</div>
-                </div>
-
-                <div class="pricing-card">
-                    <div class="price">$60-150</div>
-                    <div class="service-name">Frame Repairs</div>
-                    <div class="description">Hinge, handle, and frame restoration work</div>
-                </div>
-
-                <div class="pricing-card">
-                    <div class="price">$45-80</div>
-                    <div class="service-name">Sliding Door Service</div>
-                    <div class="description">Track cleaning, roller replacement, alignment</div>
-                </div>
-
-                <div class="pricing-card">
-                    <div class="price">$150-300</div>
-                    <div class="service-name">Security Screen Repair</div>
-                    <div class="description">Security mesh and lock mechanism repairs</div>
-                </div>
+            <div style="max-width: 600px; margin: 0 auto; text-align: center; background: var(--yellow-light); padding: 3rem 2rem; border-radius: var(--border-radius-lg);">
+                <h3 style="color: var(--charcoal); margin-bottom: 1rem; font-size: 1.5rem;">Why Call Instead of Pricing Online?</h3>
+                <ul style="list-style: none; text-align: left; color: var(--dark-grey); line-height: 1.8; margin-bottom: 2rem;">
+                    <li style="margin-bottom: 0.8rem; position: relative; padding-left: 2rem;">✓ Every screen is different - size, type, damage level</li>
+                    <li style="margin-bottom: 0.8rem; position: relative; padding-left: 2rem;">✓ I can give you options - patch vs full replacement</li>
+                    <li style="margin-bottom: 0.8rem; position: relative; padding-left: 2rem;">✓ Sometimes I can fix it on the spot for less</li>
+                    <li style="margin-bottom: 0.8rem; position: relative; padding-left: 2rem;">✓ I'll tell you honestly if it's worth repairing</li>
+                </ul>
+                <a href="tel:0481457271" style="background: var(--yellow-primary); color: var(--charcoal); padding: 1rem 2rem; border-radius: var(--border-radius); text-decoration: none; font-weight: 700; font-size: 1.2rem; display: inline-block; transition: all 0.3s ease;">📞 Call Dan: 0481 457271</a>
+                <p style="margin-top: 1rem; color: var(--medium-grey); font-size: 0.9rem;">Quick 5-minute chat - no obligation, honest advice</p>
             </div>
         </div>
     </section>
