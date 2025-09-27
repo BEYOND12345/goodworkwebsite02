@@ -678,6 +678,39 @@
             color: var(--yellow-primary);
         }
 
+        /* Photo Gallery */
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin: 48px 0;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s ease;
+            background: var(--white);
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
         /* Mobile Responsive */
         @media (max-width: 968px) {
             .content-grid {
@@ -688,6 +721,11 @@
             .services-grid {
                 grid-template-columns: 1fr;
                 gap: 24px;
+            }
+
+            .photo-gallery {
+                grid-template-columns: 1fr;
+                gap: 20px;
             }
 
             .footer-grid {
@@ -794,7 +832,6 @@
                     </div>
                     <h3 class="service-title">Built-in Storage Solutions</h3>
                     <p class="service-description">Custom wardrobes, under-stair storage, and built-in cabinetry designed to maximize space and complement your home's architecture.</p>
-                    <div class="service-price">From $800 per project</div>
                 </div>
 
                 <div class="service-card">
@@ -807,7 +844,6 @@
                     </div>
                     <h3 class="service-title">Custom Shelving Systems</h3>
                     <p class="service-description">Floating shelves, bookcase installations, and display shelving tailored to your specific needs and space requirements.</p>
-                    <div class="service-price">From $200 per linear meter</div>
                 </div>
 
                 <div class="service-card">
@@ -820,7 +856,6 @@
                     </div>
                     <h3 class="service-title">Outdoor Structures</h3>
                     <p class="service-description">Pergolas, arbors, outdoor storage boxes, and custom outdoor furniture built to withstand Northern Rivers weather.</p>
-                    <div class="service-price">From $600 per structure</div>
                 </div>
 
                 <div class="service-card">
@@ -833,7 +868,6 @@
                     </div>
                     <h3 class="service-title">Custom Furniture</h3>
                     <p class="service-description">Bespoke tables, benches, entertainment units, and furniture pieces designed specifically for your space and lifestyle.</p>
-                    <div class="service-price">From $400 per piece</div>
                 </div>
 
                 <div class="service-card">
@@ -847,7 +881,6 @@
                     </div>
                     <h3 class="service-title">Timber Feature Walls</h3>
                     <p class="service-description">Statement timber walls, wainscoting, and decorative wooden features that add character and warmth to your interior spaces.</p>
-                    <div class="service-price">From $120 per m²</div>
                 </div>
 
                 <div class="service-card">
@@ -860,7 +893,6 @@
                     </div>
                     <h3 class="service-title">Trim & Molding</h3>
                     <p class="service-description">Skirting boards, architraves, cornices, and decorative molding installation to add finishing touches to your renovation.</p>
-                    <div class="service-price">From $25 per linear meter</div>
                 </div>
             </div>
         </div>
@@ -878,6 +910,37 @@
                 </div>
                 <div class="content-image">
                     <img src="airbnb-maintenance-professional-service.jpg" alt="Custom carpentry work showing built-in storage solution" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Carpentry Work -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Recent Custom Carpentry Projects</h2>
+                <p class="section-subtitle">Before and after transformations across Northern Rivers NSW</p>
+            </div>
+
+            <div class="photo-gallery">
+                <div class="gallery-item">
+                    <img src="property-management-before-after-1.jpg" alt="Custom built-in storage before and after - Byron Bay" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="property-management-before-after-2.jpg" alt="Custom shelving installation before and after - Ballina" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="property-management-before-after-3.jpg" alt="Outdoor structure construction before and after - Lismore" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="property-management-before-after-4.jpg" alt="Custom furniture creation before and after - Mullumbimby" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="property-management-before-after-5.jpg" alt="Timber feature wall installation before and after - Bangalow" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="property-management-before-after-6.jpg" alt="Custom trim and molding before and after - Tweed Heads" loading="lazy">
                 </div>
             </div>
         </div>
