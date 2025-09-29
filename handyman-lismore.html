@@ -811,6 +811,133 @@
                 text-align: center;
             }
         }
+        /* Photo Gallery */
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin: 48px 0;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s ease;
+            background: var(--white);
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Testimonials */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 32px;
+            margin-top: 60px;
+        }
+
+        .testimonial-card {
+            background: var(--white);
+            border-radius: var(--border-radius-lg);
+            padding: 32px;
+            box-shadow: var(--shadow-md);
+            border: 2px solid var(--light-grey);
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            border-color: var(--yellow-primary);
+            background: var(--yellow-light);
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .testimonial-content {
+            margin-bottom: 24px;
+        }
+
+        .testimonial-content p {
+            font-style: italic;
+            color: var(--dark-grey);
+            line-height: 1.7;
+            font-size: 1.1rem;
+        }
+
+        .testimonial-author strong {
+            display: block;
+            color: var(--charcoal);
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .testimonial-author span {
+            color: var(--medium-grey);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* Content Grid */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+            margin-top: 60px;
+        }
+
+        .content-text h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--charcoal);
+            margin-bottom: 12px;
+            line-height: 1.3;
+        }
+
+        .content-text p {
+            color: var(--dark-grey);
+            line-height: 1.7;
+            margin-bottom: 24px;
+            font-size: 1rem;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .photo-gallery {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .testimonial-card {
+                padding: 24px;
+            }
+
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -978,6 +1105,112 @@
             <h2>Ready to Rebuild Your Lismore Property?</h2>
             <p>Get professional post-flood restoration and handyman services - understanding Lismore's rebuilding needs with flood-resilient solutions</p>
             <a href="contact.html" class="cta-button">Get Your Free Quote</a>
+        </div>
+    </section>
+
+    <!-- Recent Work Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Recent Work in Lismore</h2>
+                <p class="section-subtitle">Before and after projects across Lismore and surrounding areas</p>
+            </div>
+
+            <div class="photo-gallery">
+                <div class="gallery-item">
+                    <img src="deck-repair-before-after.png" alt="Deck restoration project Lismore heritage home" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="kitchen-repairs-before-after.png" alt="Kitchen repairs Lismore University area" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="rot-repair-before-after.png" alt="Flood recovery repairs Lismore CBD" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="about-work-photo-1.webp" alt="Heritage building maintenance Lismore" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="deck-restoration-byron-bay-before-after.webp" alt="Property maintenance Lismore residential" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="airbnb-maintenance-professional-service.jpg" alt="Professional handyman work Lismore NSW" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Lismore Customers Say</h2>
+                <p class="section-subtitle">Real feedback from Lismore residents and businesses</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"As a property manager in Lismore, having a reliable handyman is essential. Daniel handles repairs quickly and keeps tenants happy. A real lifesaver."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Emma Carter</strong>
+                        <span>Property Manager – Lismore</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"After the floods, Daniel helped us get our heritage home back together. Professional work and really understood the challenges of older Lismore properties."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Robert and Helen Mitchell</strong>
+                        <span>Heritage Home – Lismore CBD</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Quick emergency repair when our kitchen tap started flooding. Daniel came same day and sorted it perfectly. Exactly what you need in Lismore."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Sarah Wilson</strong>
+                        <span>Emergency Repairs – East Lismore</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Common Questions from Lismore Customers</h2>
+                <p class="section-subtitle">Everything you need to know about handyman services in Lismore</p>
+            </div>
+
+            <div class="content-grid">
+                <div class="content-text">
+                    <h3>Do you work on heritage buildings in Lismore?</h3>
+                    <p>Yes! Lismore has beautiful heritage homes and I understand the special care they need. I work with appropriate materials and techniques for older properties.</p>
+
+                    <h3>How quickly can you help with flood recovery repairs?</h3>
+                    <p>Emergency and flood damage repairs are priority. I understand Lismore's flood challenges and can usually respond same day or next day for urgent issues.</p>
+
+                    <h3>Do you service the University area?</h3>
+                    <p>Absolutely. From Lismore CBD to Southern Cross University area, I cover all of Lismore and surrounding suburbs.</p>
+                </div>
+                <div class="content-text">
+                    <h3>What areas around Lismore do you cover?</h3>
+                    <p>All of Lismore including CBD, East Lismore, South Lismore, Girards Hill, plus surrounding areas like Nimbin, Casino, Kyogle within reasonable distance.</p>
+
+                    <h3>Can you help with rental property maintenance?</h3>
+                    <p>Yes! I work with several Lismore property managers and understand tenant needs. Quick, quality repairs that keep everyone happy.</p>
+
+                    <h3>What's your experience with Lismore's weather challenges?</h3>
+                    <p>Born and raised in Northern Rivers. I know what materials work in our climate, how to prevent moisture issues, and proper flood-resistant repairs.</p>
+                </div>
+            </div>
         </div>
     </section>
 
