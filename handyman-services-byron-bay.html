@@ -163,6 +163,54 @@
             color: var(--yellow-primary);
         }
 
+        /* Testimonials */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 32px;
+            margin-top: 60px;
+        }
+
+        .testimonial-card {
+            background: var(--white);
+            border-radius: var(--border-radius-lg);
+            padding: 32px;
+            box-shadow: var(--shadow-md);
+            border: 2px solid var(--light-grey);
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            border-color: var(--yellow-primary);
+            background: var(--yellow-light);
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .testimonial-content {
+            margin-bottom: 24px;
+        }
+
+        .testimonial-content p {
+            font-style: italic;
+            color: var(--dark-grey);
+            line-height: 1.7;
+            font-size: 1.1rem;
+        }
+
+        .testimonial-author strong {
+            display: block;
+            color: var(--charcoal);
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .testimonial-author span {
+            color: var(--medium-grey);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
         /* Mobile Responsive */
         @media (max-width: 768px) {
             .nav-menu {
@@ -913,6 +961,19 @@
                 gap: 16px;
             }
         }
+
+        /* Mobile Responsive for Testimonials */
+        @media (max-width: 768px) {
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .testimonial-card {
+                padding: 24px;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -1402,6 +1463,68 @@
             <h2>Stop Putting It Off - Let's Get It Done</h2>
             <p>That list of jobs isn't getting any shorter by itself. Let's knock them out. Call me for a free quote - no pressure, no BS.</p>
             <a href="tel:0481457271" class="cta-button">Call 0481 457271</a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Northern Rivers Customers Say</h2>
+                <p class="section-subtitle">Real feedback from happy customers across Byron Bay to Ballina</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Daniel built us a new deck in Byron Bay and it looks fantastic. He was easy to work with, turned up on time, and the workmanship is top notch."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Sarah Thompson</strong>
+                        <span>Decking – Byron Bay</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"We needed custom shelving for our garage in Lennox and Daniel made the whole process simple. Solid work, quick turnaround, and a fair price."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Mark and Jess Reynolds</strong>
+                        <span>Custom Carpentry – Lennox Head</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Called Daniel for some urgent door and fence repairs in Ballina. He fixed everything the same week and saved us a big headache. Highly recommend."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Tom Hughes</strong>
+                        <span>Repairs – Ballina</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"As a property manager in Lismore, having a reliable handyman is essential. Daniel handles repairs quickly and keeps tenants happy. A real lifesaver."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Emma Carter</strong>
+                        <span>Property Managers – Lismore</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"We've used Daniel a few times now around the Northern Rivers. Every job is done properly with care and he's always friendly and easy to deal with."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Luke and Mia Walters</strong>
+                        <span>General Handyman – Northern Rivers</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
