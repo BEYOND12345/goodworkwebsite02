@@ -209,8 +209,8 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(45, 55, 72, 0.7), rgba(74, 85, 104, 0.7)), 
-                        url('decking_7_upscaled.webp');
+            background: linear-gradient(rgba(45, 55, 72, 0.7), rgba(74, 85, 104, 0.7)),
+                        url('about-hero-background.avif');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -702,6 +702,201 @@
             color: var(--yellow-primary);
         }
 
+        /* Recent Work Gallery Styles */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin-top: 40px;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s ease;
+            aspect-ratio: 4/3;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            color: var(--white);
+            padding: 24px 20px 16px;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+
+        .gallery-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 4px;
+        }
+
+        .gallery-description {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* Testimonials Styles */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 32px;
+            margin-top: 40px;
+        }
+
+        .testimonial-card {
+            background: var(--white);
+            border-radius: var(--border-radius-lg);
+            padding: 32px;
+            box-shadow: var(--shadow-md);
+            border-left: 4px solid var(--yellow-primary);
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .testimonial-content {
+            font-style: italic;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: var(--dark-grey);
+            margin-bottom: 24px;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .testimonial-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--yellow-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: var(--yellow-primary);
+            font-size: 1.2rem;
+        }
+
+        .testimonial-info h4 {
+            font-weight: 700;
+            color: var(--charcoal);
+            margin-bottom: 4px;
+        }
+
+        .testimonial-info p {
+            color: var(--medium-grey);
+            font-size: 0.9rem;
+        }
+
+        .testimonial-rating {
+            display: flex;
+            gap: 2px;
+            margin-bottom: 16px;
+        }
+
+        .star {
+            color: var(--yellow-primary);
+            font-size: 1.1rem;
+        }
+
+        /* FAQ Styles */
+        .faq-container {
+            max-width: 800px;
+            margin: 40px auto 0;
+        }
+
+        .faq-item {
+            border: 1px solid var(--light-grey);
+            border-radius: var(--border-radius);
+            margin-bottom: 16px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            border-color: var(--yellow-primary);
+        }
+
+        .faq-question {
+            background: var(--bg-subtle);
+            padding: 20px 24px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--charcoal);
+            transition: all 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: var(--yellow-light);
+        }
+
+        .faq-question.active {
+            background: var(--yellow-primary);
+            color: var(--charcoal);
+        }
+
+        .faq-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .faq-question.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            padding: 0 24px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq-answer.active {
+            padding: 20px 24px;
+            max-height: 200px;
+        }
+
+        .faq-answer p {
+            color: var(--dark-grey);
+            line-height: 1.6;
+        }
+
         /* Mobile Responsive */
         @media (max-width: 968px) {
             .content-grid {
@@ -942,6 +1137,211 @@
         </div>
     </section>
 
+    <!-- Recent Work Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Recent Work Gallery</h2>
+                <p class="section-subtitle">Quality handyman work across Northern Rivers - before and after transformations</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="decking_3_upscaled.webp" alt="Deck restoration before" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-title">Deck Restoration</div>
+                        <div class="gallery-description">Weather-damaged timber restored to pristine condition</div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="before_fence_repair.avif" alt="Fence repair before" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-title">Fence Repairs</div>
+                        <div class="gallery-description">Storm damage fixed with quality materials</div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="kitchen_door_repair_after.avif" alt="Kitchen door repair after" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-title">Kitchen Doors</div>
+                        <div class="gallery-description">Perfect alignment and smooth operation restored</div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="gutter_cleaning_before.avif" alt="Gutter cleaning before" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-title">Gutter Cleaning</div>
+                        <div class="gallery-description">Debris removal and downpipe clearing</div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="custom_carpentry_finished.avif" alt="Custom carpentry finished" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-title">Custom Carpentry</div>
+                        <div class="gallery-description">Bespoke solutions for unique requirements</div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="painting_project_complete.avif" alt="Painting project complete" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-title">Painting Services</div>
+                        <div class="gallery-description">Professional finish with quality materials</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Northern Rivers Customers Say</h2>
+                <p class="section-subtitle">Real feedback from handyman jobs across the region</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <div class="testimonial-content">
+                        "Dan fixed my kitchen doors perfectly - they'd been sticking for months. Great communication, arrived on time, and cleaned up afterwards. Will definitely use again."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">M</div>
+                        <div class="testimonial-info">
+                            <h4>Michael</h4>
+                            <p>Byron Bay</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <div class="testimonial-content">
+                        "Excellent deck restoration work. Dan knows his stuff when it comes to coastal conditions. The finish has held up beautifully through the wet season."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">S</div>
+                        <div class="testimonial-info">
+                            <h4>Sarah</h4>
+                            <p>Brunswick Heads</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <div class="testimonial-content">
+                        "Quick response for fence repairs after the storm. Professional job at a fair price. Highly recommend for any maintenance needs around Northern Rivers."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">J</div>
+                        <div class="testimonial-info">
+                            <h4>James</h4>
+                            <p>Mullumbimby</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">South Golden Beach Handyman FAQ</h2>
+                <p class="section-subtitle">Common questions about handyman services in South Golden Beach</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Do you service South Golden Beach regularly?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>I'm expanding my services to include more work in the tranquil South Golden Beach area. I understand the unique challenges of this secluded coastal location and the quality workmanship expected in this premium beachfront community.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Do you work on beachfront and canal properties?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely. Whether your property faces the beach or canal system, I understand the specific maintenance needs of waterfront homes. This includes salt air protection, marine-grade materials, and moisture management systems.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>How do you handle the secluded location for materials?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>I plan carefully for South Golden Beach jobs, ensuring all materials and tools are brought in one trip to minimize disruption. I understand the access considerations and work efficiently to respect the peaceful community environment.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>What's your response time for South Golden Beach jobs?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Same week service for most jobs, same day for emergencies. I'm building my presence in South Golden Beach and prioritize reliable service that meets the high standards expected in this exclusive coastal community.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Do you work on luxury holiday rental properties?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, I understand the importance of maintaining premium properties to the highest standards. I can handle luxury finishes, high-end fixtures, and ensure all work maintains the upscale character that South Golden Beach guests expect.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Do you understand coastal environmental considerations?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Definitely. Working near sensitive coastal environments requires careful material selection and waste management. I ensure all work complies with environmental guidelines while protecting the natural beauty that makes South Golden Beach special.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
@@ -997,8 +1397,9 @@
                             <li><a href="emergency-repairs.html" class="service-link">Emergency Repairs</a></li>
                             <li><a href="airbnb-maintenance.html" class="service-link">Airbnb Maintenance</a></li>
                             <li><a href="handyman-services-byron-bay.html" class="service-link">All Services</a></li>
-                                                <li><a href="property-manager-services.html" class="service-link">Property Management</a></li>
-                    </ul>
+                                                <li><a href="fly-screen-repairs.html" class="service-link">Fly Screen Repairs</a></li>
+                            <li><a href="property-manager-services.html" class="service-link">Property Management</a></li>
+                        </ul>
                     </div>
 
                     <!-- Service Areas -->
@@ -1014,8 +1415,7 @@
                             <li><a href="handyman-ocean-shores.html">Ocean Shores</a></li>
                             <li><a href="handyman-lennox-head.html">Lennox Head</a></li>
                             <li><a href="handyman-south-golden-beach.html">South Golden Beach</a></li>
-                                                <li><a href="property-manager-services.html" class="service-link">Property Management</a></li>
-                    </ul>
+                        </ul>
                     </div>
 
                     <!-- Quick Actions -->
@@ -1120,6 +1520,24 @@
                 }
             }
         });
+
+        // FAQ Toggle Functionality
+        function toggleFaq(element) {
+            const answer = element.nextElementSibling;
+            const isActive = element.classList.contains('active');
+
+            // Close all FAQs
+            document.querySelectorAll('.faq-question').forEach(q => {
+                q.classList.remove('active');
+                q.nextElementSibling.classList.remove('active');
+            });
+
+            // Open clicked FAQ if it wasn't active
+            if (!isActive) {
+                element.classList.add('active');
+                answer.classList.add('active');
+            }
+        }
     </script>
 </body>
 </html>

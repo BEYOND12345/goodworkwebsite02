@@ -105,32 +105,20 @@
 
 <url>
   <loc>https://goodhandshandyman.com.au/handyman-lennox-head.html</loc>
-  <lastmod>2025-09-14</lastmod>
+  <lastmod>2025-10-03</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
 </url>
 
-<!-- Emergency Service Pages -->
 <url>
-  <loc>https://goodhandshandyman.com.au/emergency-handyman-byron-bay.html</loc>
-  <lastmod>2025-09-10</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.9</priority>
+  <loc>https://goodhandshandyman.com.au/handyman-south-golden-beach.html</loc>
+  <lastmod>2025-10-03</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
 </url>
 
-<url>
-  <loc>https://goodhandshandyman.com.au/emergency-handyman-ballina.html</loc>
-  <lastmod>2025-09-10</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.9</priority>
-</url>
-
-<url>
-  <loc>https://goodhandshandyman.com.au/emergency-handyman-lismore.html</loc>
-  <lastmod>2025-09-10</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.9</priority>
-</url>
+<!-- Emergency Service Pages - Consolidated to main page -->
+<!-- Note: emergency-handyman-byron-bay.html, emergency-handyman-ballina.html, and emergency-handyman-lismore.html now redirect to emergency-repairs.html -->
 
 <url>
   <loc>https://goodhandshandyman.com.au/emergency-door-repair-byron-bay.html</loc>
@@ -149,9 +137,9 @@
 
 <url>
   <loc>https://goodhandshandyman.com.au/emergency-repairs.html</loc>
-  <lastmod>2025-09-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.7</priority>
+  <lastmod>2025-10-03</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
 </url>
 
 <url>

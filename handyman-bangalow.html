@@ -169,8 +169,8 @@
         .hero {
             height: 70vh;
             min-height: 500px;
-            background: linear-gradient(rgba(45, 55, 72, 0.7), rgba(45, 55, 72, 0.7)), 
-                        url('handyman-bangalow-hero-bg.avif');
+            background: linear-gradient(rgba(45, 55, 72, 0.7), rgba(45, 55, 72, 0.7)),
+                        url('about-hero-background.avif');
             background-size: cover;
             background-position: center;
             display: flex;
@@ -586,6 +586,87 @@
             text-decoration: none;
         }
 
+        .cta-button-footer {
+            background: var(--yellow-primary);
+            color: var(--charcoal);
+            padding: 16px 24px;
+            border: none;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button-footer:hover {
+            background: var(--yellow-hover);
+            transform: translateY(-2px);
+        }
+
+        .cta-secondary {
+            background: transparent;
+            border: 2px solid rgba(255,255,255,0.3);
+            color: var(--white);
+        }
+
+        .cta-secondary:hover {
+            border-color: var(--yellow-primary);
+            color: var(--yellow-primary);
+            background: transparent;
+        }
+
+        .business-hours {
+            margin-top: 24px;
+            padding: 20px;
+            background: rgba(255,255,255,0.05);
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--yellow-primary);
+        }
+
+        .business-hours h4 {
+            color: var(--yellow-primary);
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .business-hours p {
+            color: rgba(255,255,255,0.9);
+            font-size: 0.875rem;
+            margin-bottom: 8px;
+        }
+
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            padding: 24px 0;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin-top: 24px;
+        }
+
+        .trust-badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: rgba(255,255,255,0.8);
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .trust-badge svg {
+            width: 20px;
+            height: 20px;
+            color: var(--yellow-primary);
+        }
+
         .footer-bottom {
             display: flex;
             justify-content: space-between;
@@ -593,6 +674,201 @@
             padding-top: 32px;
             color: rgba(255,255,255,0.6);
             font-size: 0.875rem;
+        }
+
+        /* Recent Work Gallery Styles */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin-top: 40px;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s ease;
+            aspect-ratio: 4/3;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            color: var(--white);
+            padding: 24px 20px 16px;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+
+        .gallery-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 4px;
+        }
+
+        .gallery-description {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* Testimonials Styles - Enhanced */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 32px;
+            margin-top: 40px;
+        }
+
+        .testimonial-card {
+            background: var(--white);
+            border-radius: var(--border-radius-lg);
+            padding: 32px;
+            box-shadow: var(--shadow-md);
+            border-left: 4px solid var(--yellow-primary);
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .testimonial-content {
+            font-style: italic;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: var(--dark-grey);
+            margin-bottom: 24px;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .testimonial-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--yellow-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: var(--yellow-primary);
+            font-size: 1.2rem;
+        }
+
+        .testimonial-info h4 {
+            font-weight: 700;
+            color: var(--charcoal);
+            margin-bottom: 4px;
+        }
+
+        .testimonial-info p {
+            color: var(--medium-grey);
+            font-size: 0.9rem;
+        }
+
+        .testimonial-rating {
+            display: flex;
+            gap: 2px;
+            margin-bottom: 16px;
+        }
+
+        .star {
+            color: var(--yellow-primary);
+            font-size: 1.1rem;
+        }
+
+        /* FAQ Styles */
+        .faq-container {
+            max-width: 800px;
+            margin: 40px auto 0;
+        }
+
+        .faq-item {
+            border: 1px solid var(--light-grey);
+            border-radius: var(--border-radius);
+            margin-bottom: 16px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            border-color: var(--yellow-primary);
+        }
+
+        .faq-question {
+            background: var(--bg-subtle);
+            padding: 20px 24px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--charcoal);
+            transition: all 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: var(--yellow-light);
+        }
+
+        .faq-question.active {
+            background: var(--yellow-primary);
+            color: var(--charcoal);
+        }
+
+        .faq-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .faq-question.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            padding: 0 24px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq-answer.active {
+            padding: 20px 24px;
+            max-height: 200px;
+        }
+
+        .faq-answer p {
+            color: var(--dark-grey);
+            line-height: 1.6;
         }
 
         /* Mobile Responsive */
@@ -785,6 +1061,210 @@
         </div>
     </section>
 
+    <!-- Recent Work Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Recent Work Gallery</h2>
+                <p class="section-subtitle">Quality handyman work across Northern Rivers - before and after transformations</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="decking_3_upscaled.webp" alt="Deck restoration before" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-title">Deck Restoration</div>
+                        <div class="gallery-description">Weather-damaged timber restored to pristine condition</div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="before_fence_repair.avif" alt="Fence repair before" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-title">Fence Repairs</div>
+                        <div class="gallery-description">Storm damage fixed with quality materials</div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="kitchen_door_repair_after.avif" alt="Kitchen door repair after" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-title">Kitchen Doors</div>
+                        <div class="gallery-description">Perfect alignment and smooth operation restored</div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="gutter_cleaning_before.avif" alt="Gutter cleaning before" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-title">Gutter Cleaning</div>
+                        <div class="gallery-description">Debris removal and downpipe clearing</div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="custom_carpentry_finished.avif" alt="Custom carpentry finished" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-title">Custom Carpentry</div>
+                        <div class="gallery-description">Bespoke solutions for unique requirements</div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="painting_project_complete.avif" alt="Painting project complete" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-title">Painting Services</div>
+                        <div class="gallery-description">Professional finish with quality materials</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Testimonials Section -->
+    <section class="section" style="background: var(--bg-subtle);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Northern Rivers Customers Say</h2>
+                <p class="section-subtitle">Real feedback from handyman jobs across the region</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <div class="testimonial-content">
+                        "Dan has been our go-to handyman for three years. He understands our heritage property's needs and always uses appropriate materials and methods. Professional, reliable, and fair pricing."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">P</div>
+                        <div class="testimonial-info">
+                            <h4>Patricia & James</h4>
+                            <p>Bangalow</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <div class="testimonial-content">
+                        "Excellent handyman service. Dan fixed our deck, repaired interior doors, and installed new light fittings. Quality workmanship and knows local building requirements."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">R</div>
+                        <div class="testimonial-info">
+                            <h4>Rachel</h4>
+                            <p>Bangalow</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <div class="testimonial-content">
+                        "Quick response for fence repairs after the storm. Professional job at a fair price. Highly recommend for any maintenance needs around Northern Rivers."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">J</div>
+                        <div class="testimonial-info">
+                            <h4>James</h4>
+                            <p>Mullumbimby</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Bangalow Handyman FAQ</h2>
+                <p class="section-subtitle">Common questions about handyman services in Bangalow village</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Do you regularly service Bangalow properties?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>I'm expanding my services to include more work in the charming village of Bangalow. I appreciate the character of heritage homes and understand the requirements for maintaining properties in this beautiful area.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Do you work on heritage and character homes?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely. Bangalow has many beautiful heritage properties that require specialized care. I use appropriate materials and techniques that respect the character and historical significance of older homes.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Do you understand council requirements for Bangalow?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, I'm familiar with Byron Shire Council requirements and heritage overlay considerations that apply to many Bangalow properties. I ensure all work complies with local regulations.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>What's your response time for Bangalow jobs?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Same week service for most jobs, same day for emergencies. I'm building strong relationships in the Bangalow community and prioritize reliable service for all village properties.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Do you have local supplier relationships?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, I work with trusted local suppliers who understand the quality materials needed for both heritage and modern properties in the Byron Shire area, ensuring the best outcomes for your project.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>What types of properties do you service in Bangalow?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>From heritage homes in the village center to modern rural properties on the outskirts, I handle all property types. Whether it's a federation cottage or contemporary build, I adapt my approach to suit each property's unique needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Final CTA Section -->
     <section class="final-cta">
         <div class="container">
@@ -799,26 +1279,6 @@
         <div class="container">
             <div class="footer-main">
                 <div class="footer-grid">
-                    <div class="brand-section">
-                        <div class="brand-logo">GoodHands</div>
-                        <p class="brand-tagline">Professional handyman services across Northern Rivers NSW</p>
-                        
-                        <div class="contact-item">
-                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-                            </svg>
-                            <a href="tel:0481457271">0481 457271</a>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                            </svg>
-                            <a href="mailto:danhandywork@gmail.com">danhandywork@gmail.com</a>
-                        </div>
-                    </div>
-                    
-                    <!-- Brand & Contact -->
                     <div class="footer-section brand-section">
                         <a href="index.html" class="brand-logo">GoodHands</a>
                         <p class="brand-tagline">Professional handyman services across Northern Rivers NSW</p>
@@ -856,8 +1316,9 @@
                             <li><a href="emergency-repairs.html" class="service-link">Emergency Repairs</a></li>
                             <li><a href="airbnb-maintenance.html" class="service-link">Airbnb Maintenance</a></li>
                             <li><a href="handyman-services-byron-bay.html" class="service-link">All Services</a></li>
-                                                <li><a href="property-manager-services.html" class="service-link">Property Management</a></li>
-                    </ul>
+                                                <li><a href="fly-screen-repairs.html" class="service-link">Fly Screen Repairs</a></li>
+                            <li><a href="property-manager-services.html" class="service-link">Property Management</a></li>
+                        </ul>
                     </div>
 
                     <!-- Service Areas -->
@@ -873,16 +1334,15 @@
                             <li><a href="handyman-ocean-shores.html">Ocean Shores</a></li>
                             <li><a href="handyman-lennox-head.html">Lennox Head</a></li>
                             <li><a href="handyman-south-golden-beach.html">South Golden Beach</a></li>
-                                                <li><a href="property-manager-services.html" class="service-link">Property Management</a></li>
-                    </ul>
+                        </ul>
                     </div>
 
                     <!-- Quick Actions -->
                     <div class="footer-section quick-actions">
                         <h3>Get Started</h3>
-                        <a href="get-quote.html" class="cta-button">Get Free Quote</a>
-                        <a href="about-dan-byron-bay-handyman.html" class="cta-button cta-secondary">About Me</a>
-                        
+                        <a href="get-quote.html" class="cta-button-footer">Get Free Quote</a>
+                        <a href="about-dan-byron-bay-handyman.html" class="cta-button-footer cta-secondary">About Me</a>
+
                         <div class="business-hours">
                             <h4>Response Times</h4>
                             <p><strong>Emergency:</strong> Same day</p>
@@ -894,36 +1354,36 @@
                 </div>
             </div>
             
-            <!-- Trust Signals -->
-            <div class="trust-badges">
-                <div class="trust-badge">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                        <path d="M9 12l2 2 4-4"/>
-                    </svg>
-                    <span>Fully Insured</span>
+                <!-- Trust Signals -->
+                <div class="trust-badges">
+                    <div class="trust-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="M9 12l2 2 4-4"/>
+                        </svg>
+                        <span>Fully Insured</span>
+                    </div>
+                    <div class="trust-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="8" r="7"/>
+                            <polyline points="8.21,13.89 7,23 12,20 17,23 15.79,13.88"/>
+                        </svg>
+                        <span>Pride in Workmanship</span>
+                    </div>
+                    <div class="trust-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <span>Northern Rivers Local</span>
+                    </div>
+                    <div class="trust-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                        </svg>
+                        <span>Same Week Service</span>
+                    </div>
                 </div>
-                <div class="trust-badge">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="8" r="7"/>
-                        <polyline points="8.21,13.89 7,23 12,20 17,23 15.79,13.88"/>
-                    </svg>
-                    <span>Pride in Workmanship</span>
-                </div>
-                <div class="trust-badge">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                        <circle cx="12" cy="10" r="3"/>
-                    </svg>
-                    <span>Northern Rivers Local</span>
-                </div>
-                <div class="trust-badge">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
-                    </svg>
-                    <span>Same Week Service</span>
-                </div>
-            </div>
         </div>
 
         <div class="footer-bottom">
@@ -966,11 +1426,29 @@
         document.addEventListener('click', function(event) {
             const mobileMenu = document.getElementById('mobileMenu');
             const menuBtn = document.querySelector('.mobile-menu-btn');
-            
-            if (!mobileMenu.contains(event.target) && !menuBtn.contains(event.target)) {
+
+            if (mobileMenu && menuBtn && !mobileMenu.contains(event.target) && !menuBtn.contains(event.target)) {
                 mobileMenu.classList.remove('active');
             }
         });
+
+        // FAQ Toggle Functionality
+        function toggleFaq(element) {
+            const answer = element.nextElementSibling;
+            const isActive = element.classList.contains('active');
+
+            // Close all FAQs
+            document.querySelectorAll('.faq-question').forEach(q => {
+                q.classList.remove('active');
+                q.nextElementSibling.classList.remove('active');
+            });
+
+            // Open clicked FAQ if it wasn't active
+            if (!isActive) {
+                element.classList.add('active');
+                answer.classList.add('active');
+            }
+        }
     </script>
 </body>
 </html>
