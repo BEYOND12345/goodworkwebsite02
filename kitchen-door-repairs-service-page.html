@@ -1166,10 +1166,8 @@
             </div>
             <p style="margin-bottom: 32px; color: var(--dark-grey);">Tell us about your kitchen door problems</p>
             
-            <form id="bookingForm" action="https://formsubmit.co/danhandywork@gmail.com" method="POST">
-                <input type="hidden" name="_subject" value="New Quote Request - Kitchen Door Repairs">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_template" value="table">
+            <form id="bookingForm" name="kitchen-quote" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="kitchen-quote">
 
                 <div class="form-group">
                     <label for="name" class="form-label">Your Name</label>

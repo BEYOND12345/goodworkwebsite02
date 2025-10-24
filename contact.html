@@ -993,10 +993,8 @@
                 <!-- Contact Form -->
                 <div class="contact-form">
                     <h2>Request Your Free Quote</h2>
-                    <form action="https://formsubmit.co/danhandywork@gmail.com" method="POST">
-                        <input type="hidden" name="_subject" value="New Contact Form Submission - GoodHands">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_template" value="table">
+                    <form name="contact" method="POST" data-netlify="true">
+                        <input type="hidden" name="form-name" value="contact">
 
                         <div class="form-group">
                             <label for="name">Your Name *</label>

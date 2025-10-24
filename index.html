@@ -900,10 +900,8 @@
             </div>
             <p style="margin-bottom: 32px; color: var(--dark-grey);">Tell me what you need help with around your place</p>
             
-            <form id="bookingForm" action="https://formsubmit.co/danhandywork@gmail.com" method="POST">
-                <input type="hidden" name="_subject" value="New Quote Request - Homepage">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_template" value="table">
+            <form id="bookingForm" name="homepage-quote" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="homepage-quote">
 
                 <div class="form-group">
                     <label for="name" class="form-label">Your Name</label>
