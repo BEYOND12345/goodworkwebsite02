@@ -900,87 +900,26 @@
             </div>
             <p style="margin-bottom: 32px; color: var(--dark-grey);">Tell me what you need help with around your place</p>
             
-            <form id="bookingForm" name="homepage-quote" method="POST" data-netlify="true">
-                <input type="hidden" name="form-name" value="homepage-quote">
+            <div style="padding: 20px 0;">
+                <p style="margin-bottom: 32px; color: var(--dark-grey); line-height: 1.7;">Choose the best way to contact Dan:</p>
 
-                <div class="form-group">
-                    <label for="name" class="form-label">Your Name</label>
-                    <input type="text" id="name" name="name" class="form-input" required>
+                <a href="tel:0481457271" class="submit-btn" style="display: block; text-align: center; text-decoration: none; margin-bottom: 16px;">
+                    📞 Call Dan: 0481 457271
+                </a>
+
+                <a href="mailto:danhandywork@gmail.com?subject=Handyman Quote Request&body=Hi Dan,%0D%0A%0D%0AI need help with:%0D%0A%0D%0ALocation:%0D%0A%0D%0ABest time to call:%0D%0A%0D%0AThanks!" class="submit-btn" style="display: block; text-align: center; text-decoration: none; background: white; border: 2px solid var(--yellow-primary); color: var(--charcoal);">
+                    ✉️ Send Email Quote Request
+                </a>
+
+                <div style="margin-top: 32px; padding: 20px; background: var(--yellow-light); border-radius: 12px;">
+                    <p style="font-size: 0.9rem; color: var(--dark-grey); margin: 0; line-height: 1.6;">
+                        <strong>Response Times:</strong><br>
+                        Emergency: Same day<br>
+                        General work: Within 48 hours<br>
+                        Quotes: 24 hours
+                    </p>
                 </div>
-                
-                <div class="form-group">
-                    <label for="phone" class="form-label">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" class="form-input" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="email" class="form-label">Email Address</label>
-                    <input type="email" id="email" name="email" class="form-input" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="location" class="form-label">Northern Rivers Location</label>
-                    <select id="location" name="location" class="form-select" required>
-                        <option value="">Select your area</option>
-                        <option value="byron-bay">Byron Bay</option>
-                        <option value="ballina">Ballina</option>
-                        <option value="lismore">Lismore</option>
-                        <option value="tweed-heads">Tweed Heads</option>
-                        <option value="mullumbimby">Mullumbimby</option>
-                        <option value="bangalow">Bangalow</option>
-                        <option value="suffolk-park">Suffolk Park</option>
-                        <option value="ocean-shores">Ocean Shores</option>
-                        <option value="lennox-head">Lennox Head</option>
-                        <option value="alstonville">Alstonville</option>
-                        <option value="cabarita-beach">Cabarita Beach</option>
-                        <option value="other">Other Northern Rivers area</option>
-                    </select>
-                </div>
-                
-                <div class="form-group">
-                    <label for="service" class="form-label">Service Required</label>
-                    <select id="service" name="service" class="form-select" required>
-                        <option value="">Select service type</option>
-                        <option value="kitchen-repairs">Kitchen door repairs</option>
-                        <option value="deck-restoration">Deck restoration</option>
-                        <option value="gutter-cleaning">Gutter cleaning</option>
-                        <option value="fence-installation">Fence installation/repairs</option>
-                        <option value="emergency-repairs">Emergency repairs</option>
-                        <option value="holiday-rental">Holiday rental maintenance</option>
-                        <option value="general-handyman">General handyman work</option>
-                        <option value="other">Other (please describe below)</option>
-                    </select>
-                </div>
-                
-                <div class="form-group">
-                    <label for="property-type" class="form-label">Property Type</label>
-                    <select id="property-type" name="property-type" class="form-select" required>
-                        <option value="">Select property type</option>
-                        <option value="residential">Residential home</option>
-                        <option value="commercial">Commercial property</option>
-                        <option value="holiday-rental">Holiday rental/Airbnb</option>
-                        <option value="rental-property">Rental property</option>
-                    </select>
-                </div>
-                
-                <div class="form-group">
-                    <label for="details" class="form-label">Project Details</label>
-                    <textarea id="details" name="details" class="form-textarea" placeholder="Please describe what you need help with..."></textarea>
-                </div>
-                
-                <div class="form-group">
-                    <label for="preferred-time" class="form-label">Preferred Contact Time</label>
-                    <select id="preferred-time" name="preferred-time" class="form-select" required>
-                        <option value="">Select preferred time</option>
-                        <option value="morning">Morning (8am-12pm)</option>
-                        <option value="afternoon">Afternoon (12pm-5pm)</option>
-                        <option value="evening">Evening (5pm-7pm)</option>
-                        <option value="anytime">Anytime that suits you</option>
-                    </select>
-                </div>
-                
-                <button type="submit" class="submit-btn">Send Quote Request</button>
-            </form>
+            </div>
         </div>
     </div>
 
