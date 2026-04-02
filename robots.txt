@@ -11,10 +11,6 @@ Allow: /
 # Block any admin or private areas
 Disallow: /admin/
 Disallow: /private/
-Disallow: /*master*
-Disallow: /*old*
-Disallow: /*backup*
-Disallow: /*new*
 
 # XML Sitemap location
 Sitemap: https://goodhandshandyman.com.au/sitemap.xml
