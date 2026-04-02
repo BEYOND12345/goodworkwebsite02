@@ -38,9 +38,67 @@
     }
     </script>
     
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How much do fence repairs cost in Ballina?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Fence repair costs in Ballina depend on the type of fencing and extent of damage. Minor timber fence repairs such as replacing a few palings typically start from $150-$250, while larger storm damage repairs or Colorbond panel replacements cost more. GoodHands provides free quotes for all fence repairs across Ballina and the Northern Rivers. Call 0481 457271 for an accurate estimate."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you repair storm-damaged fences in the Ballina and Northern Rivers area?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, GoodHands provides fast storm damage fence repairs across Ballina, Byron Bay, Lennox Head, and the wider Northern Rivers. After severe weather events, we prioritise emergency repairs to secure properties quickly. We can temporary-brace damaged sections same day and complete full repairs as soon as materials are available. Call 0481 457271 for urgent fence repairs."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is Colorbond or timber fencing better for Ballina's coastal climate?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Both options work well in Ballina when installed correctly. Colorbond fencing handles salt air and humidity better with minimal maintenance, making it ideal for properties close to the Richmond River or coast. Timber fencing offers a natural look but requires regular treatment to prevent rot in Ballina's humid climate. GoodHands can advise on the best option for your specific property and budget."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can you make my pool fence compliant in Ballina?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "GoodHands repairs and upgrades pool fences to meet current Australian safety standards in Ballina and throughout the Northern Rivers. Common compliance issues include gaps that are too wide, climbable objects nearby, and faulty gate latches. We can assess your pool fence, identify compliance problems, and complete the necessary repairs. Contact us on 0481 457271 to arrange an inspection."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How long do fence repairs take in Ballina?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Most fence repairs in Ballina are completed within half a day to one full day. Straightforward jobs like replacing broken palings or fixing a leaning post take 2-4 hours. Larger repairs involving multiple posts or full panel replacement may require a full day. GoodHands will provide a clear timeframe when quoting your job so there are no surprises."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you offer emergency fence repairs in the Northern Rivers?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, GoodHands offers priority fence repairs across the Northern Rivers for urgent situations such as storm damage, fallen trees on fences, or security concerns. We understand that a damaged fence can be a safety issue, especially for families with children or pets. Call 0481 457271 and we will get to you as quickly as possible to secure your property."
+                }
+            }
+        ]
+    }
+    </script>
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+
     <style>
         :root {
             --yellow-primary: #FFB800;
@@ -823,7 +881,63 @@
                 text-align: center;
             }
         }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 80px 0;
+            background: var(--bg-subtle);
+        }
+
+        .faq-section .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .faq-section h2 {
+            font-size: clamp(2rem, 4vw, 2.75rem);
+            font-weight: 900;
+            color: var(--charcoal);
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .faq-item {
+            border-bottom: 2px solid var(--light-grey);
+            padding: 32px 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-item h3 {
+            font-weight: 800;
+            color: var(--charcoal);
+            margin-bottom: 12px;
+            font-size: 1.25rem;
+            line-height: 1.4;
+        }
+
+        .faq-item p {
+            color: var(--dark-grey);
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
     </style>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://goodhandshandyman.com.au/"},
+            {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://goodhandshandyman.com.au/handyman-services-byron-bay.html"},
+            {"@type": "ListItem", "position": 3, "name": "Fence Repairs"}
+        ]
+    }
+    </script>
 </head>
 <body>
     <!-- Header Navigation -->
@@ -1065,6 +1179,37 @@
             }
         });
     </script>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>How much do fence repairs cost in Ballina?</h3>
+                <p>Fence repair costs in Ballina depend on the type of fencing and extent of damage. Minor timber fence repairs such as replacing a few palings typically start from $150-$250, while larger storm damage repairs or Colorbond panel replacements cost more. GoodHands provides free quotes for all fence repairs across Ballina and the Northern Rivers. Call 0481 457271 for an accurate estimate.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Do you repair storm-damaged fences in the Ballina and Northern Rivers area?</h3>
+                <p>Yes, GoodHands provides fast storm damage fence repairs across Ballina, Byron Bay, Lennox Head, and the wider Northern Rivers. After severe weather events, we prioritise emergency repairs to secure properties quickly. We can temporary-brace damaged sections same day and complete full repairs as soon as materials are available. Call 0481 457271 for urgent fence repairs.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Is Colorbond or timber fencing better for Ballina's coastal climate?</h3>
+                <p>Both options work well in Ballina when installed correctly. Colorbond fencing handles salt air and humidity better with minimal maintenance, making it ideal for properties close to the Richmond River or coast. Timber fencing offers a natural look but requires regular treatment to prevent rot in Ballina's humid climate. GoodHands can advise on the best option for your specific property and budget.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can you make my pool fence compliant in Ballina?</h3>
+                <p>GoodHands repairs and upgrades pool fences to meet current Australian safety standards in Ballina and throughout the Northern Rivers. Common compliance issues include gaps that are too wide, climbable objects nearby, and faulty gate latches. We can assess your pool fence, identify compliance problems, and complete the necessary repairs. Contact us on 0481 457271 to arrange an inspection.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How long do fence repairs take in Ballina?</h3>
+                <p>Most fence repairs in Ballina are completed within half a day to one full day. Straightforward jobs like replacing broken palings or fixing a leaning post take 2-4 hours. Larger repairs involving multiple posts or full panel replacement may require a full day. GoodHands will provide a clear timeframe when quoting your job so there are no surprises.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Do you offer emergency fence repairs in the Northern Rivers?</h3>
+                <p>Yes, GoodHands offers priority fence repairs across the Northern Rivers for urgent situations such as storm damage, fallen trees on fences, or security concerns. We understand that a damaged fence can be a safety issue, especially for families with children or pets. Call 0481 457271 and we will get to you as quickly as possible to secure your property.</p>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">

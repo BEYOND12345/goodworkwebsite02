@@ -26,6 +26,61 @@
         "url": "https://goodhandshandyman.com.au/"
     }
     </script>
+
+    <!-- LocalBusiness + Service Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "GoodHands Handyman - Airbnb Maintenance Byron Bay",
+        "image": "https://goodhandshandyman.com.au/airbnb-maintenance-hero-northern-rivers.jpg",
+        "telephone": "0481457271",
+        "email": "danhandywork@gmail.com",
+        "url": "https://goodhandshandyman.com.au/airbnb-maintenance.html",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Byron Bay",
+            "addressRegion": "NSW",
+            "postalCode": "2481",
+            "addressCountry": "AU"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -28.6474,
+            "longitude": 153.6020
+        },
+        "areaServed": [
+            {"@type": "City", "name": "Byron Bay"},
+            {"@type": "City", "name": "Ballina"},
+            {"@type": "City", "name": "Bangalow"},
+            {"@type": "City", "name": "Lennox Head"},
+            {"@type": "City", "name": "Mullumbimby"}
+        ],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Airbnb Maintenance Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Emergency Airbnb Repairs",
+                        "description": "Fast turnaround repairs between guest bookings"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Preventative Maintenance",
+                        "description": "Regular maintenance to prevent breakages and bad reviews"
+                    }
+                }
+            ]
+        },
+        "priceRange": "$$"
+    }
+    </script>
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -844,6 +899,19 @@
             }
         }
     </style>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://goodhandshandyman.com.au/"},
+            {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://goodhandshandyman.com.au/handyman-services-byron-bay.html"},
+            {"@type": "ListItem", "position": 3, "name": "Airbnb Maintenance"}
+        ]
+    }
+    </script>
 </head>
 <body>
     <!-- Header Navigation -->

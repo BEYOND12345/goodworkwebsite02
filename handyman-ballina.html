@@ -812,6 +812,19 @@
             }
         }
     </style>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://goodhandshandyman.com.au/"},
+            {"@type": "ListItem", "position": 2, "name": "Service Areas", "item": "https://goodhandshandyman.com.au/areas.html"},
+            {"@type": "ListItem", "position": 3, "name": "Ballina"}
+        ]
+    }
+    </script>
 </head>
 <body>
     <!-- Header Navigation -->
@@ -1446,6 +1459,44 @@
       }
     }
   ]
+}
+    </script>
+
+    <!-- LocalBusiness Schema for SEO -->
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "GoodHands Handyman",
+    "image": "https://goodhandshandyman.com.au/hero-handyman-working.webp",
+    "telephone": "0481457271",
+    "email": "danhandywork@gmail.com",
+    "url": "https://goodhandshandyman.com.au/",
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ballina",
+        "addressRegion": "NSW",
+        "postalCode": "2478",
+        "addressCountry": "AU"
+    },
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -28.8670,
+        "longitude": 153.5638
+    },
+    "areaServed": {
+        "@type": "City",
+        "name": "Ballina",
+        "addressRegion": "NSW",
+        "addressCountry": "AU"
+    },
+    "priceRange": "$$",
+    "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "07:00",
+        "closes": "17:00"
+    }
 }
     </script>
 

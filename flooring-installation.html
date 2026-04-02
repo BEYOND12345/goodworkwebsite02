@@ -38,9 +38,67 @@
     }
     </script>
     
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is the best flooring for Byron Bay homes?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "For Byron Bay homes, moisture-resistant laminate or engineered timber flooring performs best in the coastal climate. Solid hardwood can warp with humidity fluctuations, while quality laminate with an AC4 or AC5 rating handles moisture and foot traffic well. GoodHands can assess your property and recommend the best flooring option for your specific location and lifestyle. Call 0481 457271 for advice."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How much does flooring installation cost in the Northern Rivers?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Flooring installation costs in the Northern Rivers vary depending on the material, room size, and subfloor condition. Laminate installation typically ranges from $30-$50 per square metre for labour, with materials additional. Engineered timber and hybrid flooring installation costs more due to the product and preparation involved. GoodHands provides free quotes for flooring installation across Byron Bay, Ballina, and the wider Northern Rivers. Call 0481 457271."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is timber or laminate flooring better for coastal areas like Byron Bay?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "In coastal areas like Byron Bay and Lennox Head, laminate and hybrid flooring generally outperform solid timber because they handle humidity changes better and resist moisture. Solid timber expands and contracts significantly with the Northern Rivers humidity, leading to gaps and buckling. Engineered timber is a good middle ground, offering the look of real wood with better moisture stability. GoodHands installs all types and can help you choose."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How long does flooring installation take in Byron Bay?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A standard room flooring installation typically takes one day, while a full house can take 2-4 days depending on size and subfloor preparation required. If the subfloor needs levelling or moisture barriers need installing, this adds time but is essential for a lasting result in the Northern Rivers climate. GoodHands will give you a clear timeline during the quoting process."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What moisture-resistant flooring options work best near the Northern Rivers coast?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Hybrid flooring (SPC or WPC core) is the most moisture-resistant option and ideal for Northern Rivers coastal homes. It is 100% waterproof, handles humidity well, and comes in realistic timber-look finishes. Quality laminate with sealed edges also performs well. GoodHands always installs proper moisture barriers and ensures expansion gaps are correct for the Byron Bay climate. Call 0481 457271 to discuss options for your home."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Should I repair or replace my damaged flooring in Byron Bay?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "If the damage is limited to a small area such as a few boards or a section with water damage, repair is usually more cost-effective. However, if the subfloor has moisture problems or the flooring is extensively worn, replacement may be the better long-term investment. GoodHands can inspect your flooring in Byron Bay or anywhere in the Northern Rivers and provide honest advice on whether repair or replacement makes more sense. Call 0481 457271 for a free assessment."
+                }
+            }
+        ]
+    }
+    </script>
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+
     <style>
         :root {
             --yellow-primary: #FFB800;
@@ -591,7 +649,63 @@
                 gap: 32px;
             }
         }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 80px 0;
+            background: var(--bg-subtle);
+        }
+
+        .faq-section .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .faq-section h2 {
+            font-size: clamp(2rem, 4vw, 2.75rem);
+            font-weight: 900;
+            color: var(--charcoal);
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .faq-item {
+            border-bottom: 2px solid var(--light-grey);
+            padding: 32px 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-item h3 {
+            font-weight: 800;
+            color: var(--charcoal);
+            margin-bottom: 12px;
+            font-size: 1.25rem;
+            line-height: 1.4;
+        }
+
+        .faq-item p {
+            color: var(--dark-grey);
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
     </style>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://goodhandshandyman.com.au/"},
+            {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://goodhandshandyman.com.au/handyman-services-byron-bay.html"},
+            {"@type": "ListItem", "position": 3, "name": "Flooring Installation"}
+        ]
+    }
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -824,6 +938,37 @@
             <h2>Ready for Professional Flooring?</h2>
             <p>Technical expertise in laminate flooring installation with guaranteed coastal durability</p>
             <a href="contact.html" class="cta-button">Get Your Free Quote</a>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>What is the best flooring for Byron Bay homes?</h3>
+                <p>For Byron Bay homes, moisture-resistant laminate or engineered timber flooring performs best in the coastal climate. Solid hardwood can warp with humidity fluctuations, while quality laminate with an AC4 or AC5 rating handles moisture and foot traffic well. GoodHands can assess your property and recommend the best flooring option for your specific location and lifestyle. Call 0481 457271 for advice.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How much does flooring installation cost in the Northern Rivers?</h3>
+                <p>Flooring installation costs in the Northern Rivers vary depending on the material, room size, and subfloor condition. Laminate installation typically ranges from $30-$50 per square metre for labour, with materials additional. Engineered timber and hybrid flooring installation costs more due to the product and preparation involved. GoodHands provides free quotes for flooring installation across Byron Bay, Ballina, and the wider Northern Rivers. Call 0481 457271.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Is timber or laminate flooring better for coastal areas like Byron Bay?</h3>
+                <p>In coastal areas like Byron Bay and Lennox Head, laminate and hybrid flooring generally outperform solid timber because they handle humidity changes better and resist moisture. Solid timber expands and contracts significantly with the Northern Rivers humidity, leading to gaps and buckling. Engineered timber is a good middle ground, offering the look of real wood with better moisture stability. GoodHands installs all types and can help you choose.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How long does flooring installation take in Byron Bay?</h3>
+                <p>A standard room flooring installation typically takes one day, while a full house can take 2-4 days depending on size and subfloor preparation required. If the subfloor needs levelling or moisture barriers need installing, this adds time but is essential for a lasting result in the Northern Rivers climate. GoodHands will give you a clear timeline during the quoting process.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What moisture-resistant flooring options work best near the Northern Rivers coast?</h3>
+                <p>Hybrid flooring (SPC or WPC core) is the most moisture-resistant option and ideal for Northern Rivers coastal homes. It is 100% waterproof, handles humidity well, and comes in realistic timber-look finishes. Quality laminate with sealed edges also performs well. GoodHands always installs proper moisture barriers and ensures expansion gaps are correct for the Byron Bay climate. Call 0481 457271 to discuss options for your home.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Should I repair or replace my damaged flooring in Byron Bay?</h3>
+                <p>If the damage is limited to a small area such as a few boards or a section with water damage, repair is usually more cost-effective. However, if the subfloor has moisture problems or the flooring is extensively worn, replacement may be the better long-term investment. GoodHands can inspect your flooring in Byron Bay or anywhere in the Northern Rivers and provide honest advice on whether repair or replacement makes more sense. Call 0481 457271 for a free assessment.</p>
+            </div>
         </div>
     </section>
 

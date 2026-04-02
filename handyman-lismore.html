@@ -939,6 +939,19 @@
         }
 
     </style>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://goodhandshandyman.com.au/"},
+            {"@type": "ListItem", "position": 2, "name": "Service Areas", "item": "https://goodhandshandyman.com.au/areas.html"},
+            {"@type": "ListItem", "position": 3, "name": "Lismore"}
+        ]
+    }
+    </script>
 </head>
 <body>
     <!-- Header Navigation -->
@@ -1430,6 +1443,44 @@
       }
     }
   ]
+}
+    </script>
+
+    <!-- LocalBusiness Schema for SEO -->
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "GoodHands Handyman",
+    "image": "https://goodhandshandyman.com.au/hero-handyman-working.webp",
+    "telephone": "0481457271",
+    "email": "danhandywork@gmail.com",
+    "url": "https://goodhandshandyman.com.au/",
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lismore",
+        "addressRegion": "NSW",
+        "postalCode": "2480",
+        "addressCountry": "AU"
+    },
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -28.8133,
+        "longitude": 153.2740
+    },
+    "areaServed": {
+        "@type": "City",
+        "name": "Lismore",
+        "addressRegion": "NSW",
+        "addressCountry": "AU"
+    },
+    "priceRange": "$$",
+    "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "07:00",
+        "closes": "17:00"
+    }
 }
     </script>
 

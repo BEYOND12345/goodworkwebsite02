@@ -38,9 +38,67 @@
     }
     </script>
     
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How much does furniture assembly cost in the Northern Rivers?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Furniture assembly costs in the Northern Rivers depend on the complexity and number of items. Simple items like bedside tables or shelving units typically start from $50-$80 each, while larger pieces like wardrobes, desks, or entertainment units range higher. GoodHands provides free quotes and can often assemble multiple items in a single visit to save you money. Call 0481 457271 for a price on your specific items."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you offer IKEA furniture assembly in Byron Bay?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, GoodHands assembles all IKEA furniture across Byron Bay, Ballina, and the Northern Rivers. From PAX wardrobes and KALLAX shelving to MALM beds and BESTA units, we have experience with the full IKEA range. We bring our own tools and work efficiently to get your furniture built properly. Many customers order from IKEA online and book us for assembly day. Call 0481 457271 to schedule."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How long does furniture assembly take?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Assembly time varies by item. A simple bookcase or side table takes 30-45 minutes. A standard bed frame takes about an hour. Larger items like PAX wardrobes or office desks take 1.5-3 hours depending on size and configuration. GoodHands can usually assemble 3-5 average items in a half-day session. We will give you a time estimate when you send through the details of what needs building."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What furniture brands do you assemble in the Northern Rivers?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "GoodHands assembles flatpack furniture from all major brands including IKEA, Fantastic Furniture, Officeworks, Koala, Mocka, Temple & Webster, Kmart, and Target. We also handle commercial office furniture from brands like Officeworks Business and JasonL. If it comes in a box with instructions, we can build it. Call 0481 457271 with your item details for a quote."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you take away packaging after furniture assembly?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, GoodHands will break down and remove all cardboard packaging and polystyrene after assembling your furniture. We leave your space clean and tidy with no mess to deal with. Just let us know when booking that you would like packaging removal included. This is a popular add-on for customers across Byron Bay and the Northern Rivers."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you assemble commercial and office furniture in Byron Bay?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, GoodHands provides commercial furniture assembly across Byron Bay and the Northern Rivers. We assemble office desks, workstations, reception counters, shelving systems, and retail display units. We can work outside business hours to avoid disrupting your operations. Whether you are fitting out a new office in the Byron Bay Arts & Industry Estate or a shop in Ballina, call 0481 457271 to arrange assembly."
+                }
+            }
+        ]
+    }
+    </script>
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+
     <style>
         :root {
             --yellow-primary: #FFB800;
@@ -739,7 +797,63 @@
                 gap: 16px;
             }
         }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 80px 0;
+            background: var(--bg-subtle);
+        }
+
+        .faq-section .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .faq-section h2 {
+            font-size: clamp(2rem, 4vw, 2.75rem);
+            font-weight: 900;
+            color: var(--charcoal);
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .faq-item {
+            border-bottom: 2px solid var(--light-grey);
+            padding: 32px 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-item h3 {
+            font-weight: 800;
+            color: var(--charcoal);
+            margin-bottom: 12px;
+            font-size: 1.25rem;
+            line-height: 1.4;
+        }
+
+        .faq-item p {
+            color: var(--dark-grey);
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
     </style>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://goodhandshandyman.com.au/"},
+            {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://goodhandshandyman.com.au/handyman-services-byron-bay.html"},
+            {"@type": "ListItem", "position": 3, "name": "Furniture Assembly"}
+        ]
+    }
+    </script>
 </head>
 <body>
     <!-- Header Navigation -->
@@ -894,6 +1008,37 @@
             <h2>Ready for Stress-Free Furniture Assembly?</h2>
             <p>Get your free quote today. Professional flatpack assembly across all Northern Rivers areas - same day service available.</p>
             <a href="tel:0481457271" class="cta-button">Call 0481 457271</a>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>How much does furniture assembly cost in the Northern Rivers?</h3>
+                <p>Furniture assembly costs in the Northern Rivers depend on the complexity and number of items. Simple items like bedside tables or shelving units typically start from $50-$80 each, while larger pieces like wardrobes, desks, or entertainment units range higher. GoodHands provides free quotes and can often assemble multiple items in a single visit to save you money. Call 0481 457271 for a price on your specific items.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Do you offer IKEA furniture assembly in Byron Bay?</h3>
+                <p>Yes, GoodHands assembles all IKEA furniture across Byron Bay, Ballina, and the Northern Rivers. From PAX wardrobes and KALLAX shelving to MALM beds and BESTA units, we have experience with the full IKEA range. We bring our own tools and work efficiently to get your furniture built properly. Many customers order from IKEA online and book us for assembly day. Call 0481 457271 to schedule.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How long does furniture assembly take?</h3>
+                <p>Assembly time varies by item. A simple bookcase or side table takes 30-45 minutes. A standard bed frame takes about an hour. Larger items like PAX wardrobes or office desks take 1.5-3 hours depending on size and configuration. GoodHands can usually assemble 3-5 average items in a half-day session. We will give you a time estimate when you send through the details of what needs building.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What furniture brands do you assemble in the Northern Rivers?</h3>
+                <p>GoodHands assembles flatpack furniture from all major brands including IKEA, Fantastic Furniture, Officeworks, Koala, Mocka, Temple and Webster, Kmart, and Target. We also handle commercial office furniture from brands like Officeworks Business and JasonL. If it comes in a box with instructions, we can build it. Call 0481 457271 with your item details for a quote.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Do you take away packaging after furniture assembly?</h3>
+                <p>Yes, GoodHands will break down and remove all cardboard packaging and polystyrene after assembling your furniture. We leave your space clean and tidy with no mess to deal with. Just let us know when booking that you would like packaging removal included. This is a popular add-on for customers across Byron Bay and the Northern Rivers.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Do you assemble commercial and office furniture in Byron Bay?</h3>
+                <p>Yes, GoodHands provides commercial furniture assembly across Byron Bay and the Northern Rivers. We assemble office desks, workstations, reception counters, shelving systems, and retail display units. We can work outside business hours to avoid disrupting your operations. Whether you are fitting out a new office in the Byron Bay Arts and Industry Estate or a shop in Ballina, call 0481 457271 to arrange assembly.</p>
+            </div>
         </div>
     </section>
 

@@ -16,34 +16,127 @@
     <meta property="og:image" content="https://goodhandshandyman.com.au/hero-handyman-working.webp">
     <meta property="og:locale" content="en_AU">
 
-    <!-- Article Schema -->
+    <!-- LocalBusiness + Service Schema -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Kitchen Repairs Byron Bay - Common Problems and Solutions",
-        "description": "Expert kitchen repairs in Byron Bay. Door alignment, hinge replacement, drawer repairs for coastal properties.",
-        "author": {
-            "@type": "Person",
-            "name": "Dan",
-            "jobTitle": "Master Handyman"
+        "@type": "LocalBusiness",
+        "name": "GoodHands Handyman - Kitchen Repairs Byron Bay",
+        "image": "https://goodhandshandyman.com.au/kitchen-repairs-before-after.png",
+        "telephone": "0481457271",
+        "email": "danhandywork@gmail.com",
+        "url": "https://goodhandshandyman.com.au/kitchen-repairs-byron-bay.html",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Byron Bay",
+            "addressRegion": "NSW",
+            "postalCode": "2481",
+            "addressCountry": "AU"
         },
-        "publisher": {
-            "@type": "Organization",
-            "name": "GoodHands Handyman",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://goodhandshandyman.com.au/good-hands-handyman-logo.jpg"
-            }
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -28.6474,
+            "longitude": 153.6020
         },
-        "datePublished": "2024-11-07",
-        "dateModified": "2024-11-10"
+        "areaServed": [
+            {"@type": "City", "name": "Byron Bay"},
+            {"@type": "City", "name": "Ballina"},
+            {"@type": "City", "name": "Bangalow"},
+            {"@type": "City", "name": "Lennox Head"}
+        ],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Kitchen Repair Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Kitchen Cabinet Repairs",
+                        "description": "Repair and replacement of kitchen cabinet doors, hinges, and runners damaged by coastal humidity"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Kitchen Drawer Repairs",
+                        "description": "Fix sticking drawers, replace runners, and repair drawer fronts"
+                    }
+                }
+            ]
+        },
+        "priceRange": "$$",
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "07:00",
+            "closes": "17:00"
+        }
     }
     </script>
     
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How much do kitchen repairs cost in Byron Bay?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kitchen repair costs in Byron Bay vary depending on the scope of work. Simple hinge replacements or drawer runner fixes typically start from $120-$200, while more involved repairs like cabinet door realignment or benchtop fixes range higher. GoodHands provides free quotes for all kitchen repair work across Byron Bay and the Northern Rivers. Call 0481 457271 for an accurate estimate."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are common kitchen problems in coastal homes near Byron Bay?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Coastal homes around Byron Bay and the Northern Rivers face unique kitchen issues caused by salt air and high humidity. The most common problems include swollen cabinet doors that won't close properly, rusted hinges, warped drawer fronts, peeling laminate, and moisture damage to kickboards. GoodHands specialises in diagnosing and repairing these coastal-specific kitchen issues using materials suited to the environment."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can humidity damage kitchen cabinets in the Northern Rivers?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, the Northern Rivers region experiences high humidity year-round, which causes significant damage to kitchen cabinets over time. MDF and particleboard are especially vulnerable to swelling and delamination. GoodHands repairs humidity-damaged cabinets and can recommend marine-grade or moisture-resistant materials for replacements that will last in the Byron Bay coastal climate. Call 0481 457271 to discuss your options."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How long do kitchen repairs take in Byron Bay?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Most kitchen repairs in Byron Bay are completed within a single day. Simple fixes like hinge replacement or drawer runner repair take 1-2 hours. More involved work such as multiple cabinet door realignments or replacing damaged panels may take a full day. GoodHands will give you a clear timeframe during the free quoting process so you know what to expect."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Should I use marine-grade materials for kitchen repairs near the coast?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "For properties close to the beach in Byron Bay, Lennox Head, or Suffolk Park, marine-grade hardware and moisture-resistant materials are strongly recommended. Standard hinges and runners corrode quickly in salt air environments. GoodHands uses stainless steel hardware and moisture-resistant boards for coastal kitchen repairs to ensure the work lasts. This small investment upfront prevents repeated repairs down the track."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "When should I repair my kitchen cabinets versus replacing them?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "If the cabinet carcasses are structurally sound, repair is almost always more cost-effective than full replacement. Replacing doors, hinges, drawer runners, and handles can transform a tired kitchen at a fraction of the cost. GoodHands can assess your kitchen in Byron Bay or anywhere in the Northern Rivers and give honest advice on whether repair or replacement makes more sense for your situation. Call 0481 457271 for a free assessment."
+                }
+            }
+        ]
+    }
+    </script>
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+
     <style>
         :root {
             --yellow-primary: #FFB800;
@@ -732,7 +825,63 @@
                 gap: 2rem;
             }
         }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 80px 0;
+            background: var(--bg-subtle);
+        }
+
+        .faq-section .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .faq-section h2 {
+            font-size: clamp(2rem, 4vw, 2.75rem);
+            font-weight: 900;
+            color: var(--charcoal);
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .faq-item {
+            border-bottom: 2px solid var(--light-grey);
+            padding: 32px 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-item h3 {
+            font-weight: 800;
+            color: var(--charcoal);
+            margin-bottom: 12px;
+            font-size: 1.25rem;
+            line-height: 1.4;
+        }
+
+        .faq-item p {
+            color: var(--dark-grey);
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
     </style>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://goodhandshandyman.com.au/"},
+            {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://goodhandshandyman.com.au/handyman-services-byron-bay.html"},
+            {"@type": "ListItem", "position": 3, "name": "Kitchen Repairs"}
+        ]
+    }
+    </script>
 </head>
 <body>
     <!-- Header Navigation -->
@@ -966,6 +1115,37 @@
             }
         });
     </script>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>How much do kitchen repairs cost in Byron Bay?</h3>
+                <p>Kitchen repair costs in Byron Bay vary depending on the scope of work. Simple hinge replacements or drawer runner fixes typically start from $120-$200, while more involved repairs like cabinet door realignment or benchtop fixes range higher. GoodHands provides free quotes for all kitchen repair work across Byron Bay and the Northern Rivers. Call 0481 457271 for an accurate estimate.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What are common kitchen problems in coastal homes near Byron Bay?</h3>
+                <p>Coastal homes around Byron Bay and the Northern Rivers face unique kitchen issues caused by salt air and high humidity. The most common problems include swollen cabinet doors that won't close properly, rusted hinges, warped drawer fronts, peeling laminate, and moisture damage to kickboards. GoodHands specialises in diagnosing and repairing these coastal-specific kitchen issues using materials suited to the environment.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can humidity damage kitchen cabinets in the Northern Rivers?</h3>
+                <p>Yes, the Northern Rivers region experiences high humidity year-round, which causes significant damage to kitchen cabinets over time. MDF and particleboard are especially vulnerable to swelling and delamination. GoodHands repairs humidity-damaged cabinets and can recommend marine-grade or moisture-resistant materials for replacements that will last in the Byron Bay coastal climate. Call 0481 457271 to discuss your options.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How long do kitchen repairs take in Byron Bay?</h3>
+                <p>Most kitchen repairs in Byron Bay are completed within a single day. Simple fixes like hinge replacement or drawer runner repair take 1-2 hours. More involved work such as multiple cabinet door realignments or replacing damaged panels may take a full day. GoodHands will give you a clear timeframe during the free quoting process so you know what to expect.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Should I use marine-grade materials for kitchen repairs near the coast?</h3>
+                <p>For properties close to the beach in Byron Bay, Lennox Head, or Suffolk Park, marine-grade hardware and moisture-resistant materials are strongly recommended. Standard hinges and runners corrode quickly in salt air environments. GoodHands uses stainless steel hardware and moisture-resistant boards for coastal kitchen repairs to ensure the work lasts. This small investment upfront prevents repeated repairs down the track.</p>
+            </div>
+            <div class="faq-item">
+                <h3>When should I repair my kitchen cabinets versus replacing them?</h3>
+                <p>If the cabinet carcasses are structurally sound, repair is almost always more cost-effective than full replacement. Replacing doors, hinges, drawer runners, and handles can transform a tired kitchen at a fraction of the cost. GoodHands can assess your kitchen in Byron Bay or anywhere in the Northern Rivers and give honest advice on whether repair or replacement makes more sense for your situation. Call 0481 457271 for a free assessment.</p>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer-main">
