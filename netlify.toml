@@ -1,6 +1,13 @@
 [build]
   publish = "."
 
+# Force non-www (fixes "alternate page with proper canonical" issue in Search Console)
+[[redirects]]
+  from = "https://www.goodhandshandyman.com.au/*"
+  to = "https://goodhandshandyman.com.au/:splat"
+  status = 301
+  force = true
+
 [[headers]]
   for = "/*"
   [headers.values]

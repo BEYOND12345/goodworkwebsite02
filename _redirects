@@ -1,0 +1,15 @@
+# Force www to non-www
+https://www.goodhandshandyman.com.au/* https://goodhandshandyman.com.au/:splat 301!
+
+# Fix old broken URLs that Google Search Console is still crawling as 404s
+/handyman-quote-northern-rivers.html /get-quote.html 301
+/fly-screen-repairs.html /fly-screen-repairs-byron-bay.html 301
+/latest-updates.html /blog.html 301
+/emergency-handyman-bangalow.html /handyman-bangalow.html 301
+/emergency-handyman-mullumbimby.html /handyman-mullumbimby.html 301
+/emergency-handyman-tweed-heads.html /handyman-tweed-heads.html 301
+/bathroom-repairs-byron-bay.html /handyman-services-byron-bay.html 301
+/fence-repairs-northern-rivers.html /fence-repairs-ballina.html 301
+/handyman-casino.html /areas.html 301
+/painting-services-northern-rivers.html /painting-services.html 301
+/how-much-does-handyman-cost-byron-bay-quote-guide.html /how-much-does-handyman-cost-byron-bay-pricing-guide.html 301
