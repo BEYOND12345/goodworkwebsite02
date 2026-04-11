@@ -1,6 +1,12 @@
 [build]
   publish = "."
 
+# Disable Netlify's pretty URLs - we want .html extensions only
+[build.processing]
+  skip_processing = false
+[build.processing.html]
+  pretty_urls = false
+
 # Force non-www (fixes "alternate page with proper canonical" issue in Search Console)
 [[redirects]]
   from = "https://www.goodhandshandyman.com.au/*"
