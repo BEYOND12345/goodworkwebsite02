@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <title>Byron Bay Home Maintenance Schedule for New Owners</title>
     <meta name="description" content="Complete maintenance schedule for Byron Bay properties. Monthly, quarterly, and annual tasks for coastal homes. Local handyman guide. Call 0481 457271">
     <meta name="keywords" content="Byron Bay property maintenance, home maintenance schedule, coastal property care, Northern Rivers homeowner guide, preventative maintenance">
@@ -49,6 +50,7 @@
     </script>
 
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Nunito', sans-serif; line-height: 1.7; color: #2D3748; background: #fff; padding-top: 70px; }
@@ -75,6 +77,32 @@
     </style>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <div class="nav-logo-text">Good Hands Handyman</div>
+                    </a>
+                </div>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="nav" id="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="areas.html">Service Areas</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html" class="cta-button">Get Quote</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
     <div class="container">
         <article>
             <div class="meta">January 15, 2025 | Byron Bay Property Maintenance</div>
@@ -301,5 +329,55 @@
 
         </article>
     </div>
+    <footer class="footer-main">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Good Hands Handyman</h3>
+                    <p>Professional handyman services across Byron Bay and Northern Rivers. Quality workmanship, reliable service, competitive quote.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="areas.html">Service Areas</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="emergency-repairs.html">Emergency Repairs</a></li>
+                        <li><a href="deck-restoration.html">Deck Restoration</a></li>
+                        <li><a href="gutter-cleaning.html">Gutter Cleaning</a></li>
+                        <li><a href="fence-repairs-ballina.html">Fence Repairs</a></li>
+                        <li><a href="custom-carpentry.html">Custom Carpentry</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Phone: 0481 457271</p>
+                    <p>Email: info@goodhandshandyman.com.au</p>
+                    <p>Serving Byron Bay & Northern Rivers</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 Good Hands Handyman. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="terms-of-service.html">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+            document.getElementById('nav').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
