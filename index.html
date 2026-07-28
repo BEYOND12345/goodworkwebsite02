@@ -36,431 +36,435 @@
     
     <!-- WebSite Schema for Sitelinks -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "GoodHands Handyman",
-        "alternateName": "GoodHands Handyman Northern Rivers",
-        "url": "https://goodhandshandyman.com.au/",
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://goodhandshandyman.com.au/blog.html?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-        }
+{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "GoodHands Handyman",
+    "alternateName": "GoodHands Handyman Northern Rivers",
+    "url": "https://goodhandshandyman.com.au/",
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://goodhandshandyman.com.au/blog.html?q={search_term_string}",
+        "query-input": "required name=search_term_string"
     }
+}
     </script>
 
     <!-- Schema Markup for Local Business -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "GoodHands",
-        "alternateName": "GoodHands Handyman Northern Rivers",
-        "image": [
-            "good-hands-handyman-logo.jpg",
-            "hero-handyman-working.webp",
-            "decking_7_upscaled.webp"
-        ],
-        "logo": "good-hands-handyman-logo.jpg",
-        "telephone": "0481457271",
-        "email": "danhandywork@gmail.com",
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "0481457271",
-                "contactType": "Customer Service",
-                "availableLanguage": "English",
-                "contactOption": "TollFree"
-            },
-            {
-                "@type": "ContactPoint", 
-                "email": "danhandywork@gmail.com",
-                "contactType": "Customer Service",
-                "availableLanguage": "English"
-            }
-        ],
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Byron Bay",
-            "addressRegion": "NSW",
-            "postalCode": "2481",
-            "addressCountry": "AU",
-            "streetAddress": "Northern Rivers"
+{
+    "@context": "https://schema.org",
+    "@type": [
+        "HomeAndConstructionBusiness",
+        "LocalBusiness"
+    ],
+    "name": "GoodHands",
+    "alternateName": "GoodHands Handyman Northern Rivers",
+    "image": [
+        "good-hands-handyman-logo.jpg",
+        "hero-handyman-working.webp",
+        "decking_7_upscaled.webp"
+    ],
+    "logo": "good-hands-handyman-logo.jpg",
+    "telephone": "0481457271",
+    "email": "danhandywork@gmail.com",
+    "contactPoint": [
+        {
+            "@type": "ContactPoint",
+            "telephone": "0481457271",
+            "contactType": "Customer Service",
+            "availableLanguage": "English",
+            "contactOption": "TollFree"
         },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": -28.6474,
-            "longitude": 153.6020
-        },
-        "areaServed": [
-            {
-                "@type": "City",
-                "name": "Byron Bay",
-                "addressRegion": "NSW",
-                "addressCountry": "AU"
-            },
-            {
-                "@type": "City", 
-                "name": "Ballina",
-                "addressRegion": "NSW",
-                "addressCountry": "AU"
-            },
-            {
-                "@type": "City",
-                "name": "Lismore",
-                "addressRegion": "NSW",
-                "addressCountry": "AU"
-            },
-            {
-                "@type": "City",
-                "name": "Tweed Heads",
-                "addressRegion": "NSW",
-                "addressCountry": "AU"
-            },
-            {
-                "@type": "City",
-                "name": "Mullumbimby",
-                "addressRegion": "NSW",
-                "addressCountry": "AU"
-            },
-            {
-                "@type": "City",
-                "name": "Bangalow",
-                "addressRegion": "NSW",
-                "addressCountry": "AU"
-            }
-        ],
-        "serviceType": [
-            "Kitchen Repairs", "Deck Restoration", "Gutter Cleaning", "Emergency Repairs",
-            "Fence Installation", "Property Maintenance", "Custom Carpentry", "Painting Services",
-            "Furniture Assembly", "Airbnb Maintenance", "Holiday Rental Maintenance", "Flooring Installation"
-        ],
-        "url": "https://goodhandshandyman.com.au",
-        "@id": "https://www.google.com/maps/place/?cid=12117124239782624774",
-        "description": "Professional handyman and property maintenance services across Northern Rivers NSW. Specializing in kitchen repairs, deck restoration, emergency repairs and all property maintenance needs using marine-grade materials for coastal properties.",
-        "slogan": "Professional handyman services - we treat your property like it's our own",
-        "openingHours": [
-            "Mo 07:00-18:00",
-            "Tu 07:00-18:00", 
-            "We 07:00-18:00",
-            "Th 07:00-18:00",
-            "Fr 07:00-18:00",
-            "Sa 08:00-16:00"
-        ],
-        "openingHoursSpecification": [
-            {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                "opens": "07:00",
-                "closes": "18:00"
-            },
-            {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": "Saturday",
-                "opens": "08:00", 
-                "closes": "16:00"
-            }
-        ],
-        "paymentAccepted": ["Cash", "Bank Transfer", "Credit Card", "Direct Debit"],
-        "currenciesAccepted": "AUD",
-        "hasCredential": "Fully Insured",
-        "knowsAbout": [
-            "Coastal Property Maintenance",
-            "Marine Grade Materials",
-            "Northern Rivers Climate",
-            "Holiday Rental Maintenance",
-            "Emergency Storm Repairs"
-        ],
-        "memberOf": {
-            "@type": "Organization",
-            "name": "Northern Rivers Business Network"
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "5.0",
-            "reviewCount": "12",
-            "bestRating": "5",
-            "worstRating": "1"
-        },
-        "founder": {
-            "@type": "Person",
-            "name": "Dan",
-            "jobTitle": "Master Handyman",
-            "knowsAbout": "Coastal Property Maintenance"
+        {
+            "@type": "ContactPoint",
+            "email": "danhandywork@gmail.com",
+            "contactType": "Customer Service",
+            "availableLanguage": "English"
         }
+    ],
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Byron Bay",
+        "addressRegion": "NSW",
+        "postalCode": "2481",
+        "addressCountry": "AU"
+    },
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -28.6474,
+        "longitude": 153.602
+    },
+    "areaServed": [
+        {
+            "@type": "City",
+            "name": "Byron Bay",
+            "addressRegion": "NSW",
+            "addressCountry": "AU"
+        },
+        {
+            "@type": "City",
+            "name": "Ballina",
+            "addressRegion": "NSW",
+            "addressCountry": "AU"
+        },
+        {
+            "@type": "City",
+            "name": "Lismore",
+            "addressRegion": "NSW",
+            "addressCountry": "AU"
+        },
+        {
+            "@type": "City",
+            "name": "Tweed Heads",
+            "addressRegion": "NSW",
+            "addressCountry": "AU"
+        },
+        {
+            "@type": "City",
+            "name": "Mullumbimby",
+            "addressRegion": "NSW",
+            "addressCountry": "AU"
+        },
+        {
+            "@type": "City",
+            "name": "Bangalow",
+            "addressRegion": "NSW",
+            "addressCountry": "AU"
+        },
+        {
+            "@type": "City",
+            "name": "Lennox Head",
+            "addressRegion": "NSW",
+            "addressCountry": "AU"
+        },
+        {
+            "@type": "City",
+            "name": "Brunswick Heads",
+            "addressRegion": "NSW",
+            "addressCountry": "AU"
+        },
+        {
+            "@type": "City",
+            "name": "Ocean Shores",
+            "addressRegion": "NSW",
+            "addressCountry": "AU"
+        },
+        {
+            "@type": "City",
+            "name": "Kingscliff",
+            "addressRegion": "NSW",
+            "addressCountry": "AU"
+        },
+        {
+            "@type": "City",
+            "name": "Pottsville",
+            "addressRegion": "NSW",
+            "addressCountry": "AU"
+        },
+        {
+            "@type": "City",
+            "name": "Murwillumbah",
+            "addressRegion": "NSW",
+            "addressCountry": "AU"
+        },
+        {
+            "@type": "City",
+            "name": "Casino",
+            "addressRegion": "NSW",
+            "addressCountry": "AU"
+        },
+        {
+            "@type": "City",
+            "name": "Coolangatta",
+            "addressRegion": "QLD",
+            "addressCountry": "AU"
+        }
+    ],
+    "serviceType": [
+        "Kitchen Repairs",
+        "Deck Restoration",
+        "Gutter Cleaning",
+        "Emergency Repairs",
+        "Fence Installation",
+        "Property Maintenance",
+        "Custom Carpentry",
+        "Painting Services",
+        "Furniture Assembly",
+        "Airbnb Maintenance",
+        "Holiday Rental Maintenance",
+        "Flooring Installation"
+    ],
+    "url": "https://goodhandshandyman.com.au",
+    "@id": "https://www.google.com/maps/place/?cid=12117124239782624774",
+    "description": "Professional handyman and property maintenance services across Northern Rivers NSW. Specializing in kitchen repairs, deck restoration, emergency repairs and all property maintenance needs using marine-grade materials for coastal properties.",
+    "slogan": "Professional handyman services - we treat your property like it's our own",
+    "openingHours": [
+        "Mo 07:00-18:00",
+        "Tu 07:00-18:00",
+        "We 07:00-18:00",
+        "Th 07:00-18:00",
+        "Fr 07:00-18:00",
+        "Sa 08:00-16:00"
+    ],
+    "openingHoursSpecification": [
+        {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "07:00",
+            "closes": "18:00"
+        },
+        {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "08:00",
+            "closes": "16:00"
+        }
+    ],
+    "paymentAccepted": [
+        "Cash",
+        "Bank Transfer",
+        "Credit Card",
+        "Direct Debit"
+    ],
+    "currenciesAccepted": "AUD",
+    "hasCredential": "Fully Insured",
+    "knowsAbout": [
+        "Coastal Property Maintenance",
+        "Marine Grade Materials",
+        "Northern Rivers Climate",
+        "Holiday Rental Maintenance",
+        "Emergency Storm Repairs"
+    ],
+    "memberOf": {
+        "@type": "Organization",
+        "name": "Northern Rivers Business Network"
+    },
+    "founder": {
+        "@type": "Person",
+        "name": "Dan",
+        "jobTitle": "Master Handyman",
+        "knowsAbout": "Coastal Property Maintenance"
     }
+}
     </script>
     
     <!-- Organization Schema -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "GoodHands",
-        "url": "https://goodhandshandyman.com.au",
-        "logo": "https://goodhandshandyman.com.au/rivers-property-services-logo.jpg",
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+61481457271",
-            "contactType": "Customer Service",
-            "areaServed": "AU",
-            "availableLanguage": "English"
-        },
-        "sameAs": [
-            "https://www.facebook.com/goodhandshandyman",
-            "https://www.instagram.com/goodhandshandyman"
-        ]
-    }
+{
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "GoodHands",
+    "url": "https://goodhandshandyman.com.au",
+    "logo": "https://goodhandshandyman.com.au/rivers-property-services-logo.jpg",
+    "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+61481457271",
+        "contactType": "Customer Service",
+        "areaServed": "AU",
+        "availableLanguage": "English"
+    },
+    "sameAs": [
+        "https://www.facebook.com/goodhandshandyman",
+        "https://www.instagram.com/goodhandshandyman"
+    ]
+}
     </script>
     
     <!-- FAQ Schema -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "Do you service all areas from Byron Bay to Tweed Heads?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Absolutely! I cover the whole Northern Rivers region from Byron Bay to Tweed Heads - including Ballina, Lismore, Mullumbimby, and Bangalow. Living here myself, I get the coastal property challenges we all face."
-                }
-            },
-            {
-                "@type": "Question", 
-                "name": "How quickly can you respond to emergency repairs?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Need this sorted quickly? I can usually fit emergency work in within a day or two. For urgent stuff like storm damage or security issues, give me a call: 0481 457271 - I'll prioritize getting your place secure again."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What types of kitchen door repairs do you handle?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Look, I tackle all the annoying kitchen door problems - broken hinges, warped doors, drawer sliders that stick, soft-close bits that don't work. I use quality hardware that actually lasts in our salty coastal air."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Do you use marine-grade materials for coastal properties?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Absolutely. Living here myself, I know salt air's tough on everything. I use marine-grade stainless steel, coastal timber treatments - stuff that's actually built for our conditions. No point using cheap materials that'll just rust out in a year."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How do you quote for handyman services?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Every job's different, so I give you a free quote first. Just call or text 0481 457271 and tell me what needs doing - I'll give you an honest price upfront. No surprises, no hidden costs."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Are you fully insured for property work?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Absolutely - I'm fully insured and take pride in getting things right. Your place is protected, and everything I do meets Aussie building standards. No cutting corners here."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Can you help with holiday rental maintenance between guests?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yeah, absolutely! I get how stressful those tight turnarounds can be between guests. I'm pretty quick with the maintenance stuff - keeping your Airbnb guest-ready so you don't lose bookings."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What's included in your deck restoration service?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "I'll clean it up properly, sand back the rough bits, fix any dodgy boards, then treat it with marine-grade stuff that actually works in our salty air. The whole point is making your deck last longer in this harsh coastal climate we've got."
-                }
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Do you service all areas from Byron Bay to Tweed Heads?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely! I cover the whole Northern Rivers region from Byron Bay to Tweed Heads - including Ballina, Lismore, Mullumbimby, and Bangalow. Living here myself, I get the coastal property challenges we all face."
             }
-        ]
-    }
+        },
+        {
+            "@type": "Question",
+            "name": "How quickly can you respond to emergency repairs?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Need this sorted quickly? I can usually fit emergency work in within a day or two. For urgent stuff like storm damage or security issues, give me a call: 0481 457271 - I'll prioritize getting your place secure again."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What types of kitchen door repairs do you handle?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Look, I tackle all the annoying kitchen door problems - broken hinges, warped doors, drawer sliders that stick, soft-close bits that don't work. I use quality hardware that actually lasts in our salty coastal air."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Do you use marine-grade materials for coastal properties?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely. Living here myself, I know salt air's tough on everything. I use marine-grade stainless steel, coastal timber treatments - stuff that's actually built for our conditions. No point using cheap materials that'll just rust out in a year."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How do you quote for handyman services?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Every job's different, so I give you a free quote first. Just call or text 0481 457271 and tell me what needs doing - I'll give you an honest price upfront. No surprises, no hidden costs."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Are you fully insured for property work?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely - I'm fully insured and take pride in getting things right. Your place is protected, and everything I do meets Aussie building standards. No cutting corners here."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can you help with holiday rental maintenance between guests?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yeah, absolutely! I get how stressful those tight turnarounds can be between guests. I'm pretty quick with the maintenance stuff - keeping your Airbnb guest-ready so you don't lose bookings."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What's included in your deck restoration service?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "I'll clean it up properly, sand back the rough bits, fix any dodgy boards, then treat it with marine-grade stuff that actually works in our salty air. The whole point is making your deck last longer in this harsh coastal climate we've got."
+            }
+        }
+    ]
+}
     </script>
     
     <!-- Service Schema -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "@id": "https://goodhandshandyman.com.au/#services",
-        "serviceType": "Handyman Services",
-        "provider": {
-            "@type": "LocalBusiness",
-            "name": "GoodHands",
-            "url": "https://goodhandshandyman.com.au"
-        },
-        "areaServed": [
-            {
-                "@type": "City",
-                "name": "Byron Bay",
-                "addressRegion": "NSW",
-                "addressCountry": "AU"
-            },
-            {
-                "@type": "City", 
-                "name": "Ballina",
-                "addressRegion": "NSW",
-                "addressCountry": "AU"
-            },
-            {
-                "@type": "City",
-                "name": "Lismore", 
-                "addressRegion": "NSW",
-                "addressCountry": "AU"
-            },
-            {
-                "@type": "City",
-                "name": "Tweed Heads",
-                "addressRegion": "NSW", 
-                "addressCountry": "AU"
-            }
+{
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://goodhandshandyman.com.au/#services",
+    "serviceType": "Handyman Services",
+    "provider": {
+        "@type": [
+            "HomeAndConstructionBusiness",
+            "LocalBusiness"
         ],
-        "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Handyman Services Northern Rivers",
-            "itemListElement": [
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Kitchen Door Repairs",
-                        "description": "Professional kitchen cabinet door and drawer repairs including hinges, sliders, and alignment fixes using quality coastal-rated hardware.",
-                        "serviceType": "Kitchen Repairs"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Deck Restoration",
-                        "description": "Complete deck restoration using marine-grade materials perfect for coastal Northern Rivers properties. Includes cleaning, sanding, sealing and protective coating.",
-                        "serviceType": "Deck Maintenance"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Gutter Cleaning",
-                        "description": "Professional gutter cleaning and maintenance service with debris removal and downpipe checks to prepare your property for storm season.",
-                        "serviceType": "Gutter Maintenance"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Emergency Repairs",
-                        "description": "Same-day emergency repair service for storm damage, security issues, and urgent property problems that can't wait.",
-                        "serviceType": "Emergency Services"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Holiday Rental Maintenance",
-                        "description": "Fast turnaround maintenance services for Airbnb and holiday rentals to keep properties guest-ready and earning income.",
-                        "serviceType": "Property Maintenance"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Custom Carpentry",
-                        "description": "Built-in storage solutions, shelving, and custom woodwork designed specifically for your space with quality craftsmanship.",
-                        "serviceType": "Carpentry"
-                    }
-                }
-            ]
-        }
-    }
-    </script>
-    
-    <!-- Review Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
         "name": "GoodHands",
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "5.0",
-            "reviewCount": "12",
-            "bestRating": "5",
-            "worstRating": "1"
+        "url": "https://goodhandshandyman.com.au"
+    },
+    "areaServed": [
+        {
+            "@type": "City",
+            "name": "Byron Bay",
+            "addressRegion": "NSW",
+            "addressCountry": "AU"
         },
-        "review": [
+        {
+            "@type": "City",
+            "name": "Ballina",
+            "addressRegion": "NSW",
+            "addressCountry": "AU"
+        },
+        {
+            "@type": "City",
+            "name": "Lismore",
+            "addressRegion": "NSW",
+            "addressCountry": "AU"
+        },
+        {
+            "@type": "City",
+            "name": "Tweed Heads",
+            "addressRegion": "NSW",
+            "addressCountry": "AU"
+        }
+    ],
+    "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Handyman Services Northern Rivers",
+        "itemListElement": [
             {
-                "@type": "Review",
-                "author": {
-                    "@type": "Person",
-                    "name": "Sarah M."
-                },
-                "datePublished": "2024-08-15",
-                "reviewBody": "Dan fixed our kitchen cabinet doors that had been driving us crazy for months. Living near the beach, we needed someone who understood coastal property challenges. The new hinges and drawer sliders work perfectly, and he used marine-grade hardware that should last for years. Highly recommend for Byron Bay area.",
-                "reviewRating": {
-                    "@type": "Rating",
-                    "ratingValue": "5",
-                    "bestRating": "5"
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Kitchen Door Repairs",
+                    "description": "Professional kitchen cabinet door and drawer repairs including hinges, sliders, and alignment fixes using quality coastal-rated hardware.",
+                    "serviceType": "Kitchen Repairs"
                 }
             },
             {
-                "@type": "Review",
-                "author": {
-                    "@type": "Person", 
-                    "name": "Michael T."
-                },
-                "datePublished": "2024-07-22",
-                "reviewBody": "Needed emergency repairs after the last big storm hit our Ballina property. Dan came out same day and secured everything properly. Professional service and fair pricing. Will definitely use again for regular maintenance.",
-                "reviewRating": {
-                    "@type": "Rating",
-                    "ratingValue": "5",
-                    "bestRating": "5"
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Deck Restoration",
+                    "description": "Complete deck restoration using marine-grade materials perfect for coastal Northern Rivers properties. Includes cleaning, sanding, sealing and protective coating.",
+                    "serviceType": "Deck Maintenance"
                 }
             },
             {
-                "@type": "Review",
-                "author": {
-                    "@type": "Person",
-                    "name": "Emma K."
-                },
-                "datePublished": "2024-06-10", 
-                "reviewBody": "Our deck restoration turned out amazing! Dan really knows what he's doing with coastal properties. The marine-grade treatment should protect it from salt air for years. Great communication throughout the job and cleaned up perfectly.",
-                "reviewRating": {
-                    "@type": "Rating",
-                    "ratingValue": "5",
-                    "bestRating": "5"
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Gutter Cleaning",
+                    "description": "Professional gutter cleaning and maintenance service with debris removal and downpipe checks to prepare your property for storm season.",
+                    "serviceType": "Gutter Maintenance"
                 }
             },
             {
-                "@type": "Review",
-                "author": {
-                    "@type": "Person",
-                    "name": "James R."
-                },
-                "datePublished": "2024-05-28",
-                "reviewBody": "Had Dan help with maintenance between Airbnb guests at our Lennox Head property. He's fast, reliable, and understands the urgency of keeping holiday rentals guest-ready. Booking calendar never missed a beat.",
-                "reviewRating": {
-                    "@type": "Rating", 
-                    "ratingValue": "5",
-                    "bestRating": "5"
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Emergency Repairs",
+                    "description": "Same-day emergency repair service for storm damage, security issues, and urgent property problems that can't wait.",
+                    "serviceType": "Emergency Services"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Holiday Rental Maintenance",
+                    "description": "Fast turnaround maintenance services for Airbnb and holiday rentals to keep properties guest-ready and earning income.",
+                    "serviceType": "Property Maintenance"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Custom Carpentry",
+                    "description": "Built-in storage solutions, shelving, and custom woodwork designed specifically for your space with quality craftsmanship.",
+                    "serviceType": "Carpentry"
                 }
             }
         ]
     }
+}
+    </script>
+    
+    <!-- Review Schema -->
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": [
+        "HomeAndConstructionBusiness",
+        "LocalBusiness"
+    ],
+    "name": "GoodHands"
+}
     </script>
     
     <!-- Preload critical resources -->
@@ -787,7 +791,7 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Covering the whole Northern Rivers</h2>
-                <p class="section-subtitle">Byron Bay, Mullumbimby, Ballina, Lennox Head, Brunswick Heads, Tweed Heads, and surrounding Northern Rivers towns.</p>
+                <p class="section-subtitle">Byron Bay, Ballina, Lismore, Lennox Head, Mullumbimby, Bangalow, Brunswick Heads, Ocean Shores, Kingscliff, Pottsville, Tweed Heads, Murwillumbah, Casino, and Coolangatta / Gold Coast border by arrangement.</p>
             </div>
             
             <div class="areas-grid">
@@ -802,6 +806,14 @@
                 <a href="handyman-lismore.html" class="area-card">
                     <div class="area-title">Lismore</div>
                     <div class="area-description">Post-flood restoration, heritage building maintenance</div>
+                </a>
+                <a href="handyman-northern-rivers.html" class="area-card">
+                    <div class="area-title">Northern Rivers</div>
+                    <div class="area-description">Full regional coverage hub</div>
+                </a>
+                <a href="handyman-gold-coast.html" class="area-card">
+                    <div class="area-title">Gold Coast border</div>
+                    <div class="area-description">Coolangatta &amp; Tweed corridor</div>
                 </a>
                 <a href="handyman-tweed-heads.html" class="area-card">
                     <div class="area-title">Tweed Heads</div>
@@ -839,7 +851,7 @@
 
                 <div style="margin-bottom: 48px;">
                     <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 16px; color: var(--charcoal);">What areas do you service?</h3>
-                    <p style="color: var(--dark-grey); line-height: 1.7; margin-bottom: 32px;">Byron Bay, Mullumbimby, Ballina, Lennox Head, Brunswick Heads, Tweed Heads, and surrounding Northern Rivers towns.</p>
+                    <p style="color: var(--dark-grey); line-height: 1.7; margin-bottom: 32px;">Byron Bay, Ballina, Lismore, Lennox Head, Mullumbimby, Bangalow, Brunswick Heads, Ocean Shores, Kingscliff, Pottsville, Tweed Heads, Murwillumbah, Casino, and Coolangatta / Gold Coast border by arrangement.</p>
                 </div>
 
                 <div style="margin-bottom: 48px;">
@@ -1045,6 +1057,12 @@
                         <li><a href="handyman-ocean-shores.html">Ocean Shores</a></li>
                         <li><a href="handyman-lennox-head.html">Lennox Head</a></li>
                         <li><a href="handyman-south-golden-beach.html">South Golden Beach</a></li>
+                        <li><a href="handyman-brunswick-heads.html">Brunswick Heads</a></li>
+                        <li><a href="handyman-kingscliff.html">Kingscliff</a></li>
+                        <li><a href="handyman-pottsville.html">Pottsville</a></li>
+                        <li><a href="handyman-coolangatta.html">Coolangatta</a></li>
+                        <li><a href="handyman-gold-coast.html">Gold Coast border</a></li>
+                        <li><a href="handyman-northern-rivers.html">Northern Rivers hub</a></li>
                     </ul>
                 </div>
 
