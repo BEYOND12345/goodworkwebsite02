@@ -61,3 +61,46 @@
   for = "/robots.txt"
   [headers.values]
     Cache-Control = "public, max-age=3600"
+
+# Forced redirects for stub/legacy URLs (static file shadowing)
+[[redirects]]
+  from = "/services.html"
+  to = "/handyman-services-byron-bay.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/get-quote.html"
+  to = "/contact.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/about-dan-byron-bay-handyman.html"
+  to = "/about.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/emergency-handyman-byron-bay.html"
+  to = "/emergency-repairs.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/emergency-handyman-ballina.html"
+  to = "/emergency-repairs.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/emergency-handyman-lismore.html"
+  to = "/emergency-repairs.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/emergency-door-repair-byron-bay.html"
+  to = "/emergency-door-repairs-byron-bay.html"
+  status = 301
+  force = true

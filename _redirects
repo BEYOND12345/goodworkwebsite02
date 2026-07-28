@@ -1,23 +1,23 @@
 # Force www to non-www
 https://www.goodhandshandyman.com.au/* https://goodhandshandyman.com.au/:splat 301!
 
-# Stub / soft-404 cleanups (meta-refresh pages → real 301s)
-/services.html /handyman-services-byron-bay.html 301
-/get-quote.html /contact.html 301
-/about-dan-byron-bay-handyman.html /about.html 301
-/emergency-handyman-byron-bay.html /emergency-repairs.html 301
-/emergency-handyman-ballina.html /emergency-repairs.html 301
-/emergency-handyman-lismore.html /emergency-repairs.html 301
-/emergency-door-repair-byron-bay.html /emergency-door-repairs-byron-bay.html 301
+# Stub / soft-404 cleanups — "!" forces even when a file exists
+/services.html /handyman-services-byron-bay.html 301!
+/get-quote.html /contact.html 301!
+/about-dan-byron-bay-handyman.html /about.html 301!
+/emergency-handyman-byron-bay.html /emergency-repairs.html 301!
+/emergency-handyman-ballina.html /emergency-repairs.html 301!
+/emergency-handyman-lismore.html /emergency-repairs.html 301!
+/emergency-door-repair-byron-bay.html /emergency-door-repairs-byron-bay.html 301!
 
 # Legacy GSC / old URLs
-/handyman-quote-northern-rivers.html /contact.html 301
-/fly-screen-repairs.html /fly-screen-repairs-byron-bay.html 301
-/latest-updates.html /blog.html 301
-/emergency-handyman-bangalow.html /handyman-bangalow.html 301
-/emergency-handyman-mullumbimby.html /handyman-mullumbimby.html 301
-/emergency-handyman-tweed-heads.html /handyman-tweed-heads.html 301
-/bathroom-repairs-byron-bay.html /handyman-services-byron-bay.html 301
-/fence-repairs-northern-rivers.html /fence-repairs-ballina.html 301
-/painting-services-northern-rivers.html /painting-services.html 301
-/how-much-does-handyman-cost-byron-bay-quote-guide.html /how-much-does-handyman-cost-byron-bay-pricing-guide.html 301
+/handyman-quote-northern-rivers.html /contact.html 301!
+/fly-screen-repairs.html /fly-screen-repairs-byron-bay.html 301!
+/latest-updates.html /blog.html 301!
+/emergency-handyman-bangalow.html /handyman-bangalow.html 301!
+/emergency-handyman-mullumbimby.html /handyman-mullumbimby.html 301!
+/emergency-handyman-tweed-heads.html /handyman-tweed-heads.html 301!
+/bathroom-repairs-byron-bay.html /handyman-services-byron-bay.html 301!
+/fence-repairs-northern-rivers.html /fence-repairs-ballina.html 301!
+/painting-services-northern-rivers.html /painting-services.html 301!
+/how-much-does-handyman-cost-byron-bay-quote-guide.html /how-much-does-handyman-cost-byron-bay-pricing-guide.html 301!
