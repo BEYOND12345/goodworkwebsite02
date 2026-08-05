@@ -35,6 +35,10 @@ a:hover{color:var(--yellow-hover)}
 .related{margin:48px 0;padding-top:28px;border-top:1px solid var(--light-grey)}
 .footer{background:var(--charcoal);color:#fff;padding:40px 0;margin-top:56px}
 .footer a{color:#fff}
+.review-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:20px 0}
+.review-card{border:1px dashed #CBD5E0;border-radius:12px;padding:18px;background:#F7FAFC;color:#4A5568}
+.review-card strong{display:block;color:#2D3748;margin-bottom:6px}
+.review-stars{letter-spacing:2px;color:#CBD5E0;margin-bottom:8px;font-size:1.1rem}
 @media(max-width:700px){.nav-links a{display:none}.hero{padding:56px 0 40px}}
 """
 
@@ -122,6 +126,15 @@ def page(
 </div></section>
 <main class="container">
 {body}
+
+<h2>Google reviews</h2>
+<p>Collecting fresh Google reviews this week. Placeholders below — real reviews with <strong>town + job</strong> (e.g. “Bangalow door hanging”) will replace these as they land. No fake stars in schema until they’re live on Google.</p>
+<div class="review-grid">
+<div class="review-card"><div class="review-stars">☆☆☆☆☆</div><strong>Review placeholder</strong>Google review coming — ask for “door hanging” + your town.</div>
+<div class="review-card"><div class="review-stars">☆☆☆☆☆</div><strong>Review placeholder</strong>Google review coming — ask for “hung doors / fitted locks” + your town.</div>
+<div class="review-card"><div class="review-stars">☆☆☆☆☆</div><strong>Review placeholder</strong>Google review coming — Byron, Ballina, Tweed, Brunswick, Bangalow, Lismore.</div>
+</div>
+
 <div class="cta">
   <h3>Need doors hung or locks fitted in {placename}?</h3>
   <p>Call Dan — same-week for most door jobs, same-day when a door or lock has failed.</p>
@@ -159,6 +172,8 @@ TOWNS = [
         "nearby": [
             ("door-hanging-fitting-northern-rivers.html", "Door hanging hub"),
             ("door-hanging-ballina.html", "Hang doors Ballina"),
+            ("door-hanging-brunswick-heads.html", "Hang doors Brunswick"),
+            ("door-hanging-bangalow.html", "Hang doors Bangalow"),
             ("door-repairs-byron-bay-northern-rivers.html", "Door repairs Byron"),
             ("door-lock-replacement-northern-rivers.html", "Lock & handle fitting"),
             ("handyman-byron-bay.html", "Handyman Byron Bay"),
@@ -245,6 +260,66 @@ TOWNS = [
             ("airbnb-maintenance.html", "Airbnb maintenance"),
         ],
     },
+    {
+        "slug": "door-hanging-brunswick-heads.html",
+        "town": "Brunswick Heads",
+        "title": "Door Hanging Brunswick Heads | Fit & Replace Doors | GoodHands",
+        "meta": "Door hanging Brunswick Heads — hang internal doors, replace leaves, fit handles and locks. River-coast homes. Call 0481 457271.",
+        "h1": "Door hanging in Brunswick Heads",
+        "hero": "Hang or replace doors in Brunswick Heads — river-coast homes, holiday lets, and hardware fitting. Byron-based, regular local runs.",
+        "lat": "-28.5390",
+        "lng": "153.5480",
+        "local_note": "Brunswick Heads sits in humid river-coast air. Doors swell, latches miss, and holiday rentals need quick turnarounds. I hang and adjust with that climate in mind.",
+        "areas": ["Brunswick Heads", "Ocean Shores", "South Golden Beach", "Byron Bay"],
+        "nearby": [
+            ("door-hanging-fitting-northern-rivers.html", "Door hanging hub"),
+            ("door-hanging-byron-bay.html", "Hang doors Byron"),
+            ("door-hanging-bangalow.html", "Hang doors Bangalow"),
+            ("handyman-brunswick-heads.html", "Handyman Brunswick"),
+            ("door-lock-replacement-northern-rivers.html", "Lock fitting"),
+            ("airbnb-maintenance.html", "Airbnb maintenance"),
+        ],
+    },
+    {
+        "slug": "door-hanging-bangalow.html",
+        "town": "Bangalow",
+        "title": "Door Hanging Bangalow | Heritage Homes & New Doors | GoodHands",
+        "meta": "Door hanging Bangalow — hang and replace internal doors, fit handles and locks in hinterland homes. Call 0481 457271.",
+        "h1": "Door hanging in Bangalow",
+        "hero": "Door hanging and replacement for Bangalow and hinterland homes — new leaves into existing frames, careful work in older cottages, handles and locks fitted properly.",
+        "lat": "-28.6860",
+        "lng": "153.5220",
+        "local_note": "Bangalow cottages often have out-of-square frames and character architraves. I trim and hang carefully so new doors look right in older openings — not forced into a modern-only approach.",
+        "areas": ["Bangalow", "Byron Bay", "Federal", "Clunes"],
+        "nearby": [
+            ("door-hanging-fitting-northern-rivers.html", "Door hanging hub"),
+            ("door-hanging-byron-bay.html", "Hang doors Byron"),
+            ("door-hanging-lismore.html", "Hang doors Lismore"),
+            ("handyman-bangalow.html", "Handyman Bangalow"),
+            ("door-lock-replacement-northern-rivers.html", "Lock fitting"),
+            ("door-repairs-byron-bay-northern-rivers.html", "Door repairs"),
+        ],
+    },
+    {
+        "slug": "door-hanging-lismore.html",
+        "town": "Lismore",
+        "title": "Door Hanging Lismore | Replace Doors & Fit Locks | GoodHands",
+        "meta": "Door hanging Lismore — hang internal doors, replace damaged leaves, fit handles and locks. Flood-country homes. Call 0481 457271.",
+        "h1": "Door hanging in Lismore",
+        "hero": "Hang new doors and replace damaged ones across Lismore and surrounds. Practical fitting for inland humidity and post-repair homes — clear quote, same-week when I can.",
+        "lat": "-28.8094",
+        "lng": "153.2760",
+        "local_note": "Lismore jobs are often multi-door after renovations or repairs. Moisture history matters — I check frames before hanging so you’re not fighting a swollen jamb next wet season.",
+        "areas": ["Lismore", "Goonellabah", "East Lismore", "Ballina"],
+        "nearby": [
+            ("door-hanging-fitting-northern-rivers.html", "Door hanging hub"),
+            ("door-hanging-ballina.html", "Hang doors Ballina"),
+            ("door-hanging-bangalow.html", "Hang doors Bangalow"),
+            ("door-repairs-ballina-lismore.html", "Door repairs Lismore"),
+            ("handyman-lismore.html", "Handyman Lismore"),
+            ("door-lock-replacement-northern-rivers.html", "Lock fitting"),
+        ],
+    },
 ]
 
 
@@ -296,7 +371,7 @@ def pillar_body() -> str:
 <p>Simple adjustments and handle/lock swaps are usually the smaller end. Hanging a new internal door in an existing frame is typically in the <strong>$150–$350 labour</strong> range depending on trim, hardware, and access. Multi-door jobs are more efficient per door. I quote on site before I start.</p>
 
 <h2>Where I cover</h2>
-<p>Byron Bay home base, then Ballina, Lennox Head, Tweed Heads, Kingscliff, and the towns between — same corridor as the rest of GoodHands.</p>
+<p>Byron Bay home base, then Ballina, Tweed Heads, Brunswick Heads, Bangalow, Lismore, Lennox Head, Kingscliff — the small towns where local searches actually convert.</p>
 <div class="grid">
 {town_cards}
 <a class="card" href="door-lock-replacement-northern-rivers.html">Lock &amp; handle fitting</a>
@@ -337,17 +412,22 @@ def main() -> None:
             ("door-hanging-byron-bay.html", "Byron Bay"),
             ("door-hanging-ballina.html", "Ballina"),
             ("door-hanging-tweed-heads.html", "Tweed Heads"),
+            ("door-hanging-brunswick-heads.html", "Brunswick Heads"),
+            ("door-hanging-bangalow.html", "Bangalow"),
+            ("door-hanging-lismore.html", "Lismore"),
             ("door-hanging-lennox-head.html", "Lennox Head"),
             ("door-hanging-kingscliff.html", "Kingscliff"),
             ("door-lock-replacement-northern-rivers.html", "Locks & handles"),
             ("door-repairs-byron-bay-northern-rivers.html", "Door repairs"),
-            ("handyman-byron-to-tweed-corridor.html", "Corridor map"),
         ],
         area_served=[
             "Byron Bay",
             "Ballina",
-            "Lennox Head",
             "Tweed Heads",
+            "Brunswick Heads",
+            "Bangalow",
+            "Lismore",
+            "Lennox Head",
             "Kingscliff",
             "Northern Rivers",
         ],
