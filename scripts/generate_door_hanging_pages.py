@@ -135,10 +135,18 @@ def page(
 <div class="review-card"><div class="review-stars">☆☆☆☆☆</div><strong>Review placeholder</strong>Google review coming — Byron, Ballina, Tweed, Brunswick, Bangalow, Lismore.</div>
 </div>
 
-<div class="cta">
-  <h3>Need doors hung or locks fitted in {placename}?</h3>
-  <p>Call Dan — same-week for most door jobs, same-day when a door or lock has failed.</p>
-  <a class="btn" href="tel:0481457271">Call 0481 457271</a>
+<div class="cta" id="door-hanging-pricing">
+  <h3>Door hanging prices</h3>
+  <p><strong>Minimum job: $150 + GST.</strong> Typical hang/fit jobs <strong>$150–$350 + GST</strong> depending on trim, hinges and hardware. Door supply/parts extra if you need me to source them.</p>
+  <ul style="margin:12px 0 16px 22px">
+    <li><strong>$150 + GST minimum</strong> — smallest visit worth booking</li>
+    <li><strong>Hang one internal door:</strong> typically $150–$350 + GST labour</li>
+    <li><strong>Multi-door jobs:</strong> better per-door rate in one visit</li>
+    <li><strong>Handles / locks fitted</strong> with the hang, or as their own job (still $150 + GST min)</li>
+  </ul>
+  <p><strong>Text a photo</strong> of the door/opening (and handle/lock brand if known) — I’ll reply faster when I’m on the tools.</p>
+  <a class="btn" href="sms:0481457271?&body=Hi%20Dan%2C%20door%20hanging%20job%20-%20photo%20attached.%20Suburb%3A%20">Text photo: 0481 457271</a>
+  <a class="btn" href="tel:0481457271">Call</a>
   <a class="btn" href="contact.html">Request a quote</a>
 </div>
 <div class="related">
@@ -162,7 +170,7 @@ TOWNS = [
         "slug": "door-hanging-byron-bay.html",
         "town": "Byron Bay",
         "title": "Door Hanging Byron Bay | Fit, Replace & Lock Fitting | GoodHands",
-        "meta": "Door hanging Byron Bay — hang internal doors, replace door leaves, fit handles and locks. Coastal humidity know-how. Call 0481 457271.",
+        "meta": "Door hanging Byron Bay — hang internal doors, replace door leaves, fit handles and locks. Coastal humidity know-how. Minimum job $150 + GST. Call 0481 457271.",
         "h1": "Door hanging in Byron Bay",
         "hero": "Need doors hung or replaced in Byron Bay? I hang internal doors, replace damaged leaves, and fit handles and locks — trimmed and adjusted so they close properly in coastal humidity.",
         "lat": "-28.6474",
@@ -184,7 +192,7 @@ TOWNS = [
         "slug": "door-hanging-ballina.html",
         "town": "Ballina",
         "title": "Door Hanging Ballina | Internal Doors & Lock Fitting | GoodHands",
-        "meta": "Door hanging Ballina — hang and replace internal doors, fit handles and locks. River/coastal properties. Same-week. Call 0481 457271.",
+        "meta": "Door hanging Ballina — hang and replace internal doors, fit handles and locks. River/coastal properties. Same-week. Minimum job $150 + GST. Call 0481 457271.",
         "h1": "Door hanging in Ballina",
         "hero": "Hang new doors, replace old ones, and fit locks or handles across Ballina — East Ballina, West Ballina, and nearby. Practical carpentry, clear quote, same-week for most jobs.",
         "lat": "-28.8667",
@@ -204,7 +212,7 @@ TOWNS = [
         "slug": "door-hanging-tweed-heads.html",
         "town": "Tweed Heads",
         "title": "Door Hanging Tweed Heads | Replace Doors & Fit Locks | GoodHands",
-        "meta": "Door hanging Tweed Heads — hang internal doors, replace leaves, fit handles and locks. Units and houses. Call 0481 457271.",
+        "meta": "Door hanging Tweed Heads — hang internal doors, replace leaves, fit handles and locks. Units and houses. Minimum job $150 + GST. Call 0481 457271.",
         "h1": "Door hanging in Tweed Heads",
         "hero": "Door hanging and replacement for Tweed Heads homes and units — new internal doors, hardware fitting, and lock swaps. Based in Byron, regularly working the Tweed corridor.",
         "lat": "-28.1780",
@@ -224,7 +232,7 @@ TOWNS = [
         "slug": "door-hanging-lennox-head.html",
         "town": "Lennox Head",
         "title": "Door Hanging Lennox Head | Fit & Replace Doors | GoodHands",
-        "meta": "Door hanging Lennox Head — hang internal doors, replace damaged doors, fit handles and locks. Coastal homes. Call 0481 457271.",
+        "meta": "Door hanging Lennox Head — hang internal doors, replace damaged doors, fit handles and locks. Coastal homes. Minimum job $150 + GST. Call 0481 457271.",
         "h1": "Door hanging in Lennox Head",
         "hero": "Hang or replace doors in Lennox Head coastal homes. Trim, hinge, latch, and adjust — plus handle and lock fitting when you’re refreshing bedrooms or rentals.",
         "lat": "-28.8000",
@@ -244,7 +252,7 @@ TOWNS = [
         "slug": "door-hanging-kingscliff.html",
         "town": "Kingscliff",
         "title": "Door Hanging Kingscliff | Internal Doors & Locks | GoodHands",
-        "meta": "Door hanging Kingscliff — hang and replace internal doors, fit handles and locks on the Tweed Coast. Call 0481 457271.",
+        "meta": "Door hanging Kingscliff — hang and replace internal doors, fit handles and locks on the Tweed Coast. Minimum job $150 + GST. Call 0481 457271.",
         "h1": "Door hanging in Kingscliff",
         "hero": "Door hanging and lock fitting for Kingscliff and nearby Tweed Coast homes — new internal doors hung properly, old leaves replaced, hardware fitted and adjusted.",
         "lat": "-28.2560",
@@ -264,7 +272,7 @@ TOWNS = [
         "slug": "door-hanging-brunswick-heads.html",
         "town": "Brunswick Heads",
         "title": "Door Hanging Brunswick Heads | Fit & Replace Doors | GoodHands",
-        "meta": "Door hanging Brunswick Heads — hang internal doors, replace leaves, fit handles and locks. River-coast homes. Call 0481 457271.",
+        "meta": "Door hanging Brunswick Heads — hang internal doors, replace leaves, fit handles and locks. River-coast homes. Minimum job $150 + GST. Call 0481 457271.",
         "h1": "Door hanging in Brunswick Heads",
         "hero": "Hang or replace doors in Brunswick Heads — river-coast homes, holiday lets, and hardware fitting. Byron-based, regular local runs.",
         "lat": "-28.5390",
@@ -284,7 +292,7 @@ TOWNS = [
         "slug": "door-hanging-bangalow.html",
         "town": "Bangalow",
         "title": "Door Hanging Bangalow | Heritage Homes & New Doors | GoodHands",
-        "meta": "Door hanging Bangalow — hang and replace internal doors, fit handles and locks in hinterland homes. Call 0481 457271.",
+        "meta": "Door hanging Bangalow — hang and replace internal doors, fit handles and locks in hinterland homes. Minimum job $150 + GST. Call 0481 457271.",
         "h1": "Door hanging in Bangalow",
         "hero": "Door hanging and replacement for Bangalow and hinterland homes — new leaves into existing frames, careful work in older cottages, handles and locks fitted properly.",
         "lat": "-28.6860",
@@ -304,7 +312,7 @@ TOWNS = [
         "slug": "door-hanging-lismore.html",
         "town": "Lismore",
         "title": "Door Hanging Lismore | Replace Doors & Fit Locks | GoodHands",
-        "meta": "Door hanging Lismore — hang internal doors, replace damaged leaves, fit handles and locks. Flood-country homes. Call 0481 457271.",
+        "meta": "Door hanging Lismore — hang internal doors, replace damaged leaves, fit handles and locks. Flood-country homes. Minimum job $150 + GST. Call 0481 457271.",
         "h1": "Door hanging in Lismore",
         "hero": "Hang new doors and replace damaged ones across Lismore and surrounds. Practical fitting for inland humidity and post-repair homes — clear quote, same-week when I can.",
         "lat": "-28.8094",
@@ -334,6 +342,8 @@ def town_body(t: dict) -> str:
 <li><strong>Fit handles, privacy sets and locks</strong> (like-for-like and standard upgrades)</li>
 <li><strong>Bundle multi-door jobs</strong> for renovations and rental turnovers</li>
 </ul>
+<h2>Pricing in {t['town']}</h2>
+<p><strong>Minimum job $150 + GST.</strong> Hanging one internal door is typically <strong>$150–$350 + GST</strong> labour depending on trim and hardware. Multi-door jobs in one visit are better value. Text a photo of the door/opening (and lock/handle brand if known) to 0481 457271 for a quicker reply.</p>
 <h2>What I don’t pretend to be</h2>
 <p>I’m a handyman/carpenter for hanging and fitting — not a locksmith for restricted rekeys, lockouts, or high-security master systems. Fire doors and structural opening changes need a specialist; I’ll tell you straight if that’s the case.</p>
 <h2>Related</h2>
@@ -367,8 +377,15 @@ def pillar_body() -> str:
 <li>“Fit new handles and locks on rental turnover”</li>
 </ul>
 
-<h2>Rough guide on cost</h2>
-<p>Simple adjustments and handle/lock swaps are usually the smaller end. Hanging a new internal door in an existing frame is typically in the <strong>$150–$350 labour</strong> range depending on trim, hardware, and access. Multi-door jobs are more efficient per door. I quote on site before I start.</p>
+<h2>Door hanging prices</h2>
+<p><strong>Minimum job: $150 + GST.</strong> I don’t do cheap call-outs — that’s the smallest visit worth booking.</p>
+<ul>
+<li><strong>Hang one internal door</strong> (existing frame): typically $150–$350 + GST labour</li>
+<li><strong>Replace a door leaf + hang:</strong> usually in the same band, plus the door if you want me to supply</li>
+<li><strong>Fit handles / locks:</strong> often done with the hang; standalone still $150 + GST minimum</li>
+<li><strong>Multi-door packages:</strong> better per-door rate when we do several in one visit</li>
+</ul>
+<p>Exact quote after I’ve seen a photo — text the opening/door and brand of any hardware if you know it.</p>
 
 <h2>Where I cover</h2>
 <p>Byron Bay home base, then Ballina, Tweed Heads, Brunswick Heads, Bangalow, Lismore, Lennox Head, Kingscliff — the small towns where local searches actually convert.</p>
@@ -401,9 +418,9 @@ def main() -> None:
     pillar = page(
         slug="door-hanging-fitting-northern-rivers.html",
         title="Door Hanging & Fitting Northern Rivers | Replace Doors & Locks | GoodHands",
-        meta="Door hanging and fitting from Byron Bay to Tweed — hang internal doors, replace leaves, fit handles and locks. Call 0481 457271.",
+        meta="Door hanging Byron Bay to Tweed. Minimum job $150 + GST. Hang, replace, fit locks. Text a photo for a fast quote. 0481 457271.",
         h1="Door hanging, replacement & lock fitting",
-        hero="Hang new doors, replace damaged ones, and fit handles or locks across the Byron Bay to Tweed corridor. Trim, hinge, latch, adjust — done properly for coastal homes.",
+        hero="Hang new doors, replace damaged ones, and fit handles or locks across the Byron Bay to Tweed corridor. Minimum job $150 + GST. Text a photo for a faster quote.",
         placename="Northern Rivers",
         lat="-28.6430",
         lng="153.6120",
